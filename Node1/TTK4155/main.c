@@ -45,19 +45,24 @@ int main(void)
 	CAN_message a;
 	a.id = 2;
 	a.length = 2;
-	a.data[0] = 'A';
-	a.data[1] = '!';
+	
+	pos_t j_pos;
 	
 	printf("I'm NODE 1\r\n");
 	
 	/* MAIN LOOP */
 	while (1)
 	{
+		j_pos = joystick_pos_read();
 		//joystick_menu_navigation();
 		//interrupt_polling();
-		//a.data[0]++;
-		//CAN_send(a);
-		//_delay_ms(10000);
+		a.data[0] = j_pos.x;
+		a.data[1] = j_pos.y;
+		CAN_send(a);
+		
+		print_joystick_position();
+		
+		_delay_ms(10000);
 	
 		
 	}

@@ -7,17 +7,20 @@
 typedef struct{
 	uint16_t length;
 	uint16_t id;
-	char data[8];
+	int8_t data[8];
 } CAN_message;
 
 void CAN_init(uint8_t mode)
 {
 	MCP2515_reset();
-	MCP2515_set_mode(mode);
+	
+	printf("%x", MCP2515_read(MCP_CANSTAT));
 	
 	MCP2515_write(MCP_CNF3, 0b00000001);
 	MCP2515_write(MCP_CNF2, 0b10110101);
-	MCP2515_write(MCP_CNF1, 0b01000011);
+	MCP2515_write(MCP_CNF1, 0b00000011);
+	
+	MCP2515_set_mode(mode);
 	
 	// Enables output interrupt
 	MCP2515_write(MCP_CANINTE, 0X03);	
