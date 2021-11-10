@@ -22,8 +22,8 @@
 // 8-bit each value
 typedef struct
 {
-	int16_t x;
-	int16_t y;
+	uint8_t x;
+	uint8_t y;
 } pos_t;
 
 typedef enum {
@@ -52,6 +52,11 @@ pos_t pos_read(void);
 uint8_t stop = 0;
 uint8_t button = 0;
 
+long map(long x, long in_min, long in_max, long out_min, long out_max)
+{
+	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
 void joystick_init()
 {
 	PORTB |= (1 << PB2);
@@ -60,8 +65,8 @@ void joystick_init()
 
 pos_t joystick_pos_read()
 {
-	pos_t pos = {adc_read(J_X_ADDRESS)- J_X_OFFSET, adc_read(J_Y_ADDRESS)- J_Y_OFFSET};
-	
+	pos_t pos = {map(adc_read(J_X_ADDRESS),10,255,0,100), map(adc_read(J_Y_ADDRESS),10,255,0,100)};
+
 	return pos;
 }
 

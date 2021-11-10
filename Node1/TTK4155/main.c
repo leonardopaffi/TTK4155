@@ -58,12 +58,7 @@ int main(void)
 		//interrupt_polling();
 		a.data[0] = j_pos.x;
 		a.data[1] = j_pos.y;
-		CAN_send(a);
-		
-		print_joystick_position();
-		
-		_delay_ms(10000);
-	
-		
+		CAN_send(a);		
+		//print_joystick_position();
 	}
 }

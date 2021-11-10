@@ -32,6 +32,7 @@
 #include "uart.h"
 #include "can_controller.h"
 #include "can_interrupt.h"
+#include "PWM.h"
 
 int main (void)
 {
@@ -39,12 +40,10 @@ int main (void)
 	SystemInit();
 	configure_uart();
 	
+	PWM_init();
+	
 	int d = can_init_def_tx_rx_mb(0x00290561);
 	printf("Node 2\n\r");
-	
-	PIOA -> PIO_PER |= PIO_PER_P19;	//enable pin
-	PIOA -> PIO_OER |= PIO_OER_P19; // set as output
-	PIOA -> PIO_SODR |= PIO_SODR_P19; // set high
 	
 	WDT -> WDT_MR |= WDT_MR_WDDIS;
 	
@@ -54,7 +53,7 @@ int main (void)
 	msg.data[0] = 'c';
 	msg.data[1] = 'f';
 	
-	
 	while(1){
+		
 	}
 }

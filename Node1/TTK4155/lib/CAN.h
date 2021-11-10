@@ -37,9 +37,9 @@ void CAN_send(CAN_message message)
 	// Sending message
 	for(uint8_t i = 0; i < (message.length); i++){
 		MCP2515_write(MCP_TXB0D0 + i, message.data[i]);
-		printf("\r\nSENDING MESSAGE: \r\n data: %d\r\n", message.data[i]);
+		//printf("\r\nSENDING MESSAGE: \r\n data: %d\r\n", message.data[i]);
 	}
-	printf("\r\n");
+	//printf("\r\n");
 	// Enables sending
 	MCP2515_RTS(MCP_RTS_TX0);
 }
@@ -57,7 +57,7 @@ void CAN_receive(void){
 		// Reading message
 		for(uint8_t i = 0; i < (msg.length); i++){
 			msg.data[i] = MCP2515_read(MCP_RXB0D0 + i);
-			CAN_debug_print(msg.id, msg.data[i], i);
+			//CAN_debug_print(msg.id, msg.data[i], i);
 		}
 		// Clearing CANINTF to allow new message to be received
 		MCP2515_bit_modify(MCP_CANINTF, 0x01, 0x00);
@@ -72,7 +72,7 @@ void CAN_receive(void){
 		// Reading message
 		for(uint8_t i = 0; i < (msg.length); i++){
 			msg.data[i] = MCP2515_read(MCP_RXB1D0 + i);
-			CAN_debug_print(msg.id, msg.data[i], i);
+			//CAN_debug_print(msg.id, msg.data[i], i);
 		}
 		// Clearing CANINTF to allow new message to be received
 		MCP2515_bit_modify(MCP_CANINTF,0x02, 0x00);
