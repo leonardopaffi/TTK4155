@@ -33,6 +33,10 @@
 #include "can_controller.h"
 #include "can_interrupt.h"
 #include "PWM.h"
+#include "ADC.h"
+
+uint8_t score = 0;
+uint8_t game_pause = 0;
 
 int main (void)
 {
@@ -41,6 +45,8 @@ int main (void)
 	configure_uart();
 	
 	PWM_init();
+	
+	ADC_init();
 	
 	int d = can_init_def_tx_rx_mb(0x00290561);
 	printf("Node 2\n\r");
@@ -54,6 +60,15 @@ int main (void)
 	msg.data[1] = 'f';
 	
 	while(1){
+		// GOAL logic
+		if (ADC_check_goal() && !game_pause)
+		{
+			score++;
+			printf("score: %d \n\r", score);
+			game_pause = 1;
+		}
+		
+		// TODO: Need to implement something to un-pause game
 		
 	}
 }
