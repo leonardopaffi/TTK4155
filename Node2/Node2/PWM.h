@@ -1,3 +1,6 @@
+#ifndef PWM_H
+#define PWM_H
+
 #define STEP_CENTER 1320
 #define STEP_RIGHT_MAX 1740
 #define STEP_LEFT_MAX 900
@@ -36,3 +39,5 @@ int PWM_set_value(int8_t value)
 		REG_PWM_CDTY5 = 20000-step_value;
 	}
 }
+
+#endif PWM_H

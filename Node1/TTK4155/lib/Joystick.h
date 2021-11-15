@@ -8,15 +8,11 @@
 #define J_X_ADDRESS 0x01
 #define J_Y_ADDRESS 0x00
 
-// Joystick offset
-#define J_X_OFFSET 164
-#define J_Y_OFFSET 164
-
 // Idle values limit interval
-#define IDLE_X_MIN -40
-#define IDLE_X_MAX 40
-#define IDLE_Y_MIN -40
-#define IDLE_Y_MAX 40
+#define IDLE_X_MIN 20
+#define IDLE_X_MAX 80
+#define IDLE_Y_MIN 20
+#define IDLE_Y_MAX 80
 
 // Position structure for x,y values
 // 8-bit each value
@@ -43,8 +39,6 @@ typedef struct{
 	char y_dir;	
 } direction;
 
-// Calibrates the ADC
-void joystick_calibrate();
 // Reads position of the joystick
 pos_t pos_read(void);
 
@@ -65,8 +59,8 @@ void joystick_init()
 
 pos_t joystick_pos_read()
 {
-	pos_t pos = {map(adc_read(J_X_ADDRESS),10,255,0,100), map(adc_read(J_Y_ADDRESS),10,255,0,100)};
-
+	pos_t pos = {map(adc_read(J_X_ADDRESS),0,255,0,100), map(adc_read(J_Y_ADDRESS),0,255,0,100)};
+	//pos_t pos = {adc_read(J_X_ADDRESS)-J_X_OFFSET, adc_read(J_Y_ADDRESS)-J_Y_OFFSET};
 	return pos;
 }
 

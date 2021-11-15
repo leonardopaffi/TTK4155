@@ -34,6 +34,7 @@
 #include "can_interrupt.h"
 #include "PWM.h"
 #include "ADC.h"
+#include "Motor.h"
 
 uint8_t score = 0;
 uint8_t game_pause = 0;
@@ -47,6 +48,8 @@ int main (void)
 	PWM_init();
 	
 	ADC_init();
+	
+	motor_init();
 	
 	int d = can_init_def_tx_rx_mb(0x00290561);
 	printf("Node 2\n\r");
@@ -69,6 +72,13 @@ int main (void)
 		}
 		
 		// TODO: Need to implement something to un-pause game
+		
+		
+		
+			// Set data in the DAC
+			uint16_t data1 = 0xAAAA;
+			uint16_t data2 = 0xFFFF;
+			REG_DACC_CDR = ((data1 << 16) | data2);
 		
 	}
 }
