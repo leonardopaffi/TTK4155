@@ -34,7 +34,7 @@
 #include "can_interrupt.h"
 #include "PWM.h"
 #include "ADC.h"
-#include "Motor.h"
+#include "PI.h"
 
 uint8_t score = 0;
 uint8_t game_pause = 0;
@@ -54,6 +54,11 @@ int main (void)
 	int d = can_init_def_tx_rx_mb(0x00290561);
 	printf("Node 2\n\r");
 	
+	pidData_t pid;
+	//PI_init(20,1,&pid);
+	//printf("%d %d %d %d \r\n", pid.P_Factor, pid.I_Factor, pid.error, pid.integral);
+
+	
 	WDT -> WDT_MR |= WDT_MR_WDDIS;
 	
 	CAN_MESSAGE msg;
@@ -61,6 +66,8 @@ int main (void)
 	msg.data_length = 2;
 	msg.data[0] = 'c';
 	msg.data[1] = 'f';
+	
+	int16_t value = 80;
 	
 	while(1){
 		// GOAL logic
@@ -73,12 +80,10 @@ int main (void)
 		
 		// TODO: Need to implement something to un-pause game
 		
+		value += PI_controller(500, value, &pid);
 		
-		
-			// Set data in the DAC
-			uint16_t data1 = 0xAAAA;
-			uint16_t data2 = 0xFFFF;
-			REG_DACC_CDR = ((data1 << 16) | data2);
-		
+		//printf("%d \r\n", value);
+		//printf("%d %d %d %d \r\n", pid.P_Factor, pid.I_Factor, pid.error, pid.integral);
+		motor_encoder_read();
 	}
 }

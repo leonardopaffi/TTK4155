@@ -60,7 +60,7 @@ void joystick_init()
 pos_t joystick_pos_read()
 {
 	pos_t pos = {map(adc_read(J_X_ADDRESS),0,255,0,100), map(adc_read(J_Y_ADDRESS),0,255,0,100)};
-	//pos_t pos = {adc_read(J_X_ADDRESS)-J_X_OFFSET, adc_read(J_Y_ADDRESS)-J_Y_OFFSET};
+	//pos_t pos = {adc_read(J_X_ADDRESS), adc_read(J_Y_ADDRESS)};
 	return pos;
 }
 

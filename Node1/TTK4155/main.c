@@ -55,9 +55,12 @@ int main(void)
 	{
 		j_pos = joystick_pos_read();
 		joystick_menu_navigation();
+		
 		interrupt_polling();
 		a.data[0] = j_pos.x;
 		a.data[1] = j_pos.y;
-		CAN_send(a);		
+		CAN_send(a);	
+		
+		print_joystick_direction();	
 	}
 }

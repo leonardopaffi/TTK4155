@@ -1,3 +1,6 @@
+#ifndef ADC_H
+#define ADC_H
+
 #include <stdio.h>
 #include "sam.h"
 
@@ -32,3 +35,5 @@ void ADC_print()
 {
 	printf("adc: %d\n\r", (int)ADC->ADC_CDR[0]);
 }
+
+#endif

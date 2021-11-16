@@ -1,3 +1,5 @@
+#ifndef CAN_INTERRUPT_H
+#define CAN_INTERRUPT_H
 /*
  * interrupt.c
  *
@@ -6,7 +8,7 @@
  * For use in TTK4155 Embedded and Industrial Computer Systems Design
  * NTNU - Norwegian University of Science and Technology
  *
- */ 
+ */
 
 #include "can_interrupt.h"
 
@@ -16,6 +18,8 @@
 #include "printf-stdarg.h"
 
 #include "can_controller.h"
+
+#include "Motor.h"
 
 #define DEBUG_INTERRUPT 0
 
@@ -59,7 +63,16 @@ void CAN0_Handler( void )
 		if(DEBUG_INTERRUPT)printf("\n\r");
 		
 		// Setting step motor with X-Axis when message is received
-		PWM_set_value(message.data[0]);
+		if(message.data[0] < 20)
+		{
+			motor_set_direction_speed(LEFT, 81);
+		} else if (message.data[0] > 80)
+		{
+			motor_set_direction_speed(RIGHT, 81);	
+		}
+		else {
+			motor_set_direction_speed(RIGHT, 0);	
+		}
 	}
 	
 	if(can_sr & CAN_SR_MB0)
@@ -85,3 +98,5 @@ void CAN0_Handler( void )
 	NVIC_ClearPendingIRQ(ID_CAN0);
 	//sei();*/
 }
+
+#endif
