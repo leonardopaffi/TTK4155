@@ -44,7 +44,7 @@ int main(void)
 	
 	CAN_message a;
 	a.id = 2;
-	a.length = 2;
+	a.length = 3;
 	
 	pos_t j_pos;
 	
@@ -59,8 +59,10 @@ int main(void)
 		interrupt_polling();
 		a.data[0] = j_pos.x;
 		a.data[1] = j_pos.y;
+		a.data[2] = button;
+		
 		CAN_send(a);	
 		
-		print_joystick_direction();	
+		//print_joystick_direction();	
 	}
 }

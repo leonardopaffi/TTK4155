@@ -34,7 +34,7 @@
 #include "can_interrupt.h"
 #include "PWM.h"
 #include "ADC.h"
-#include "PI.h"
+#include "Motor.h"
 
 uint8_t score = 0;
 uint8_t game_pause = 0;
@@ -54,11 +54,6 @@ int main (void)
 	int d = can_init_def_tx_rx_mb(0x00290561);
 	printf("Node 2\n\r");
 	
-	pidData_t pid;
-	//PI_init(20,1,&pid);
-	//printf("%d %d %d %d \r\n", pid.P_Factor, pid.I_Factor, pid.error, pid.integral);
-
-	
 	WDT -> WDT_MR |= WDT_MR_WDDIS;
 	
 	CAN_MESSAGE msg;
@@ -69,6 +64,13 @@ int main (void)
 	
 	int16_t value = 80;
 	
+	// Put the motor in the center
+	motor_set_with_PI(0);
+	
+	//motor_set_direction_speed(LEFT, 81);
+	
+	solenoid_init();
+	
 	while(1){
 		// GOAL logic
 		if (ADC_check_goal() && !game_pause)
@@ -78,12 +80,13 @@ int main (void)
 			game_pause = 1;
 		}
 		
+		// To check data from encoder
+		//printf("%d \r\n", motor_encoder_read());
+		
 		// TODO: Need to implement something to un-pause game
 		
-		value += PI_controller(500, value, &pid);
+		// Only joystick button for solenoid
+		solenoid_routine(buttons & 0x01);
 		
-		//printf("%d \r\n", value);
-		//printf("%d %d %d %d \r\n", pid.P_Factor, pid.I_Factor, pid.error, pid.integral);
-		motor_encoder_read();
 	}
 }

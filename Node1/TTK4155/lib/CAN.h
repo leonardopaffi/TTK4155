@@ -4,6 +4,12 @@
 #include "CAN_Controller.h"
 #include "avr/interrupt.h"
 
+/*
+	"Buttons" variable:
+	Joystick button << 0
+	Right button << 1
+*/
+
 typedef struct{
 	uint16_t length;
 	uint16_t id;

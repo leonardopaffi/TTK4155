@@ -73,6 +73,9 @@ void CAN0_Handler( void )
 		else {
 			motor_set_direction_speed(RIGHT, 0);	
 		}
+		
+		// Updating buttons variable
+		buttons = message.data[2];
 	}
 	
 	if(can_sr & CAN_SR_MB0)
