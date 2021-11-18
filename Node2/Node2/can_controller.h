@@ -14,6 +14,10 @@
 
 #include <stdint.h>
 
+/**
+ * @brief Structure of the CAN message
+ * 
+ */
 typedef struct can_message_t
 {
 	uint16_t  id;

@@ -6,15 +6,15 @@
  */
 
 #include <avr/io.h>
-#include "lib/USART.h"
-#include "lib/SRAM.h"
-#include "lib/ADC.h"
-#include "lib/Joystick.h"
-#include "lib/Interrupt.h"
-#include "lib/Slider.h"
-#include "lib/OLED.h"
-#include "lib/CAN.h"
-#include "lib/mcp2515.h"
+#include "USART.h"
+#include "SRAM.h"
+#include "ADC.h"
+#include "Joystick.h"
+#include "Interrupt.h"
+#include "Slider.h"
+#include "OLED.h"
+#include "CAN.h"
+#include "mcp2515.h"
 
 #define FOSC 4915200 // Clock speed
 #define BAUD 9600
