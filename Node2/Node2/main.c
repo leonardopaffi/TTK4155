@@ -72,6 +72,7 @@ int main (void)
 	solenoid_init();
 	
 	while(1){
+		
 		// GOAL logic
 		if (ADC_check_goal() && !game_pause)
 		{
@@ -82,11 +83,10 @@ int main (void)
 		
 		// To check data from encoder
 		//printf("%d \r\n", motor_encoder_read());
-		
-		// TODO: Need to implement something to un-pause game
-		
+		// Setting step_position value for moving stepper
+		PWM_set_value(step_position);
+		printf("%d",step_position);
 		// Only joystick button for solenoid
 		solenoid_routine(buttons & 0x01);
-		
 	}
 }

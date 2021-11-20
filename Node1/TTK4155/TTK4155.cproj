@@ -156,7 +156,70 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ADC.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADC.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CAN.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CAN.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CAN_Controller.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CAN_Controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="fonts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interrupt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Interrupt.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Joystick.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Joystick.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="mcp2515.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="OLED.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="OLED.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Slider.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Slider.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SRAM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

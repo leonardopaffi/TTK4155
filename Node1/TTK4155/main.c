@@ -6,21 +6,23 @@
  */
 
 #include <avr/io.h>
-#include "lib/USART.h"
-#include "lib/SRAM.h"
-#include "lib/ADC.h"
-#include "lib/Joystick.h"
-#include "lib/Interrupt.h"
-#include "lib/Slider.h"
-#include "lib/OLED.h"
-#include "lib/CAN.h"
-#include "lib/mcp2515.h"
+#include "USART.h"
+#include "SRAM.h"
+#include "ADC.h"
+#include "Joystick.h"
+#include "Interrupt.h"
+#include "Slider.h"
+#include "OLED.h"
+#include "CAN.h"
+#include "mcp2515.h"
 
 #define FOSC 4915200 // Clock speed
 #define BAUD 9600
 #define MYUBRR FOSC / 16 / BAUD - 1
 
 #include <stdlib.h>
+
+uint8_t playing = 0;
 
 int main(void)
 {
@@ -44,9 +46,10 @@ int main(void)
 	
 	CAN_message a;
 	a.id = 2;
-	a.length = 3;
+	a.length = 4;
 	
 	pos_t j_pos;
+	sliderpos_t slider_pos;
 	
 	printf("I'm NODE 1\r\n");
 	
@@ -54,15 +57,23 @@ int main(void)
 	while (1)
 	{
 		j_pos = joystick_pos_read();
-		joystick_menu_navigation();
+		slider_pos = slider_pos_read();
+		
+		joystick_menu_navigation(&playing);	
 		
 		interrupt_polling();
-		a.data[0] = j_pos.x;
-		a.data[1] = j_pos.y;
-		a.data[2] = button;
 		
-		CAN_send(a);	
+		if(playing)
+		{
+			a.data[0] = j_pos.x;
+			a.data[1] = j_pos.y;
+			a.data[2] = button;
+			a.data[3] = slider_pos.R;
 		
-		//print_joystick_direction();	
+			CAN_send(a);	
+			
+			print_joystick_position();
+			print_slider_position();
+		}
 	}
 }

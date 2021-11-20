@@ -105,7 +105,7 @@ can_interrupt.d can_interrupt.o: .././can_interrupt.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\machine\types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\stdio.h \
  .././printf-stdarg.h .././can_controller.h .././Motor.h .././delay.h \
- .././PI.h
+ .././PI.h .././PWM.h
 
 .././can_interrupt.h:
 
@@ -326,3 +326,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 .././delay.h:
 
 .././PI.h:
+
+.././PWM.h:
