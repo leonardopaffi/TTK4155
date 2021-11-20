@@ -31,6 +31,6 @@ long map(long x, long in_min, long in_max, long out_min, long out_max);
  * @param value 
  * @return int 
  */
-int PWM_set_value(int8_t value);
+int PWM_set_value(uint8_t value);
 
 #endif PWM_H

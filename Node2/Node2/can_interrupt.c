@@ -20,8 +20,11 @@
 #include "can_controller.h"
 
 #include "Motor.h"
+#include "PWM.h"
 
 #define DEBUG_INTERRUPT 0
+
+uint8_t step_position = 0;
 
 /**
  * \brief CAN0 Interrupt handler for RX, TX and bus error interrupts
@@ -76,6 +79,9 @@ void CAN0_Handler( void )
 		
 		// Updating buttons variable
 		buttons = message.data[2];
+		
+		// Updating stepper values
+		step_position = message.data[3];
 	}
 	
 	if(can_sr & CAN_SR_MB0)

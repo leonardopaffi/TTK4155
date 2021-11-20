@@ -17,14 +17,12 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-int PWM_set_value(int8_t value)
+int PWM_set_value(uint8_t value)
 {
 	int16_t step_value = STEP_CENTER;
 
-	// Value between 0 and 100
-
-	step_value = map(value, 0, 100, STEP_LEFT_MAX, STEP_RIGHT_MAX);
-	//printf("%d", step_value);
+	step_value = map(value, 0, 255, STEP_LEFT_MAX, STEP_RIGHT_MAX);
+	printf("STEP %d\r\n", step_value);
 
 	if (step_value < STEP_LEFT_MAX || step_value > STEP_RIGHT_MAX)
 	{

@@ -1,8 +1,8 @@
 #include "Interrupt.h"
 
-RIGHT_BUTTON_PRESSED = 0;
-LEFT_BUTTON_PRESSED = 0;
-JOYSTICK_BUTTON_PRESSED = 0;
+volatile uint8_t RIGHT_BUTTON_PRESSED = 0;
+volatile uint8_t LEFT_BUTTON_PRESSED = 0;
+volatile uint8_t JOYSTICK_BUTTON_PRESSED = 0;
 
 void interrupt_init()
 {
@@ -27,13 +27,13 @@ void interrupt_init()
 
 void interrupt_polling()
 {
-	if(RIGHT_BUTTON_PRESSED)
-	{
-		// Do stuff
-		printf("RIGHT B\n\r");
-		//Reset button variable
-		RIGHT_BUTTON_PRESSED = 0;
-	}
+// 	if(RIGHT_BUTTON_PRESSED)
+// 	{
+// 		// Do stuff
+// 		printf("RIGHT B\n\r");
+// 		//Reset button variable
+// 		RIGHT_BUTTON_PRESSED = 0;
+// 	}
 	
 	if(LEFT_BUTTON_PRESSED)
 	{
@@ -43,4 +43,16 @@ void interrupt_polling()
 		LEFT_BUTTON_PRESSED = 0;
 	}
 	
+}
+
+ISR(INT2_vect)
+{
+	// Wakes the MCU up when right button is pressed
+	RIGHT_BUTTON_PRESSED = 1;
+}
+
+ISR(INT1_vect)
+{
+	// Wakes the MCU up when left button is pressed
+	LEFT_BUTTON_PRESSED = 1;
 }

@@ -42,9 +42,8 @@ typedef struct
 	char y_dir;
 } direction;
 
-// Prevents the joystick to get more than one input
-uint8_t stop;
-uint8_t button;
+extern uint8_t stop;
+extern uint8_t button;
 
 /**
  * @brief Reads position of the joystick
@@ -101,9 +100,6 @@ void print_joystick_direction();
  * @param out_max Output range maximum value
  * @return long 
  */
-long map(long x, long in_min, long in_max, long out_min, long out_max)
-{
-	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
+long map(long x, long in_min, long in_max, long out_min, long out_max);
 
 #endif

@@ -13,7 +13,7 @@
 typedef struct{
 	uint16_t length;
 	uint16_t id;
-	int8_t data[8];
+	uint8_t data[8];
 } CAN_message;
 
 /**
@@ -44,12 +44,5 @@ void CAN_receive();
  * @param position 
  */
 void CAN_debug_print(uint8_t id, char data, uint8_t position);
-
-
-// Interrupt 0 trigger function
-ISR(INT0_vect){
-	printf("message received \r\n");
-	CAN_receive();
-}
 
 #endif

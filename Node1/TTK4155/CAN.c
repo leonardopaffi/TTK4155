@@ -73,3 +73,9 @@ void CAN_debug_print(uint8_t id, char data, uint8_t position)
 {
 	printf("INCOMING DATA BYTE: \r\n data[%d]: %c \r\n id: %d\r\n", position, data, id);
 }
+
+// Interrupt 0 trigger function
+//ISR(INT0_vect){
+	//printf("message received \r\n");
+	//CAN_receive();
+//}

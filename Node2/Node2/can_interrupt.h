@@ -14,6 +14,8 @@
 
 #include "sam.h"
 
+extern uint8_t step_position;
+
 /*
 	"Buttons" variable:
 	Joystick button << 0

@@ -2,6 +2,7 @@
 #define USART_H
 
 #include <stdio.h>
+#include <avr/io.h>
 
 /**
  * @brief Initialization function for the USART

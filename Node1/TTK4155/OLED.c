@@ -1,13 +1,18 @@
 #include "OLED.h"
+#include "fonts.h"
 
 // Creating menus HERE:
-main_menu[4] = {{"Play", 4}, {"Settings", 8}, {"Credits", 7}, {"About", 5}};
+menu_entry main_menu[4] = {{"Play", 4}, {"Credits", 7}, {"About", 5}};
+menu_entry play_menu[2] = {{"Playing", 7}, {"Return", 6}};
+menu_entry credits_menu[4] = {{"Hans", 4}, {"Leonardo", 8}, {"Pragaash", 8}, {"Tobi", 4}};
+menu_entry about_menu[4] = {{"TTK4155", 7}, {"Group 39", 8}, {"2021", 4}, {"2022", 4}};
 
 // Current cursor position on the screen (line number)
-menu_pos = 1;
+volatile uint8_t menu_pos = 1;
+uint8_t is_main_menu = 1;
 
-OLED_COMMAND = (char *)0x1000;
-OLED_DATA = (char *)0x1200;
+volatile char *OLED_COMMAND = (char *)0x1000;
+volatile char *OLED_DATA = (char *)0x1200;
 
 void OLED_write_command(uint8_t c)
 {
@@ -154,6 +159,8 @@ void OLED_update_menu(uint8_t pos)
 
 void OLED_print_menu(uint8_t menutype)
 {
+	// Clearing the OLED before printing
+	OLED_clear_all();
     // Selecting type of menu
     switch (menutype)
     {
@@ -168,6 +175,30 @@ void OLED_print_menu(uint8_t menutype)
         // Setting initial position
         OLED_update_menu(1);
         break;
+	case PLAYMENU:
+		OLED_fill_line(0);
+		// Drawing menu entries
+		OLED_print_string(play_menu[0].name, play_menu[0].length, 1);
+		OLED_fill_line(7);
+		break;
+	case CREDITS:
+	    OLED_fill_line(0);
+	    // Drawing menu entries
+	    for (uint8_t i = 0; i < 4; i++)
+	    {
+		    OLED_print_string(credits_menu[i].name, credits_menu[i].length, i + 1);
+	    }
+	    OLED_fill_line(7);
+	    break;
+	case ABOUT:
+		OLED_fill_line(0);
+		// Drawing menu entries
+		for (uint8_t i = 0; i < 4; i++)
+		{
+			OLED_print_string(about_menu[i].name, about_menu[i].length, i + 1);
+		}
+		OLED_fill_line(7);
+		break;
 
     default:
         break;

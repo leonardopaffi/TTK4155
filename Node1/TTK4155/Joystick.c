@@ -1,7 +1,8 @@
 #include "Joystick.h"
 
-stop = 0;
-button = 0;
+// Prevents the joystick to get more than one input
+uint8_t stop = 0;
+uint8_t button = 0;
 
 void joystick_init()
 {
@@ -46,7 +47,7 @@ direction joystick_dir_read()
     return dir;
 }
 
-void joystick_menu_navigation()
+void joystick_menu_navigation(uint8_t* playing)
 {
     // Updating the button state
     button = !((PINB & (1 << PB2)) / 4);
@@ -54,15 +55,38 @@ void joystick_menu_navigation()
     // Getting the position
     pos_t joystick_position = joystick_pos_read();
 
-    if (button == 1 && stop == 0)
+    if (button == 1 && stop == 0 && *playing == 0 && is_main_menu)
     {
         // Button on menu is pressed
         printf("%d\r\n", menu_pos);
+		
+		switch(menu_pos)
+		{
+			case PLAYMENU:
+				*playing = 1;
+				OLED_print_menu(PLAYMENU);
+				is_main_menu = 1; 
+				break;
+			
+			case CREDITS:
+				OLED_print_menu(CREDITS);
+				is_main_menu = 0;
+				break;
+			
+			case ABOUT:
+				OLED_print_menu(ABOUT);
+				is_main_menu = 0;
+				break;
+			
+			default:
+				break;
+		}
+		
         stop = 1;
     }
 
     // Navigating when button is NOT pressed
-    if (button == 0)
+    if (button == 0 && *playing == 0 && is_main_menu)
     {
         // Going UP
         if (joystick_position.y > IDLE_Y_MAX)
@@ -126,4 +150,9 @@ void print_joystick_direction()
         printf("UP\r\n");
         break;
     }
+}
+
+long map(long x, long in_min, long in_max, long out_min, long out_max)
+{
+	return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }

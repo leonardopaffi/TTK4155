@@ -3,11 +3,7 @@
 
 #include <avr/delay.h>
 
-#include "fonts.h"
-
 #define OLED_COMMAND_PIN 3
-volatile char *OLED_COMMAND;
-volatile char *OLED_DATA;
 
 #define HEIGHT 64
 #define WIDTH 128
@@ -17,7 +13,6 @@ typedef enum
 {
 	MAIN,
 	PLAYMENU,
-	SETTINGS,
 	CREDITS,
 	ABOUT
 } menu_name;
@@ -29,11 +24,13 @@ typedef struct
 	uint8_t length;
 } menu_entry;
 
-// Creating menus HERE:
-menu_entry main_menu[4];
+extern volatile char *OLED_COMMAND;
+extern volatile char *OLED_DATA;
 
 // Current cursor position on the screen (line number)
-volatile uint8_t menu_pos;
+extern volatile uint8_t menu_pos;
+
+extern uint8_t is_main_menu;
 
 /**
  * @brief Send command to the OLED controller

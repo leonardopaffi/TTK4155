@@ -1,6 +1,10 @@
 #include "ADC.h"
 
-ext_adc = ADC_ADDRESS;
+/**
+ * @brief Pointer to the array of all addresses we will write to. ADC starting at 0x1400
+ * 
+ */
+volatile char* ext_adc = ADC_ADDRESS;
 
 void adc_init()
 {
