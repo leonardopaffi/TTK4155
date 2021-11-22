@@ -1,5 +1,7 @@
 #include "CAN.h"
 
+uint8_t you_lose = 0;
+
 void CAN_init(uint8_t mode)
 {
 	MCP2515_reset();
@@ -47,7 +49,7 @@ void CAN_receive(void){
 		// Reading message
 		for(uint8_t i = 0; i < (msg.length); i++){
 			msg.data[i] = MCP2515_read(MCP_RXB0D0 + i);
-			//CAN_debug_print(msg.id, msg.data[i], i);
+			CAN_debug_print(msg.id, msg.data[i], i);
 		}
 		// Clearing CANINTF to allow new message to be received
 		MCP2515_bit_modify(MCP_CANINTF, 0x01, 0x00);
@@ -62,10 +64,15 @@ void CAN_receive(void){
 		// Reading message
 		for(uint8_t i = 0; i < (msg.length); i++){
 			msg.data[i] = MCP2515_read(MCP_RXB1D0 + i);
-			//CAN_debug_print(msg.id, msg.data[i], i);
+			CAN_debug_print(msg.id, msg.data[i], i);
 		}
 		// Clearing CANINTF to allow new message to be received
 		MCP2515_bit_modify(MCP_CANINTF,0x02, 0x00);
+	}
+	
+	if(msg.data[0] == 'x')
+	{
+		you_lose = 1;
 	}
 }
 
@@ -75,7 +82,7 @@ void CAN_debug_print(uint8_t id, char data, uint8_t position)
 }
 
 // Interrupt 0 trigger function
-//ISR(INT0_vect){
-	//printf("message received \r\n");
-	//CAN_receive();
-//}
+ISR(INT0_vect){
+	printf("message received \r\n");
+	CAN_receive();
+}

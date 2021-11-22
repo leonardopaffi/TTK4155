@@ -14,6 +14,7 @@
 
 #include "printf-stdarg.h"
 
+uint8_t reset = 0;
 
 /**
  * \brief Initialize can bus with predefined number of rx and tx mailboxes, 
@@ -146,11 +147,13 @@ uint8_t can_send(CAN_MESSAGE* can_msg, uint8_t tx_mb_id)
 		
 		//Set message length and mailbox ready to send
 		CAN0->CAN_MB[tx_mb_id].CAN_MCR = (can_msg->data_length << CAN_MCR_MDLC_Pos) | CAN_MCR_MTCR;
+		printf("message sent from NODE2");
 		return 0;
 	}
 	
 	else //Mailbox busy
 	{
+		printf("Mailbox busy");
 		return 1;
 	}
 	
@@ -198,6 +201,7 @@ uint8_t can_receive(CAN_MESSAGE* can_msg, uint8_t rx_mb_id)
 		//Reset for new receive
 		CAN0->CAN_MB[rx_mb_id].CAN_MMR = CAN_MMR_MOT_MB_RX;
 		CAN0->CAN_MB[rx_mb_id].CAN_MCR |= CAN_MCR_MTCR;
+		
 		return 0;
 	}
 	else //Mailbox busy

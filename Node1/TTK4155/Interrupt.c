@@ -51,8 +51,8 @@ ISR(INT2_vect)
 	RIGHT_BUTTON_PRESSED = 1;
 }
 
-ISR(INT1_vect)
-{
+// ISR(INT1_vect)
+// {
 	// Wakes the MCU up when left button is pressed
-	LEFT_BUTTON_PRESSED = 1;
-}
+/*	LEFT_BUTTON_PRESSED = 1;*/
+/*}*/

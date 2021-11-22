@@ -50,71 +50,74 @@ direction joystick_dir_read()
 void joystick_menu_navigation(uint8_t* playing)
 {
     // Updating the button state
-    button = !((PINB & (1 << PB2)) / 4);
+    button = !((PINB & (1 << PB2)) >> 2);
 
-    // Getting the position
-    pos_t joystick_position = joystick_pos_read();
+	if(*playing == 0)
+	{
+		// Getting the position
+		pos_t joystick_position = joystick_pos_read();
 
-    if (button == 1 && stop == 0 && *playing == 0 && is_main_menu)
-    {
-        // Button on menu is pressed
-        printf("%d\r\n", menu_pos);
-		
-		switch(menu_pos)
+		if (button == 1 && stop == 0  && is_main_menu)
 		{
-			case PLAYMENU:
-				*playing = 1;
-				OLED_print_menu(PLAYMENU);
-				is_main_menu = 1; 
-				break;
-			
-			case CREDITS:
-				OLED_print_menu(CREDITS);
-				is_main_menu = 0;
-				break;
-			
-			case ABOUT:
-				OLED_print_menu(ABOUT);
-				is_main_menu = 0;
-				break;
-			
-			default:
-				break;
-		}
+			// Button on menu is pressed
+			printf("%d\r\n", menu_pos);
 		
-        stop = 1;
-    }
+			switch(menu_pos)
+			{
+				case PLAYMENU:
+					*playing = 1;
+					OLED_print_menu(PLAYMENU);
+					is_main_menu = 1; 
+					break;
+			
+				case CREDITS:
+					OLED_print_menu(CREDITS);
+					is_main_menu = 0;
+					break;
+			
+				case ABOUT:
+					OLED_print_menu(ABOUT);
+					is_main_menu = 0;
+					break;
+			
+				default:
+					break;
+			}
+		
+			stop = 1;
+		}
 
-    // Navigating when button is NOT pressed
-    if (button == 0 && *playing == 0 && is_main_menu)
-    {
-        // Going UP
-        if (joystick_position.y > IDLE_Y_MAX)
-        {
-            if (stop == 0 && button == 0)
-            {
-                OLED_update_menu(menu_pos - 1);
-                stop = 1;
-            }
-        }
-        // Going DOWN
-        else if (joystick_position.y < IDLE_Y_MIN)
-        {
-            if (stop == 0 && button == 0)
-            {
-                OLED_update_menu(menu_pos + 1);
-                stop = 1;
-            }
-        }
-        // Position: IDLE
-        else
-        {
-            if (button == 0)
-            {
-                stop = 0;
-            }
-        }
-    }
+		// Navigating when button is NOT pressed
+		if (button == 0 && is_main_menu)
+		{
+			// Going UP
+			if (joystick_position.y > IDLE_Y_MAX)
+			{
+				if (stop == 0 && button == 0)
+				{
+					OLED_update_menu(menu_pos - 1);
+					stop = 1;
+				}
+			}
+			// Going DOWN
+			else if (joystick_position.y < IDLE_Y_MIN)
+			{
+				if (stop == 0 && button == 0)
+				{
+					OLED_update_menu(menu_pos + 1);
+					stop = 1;
+				}
+			}
+			// Position: IDLE
+			else
+			{
+				if (button == 0)
+				{
+					stop = 0;
+				}
+			}
+		}
+	}
 }
 
 void print_joystick_direction()

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "sam.h"
 
-#define ADC_LIMIT 2000
+#define ADC_LIMIT 500
 
 /**
  * @brief Initialization function for the ADC

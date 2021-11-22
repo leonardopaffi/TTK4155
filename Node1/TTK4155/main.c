@@ -53,6 +53,14 @@ int main(void)
 	
 	printf("I'm NODE 1\r\n");
 	
+	// Re-initializing Node 2
+	CAN_message msgs;
+	msgs.id = 1;
+	msgs.length = 1;
+	msgs.data[0] = 0x01;
+			
+	CAN_send(msgs);
+	
 	/* MAIN LOOP */
 	while (1)
 	{
@@ -69,11 +77,17 @@ int main(void)
 			a.data[1] = j_pos.y;
 			a.data[2] = button;
 			a.data[3] = slider_pos.R;
-		
+			
 			CAN_send(a);	
 			
-			print_joystick_position();
-			print_slider_position();
+			//print_joystick_position();
+			
+			printf("%d \r\n", adc_read(0x01));
+			
+			if(you_lose)
+			{
+				OLED_print_string("You lose", 8, 3);
+			}
 		}
 	}
 }

@@ -16,6 +16,8 @@ typedef struct{
 	uint8_t data[8];
 } CAN_message;
 
+extern uint8_t you_lose;
+
 /**
  * @brief Initialization function for the CAN bus
  * 

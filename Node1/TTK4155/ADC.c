@@ -27,6 +27,8 @@ uint8_t adc_read(uint8_t channel)
 	volatile char *ext_adc = (char *)0x1400; // Start address for the ADC
 	uint8_t offset_adc= 0x01;
 	
+	uint8_t value = 0;
+	
 	// Setting ADC mode for multiplexer configuration (page 8 of ADC datasheet)
 	// setting channels
 	// for channel 0 uint8_t adc_mode = 0b1000 0001;
@@ -35,10 +37,19 @@ uint8_t adc_read(uint8_t channel)
 	ext_adc[offset_adc] = adc_mode;
 
 	// Wait for conversion
-	_delay_us(2000);
+	_delay_us(5000);
+	
+	// Getting value from ADC
+	value = ext_adc[offset_adc];
+	
+	// Overflow detection
+	if(value > 255)
+		value = 255;
+	else if(value <= 0)
+		value = 1;
 	
 	// Returns the value inside the ADC
-	return ext_adc[offset_adc];
+	return value;
 }
 
 void adc_read_all_channels()

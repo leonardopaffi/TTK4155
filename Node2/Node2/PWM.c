@@ -22,7 +22,7 @@ int PWM_set_value(uint8_t value)
 	int16_t step_value = STEP_CENTER;
 
 	step_value = map(value, 0, 255, STEP_LEFT_MAX, STEP_RIGHT_MAX);
-	printf("STEP %d\r\n", step_value);
+	//printf("STEP %d\r\n", step_value);
 
 	if (step_value < STEP_LEFT_MAX || step_value > STEP_RIGHT_MAX)
 	{

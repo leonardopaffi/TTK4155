@@ -55,38 +55,40 @@ int main (void)
 	printf("Node 2\n\r");
 	
 	WDT -> WDT_MR |= WDT_MR_WDDIS;
+	PIOC->PIO_CODR |= PIO_PC9;
 	
 	CAN_MESSAGE msg;
 	msg.id = 12;
-	msg.data_length = 2;
-	msg.data[0] = 'c';
-	msg.data[1] = 'f';
+	msg.data_length = 1;
+	msg.data[0] = 'x';
 	
 	int16_t value = 80;
 	
-	// Put the motor in the center
-	motor_set_with_PI(0);
+	// Put the motor in the center AUTOHOME
+	//motor_set_with_PI(0);
 	
 	//motor_set_direction_speed(LEFT, 81);
 	
 	solenoid_init();
 	
-	while(1){
-		
+	while(1)
+	{	
 		// GOAL logic
 		if (ADC_check_goal() && !game_pause)
 		{
 			score++;
 			printf("score: %d \n\r", score);
 			game_pause = 1;
+			can_send(&msg, 0);
 		}
 		
 		// To check data from encoder
 		//printf("%d \r\n", motor_encoder_read());
 		// Setting step_position value for moving stepper
 		PWM_set_value(step_position);
-		printf("%d",step_position);
+		//printf("%d",step_position);
 		// Only joystick button for solenoid
 		solenoid_routine(buttons & 0x01);
+		
 	}
 }

@@ -25,6 +25,8 @@ typedef struct can_message_t
 	uint8_t data[8];
 } CAN_MESSAGE;
 
+extern uint8_t reset;
+
 uint8_t can_init_def_tx_rx_mb(uint32_t can_br);
 uint8_t can_init(uint32_t can_br, uint8_t num_tx_mb, uint8_t num_rx_mb);
 
