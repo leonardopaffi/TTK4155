@@ -1,0 +1,62 @@
+\hypertarget{_p_i_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/\+PI.c File Reference}
+\label{_p_i_8c}\index{D:/Progetti/TTK4155/Node2/Node2/PI.c@{D:/Progetti/TTK4155/Node2/Node2/PI.c}}
+{\ttfamily \#include \char`\"{}PI.\+h\char`\"{}}\newline
+Include dependency graph for PI.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{_p_i_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_p_i_8c_ac64c6936fea812ae971766d888d59c29}{PI\+\_\+init}} (int16\+\_\+t P\+\_\+factor, int16\+\_\+t I\+\_\+factor, \mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} $\ast$pid\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Initialization function for the PI controller. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{_p_i_8c_a5e5b3c1185e1fcc5967cefa3727c1714}{PI\+\_\+controller}} (int16\+\_\+t set\+\_\+point, int16\+\_\+t process\+\_\+value, \mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} $\ast$pid\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Updates the value with the PI controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_p_i_8c_a5e5b3c1185e1fcc5967cefa3727c1714}\label{_p_i_8c_a5e5b3c1185e1fcc5967cefa3727c1714}} 
+\index{PI.c@{PI.c}!PI\_controller@{PI\_controller}}
+\index{PI\_controller@{PI\_controller}!PI.c@{PI.c}}
+\doxysubsubsection{\texorpdfstring{PI\_controller()}{PI\_controller()}}
+{\footnotesize\ttfamily int16\+\_\+t PI\+\_\+controller (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{set\+\_\+point,  }\item[{int16\+\_\+t}]{process\+\_\+value,  }\item[{\mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} $\ast$}]{pid\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Updates the value with the PI controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\+\_\+point} & \\
+\hline
+{\em process\+\_\+value} & \\
+\hline
+{\em pid\+\_\+st} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int16\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_i_8c_ac64c6936fea812ae971766d888d59c29}\label{_p_i_8c_ac64c6936fea812ae971766d888d59c29}} 
+\index{PI.c@{PI.c}!PI\_init@{PI\_init}}
+\index{PI\_init@{PI\_init}!PI.c@{PI.c}}
+\doxysubsubsection{\texorpdfstring{PI\_init()}{PI\_init()}}
+{\footnotesize\ttfamily void PI\+\_\+init (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{P\+\_\+factor,  }\item[{int16\+\_\+t}]{I\+\_\+factor,  }\item[{\mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} $\ast$}]{pid\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the PI controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+\_\+factor} & \\
+\hline
+{\em I\+\_\+factor} & \\
+\hline
+{\em pid\+\_\+st} & \\
+\hline
+\end{DoxyParams}

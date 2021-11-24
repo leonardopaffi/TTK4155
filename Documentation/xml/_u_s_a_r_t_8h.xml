@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_u_s_a_r_t_8h" kind="file" language="C++">
+    <compoundname>USART.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">avr/io.h</includes>
+    <includedby refid="_u_s_a_r_t_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/USART.c</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>avr/io.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/USART.c</label>
+        <link refid="_u_s_a_r_t_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_u_s_a_r_t_8h_1a99f79737b2f8bf945b4c169c69e3e3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_Init</definition>
+        <argsstring>(unsigned int ubrr)</argsstring>
+        <name>USART_Init</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ubrr</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ubrr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USART bitrate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" line="12" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="3" bodyend="14" declfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_s_a_r_t_8h_1a90a44f50119303ce2d4198c756908fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int USART_Transmit</definition>
+        <argsstring>(unsigned char data)</argsstring>
+        <name>USART_Transmit</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Transmit data over the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" line="20" column="5" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="16" bodyend="26" declfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_s_a_r_t_8h_1a2a0833b5425a154bdb3614d11003c2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int USART_Receive</definition>
+        <argsstring>()</argsstring>
+        <name>USART_Receive</name>
+        <briefdescription>
+<para>Receives data over the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Received data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" line="27" column="5" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="28" bodyend="35" declfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.h" declline="27" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>USART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8h_1a99f79737b2f8bf945b4c169c69e3e3eb" kindref="member">USART_Init</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ubrr);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8h_1a90a44f50119303ce2d4198c756908fa8" kindref="member">USART_Transmit</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8h_1a2a0833b5425a154bdb3614d11003c2a2" kindref="member">USART_Receive</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.h"/>
+  </compounddef>
+</doxygen>

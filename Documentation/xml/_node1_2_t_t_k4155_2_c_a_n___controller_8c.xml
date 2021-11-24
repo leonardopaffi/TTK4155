@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node1_2_t_t_k4155_2_c_a_n___controller_8c" kind="file" language="C++">
+    <compoundname>CAN_Controller.c</compoundname>
+    <includes refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h" local="yes">CAN_Controller.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mcp2515.h</label>
+        <link refid="mcp2515_8h"/>
+      </node>
+      <node id="4">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP2515_read</definition>
+        <argsstring>(uint8_t address)</argsstring>
+        <name>MCP2515_read</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Reading instruction for the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the register to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint8_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="3" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="3" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP2515_write</definition>
+        <argsstring>(uint8_t address, uint8_t data)</argsstring>
+        <name>MCP2515_write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writing data to a register of the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="15" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aa12fd2c3ad6653e48f0e1985527f5d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP2515_RTS</definition>
+        <argsstring>(uint8_t buffer)</argsstring>
+        <name>MCP2515_RTS</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Ready To Send instruction for the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="24" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="24" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MCP2515_read_status</definition>
+        <argsstring>()</argsstring>
+        <name>MCP2515_read_status</name>
+        <briefdescription>
+<para>Read status instruction for the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="36" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP2515_bit_modify</definition>
+        <argsstring>(uint8_t address, uint8_t byte_mask, uint8_t data)</argsstring>
+        <name>MCP2515_bit_modify</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte_mask</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Modify bit/bits of a register providing a mask and the new data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byte_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="47" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882a91d22eb8ae4eb4315b06c4f7e966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP2515_reset</definition>
+        <argsstring>()</argsstring>
+        <name>MCP2515_reset</name>
+        <briefdescription>
+<para>Reset the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="57" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a04b0eb91a5bafd55bd91e2b1d4da6353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MCP2515_set_mode</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>MCP2515_set_mode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set mode for the MCP2515. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" line="64" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c" bodystart="64" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_c_a_n___controller_8h" kindref="compound">CAN_Controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">uint8_t<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(uint8_t<sp/>address)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>value;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(<ref refid="mcp2515_8h_1a1d9ce2ac1c72654e113298fc1307102a" kindref="member">MCP_READ</ref>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(address);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="_s_p_i_8c_1a68e8553f6e049b8f7c4e7a1ee355e063" kindref="member">SPI_master_read</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>data)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(<ref refid="mcp2515_8h_1aa144564452e7a678d00d9727ce35f82f" kindref="member">MCP_WRITE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(address);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(data);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aa12fd2c3ad6653e48f0e1985527f5d23" kindref="member">MCP2515_RTS</ref>(uint8_t<sp/>buffer)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(buffer==<ref refid="mcp2515_8h_1ad81495d052d65e3a97a4c2688119ac0e" kindref="member">MCP_RTS_TX0</ref><sp/>||<sp/>buffer==<ref refid="mcp2515_8h_1a6cc3f921cb8d7cd9323909466ad4307e" kindref="member">MCP_RTS_TX1</ref><sp/>||<sp/>buffer==<ref refid="mcp2515_8h_1a0fa9efa8755c0ab500fc2e2da56126d0" kindref="member">MCP_RTS_TX2</ref><sp/>||<sp/>buffer==<ref refid="mcp2515_8h_1ade85afe7da126728c581e32c1fb9fb5b" kindref="member">MCP_RTS_ALL</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(buffer);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;%d<sp/>is<sp/>not<sp/>a<sp/>Buffer.<sp/>RTS<sp/>function<sp/>error&quot;</highlight><highlight class="normal">,<sp/>buffer);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">uint8_t<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" kindref="member">MCP2515_read_status</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>value;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(<ref refid="mcp2515_8h_1a399014e8231cd5d4acd4bad7a8553bb7" kindref="member">MCP_READ_STATUS</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="_s_p_i_8c_1a68e8553f6e049b8f7c4e7a1ee355e063" kindref="member">SPI_master_read</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" kindref="member">MCP2515_bit_modify</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>byte_mask,<sp/>uint8_t<sp/>data)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(<ref refid="mcp2515_8h_1a973305a49ffc6eed476689b0a8dd69e6" kindref="member">MCP_BITMOD</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(address);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(byte_mask);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(data);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882a91d22eb8ae4eb4315b06c4f7e966" kindref="member">MCP2515_reset</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(<ref refid="mcp2515_8h_1a8538419d98eecb32d7b8a6e07e8a256f" kindref="member">MCP_RESET</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a04b0eb91a5bafd55bd91e2b1d4da6353" kindref="member">MCP2515_set_mode</ref>(uint8_t<sp/>mode)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" kindref="member">MCP2515_bit_modify</ref>(<ref refid="mcp2515_8h_1a25864642b445cbfbd85f2a1a22947558" kindref="member">MCP_CANCTRL</ref>,<sp/>0xE0,<sp/>mode);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c"/>
+  </compounddef>
+</doxygen>

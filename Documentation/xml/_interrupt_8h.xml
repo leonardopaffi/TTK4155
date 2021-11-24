@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_interrupt_8h" kind="file" language="C++">
+    <compoundname>Interrupt.h</compoundname>
+    <includes local="no">avr/io.h</includes>
+    <includes local="no">avr/interrupt.h</includes>
+    <includedby refid="_interrupt_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h</label>
+        <link refid="_interrupt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="2">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c</label>
+        <link refid="_interrupt_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h</label>
+        <link refid="_interrupt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_interrupt_8h_1a1c62fca549a4981d6684d4a5c72874b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interrupt_init</definition>
+        <argsstring>()</argsstring>
+        <name>interrupt_init</name>
+        <briefdescription>
+<para>initialization function for the interrupt </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h" line="17" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="7" bodyend="26" declfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interrupt_8h_1ae04f5463a20ee95cdb373a69b2eacf5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interrupt_polling</definition>
+        <argsstring>()</argsstring>
+        <name>interrupt_polling</name>
+        <briefdescription>
+<para>Resets variables and prints in the console if a button is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h" line="23" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="28" bodyend="46" declfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INTERRUPT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTERRUPT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/interrupt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>INT2<sp/>-&gt;<sp/>RIGHT<sp/>BUTTON</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>INT1<sp/>-&gt;<sp/>LEFT<sp/>BUTTON</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>INT0<sp/>-&gt;<sp/>CAN<sp/>INTERRUPT</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interrupt_8h_1a1c62fca549a4981d6684d4a5c72874b9" kindref="member">interrupt_init</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interrupt_8h_1ae04f5463a20ee95cdb373a69b2eacf5f" kindref="member">interrupt_polling</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.h"/>
+  </compounddef>
+</doxygen>

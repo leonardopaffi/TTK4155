@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_12aa1f1713acbc3e2c25d090f775827a" kind="dir">
+    <compoundname>D:/Progetti/TTK4155/Node2/Node2/Debug/Device_Startup</compoundname>
+    <innerfile refid="startup__sam3xa_8d">startup_sam3xa.d</innerfile>
+    <innerfile refid="system__sam3xa_8d">system_sam3xa.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/Debug/Device_Startup/"/>
+  </compounddef>
+</doxygen>

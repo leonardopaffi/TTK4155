@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node2_2_node2_2main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="yes">sam.h</includes>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+    <includes refid="_node2_2_node2_2_c_a_n___controller_8h" local="yes">can_controller.h</includes>
+    <includes refid="can__interrupt_8h" local="yes">can_interrupt.h</includes>
+    <includes refid="_p_w_m_8h" local="yes">PWM.h</includes>
+    <includes refid="_node2_2_node2_2_a_d_c_8h" local="yes">ADC.h</includes>
+    <includes refid="_motor_8h" local="yes">Motor.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>ADC.h</label>
+        <link refid="_node2_2_node2_2_a_d_c_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>PI.h</label>
+        <link refid="_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>can_controller.h</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>can_interrupt.h</label>
+        <link refid="can__interrupt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/main.c</label>
+        <link refid="_node2_2_node2_2main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sam.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_node2_2_node2_2main_8c_1ad89903731d7f7be95b5d969211e27c26" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/main.c" line="39" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/main.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_node2_2_node2_2main_8c_1a8187946bf116103651f3d77f36b30344" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t game_pause</definition>
+        <argsstring></argsstring>
+        <name>game_pause</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/main.c" line="40" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/main.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node2_2_node2_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/main.c" line="42" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/main.c" bodystart="42" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Empty user application template. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>Include<sp/>header<sp/>files<sp/>for<sp/>all<sp/>drivers<sp/>that<sp/>have<sp/>been<sp/>imported<sp/>from</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>Atmel<sp/>Software<sp/>Framework<sp/>(ASF).</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Support<sp/>and<sp/>FAQ:<sp/>visit<sp/>&lt;a<sp/>href=&quot;https://www.microchip.com/support/&quot;&gt;Microchip<sp/>Support&lt;/a&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sam.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="uart_8h" kindref="compound">uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_c_a_n___controller_8h" kindref="compound">can_controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="can__interrupt_8h" kindref="compound">can_interrupt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_w_m_8h" kindref="compound">PWM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_motor_8h" kindref="compound">Motor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2main_8c_1ad89903731d7f7be95b5d969211e27c26" kindref="member">score</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2main_8c_1a8187946bf116103651f3d77f36b30344" kindref="member">game_pause</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Insert<sp/>system<sp/>clock<sp/>initialization<sp/>code<sp/>here<sp/>(sysclk_init()).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="system__sam3xa_8c_1a93f514700ccf00d08dbdcff7f1224eb2" kindref="member">SystemInit</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ab5b2eb7c61969e61bef72eeb48dd058d" kindref="member">configure_uart</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_w_m_8c_1a9816c7c730e93dba6a3e231505a40354" kindref="member">PWM_init</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node2_2_node2_2_a_d_c_8c_1a69f491a768a81c2cf99ee2653ad3002d" kindref="member">ADC_init</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_motor_8c_1a151cccf0120a24d251b5ce5d878abb67" kindref="member">motor_init</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d<sp/>=<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1a75e7e1428e5ce309c0087602721bf57d" kindref="member">can_init_def_tx_rx_mb</ref>(0x00290561);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;Node<sp/>2\n\r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>WDT<sp/>-&gt;<sp/>WDT_MR<sp/>|=<sp/>WDT_MR_WDDIS;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_CODR<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcan__message__t" kindref="compound">CAN_MESSAGE</ref><sp/>msg;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>value<sp/>=<sp/>80;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Put<sp/>the<sp/>motor<sp/>in<sp/>the<sp/>center<sp/>AUTOHOME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//motor_set_with_PI(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//motor_set_direction_speed(LEFT,<sp/>81);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="solenoid_8c_1a05736227e6f452fb1ceb65c417ebd8c9" kindref="member">solenoid_init</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GOAL<sp/>logic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_node2_2_node2_2_a_d_c_8c_1a3b1c413d7f71131713d5854b208f4e44" kindref="member">ADC_check_goal</ref>()<sp/>&amp;&amp;<sp/>!<ref refid="_node2_2_node2_2main_8c_1a8187946bf116103651f3d77f36b30344" kindref="member">game_pause</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node2_2_node2_2main_8c_1ad89903731d7f7be95b5d969211e27c26" kindref="member">score</ref>++;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;score:<sp/>%d<sp/>\n\r&quot;</highlight><highlight class="normal">,<sp/><ref refid="_node2_2_node2_2main_8c_1ad89903731d7f7be95b5d969211e27c26" kindref="member">score</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node2_2_node2_2main_8c_1a8187946bf116103651f3d77f36b30344" kindref="member">game_pause</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1a8f4793f97f7c2faaf3942bf2e21b24a7" kindref="member">can_send</ref>(&amp;msg,<sp/>0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>To<sp/>check<sp/>data<sp/>from<sp/>encoder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;%d<sp/>\r\n&quot;,<sp/>motor_encoder_read());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setting<sp/>step_position<sp/>value<sp/>for<sp/>moving<sp/>stepper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_p_w_m_8c_1a394437ec9ec6921d6598d80ce53c639a" kindref="member">PWM_set_value</ref>(<ref refid="can__interrupt_8c_1a0f3327c42d83e7b42cf684774c788e69" kindref="member">step_position</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;%d&quot;,step_position);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>joystick<sp/>button<sp/>for<sp/>solenoid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="solenoid_8c_1ad07a96cd66d6585aa3e092542e13b42a" kindref="member">solenoid_routine</ref>(<ref refid="can__interrupt_8h_1a541032c0356b6d1e2f340fbb7a98699a" kindref="member">buttons</ref><sp/>&amp;<sp/>0x01);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/main.c"/>
+  </compounddef>
+</doxygen>

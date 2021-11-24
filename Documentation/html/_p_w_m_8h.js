@@ -5,5 +5,5 @@ var _p_w_m_8h =
     [ "STEP_RIGHT_MAX", "_p_w_m_8h.html#ae4fc0c884b45881489b7ab5930a87be7", null ],
     [ "map", "_p_w_m_8h.html#aada2d75bc8a8c6eb845bd940eadfa3fd", null ],
     [ "PWM_init", "_p_w_m_8h.html#a9816c7c730e93dba6a3e231505a40354", null ],
-    [ "PWM_set_value", "_p_w_m_8h.html#a4e7a22804f36d8af20d292c78a393926", null ]
+    [ "PWM_set_value", "_p_w_m_8h.html#a394437ec9ec6921d6598d80ce53c639a", null ]
 ];

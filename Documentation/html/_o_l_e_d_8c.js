@@ -12,6 +12,12 @@ var _o_l_e_d_8c =
     [ "OLED_update_menu", "_o_l_e_d_8c.html#ac44bc9d1697259578a22f990300f1a50", null ],
     [ "OLED_write_command", "_o_l_e_d_8c.html#a92a7efc71034015484371ea860ed96b7", null ],
     [ "OLED_write_data", "_o_l_e_d_8c.html#a41efdbe7c39d060f81a317703b6626e6", null ],
-    [ "main_menu", "_o_l_e_d_8c.html#a0bc1976a718f2024b9ec7c0e3e856807", null ],
-    [ "menu_pos", "_o_l_e_d_8c.html#a6c32cf95dee545a8f5e15a2be34f65c8", null ]
+    [ "about_menu", "_o_l_e_d_8c.html#a5e6c26943628db3683a5664f0b6f0a5a", null ],
+    [ "credits_menu", "_o_l_e_d_8c.html#ab80aed340dfb01b2ddaa07d6af7b5b00", null ],
+    [ "is_main_menu", "_o_l_e_d_8c.html#a205b823d11ca2996c7f8cf02b1429258", null ],
+    [ "main_menu", "_o_l_e_d_8c.html#a1d6d39a4dede2e28a725ab4486866072", null ],
+    [ "menu_pos", "_o_l_e_d_8c.html#ab561e8d3613278ebf0c0faef7591a024", null ],
+    [ "OLED_COMMAND", "_o_l_e_d_8c.html#a2b14bcae81c33704cd345ed337762943", null ],
+    [ "OLED_DATA", "_o_l_e_d_8c.html#ad47de1071fd49ce10af87e8be74b38ff", null ],
+    [ "play_menu", "_o_l_e_d_8c.html#ac8ce6eb182e9accacfe9901f78cf1007", null ]
 ];

@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_c_a_n_8c" kind="file" language="C++">
+    <compoundname>CAN.c</compoundname>
+    <includes refid="_c_a_n_8h" local="yes">CAN.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.c</label>
+        <link refid="_c_a_n_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mcp2515.h</label>
+        <link refid="mcp2515_8h"/>
+      </node>
+      <node id="7">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="5">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_a_n_8c_1a930a5570610e7a0526767bf358673aa6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t you_lose</definition>
+        <argsstring></argsstring>
+        <name>you_lose</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="3" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_a_n_8c_1adb0f99207facf71ca3429c6108d42d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_init</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>CAN_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the CAN bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="5" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="5" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8c_1a977213658904ef25865836933905d9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_send</definition>
+        <argsstring>(CAN_message message)</argsstring>
+        <name>CAN_send</name>
+        <param>
+          <type><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Send data though the CAN bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="21" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="21" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8c_1a4eccfa3b8b0583ef6184416d1e92351e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_receive</definition>
+        <argsstring>(void)</argsstring>
+        <name>CAN_receive</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks registers for received messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="40" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="40" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8c_1a25224cfb670f006871322eeb78f46b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_debug_print</definition>
+        <argsstring>(uint8_t id, char data, uint8_t position)</argsstring>
+        <name>CAN_debug_print</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Debug function for printing incoming messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="79" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8c_1afea150fcd685610cb9f7672fce361e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ISR</definition>
+        <argsstring>(INT0_vect)</argsstring>
+        <name>ISR</name>
+        <param>
+          <type>INT0_vect</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" line="85" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_a_n_8h" kindref="compound">CAN.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">uint8_t<sp/><ref refid="_c_a_n_8c_1a930a5570610e7a0526767bf358673aa6" kindref="member">you_lose</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8c_1adb0f99207facf71ca3429c6108d42d43" kindref="member">CAN_init</ref>(uint8_t<sp/>mode)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882a91d22eb8ae4eb4315b06c4f7e966" kindref="member">MCP2515_reset</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;%x&quot;</highlight><highlight class="normal">,<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="mcp2515_8h_1a1a470d80ae3644bf02f2cd4a7bb6aa39" kindref="member">MCP_CANSTAT</ref>));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="mcp2515_8h_1ad2e13220f9c51ccd5efda5d3c19761b8" kindref="member">MCP_CNF3</ref>,<sp/>0b00000001);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="mcp2515_8h_1a2a22ce749e287690e3d85514e2c7cb57" kindref="member">MCP_CNF2</ref>,<sp/>0b10110101);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="mcp2515_8h_1a0baef095a5a2997db4c75831e55e8e96" kindref="member">MCP_CNF1</ref>,<sp/>0b00000011);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a04b0eb91a5bafd55bd91e2b1d4da6353" kindref="member">MCP2515_set_mode</ref>(mode);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enables<sp/>output<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="mcp2515_8h_1a778de33d21ab2eb875533a31a2e8ec69" kindref="member">MCP_CANINTE</ref>,<sp/>0X03);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8c_1a977213658904ef25865836933905d9b9" kindref="member">CAN_send</ref>(<ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref><sp/>message)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Writing<sp/>ID<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a30d9219d01d77604bb8cccdb6bbb8a89" kindref="member">MCP_TXB0SIDH</ref>,<sp/>message.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>&gt;&gt;<sp/>3);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a64751f2c34434ba5c7cec9cb89bb3817" kindref="member">MCP_TXB0SIDL</ref>,<sp/>message.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>&lt;&lt;<sp/>5);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setting<sp/>message<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1af079eda36bde82cfee6ef43681813ec7" kindref="member">MCP_TXB0DLC</ref>,<sp/>message.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sending<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(message.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref>);<sp/>i++){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kindref="member">MCP2515_write</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1aa37171b2eb1e0d9432c71b2b6a3ac879" kindref="member">MCP_TXB0D0</ref><sp/>+<sp/>i,<sp/>message.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;\r\nSENDING<sp/>MESSAGE:<sp/>\r\n<sp/>data:<sp/>%d\r\n&quot;,<sp/>message.data[i]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;\r\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enables<sp/>sending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aa12fd2c3ad6653e48f0e1985527f5d23" kindref="member">MCP2515_RTS</ref>(<ref refid="mcp2515_8h_1ad81495d052d65e3a97a4c2688119ac0e" kindref="member">MCP_RTS_TX0</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8c_1a4eccfa3b8b0583ef6184416d1e92351e" kindref="member">CAN_receive</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref><sp/>msg;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checks<sp/>buffer0<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" kindref="member">MCP2515_read_status</ref>()<sp/>&amp;<sp/>0x01){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="mcp2515_8h_1ad6151dfa9b6fee9b65db5bb70f41d4a1" kindref="member">MCP_RXB0SIDH</ref>)<sp/>&lt;&lt;<sp/>3)|(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a9b6a29d1afcd03966741bf4f14fc629d" kindref="member">MCP_RXB0SIDL</ref>)<sp/>&gt;&gt;<sp/>5);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>message<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref><sp/>=<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a4b3a44ce092d08f8bd7b1d76c2000eb3" kindref="member">MCP_RXB0DLC</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(msg.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref>);<sp/>i++){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i]<sp/>=<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1ac0c883f6f7f1eed093af5617cbb41f74" kindref="member">MCP_RXB0D0</ref><sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a25224cfb670f006871322eeb78f46b4f" kindref="member">CAN_debug_print</ref>(msg.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>,<sp/>msg.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i],<sp/>i);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clearing<sp/>CANINTF<sp/>to<sp/>allow<sp/>new<sp/>message<sp/>to<sp/>be<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" kindref="member">MCP2515_bit_modify</ref>(<ref refid="mcp2515_8h_1ae82ca28239a27c2f8c4871e654480ee3" kindref="member">MCP_CANINTF</ref>,<sp/>0x01,<sp/>0x00);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checks<sp/>buffer1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" kindref="member">MCP2515_read_status</ref>()<sp/>&amp;<sp/>0x02){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="mcp2515_8h_1af4bddbf3d95eb41f4217b43c0da67391" kindref="member">MCP_RXB1SIDH</ref>)<sp/>&lt;&lt;<sp/>3)|(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a83556d0bfcf1cc15058decc60ee6afd1" kindref="member">MCP_RXB1SIDL</ref>)<sp/>&gt;&gt;<sp/>5);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>message<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref><sp/>=<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a0d1445b03402e8152e66051dad310999" kindref="member">MCP_RXB1DLC</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(msg.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref>);<sp/>i++){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i]<sp/>=<sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kindref="member">MCP2515_read</ref>(<ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1ad75f4530473680b7c7ec3bfd6f2205b2" kindref="member">MCP_RXB1D0</ref><sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a25224cfb670f006871322eeb78f46b4f" kindref="member">CAN_debug_print</ref>(msg.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>,<sp/>msg.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i],<sp/>i);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clearing<sp/>CANINTF<sp/>to<sp/>allow<sp/>new<sp/>message<sp/>to<sp/>be<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" kindref="member">MCP2515_bit_modify</ref>(<ref refid="mcp2515_8h_1ae82ca28239a27c2f8c4871e654480ee3" kindref="member">MCP_CANINTF</ref>,0x02,<sp/>0x00);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(msg.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a930a5570610e7a0526767bf358673aa6" kindref="member">you_lose</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8c_1a25224cfb670f006871322eeb78f46b4f" kindref="member">CAN_debug_print</ref>(uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data,<sp/>uint8_t<sp/>position)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;INCOMING<sp/>DATA<sp/>BYTE:<sp/>\r\n<sp/>data[%d]:<sp/>%c<sp/>\r\n<sp/>id:<sp/>%d\r\n&quot;</highlight><highlight class="normal">,<sp/>position,<sp/>data,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Interrupt<sp/>0<sp/>trigger<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="_c_a_n_8c_1afea150fcd685610cb9f7672fce361e53" kindref="member">ISR</ref>(INT0_vect){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;message<sp/>received<sp/>\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a4eccfa3b8b0583ef6184416d1e92351e" kindref="member">CAN_receive</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c"/>
+  </compounddef>
+</doxygen>

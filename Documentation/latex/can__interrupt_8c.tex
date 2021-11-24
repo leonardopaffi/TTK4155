@@ -1,0 +1,81 @@
+\hypertarget{can__interrupt_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/can\+\_\+interrupt.c File Reference}
+\label{can__interrupt_8c}\index{D:/Progetti/TTK4155/Node2/Node2/can\_interrupt.c@{D:/Progetti/TTK4155/Node2/Node2/can\_interrupt.c}}
+{\ttfamily \#include \char`\"{}can\+\_\+interrupt.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sam.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}printf-\/stdarg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}can\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Motor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PWM.\+h\char`\"{}}\newline
+Include dependency graph for can\+\_\+interrupt.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{can__interrupt_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{can__interrupt_8c_a6bfc99d445c6155d072f211c2adb8c37}{CAN\+\_\+\+INTERRUPT\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{can__interrupt_8c_a407139d6347d67bb0846a95aaaf1cb34}{DEBUG\+\_\+\+INTERRUPT}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{can__interrupt_8c_aa0f30c571420d42057d28b7b243e3b3e}{CAN0\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em CAN0 Interrupt handler for RX, TX and bus error interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{can__interrupt_8c_a0f3327c42d83e7b42cf684774c788e69}{step\+\_\+position}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{can__interrupt_8c_a6bfc99d445c6155d072f211c2adb8c37}\label{can__interrupt_8c_a6bfc99d445c6155d072f211c2adb8c37}} 
+\index{can\_interrupt.c@{can\_interrupt.c}!CAN\_INTERRUPT\_H@{CAN\_INTERRUPT\_H}}
+\index{CAN\_INTERRUPT\_H@{CAN\_INTERRUPT\_H}!can\_interrupt.c@{can\_interrupt.c}}
+\doxysubsubsection{\texorpdfstring{CAN\_INTERRUPT\_H}{CAN\_INTERRUPT\_H}}
+{\footnotesize\ttfamily \#define CAN\+\_\+\+INTERRUPT\+\_\+H}
+
+\mbox{\Hypertarget{can__interrupt_8c_a407139d6347d67bb0846a95aaaf1cb34}\label{can__interrupt_8c_a407139d6347d67bb0846a95aaaf1cb34}} 
+\index{can\_interrupt.c@{can\_interrupt.c}!DEBUG\_INTERRUPT@{DEBUG\_INTERRUPT}}
+\index{DEBUG\_INTERRUPT@{DEBUG\_INTERRUPT}!can\_interrupt.c@{can\_interrupt.c}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_INTERRUPT}{DEBUG\_INTERRUPT}}
+{\footnotesize\ttfamily \#define DEBUG\+\_\+\+INTERRUPT~0}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{can__interrupt_8c_aa0f30c571420d42057d28b7b243e3b3e}\label{can__interrupt_8c_aa0f30c571420d42057d28b7b243e3b3e}} 
+\index{can\_interrupt.c@{can\_interrupt.c}!CAN0\_Handler@{CAN0\_Handler}}
+\index{CAN0\_Handler@{CAN0\_Handler}!can\_interrupt.c@{can\_interrupt.c}}
+\doxysubsubsection{\texorpdfstring{CAN0\_Handler()}{CAN0\_Handler()}}
+{\footnotesize\ttfamily void CAN0\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+CAN0 Interrupt handler for RX, TX and bus error interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em } & \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{can__interrupt_8c_a0f3327c42d83e7b42cf684774c788e69}\label{can__interrupt_8c_a0f3327c42d83e7b42cf684774c788e69}} 
+\index{can\_interrupt.c@{can\_interrupt.c}!step\_position@{step\_position}}
+\index{step\_position@{step\_position}!can\_interrupt.c@{can\_interrupt.c}}
+\doxysubsubsection{\texorpdfstring{step\_position}{step\_position}}
+{\footnotesize\ttfamily uint8\+\_\+t step\+\_\+position = 0}
+

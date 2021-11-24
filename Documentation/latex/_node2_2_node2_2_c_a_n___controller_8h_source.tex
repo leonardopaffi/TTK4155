@@ -1,0 +1,38 @@
+\hypertarget{_node2_2_node2_2_c_a_n___controller_8h_source}{}\doxysection{can\+\_\+controller.\+h}
+\label{_node2_2_node2_2_c_a_n___controller_8h_source}\index{D:/Progetti/TTK4155/Node2/Node2/can\_controller.h@{D:/Progetti/TTK4155/Node2/Node2/can\_controller.h}}
+\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * can\_controller.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Author: Gustav O. Often and Eivind H. J{\ucr}lsgard}}
+\DoxyCodeLine{5 \textcolor{comment}{ *}}
+\DoxyCodeLine{6 \textcolor{comment}{ * For use in TTK4155 Embedded and Industrial Computer Systems Design}}
+\DoxyCodeLine{7 \textcolor{comment}{ * NTNU -\/ Norwegian University of Science and Technology}}
+\DoxyCodeLine{8 \textcolor{comment}{ *}}
+\DoxyCodeLine{9 \textcolor{comment}{ */} }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CAN\_CONTROLLER\_H\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CAN\_CONTROLLER\_H\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{21 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structcan__message__t}{can\_message\_t}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     uint16\_t  \mbox{\hyperlink{structcan__message__t_a4fc3a0c58dfbd1e68224521185cb9384}{id}};}
+\DoxyCodeLine{24     uint16\_t \mbox{\hyperlink{structcan__message__t_a4984cd1ac153dd3a0b24706eb8f9b904}{data\_length}};}
+\DoxyCodeLine{25     uint8\_t \mbox{\hyperlink{structcan__message__t_afb87d045bbf32b236fc425efe02bdc7b}{data}}[8];}
+\DoxyCodeLine{26 \} \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a0627202712e73e6823e5c51a56663ac5}{CAN\_MESSAGE}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_ad4693f3cf41505cc76fe9e313cbcc8ee}{reset}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 uint8\_t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a75e7e1428e5ce309c0087602721bf57d}{can\_init\_def\_tx\_rx\_mb}}(uint32\_t can\_br);}
+\DoxyCodeLine{31 uint8\_t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_ab12c1286ebbc8c54dc200d4b9c86902d}{can\_init}}(uint32\_t can\_br, uint8\_t num\_tx\_mb, uint8\_t num\_rx\_mb);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 uint8\_t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_ac81681fa36cdf9fe6bdefdbb8164df07}{can\_send}}(\mbox{\hyperlink{structcan__message__t}{CAN\_MESSAGE}}* can\_msg, uint8\_t mailbox\_id);}
+\DoxyCodeLine{34 uint8\_t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_ac22373dd81bf37380ec1f662e7b27678}{can\_receive}}(\mbox{\hyperlink{structcan__message__t}{CAN\_MESSAGE}}* can\_msg, uint8\_t mailbox\_id);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* CAN\_CONTROLLER\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

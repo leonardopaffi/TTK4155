@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structuart__ringbuffer__t" kind="struct" language="C++" prot="public">
+    <compoundname>uart_ringbuffer_t</compoundname>
+    <includes refid="uart_8h" local="no">uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.h" line="23" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.h" line="23" column="14" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char data[UART_RINGBUFFER_SIZE]</definition>
+        <argsstring>[UART_RINGBUFFER_SIZE]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.h" line="24" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/uart.h" line="21" column="1" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.h" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" prot="public" virt="non-virtual"><scope>uart_ringbuffer_t</scope><name>data</name></member>
+      <member refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" prot="public" virt="non-virtual"><scope>uart_ringbuffer_t</scope><name>head</name></member>
+      <member refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" prot="public" virt="non-virtual"><scope>uart_ringbuffer_t</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

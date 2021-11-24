@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_p_i_8c" kind="file" language="C++">
+    <compoundname>PI.c</compoundname>
+    <includes refid="_p_i_8h" local="yes">PI.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/PI.c</label>
+        <link refid="_p_i_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PI.h</label>
+        <link refid="_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_p_i_8c_1ac64c6936fea812ae971766d888d59c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PI_init</definition>
+        <argsstring>(int16_t P_factor, int16_t I_factor, pidData_t *pid_st)</argsstring>
+        <name>PI_init</name>
+        <param>
+          <type>int16_t</type>
+          <declname>P_factor</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>I_factor</declname>
+        </param>
+        <param>
+          <type><ref refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kindref="member">pidData_t</ref> *</type>
+          <declname>pid_st</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the PI controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.c" bodystart="3" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_i_8c_1a5e5b3c1185e1fcc5967cefa3727c1714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t PI_controller</definition>
+        <argsstring>(int16_t set_point, int16_t process_value, pidData_t *pid_st)</argsstring>
+        <name>PI_controller</name>
+        <param>
+          <type>int16_t</type>
+          <declname>set_point</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>process_value</declname>
+        </param>
+        <param>
+          <type><ref refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kindref="member">pidData_t</ref> *</type>
+          <declname>pid_st</declname>
+        </param>
+        <briefdescription>
+<para>Updates the value with the PI controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>set_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int16_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.c" line="12" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.c" bodystart="12" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_i_8h" kindref="compound">PI.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_i_8c_1ac64c6936fea812ae971766d888d59c29" kindref="member">PI_init</ref>(int16_t<sp/>P_factor,<sp/>int16_t<sp/>I_factor,<sp/><ref refid="struct_p_i_d___d_a_t_a" kindref="compound">pidData_t</ref>*<sp/>pid_st)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initializing<sp/>data<sp/>for<sp/>the<sp/>PI<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st<sp/>-&gt;<sp/>P_Factor<sp/>=<sp/>P_factor;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st<sp/>-&gt;<sp/>I_Factor<sp/>=<sp/>I_factor;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st<sp/>-&gt;<sp/>error<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st<sp/>-&gt;<sp/>integral<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">int16_t<sp/><ref refid="_p_i_8c_1a5e5b3c1185e1fcc5967cefa3727c1714" kindref="member">PI_controller</ref>(int16_t<sp/>set_point,<sp/>int16_t<sp/>process_value,<sp/><ref refid="struct_p_i_d___d_a_t_a" kindref="compound">pidData_t</ref><sp/><sp/>*pid_st)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Adds<sp/>previous<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref><sp/>=<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref><sp/>+<sp/><sp/>(pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kindref="member">error</ref><sp/>*<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" kindref="member">I_Factor</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculates<sp/>new<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kindref="member">error</ref><sp/>=<sp/>set_point<sp/>-<sp/>process_value;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Adds<sp/>new<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref><sp/>=<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref><sp/>+<sp/><sp/>(pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kindref="member">error</ref><sp/>*<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" kindref="member">I_Factor</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint16_t)(((pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kindref="member">error</ref><sp/>*<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" kindref="member">P_Factor</ref>)<sp/>+<sp/>pid_st-&gt;<ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref>)<sp/>/<sp/>128);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/PI.c"/>
+  </compounddef>
+</doxygen>

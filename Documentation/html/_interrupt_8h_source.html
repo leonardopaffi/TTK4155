@@ -98,32 +98,12 @@ $(document).ready(function(){initNavTree('_interrupt_8h_source.html',''); initRe
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    INT0 -&gt; CAN INTERRUPT</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_interrupt_8h.html#a261e47dd882acb04e7c867fe2977ad1a">   13</a></span><span class="keyword">volatile</span> uint8_t <a class="code hl_variable" href="_interrupt_8h.html#a261e47dd882acb04e7c867fe2977ad1a">RIGHT_BUTTON_PRESSED</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_interrupt_8h.html#ab326e3a1904161f68cf09b94c6808a05">   14</a></span><span class="keyword">volatile</span> uint8_t <a class="code hl_variable" href="_interrupt_8h.html#ab326e3a1904161f68cf09b94c6808a05">LEFT_BUTTON_PRESSED</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_interrupt_8h.html#a9e6daedebfea645463f0605ea0c0ea53">   15</a></span><span class="keyword">volatile</span> uint8_t <a class="code hl_variable" href="_interrupt_8h.html#a9e6daedebfea645463f0605ea0c0ea53">JOYSTICK_BUTTON_PRESSED</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="_interrupt_8h.html#a1c62fca549a4981d6684d4a5c72874b9">interrupt_init</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="_interrupt_8h.html#ae04f5463a20ee95cdb373a69b2eacf5f">interrupt_polling</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_interrupt_8h.html#a30a0ad88a89a84c0161cf09eace108e8">   29</a></span><a class="code hl_function" href="_interrupt_8h.html#a30a0ad88a89a84c0161cf09eace108e8">ISR</a>(INT2_vect)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// Wakes the MCU up when right button is pressed</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_variable" href="_interrupt_8h.html#a261e47dd882acb04e7c867fe2977ad1a">RIGHT_BUTTON_PRESSED</a> = 1;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_interrupt_8h.html#a22acfb428840c6d9aa212764589cf6c6">   35</a></span><a class="code hl_function" href="_interrupt_8h.html#a30a0ad88a89a84c0161cf09eace108e8">ISR</a>(INT1_vect)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Wakes the MCU up when left button is pressed</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="_interrupt_8h.html#ab326e3a1904161f68cf09b94c6808a05">LEFT_BUTTON_PRESSED</a> = 1;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="_interrupt_8h.html#a1c62fca549a4981d6684d4a5c72874b9">interrupt_init</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="_interrupt_8h.html#ae04f5463a20ee95cdb373a69b2eacf5f">interrupt_polling</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_interrupt_8h_html_a1c62fca549a4981d6684d4a5c72874b9"><div class="ttname"><a href="_interrupt_8h.html#a1c62fca549a4981d6684d4a5c72874b9">interrupt_init</a></div><div class="ttdeci">void interrupt_init()</div><div class="ttdoc">initialization function for the interrupt</div><div class="ttdef"><b>Definition:</b> Interrupt.c:7</div></div>
-<div class="ttc" id="a_interrupt_8h_html_a261e47dd882acb04e7c867fe2977ad1a"><div class="ttname"><a href="_interrupt_8h.html#a261e47dd882acb04e7c867fe2977ad1a">RIGHT_BUTTON_PRESSED</a></div><div class="ttdeci">volatile uint8_t RIGHT_BUTTON_PRESSED</div><div class="ttdef"><b>Definition:</b> Interrupt.h:13</div></div>
-<div class="ttc" id="a_interrupt_8h_html_a30a0ad88a89a84c0161cf09eace108e8"><div class="ttname"><a href="_interrupt_8h.html#a30a0ad88a89a84c0161cf09eace108e8">ISR</a></div><div class="ttdeci">ISR(INT2_vect)</div><div class="ttdef"><b>Definition:</b> Interrupt.h:29</div></div>
-<div class="ttc" id="a_interrupt_8h_html_a9e6daedebfea645463f0605ea0c0ea53"><div class="ttname"><a href="_interrupt_8h.html#a9e6daedebfea645463f0605ea0c0ea53">JOYSTICK_BUTTON_PRESSED</a></div><div class="ttdeci">volatile uint8_t JOYSTICK_BUTTON_PRESSED</div><div class="ttdef"><b>Definition:</b> Interrupt.h:15</div></div>
-<div class="ttc" id="a_interrupt_8h_html_ab326e3a1904161f68cf09b94c6808a05"><div class="ttname"><a href="_interrupt_8h.html#ab326e3a1904161f68cf09b94c6808a05">LEFT_BUTTON_PRESSED</a></div><div class="ttdeci">volatile uint8_t LEFT_BUTTON_PRESSED</div><div class="ttdef"><b>Definition:</b> Interrupt.h:14</div></div>
 <div class="ttc" id="a_interrupt_8h_html_ae04f5463a20ee95cdb373a69b2eacf5f"><div class="ttname"><a href="_interrupt_8h.html#ae04f5463a20ee95cdb373a69b2eacf5f">interrupt_polling</a></div><div class="ttdeci">void interrupt_polling()</div><div class="ttdoc">Resets variables and prints in the console if a button is pressed.</div><div class="ttdef"><b>Definition:</b> Interrupt.c:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

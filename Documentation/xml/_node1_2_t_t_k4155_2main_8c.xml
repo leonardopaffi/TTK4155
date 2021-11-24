@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node1_2_t_t_k4155_2main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">avr/io.h</includes>
+    <includes refid="_u_s_a_r_t_8h" local="yes">USART.h</includes>
+    <includes refid="_s_r_a_m_8h" local="yes">SRAM.h</includes>
+    <includes refid="_node1_2_t_t_k4155_2_a_d_c_8h" local="yes">ADC.h</includes>
+    <includes refid="_joystick_8h" local="yes">Joystick.h</includes>
+    <includes refid="_interrupt_8h" local="yes">Interrupt.h</includes>
+    <includes refid="_slider_8h" local="yes">Slider.h</includes>
+    <includes refid="_o_l_e_d_8h" local="yes">OLED.h</includes>
+    <includes refid="_c_a_n_8h" local="yes">CAN.h</includes>
+    <includes refid="mcp2515_8h" local="yes">mcp2515.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>ADC.h</label>
+        <link refid="_node1_2_t_t_k4155_2_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Interrupt.h</label>
+        <link refid="_interrupt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Joystick.h</label>
+        <link refid="_joystick_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>OLED.h</label>
+        <link refid="_o_l_e_d_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SRAM.h</label>
+        <link refid="_s_r_a_m_8h"/>
+      </node>
+      <node id="12">
+        <label>Slider.h</label>
+        <link refid="_slider_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mcp2515.h</label>
+        <link refid="mcp2515_8h"/>
+      </node>
+      <node id="8">
+        <label>avr/delay.h</label>
+      </node>
+      <node id="7">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="2">
+        <label>avr/io.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="17">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_node1_2_t_t_k4155_2main_8c_1a802b2b582b121e4632aa9a491d503720" prot="public" static="no">
+        <name>FOSC</name>
+        <initializer>4915200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c" line="19" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/main.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_node1_2_t_t_k4155_2main_8c_1a62634036639f88eece6fbf226b45f84b" prot="public" static="no">
+        <name>BAUD</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c" line="20" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/main.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_node1_2_t_t_k4155_2main_8c_1a711e9130c825a7269c8c87dbb57a85e0" prot="public" static="no">
+        <name>MYUBRR</name>
+        <initializer><ref refid="_node1_2_t_t_k4155_2main_8c_1a802b2b582b121e4632aa9a491d503720" kindref="member">FOSC</ref> / 16 / <ref refid="_node1_2_t_t_k4155_2main_8c_1a62634036639f88eece6fbf226b45f84b" kindref="member">BAUD</ref> - 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c" line="21" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/main.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_node1_2_t_t_k4155_2main_8c_1a7b1703131dd3be69c8a918cb0405ce02" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t playing</definition>
+        <argsstring></argsstring>
+        <name>playing</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c" line="25" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/main.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node1_2_t_t_k4155_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c" line="27" column="5" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/main.c" bodystart="27" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>TTK4155.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>07.09.2021<sp/>10:44:28</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Author<sp/>:<sp/>Leonardo<sp/>Paffi</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_s_a_r_t_8h" kindref="compound">USART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_r_a_m_8h" kindref="compound">SRAM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_joystick_8h" kindref="compound">Joystick.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interrupt_8h" kindref="compound">Interrupt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_slider_8h" kindref="compound">Slider.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_o_l_e_d_8h" kindref="compound">OLED.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_a_n_8h" kindref="compound">CAN.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcp2515_8h" kindref="compound">mcp2515.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FOSC<sp/>4915200<sp/></highlight><highlight class="comment">//<sp/>Clock<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAUD<sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MYUBRR<sp/>FOSC<sp/>/<sp/>16<sp/>/<sp/>BAUD<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">uint8_t<sp/><ref refid="_node1_2_t_t_k4155_2main_8c_1a7b1703131dd3be69c8a918cb0405ce02" kindref="member">playing</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_node1_2_t_t_k4155_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8c_1a99f79737b2f8bf945b4c169c69e3e3eb" kindref="member">USART_Init</ref>(<ref refid="_node1_2_t_t_k4155_2main_8c_1a711e9130c825a7269c8c87dbb57a85e0" kindref="member">MYUBRR</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_r_a_m_8h_1ad607bcb84cc9434b858ce5502242c54f" kindref="member">SRAM_init</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8c_1afb6f3107e48d72be03cb3781374e1391" kindref="member">OLED_init</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_interrupt_8c_1a1c62fca549a4981d6684d4a5c72874b9" kindref="member">interrupt_init</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_node1_2_t_t_k4155_2_a_d_c_8c_1a1e942fcd91f79d49e4ddb8d7e9d3ef95" kindref="member">adc_init</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_joystick_8c_1a90acebf0114a3aa5d95650790e8b8693" kindref="member">joystick_init</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a34182122af387dbfe661da5dca71d01b" kindref="member">SPI_master_init</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8c_1a55bb654e6204c14882e66fc5a4c6ba44" kindref="member">OLED_print_menu</ref>(<ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd" kindref="member">MAIN</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1adb0f99207facf71ca3429c6108d42d43" kindref="member">CAN_init</ref>(<ref refid="mcp2515_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref><sp/>a;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpos__t" kindref="compound">pos_t</ref><sp/>j_pos;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsliderpos__t" kindref="compound">sliderpos_t</ref><sp/>slider_pos;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;I&apos;m<sp/>NODE<sp/>1\r\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-initializing<sp/>Node<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref><sp/>msgs;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>msgs.<ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>msgs.<ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>msgs.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[0]<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a977213658904ef25865836933905d9b9" kindref="member">CAN_send</ref>(msgs);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MAIN<sp/>LOOP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j_pos<sp/>=<sp/><ref refid="_joystick_8c_1adeabde9061c8f673f7ba257f3e61181d" kindref="member">joystick_pos_read</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slider_pos<sp/>=<sp/><ref refid="_slider_8c_1a639ed1e78351bf834f06ae19dd3ff621" kindref="member">slider_pos_read</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_joystick_8c_1a374ff6c1fb6656a221738d975f675d46" kindref="member">joystick_menu_navigation</ref>(&amp;<ref refid="_node1_2_t_t_k4155_2main_8c_1a7b1703131dd3be69c8a918cb0405ce02" kindref="member">playing</ref>);<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interrupt_8c_1ae04f5463a20ee95cdb373a69b2eacf5f" kindref="member">interrupt_polling</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_node1_2_t_t_k4155_2main_8c_1a7b1703131dd3be69c8a918cb0405ce02" kindref="member">playing</ref>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[0]<sp/>=<sp/>j_pos.<ref refid="structpos__t_1a0f561e77fa0f040b637f4e04f6cd8078" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[1]<sp/>=<sp/>j_pos.<ref refid="structpos__t_1a17f97f62d93bc8cfb4a2b5d273a2aa72" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[2]<sp/>=<sp/><ref refid="_joystick_8c_1a8273db344fd3a2b068599f6cadba12f4" kindref="member">button</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a.<ref refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[3]<sp/>=<sp/>slider_pos.<ref refid="structsliderpos__t_1ad6dca68b61d96e60ca0062e00390ba9f" kindref="member">R</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_a_n_8c_1a977213658904ef25865836933905d9b9" kindref="member">CAN_send</ref>(a);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//print_joystick_position();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;%d<sp/>\r\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="_node1_2_t_t_k4155_2_a_d_c_8c_1ac1513709a7d29dc6590d9371b8cd0556" kindref="member">adc_read</ref>(0x01));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_c_a_n_8c_1a930a5570610e7a0526767bf358673aa6" kindref="member">you_lose</ref>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8c_1a53b761d5b126de3f35e50ce27022b3b9" kindref="member">OLED_print_string</ref>(</highlight><highlight class="stringliteral">&quot;You<sp/>lose&quot;</highlight><highlight class="normal">,<sp/>8,<sp/>3);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/main.c"/>
+  </compounddef>
+</doxygen>

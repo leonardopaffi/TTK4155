@@ -1,0 +1,118 @@
+\hypertarget{uart_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/uart.h File Reference}
+\label{uart_8h}\index{D:/Progetti/TTK4155/Node2/Node2/uart.h@{D:/Progetti/TTK4155/Node2/Node2/uart.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for uart.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{uart_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{uart_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structuart__ringbuffer__t}{uart\+\_\+ringbuffer\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{uart_8h_a179f566078d72b10a8dfcaca45a0cba2}{UART\+\_\+\+RINGBUFFER\+\_\+\+SIZE}}~64
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structuart__ringbuffer__t}{uart\+\_\+ringbuffer\+\_\+t}} \mbox{\hyperlink{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}{uart\+\_\+ringbuffer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8h_ab5b2eb7c61969e61bef72eeb48dd058d}{configure\+\_\+uart}} (void)
+\begin{DoxyCompactList}\small\item\em Configure UART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8h_a1c201c2740c7aa7102270bb667069f38}{uart\+\_\+getchar}} (uint8\+\_\+t $\ast$c)
+\begin{DoxyCompactList}\small\item\em Get character from UART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8h_ae12fb3c9b87465c2fa0f0b2f78c13257}{uart\+\_\+putchar}} (const uint8\+\_\+t c)
+\item 
+void \mbox{\hyperlink{uart_8h_a5e433d3a46eda66a50c81c1eda46c84b}{UART\+\_\+\+Handler}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{uart_8h_a179f566078d72b10a8dfcaca45a0cba2}\label{uart_8h_a179f566078d72b10a8dfcaca45a0cba2}} 
+\index{uart.h@{uart.h}!UART\_RINGBUFFER\_SIZE@{UART\_RINGBUFFER\_SIZE}}
+\index{UART\_RINGBUFFER\_SIZE@{UART\_RINGBUFFER\_SIZE}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_RINGBUFFER\_SIZE}{UART\_RINGBUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+RINGBUFFER\+\_\+\+SIZE~64}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}\label{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}} 
+\index{uart.h@{uart.h}!uart\_ringbuffer@{uart\_ringbuffer}}
+\index{uart\_ringbuffer@{uart\_ringbuffer}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{uart\_ringbuffer}{uart\_ringbuffer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structuart__ringbuffer__t}{uart\+\_\+ringbuffer\+\_\+t}} \mbox{\hyperlink{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}{uart\+\_\+ringbuffer}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{uart_8h_ab5b2eb7c61969e61bef72eeb48dd058d}\label{uart_8h_ab5b2eb7c61969e61bef72eeb48dd058d}} 
+\index{uart.h@{uart.h}!configure\_uart@{configure\_uart}}
+\index{configure\_uart@{configure\_uart}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{configure\_uart()}{configure\_uart()}}
+{\footnotesize\ttfamily void configure\+\_\+uart (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Configure UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{uart_8h_a1c201c2740c7aa7102270bb667069f38}\label{uart_8h_a1c201c2740c7aa7102270bb667069f38}} 
+\index{uart.h@{uart.h}!uart\_getchar@{uart\_getchar}}
+\index{uart\_getchar@{uart\_getchar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{uart\_getchar()}{uart\_getchar()}}
+{\footnotesize\ttfamily int uart\+\_\+getchar (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Get character from UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$c} & location of character\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{uart_8h_a5e433d3a46eda66a50c81c1eda46c84b}\label{uart_8h_a5e433d3a46eda66a50c81c1eda46c84b}} 
+\index{uart.h@{uart.h}!UART\_Handler@{UART\_Handler}}
+\index{UART\_Handler@{UART\_Handler}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{UART\_Handler()}{UART\_Handler()}}
+{\footnotesize\ttfamily void UART\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ae12fb3c9b87465c2fa0f0b2f78c13257}\label{uart_8h_ae12fb3c9b87465c2fa0f0b2f78c13257}} 
+\index{uart.h@{uart.h}!uart\_putchar@{uart\_putchar}}
+\index{uart\_putchar@{uart\_putchar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{uart\_putchar()}{uart\_putchar()}}
+{\footnotesize\ttfamily int uart\+\_\+putchar (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{c }\end{DoxyParamCaption})}
+

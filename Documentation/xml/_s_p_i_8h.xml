@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_s_p_i_8h" kind="file" language="C++">
+    <compoundname>SPI.h</compoundname>
+    <includes local="no">avr/io.h</includes>
+    <includedby refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.h</includedby>
+    <includedby refid="_s_p_i_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/SPI.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.c</label>
+        <link refid="_c_a_n_8c"/>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c"/>
+      </node>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/SPI.c</label>
+        <link refid="_s_p_i_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_s_p_i_8h_1a474ee5b7a199d155bf6e3c1099d8bd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_slave_enable</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_slave_enable</name>
+        <briefdescription>
+<para>Enable the SPI slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" line="10" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="3" bodyend="7" declfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8h_1a854b85f853d4139663c8347a2e1a3fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_slave_disable</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_slave_disable</name>
+        <briefdescription>
+<para>Disable the SPI slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" line="16" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="9" bodyend="13" declfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8h_1a34182122af387dbfe661da5dca71d01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_master_init</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_master_init</name>
+        <briefdescription>
+<para>Initialize the SPI master. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" line="22" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="15" bodyend="26" declfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8h_1af6368b67e2ba591bcd82ca58e7bc05e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_master_transmit</definition>
+        <argsstring>(char cData)</argsstring>
+        <name>SPI_master_transmit</name>
+        <param>
+          <type>char</type>
+          <declname>cData</declname>
+        </param>
+        <briefdescription>
+<para>Transmit data with SPI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" line="29" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="28" bodyend="35" declfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8h_1a68e8553f6e049b8f7c4e7a1ee355e063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char SPI_master_read</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_master_read</name>
+        <briefdescription>
+<para>Read data with SPI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>char </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" line="36" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="37" bodyend="46" declfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8h_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8h_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8h_1a34182122af387dbfe661da5dca71d01b" kindref="member">SPI_master_init</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8h_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cData);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8h_1a68e8553f6e049b8f7c4e7a1ee355e063" kindref="member">SPI_master_read</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.h"/>
+  </compounddef>
+</doxygen>

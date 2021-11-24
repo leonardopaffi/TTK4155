@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node2_2_node2_2_c_a_n___controller_8c" kind="file" language="C++">
+    <compoundname>can_controller.c</compoundname>
+    <includes refid="_node2_2_node2_2_c_a_n___controller_8h" local="yes">can_controller.h</includes>
+    <includes local="yes">sam.h</includes>
+    <includes refid="printf-stdarg_8h" local="yes">printf-stdarg.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_controller.c</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>can_controller.h</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>printf-stdarg.h</label>
+        <link refid="printf-stdarg_8h"/>
+      </node>
+      <node id="4">
+        <label>sam.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_node2_2_node2_2_c_a_n___controller_8c_1ad4693f3cf41505cc76fe9e313cbcc8ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reset</definition>
+        <argsstring></argsstring>
+        <name>reset</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" line="17" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8c_1a75e7e1428e5ce309c0087602721bf57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_init_def_tx_rx_mb</definition>
+        <argsstring>(uint32_t can_br)</argsstring>
+        <name>can_init_def_tx_rx_mb</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>can_br</declname>
+        </param>
+        <briefdescription>
+<para>Initialize can bus with predefined number of rx and tx mailboxes, CAN0-&gt;CAN_MB[0] is used for transmitting CAN0-&gt;CAN_MB[1,2] is used for receiving. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set in CAN0-&gt;CAN_BR register to match can bus bit timing</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" line="28" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8c_1ab12c1286ebbc8c54dc200d4b9c86902d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_init</definition>
+        <argsstring>(uint32_t can_br, uint8_t num_tx_mb, uint8_t num_rx_mb)</argsstring>
+        <name>can_init</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>can_br</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_tx_mb</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_rx_mb</declname>
+        </param>
+        <briefdescription>
+<para>Initialize can bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set in CAN0-&gt;CAN_BR register to match can bus bit timing</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_tx_mb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of transmit mailboxes, tx mb indexes: [0 , num_tx_mb-1]</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_rx_mb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of receive mailboxes, rx mb indexes: [num_tx_mb, num_rx_mb-1]</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" line="46" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="46" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8c_1a8f4793f97f7c2faaf3942bf2e21b24a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_send</definition>
+        <argsstring>(CAN_MESSAGE *can_msg, uint8_t tx_mb_id)</argsstring>
+        <name>can_send</name>
+        <param>
+          <type><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kindref="member">CAN_MESSAGE</ref> *</type>
+          <declname>can_msg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tx_mb_id</declname>
+        </param>
+        <briefdescription>
+<para>Send can message from mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tx_mb_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of transmit mailbox to be used</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" line="131" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="131" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8c_1a03d4c2c5c83b39910e579652a514f658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_receive</definition>
+        <argsstring>(CAN_MESSAGE *can_msg, uint8_t rx_mb_id)</argsstring>
+        <name>can_receive</name>
+        <param>
+          <type><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kindref="member">CAN_MESSAGE</ref> *</type>
+          <declname>can_msg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>rx_mb_id</declname>
+        </param>
+        <briefdescription>
+<para>Read can message from mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct instance to save received data</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rx_mb_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of receive mailbox to be used</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" line="171" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="171" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>can_controller.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Gustav<sp/>O.<sp/>Often<sp/>and<sp/>Eivind<sp/>H.<sp/>J�lsgard</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>use<sp/>in<sp/>TTK4155<sp/>Embedded<sp/>and<sp/>Industrial<sp/>Computer<sp/>Systems<sp/>Design</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>NTNU<sp/>-<sp/>Norwegian<sp/>University<sp/>of<sp/>Science<sp/>and<sp/>Technology</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_c_a_n___controller_8h" kindref="compound">can_controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sam.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="printf-stdarg_8h" kindref="compound">printf-stdarg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1ad4693f3cf41505cc76fe9e313cbcc8ee" kindref="member">reset</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1a75e7e1428e5ce309c0087602721bf57d" kindref="member">can_init_def_tx_rx_mb</ref>(uint32_t<sp/>can_br)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1ab12c1286ebbc8c54dc200d4b9c86902d" kindref="member">can_init</ref>(can_br,<sp/>1,<sp/>2);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1ab12c1286ebbc8c54dc200d4b9c86902d" kindref="member">can_init</ref>(uint32_t<sp/>can_br,<sp/>uint8_t<sp/>num_tx_mb,<sp/>uint8_t<sp/>num_rx_mb)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Make<sp/>sure<sp/>num_rx_mb<sp/>and<sp/>num_tx_mb<sp/>is<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(num_rx_mb<sp/>&gt;<sp/>8<sp/>|<sp/>num_tx_mb<sp/>&gt;<sp/>8<sp/>|<sp/>num_rx_mb<sp/>+<sp/>num_tx_mb<sp/>&gt;<sp/>8)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/></highlight><highlight class="comment">//Too<sp/>many<sp/>mailboxes<sp/>is<sp/>configured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ul_status;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Disable<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MR<sp/>&amp;=<sp/>~CAN_MR_CANEN;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>status<sp/>register<sp/>on<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>ul_status<sp/>=<sp/>CAN0-&gt;CAN_SR;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>interrupts<sp/>on<sp/>CANH<sp/>and<sp/>CANL<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_IDR<sp/>=<sp/>PIO_PA8A_URXD<sp/>|<sp/>PIO_PA9A_UTXD;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Select<sp/>CAN0<sp/>RX<sp/>and<sp/>TX<sp/>in<sp/>PIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ul_sr<sp/>=<sp/>PIOA-&gt;PIO_ABSR;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_ABSR<sp/>=<sp/>~(PIO_PA1A_CANRX0<sp/>|<sp/>PIO_PA0A_CANTX0)<sp/>&amp;<sp/>ul_sr;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>the<sp/>Parallel<sp/>IO<sp/>(PIO)<sp/>of<sp/>the<sp/>Rx<sp/>and<sp/>Tx<sp/>pins<sp/>so<sp/>that<sp/>the<sp/>peripheral<sp/>controller<sp/>can<sp/>use<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_PDR<sp/>=<sp/>PIO_PA1A_CANRX0<sp/>|<sp/>PIO_PA0A_CANTX0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>pull<sp/>up<sp/>on<sp/>CANH<sp/>and<sp/>CANL<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_PUER<sp/>=<sp/>(PIO_PA1A_CANRX0<sp/>|<sp/>PIO_PA0A_CANTX0);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>Clock<sp/>for<sp/>CAN0<sp/>in<sp/>PMC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>PMC-&gt;PMC_PCR<sp/>=<sp/>PMC_PCR_EN<sp/>|<sp/>(0<sp/>&lt;&lt;<sp/>PMC_PCR_DIV_Pos)<sp/>|<sp/>PMC_PCR_CMD<sp/>|<sp/>(ID_CAN0<sp/>&lt;&lt;<sp/>PMC_PCR_PID_Pos);<sp/></highlight><highlight class="comment">//<sp/>DIV<sp/>=<sp/>1(can<sp/>clk<sp/>=<sp/>MCK/2),<sp/>CMD<sp/>=<sp/>1<sp/>(write),<sp/>PID<sp/>=<sp/>2B<sp/>(CAN0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>PMC-&gt;PMC_PCER1<sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>(ID_CAN0<sp/>-<sp/>32);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>baudrate,<sp/>Phase1,<sp/>phase2<sp/>and<sp/>propagation<sp/>delay<sp/>for<sp/>can<sp/>bus.<sp/>Must<sp/>match<sp/>on<sp/>all<sp/>nodes!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_BR<sp/>=<sp/>can_br;<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/******<sp/>Start<sp/>of<sp/>mailbox<sp/>configuration<sp/>******/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>can_ier<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>receive<sp/>mailboxes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>num_tx_mb;<sp/>n<sp/>&lt;=<sp/>num_rx_mb<sp/>+<sp/>num_tx_mb;<sp/>n++)<sp/><sp/></highlight><highlight class="comment">//Simply<sp/>one<sp/>mailbox<sp/>setup<sp/>for<sp/>all<sp/>messages.<sp/>You<sp/>might<sp/>want<sp/>to<sp/>apply<sp/>filter<sp/>for<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MAM<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//Accept<sp/>all<sp/>messages</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MID<sp/>=<sp/>CAN_MID_MIDE;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MMR<sp/>=<sp/>(CAN_MMR_MOT_MB_RX);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MCR<sp/>|=<sp/>CAN_MCR_MTCR;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_ier<sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>n;<sp/></highlight><highlight class="comment">//Enable<sp/>interrupt<sp/>on<sp/>rx<sp/>mailbox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>transmit<sp/>mailboxes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>0;<sp/>n<sp/>&lt;<sp/>num_tx_mb;<sp/>n++)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MID<sp/>=<sp/>CAN_MID_MIDE;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[n].CAN_MMR<sp/>=<sp/>(CAN_MMR_MOT_MB_TX);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/******<sp/>End<sp/>of<sp/>mailbox<sp/>configuraion<sp/>******/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>interrupt<sp/>on<sp/>receive<sp/>mailboxes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_IER<sp/>=<sp/>can_ier;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>interrupt<sp/>in<sp/>NVIC<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>NVIC_EnableIRQ(ID_CAN0);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//enable<sp/>CAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MR<sp/>|=<sp/>CAN_MR_CANEN;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1a8f4793f97f7c2faaf3942bf2e21b24a7" kindref="member">can_send</ref>(<ref refid="structcan__message__t" kindref="compound">CAN_MESSAGE</ref>*<sp/>can_msg,<sp/>uint8_t<sp/>tx_mb_id)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>that<sp/>mailbox<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CAN0-&gt;CAN_MB[tx_mb_id].CAN_MSR<sp/>&amp;<sp/>CAN_MSR_MRDY)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>message<sp/>ID<sp/>and<sp/>use<sp/>CAN<sp/>2.0B<sp/>protocol</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[tx_mb_id].CAN_MID<sp/>=<sp/>CAN_MID_MIDvA(can_msg-&gt;<ref refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>)<sp/>|<sp/>CAN_MID_MIDE<sp/>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Make<sp/>sure<sp/>message<sp/>is<sp/>not<sp/>to<sp/>long</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(can_msg-&gt;<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref><sp/>&gt;<sp/>7){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_msg-&gt;<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref><sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Message<sp/>is<sp/>to<sp/>long,<sp/>sending<sp/>only<sp/>the<sp/>first<sp/>8<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Put<sp/>message<sp/>in<sp/>can<sp/>data<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[tx_mb_id].CAN_MDL<sp/>=<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[3]<sp/>&lt;&lt;<sp/>24<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[2]<sp/>&lt;&lt;<sp/>16<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[1]<sp/>&lt;&lt;<sp/>8<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[0];</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[tx_mb_id].CAN_MDH<sp/>=<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[7]<sp/>&lt;&lt;<sp/>24<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[6]<sp/>&lt;&lt;<sp/>16<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[5]<sp/>&lt;&lt;<sp/>8<sp/>|<sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[4];</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>message<sp/>length<sp/>and<sp/>mailbox<sp/>ready<sp/>to<sp/>send</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[tx_mb_id].CAN_MCR<sp/>=<sp/>(can_msg-&gt;<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref><sp/>&lt;&lt;<sp/>CAN_MCR_MDLC_Pos)<sp/>|<sp/>CAN_MCR_MTCR;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;message<sp/>sent<sp/>from<sp/>NODE2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Mailbox<sp/>busy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;Mailbox<sp/>busy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8c_1a03d4c2c5c83b39910e579652a514f658" kindref="member">can_receive</ref>(<ref refid="structcan__message__t" kindref="compound">CAN_MESSAGE</ref>*<sp/>can_msg,<sp/>uint8_t<sp/>rx_mb_id)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>that<sp/>mailbox<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(CAN0-&gt;CAN_MB[rx_mb_id].CAN_MSR<sp/>&amp;<sp/>CAN_MSR_MRDY)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>data<sp/>from<sp/>CAN<sp/>mailbox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>data_low<sp/>=<sp/>CAN0-&gt;CAN_MB[rx_mb_id].CAN_MDL;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>data_high<sp/>=<sp/>CAN0-&gt;CAN_MB[rx_mb_id].CAN_MDH;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>message<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_msg-&gt;<ref refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref><sp/>=<sp/>(uint16_t)((CAN0-&gt;CAN_MB[rx_mb_id].CAN_MID<sp/>&amp;<sp/>CAN_MID_MIDvA_Msk)<sp/>&gt;&gt;<sp/>CAN_MID_MIDvA_Pos);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>data<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_msg-&gt;<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref><sp/>=<sp/>(uint8_t)((CAN0-&gt;CAN_MB[rx_mb_id].CAN_MSR<sp/>&amp;<sp/>CAN_MSR_MDLC_Msk)<sp/>&gt;&gt;<sp/>CAN_MSR_MDLC_Pos);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Put<sp/>data<sp/>in<sp/>CAN_MESSAGE<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>can_msg-&gt;<ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref>;i++)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i<sp/>&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i]<sp/>=<sp/>(char)(data_low<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_low<sp/>=<sp/>data_low<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>can_msg-&gt;<ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[i]<sp/>=<sp/>(uint8_t)(data_high<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_high<sp/>=<sp/>data_high<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Reset<sp/>for<sp/>new<sp/>receive</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[rx_mb_id].CAN_MMR<sp/>=<sp/>CAN_MMR_MOT_MB_RX;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CAN0-&gt;CAN_MB[rx_mb_id].CAN_MCR<sp/>|=<sp/>CAN_MCR_MTCR;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//Mailbox<sp/>busy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.c"/>
+  </compounddef>
+</doxygen>

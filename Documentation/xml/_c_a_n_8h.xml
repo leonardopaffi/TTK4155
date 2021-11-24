@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_c_a_n_8h" kind="file" language="C++">
+    <compoundname>CAN.h</compoundname>
+    <includes refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h" local="yes">CAN_Controller.h</includes>
+    <includes local="yes">avr/interrupt.h</includes>
+    <includedby refid="_c_a_n_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/CAN.c</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mcp2515.h</label>
+        <link refid="mcp2515_8h"/>
+      </node>
+      <node id="6">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="4">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.c</label>
+        <link refid="_c_a_n_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_c_a_n__message" prot="public">CAN_message</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_a_n_8h_1a930a5570610e7a0526767bf358673aa6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t you_lose</definition>
+        <argsstring></argsstring>
+        <name>you_lose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="19" column="16" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="3" bodyend="-1" declfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" declline="19" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_a_n_8h_1adb0f99207facf71ca3429c6108d42d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_init</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>CAN_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the CAN bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="26" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="5" bodyend="19" declfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8h_1a977213658904ef25865836933905d9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_send</definition>
+        <argsstring>(CAN_message message)</argsstring>
+        <name>CAN_send</name>
+        <param>
+          <type><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref></type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Send data though the CAN bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="33" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="21" bodyend="37" declfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8h_1a679e0fac309970bf0d8361cf02da8f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_receive</definition>
+        <argsstring>()</argsstring>
+        <name>CAN_receive</name>
+        <briefdescription>
+<para>Checks registers for received messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="39" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="40" bodyend="77" declfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_c_a_n_8h_1a25224cfb670f006871322eeb78f46b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CAN_debug_print</definition>
+        <argsstring>(uint8_t id, char data, uint8_t position)</argsstring>
+        <name>CAN_debug_print</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Debug function for printing incoming messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="48" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.c" bodystart="79" bodyend="82" declfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CAN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_c_a_n___controller_8h" kindref="compound">CAN_Controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;avr/interrupt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>&quot;Buttons&quot;<sp/>variable:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Joystick<sp/>button<sp/>&lt;&lt;<sp/>0</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>Right<sp/>button<sp/>&lt;&lt;<sp/>1</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_c_a_n__message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="15" refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="16" refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data[8];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_c_a_n_8h_1a930a5570610e7a0526767bf358673aa6" kindref="member">you_lose</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8h_1adb0f99207facf71ca3429c6108d42d43" kindref="member">CAN_init</ref>(uint8_t<sp/>mode);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8h_1a977213658904ef25865836933905d9b9" kindref="member">CAN_send</ref>(<ref refid="struct_c_a_n__message" kindref="compound">CAN_message</ref><sp/>message);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8h_1a679e0fac309970bf0d8361cf02da8f97" kindref="member">CAN_receive</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_c_a_n_8h_1a25224cfb670f006871322eeb78f46b4f" kindref="member">CAN_debug_print</ref>(uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data,<sp/>uint8_t<sp/>position);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h"/>
+  </compounddef>
+</doxygen>

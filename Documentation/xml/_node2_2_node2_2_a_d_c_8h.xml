@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node2_2_node2_2_a_d_c_8h" kind="file" language="C++">
+    <compoundname>ADC.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="yes">sam.h</includes>
+    <includedby refid="_node2_2_node2_2_a_d_c_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/ADC.c</includedby>
+    <includedby refid="_node2_2_node2_2main_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/ADC.h</label>
+        <link refid="_node2_2_node2_2_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node2/Node2/ADC.c</label>
+        <link refid="_node2_2_node2_2_a_d_c_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/ADC.h</label>
+        <link refid="_node2_2_node2_2_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node2/Node2/main.c</label>
+        <link refid="_node2_2_node2_2main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_node2_2_node2_2_a_d_c_8h_1aa5e01ec55f233bf763f4f095bcfaaaa0" prot="public" static="no">
+        <name>ADC_LIMIT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h" line="7" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/ADC.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node2_2_node2_2_a_d_c_8h_1a69f491a768a81c2cf99ee2653ad3002d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_init</definition>
+        <argsstring>()</argsstring>
+        <name>ADC_init</name>
+        <briefdescription>
+<para>Initialization function for the ADC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h" line="13" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/ADC.c" bodystart="3" bodyend="9" declfile="D:/Progetti/TTK4155/Node2/Node2/ADC.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_a_d_c_8h_1a5bbea9320798ccfd596c7925f65e7734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ADC_read</definition>
+        <argsstring>()</argsstring>
+        <name>ADC_read</name>
+        <briefdescription>
+<para>Read data for the ADC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h" line="20" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/ADC.c" bodystart="11" bodyend="15" declfile="D:/Progetti/TTK4155/Node2/Node2/ADC.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_a_d_c_8h_1a3b1c413d7f71131713d5854b208f4e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ADC_check_goal</definition>
+        <argsstring>()</argsstring>
+        <name>ADC_check_goal</name>
+        <briefdescription>
+<para>Check if the user has scored a goal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Return 1 if the goal has been scored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h" line="27" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/ADC.c" bodystart="17" bodyend="26" declfile="D:/Progetti/TTK4155/Node2/Node2/ADC.h" declline="27" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_a_d_c_8h_1a461ee45e98428f41ccad403d65fcd69d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC_print</definition>
+        <argsstring>()</argsstring>
+        <name>ADC_print</name>
+        <briefdescription>
+<para>Debug function that prints ADC data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h" line="33" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/ADC.c" bodystart="28" bodyend="31" declfile="D:/Progetti/TTK4155/Node2/Node2/ADC.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sam.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_node2_2_node2_2_a_d_c_8h_1aa5e01ec55f233bf763f4f095bcfaaaa0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_LIMIT<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node2_2_node2_2_a_d_c_8h_1a69f491a768a81c2cf99ee2653ad3002d" kindref="member">ADC_init</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_node2_2_node2_2_a_d_c_8h_1a5bbea9320798ccfd596c7925f65e7734" kindref="member">ADC_read</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_node2_2_node2_2_a_d_c_8h_1a3b1c413d7f71131713d5854b208f4e44" kindref="member">ADC_check_goal</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_node2_2_node2_2_a_d_c_8h_1a461ee45e98428f41ccad403d65fcd69d" kindref="member">ADC_print</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/ADC.h"/>
+  </compounddef>
+</doxygen>

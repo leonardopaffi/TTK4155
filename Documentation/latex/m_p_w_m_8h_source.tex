@@ -1,0 +1,24 @@
+\hypertarget{m_p_w_m_8h_source}{}\doxysection{m\+PWM.\+h}
+\label{m_p_w_m_8h_source}\index{D:/Progetti/TTK4155/Node3/mPWM.h@{D:/Progetti/TTK4155/Node3/mPWM.h}}
+\mbox{\hyperlink{m_p_w_m_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef mPWM}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define mPWM\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keywordtype}{void} \mbox{\hyperlink{m_p_w_m_8h_a12c5d4c3c0f192525e937ed50598ce62}{mPWM\_init}}()}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     REG\_PMC\_PCER1 |= PMC\_PCER1\_PID36;                     \textcolor{comment}{// Enable PWM}}
+\DoxyCodeLine{9     REG\_PIOC\_ABSR |= PIO\_ABSR\_P20;                        \textcolor{comment}{// Set PWM pin 20 peripheral C }}
+\DoxyCodeLine{10     REG\_PIOC\_PDR |= PIO\_PDR\_P20;                          \textcolor{comment}{// Set PWM pin 20 to an output}}
+\DoxyCodeLine{11     REG\_PWM\_CLK = PWM\_CLK\_PREA(0) | PWM\_CLK\_DIVA(42);     \textcolor{comment}{// Set the PWM clock rate to 2MHz (84MHz/42)}}
+\DoxyCodeLine{12     REG\_PWM\_CMR5 = PWM\_CMR\_CALG | PWM\_CMR\_CPRE\_CLKA;      \textcolor{comment}{// Enable dual slope PWM and set the clock source as CLKA}}
+\DoxyCodeLine{13     REG\_PWM\_CPRD5 = 20000;                                \textcolor{comment}{// Set the PWM frequency 2MHz/(2 * 20000) = 50Hz = 20ms}}
+\DoxyCodeLine{14     REG\_PWM\_CDTY5 = 20000-\/\mbox{\hyperlink{_p_w_m_8h_ab71cdc0ec46d7f32153a76e127ef13fd}{STEP\_CENTER}};                    \textcolor{comment}{// Set the PWM duty cycle to 1500 -\/ centre the servo}}
+\DoxyCodeLine{15     REG\_PWM\_ENA = PWM\_ENA\_CHID5;                          \textcolor{comment}{// Enable the PWM channel}}
+\DoxyCodeLine{16 \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+
+\end{DoxyCode}

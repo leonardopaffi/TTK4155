@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_s_p_i_8c" kind="file" language="C++">
+    <compoundname>SPI.c</compoundname>
+    <includes refid="_s_p_i_8h" local="yes">SPI.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/SPI.c</label>
+        <link refid="_s_p_i_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SPI.h</label>
+        <link refid="_s_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_slave_enable</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_slave_enable</name>
+        <briefdescription>
+<para>Enable the SPI slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_slave_disable</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_slave_disable</name>
+        <briefdescription>
+<para>Disable the SPI slave. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" line="9" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8c_1a34182122af387dbfe661da5dca71d01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_master_init</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_master_init</name>
+        <briefdescription>
+<para>Initialize the SPI master. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" line="15" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="15" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_master_transmit</definition>
+        <argsstring>(char cData)</argsstring>
+        <name>SPI_master_transmit</name>
+        <param>
+          <type>char</type>
+          <declname>cData</declname>
+        </param>
+        <briefdescription>
+<para>Transmit data with SPI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" line="28" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_p_i_8c_1a68e8553f6e049b8f7c4e7a1ee355e063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char SPI_master_read</definition>
+        <argsstring>()</argsstring>
+        <name>SPI_master_read</name>
+        <briefdescription>
+<para>Read data with SPI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>char </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" line="37" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c" bodystart="37" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_p_i_8h" kindref="compound">SPI.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kindref="member">SPI_slave_enable</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>SS-pin<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTB<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>PB4);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>SS-pin<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTB<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>PB4);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8c_1a34182122af387dbfe661da5dca71d01b" kindref="member">SPI_master_init</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Code<sp/>adapted<sp/>from<sp/>datasheet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>SS<sp/>(PB4),<sp/>MOSI<sp/>(PB5)<sp/>and<sp/>SCK<sp/>(PB7)<sp/>as<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>DDRB<sp/>=<sp/>(1&lt;&lt;PB4)|(1&lt;&lt;PB5)|(1&lt;&lt;PB7);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DDRB<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>PB6);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>SPI,<sp/>Master,<sp/>set<sp/>clock<sp/>rate<sp/>fck/16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>SPCR<sp/>=<sp/>(1&lt;&lt;SPE)|(1&lt;&lt;MSTR)|(1&lt;&lt;SPR0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Starting<sp/>with<sp/>slave<sp/>disabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kindref="member">SPI_slave_disable</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kindref="member">SPI_master_transmit</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cData)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>transmission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>cData;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>transmission<sp/>complete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_s_p_i_8c_1a68e8553f6e049b8f7c4e7a1ee355e063" kindref="member">SPI_master_read</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Shifting<sp/>the<sp/>register<sp/>by<sp/>8bit<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>complete<sp/>reception</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SPDR;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/SPI.c"/>
+  </compounddef>
+</doxygen>

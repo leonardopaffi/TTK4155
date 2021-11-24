@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="delay_8h" kind="file" language="C++">
+    <compoundname>delay.h</compoundname>
+    <includes local="yes">sam.h</includes>
+    <includedby refid="_motor_8h" local="yes">D:/Progetti/TTK4155/Node2/Node2/Motor.h</includedby>
+    <includedby refid="delay_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/delay.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sam.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node2/Node2/Motor.c</label>
+        <link refid="_motor_8c"/>
+      </node>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node2/Node2/Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_interrupt.c</label>
+        <link refid="can__interrupt_8c"/>
+      </node>
+      <node id="6">
+        <label>D:/Progetti/TTK4155/Node2/Node2/delay.c</label>
+        <link refid="delay_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/Progetti/TTK4155/Node2/Node2/main.c</label>
+        <link refid="_node2_2_node2_2main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="delay_8h_1a39dbff94d8aa04a8cb8c5dd2227f77a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_delay_us</definition>
+        <argsstring>(int16_t value)</argsstring>
+        <name>test_delay_us</name>
+        <param>
+          <type>int16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/delay.h" line="6" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/delay.c" bodystart="3" bodyend="15" declfile="D:/Progetti/TTK4155/Node2/Node2/delay.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="delay_8h_1a36c8c34fc8f64e6bf1a21498195be1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delay_us</definition>
+        <argsstring>(uint16_t value)</argsstring>
+        <name>delay_us</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Delay function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/delay.h" line="13" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/delay.c" bodystart="17" bodyend="21" declfile="D:/Progetti/TTK4155/Node2/Node2/delay.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DELAY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DELAY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sam.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="delay_8h_1a39dbff94d8aa04a8cb8c5dd2227f77a7" kindref="member">test_delay_us</ref>(int16_t<sp/>value);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="delay_8h_1a36c8c34fc8f64e6bf1a21498195be1dd" kindref="member">delay_us</ref>(uint16_t<sp/>value);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/delay.h"/>
+  </compounddef>
+</doxygen>

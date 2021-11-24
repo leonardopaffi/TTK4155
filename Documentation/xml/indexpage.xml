@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>User Application template doxygen documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Empty user application template</title><para></para>
+</simplesect>
+Bare minimum empty user application template</para>
+<para><simplesect kind="par"><title>Content</title><para></para>
+</simplesect>
+<orderedlist>
+<listitem><para>Include the ASF header files (through asf.h)</para>
+</listitem><listitem><para>&quot;Insert system clock initialization code here&quot; comment</para>
+</listitem><listitem><para>Minimal main function that starts with a call to board_init()</para>
+</listitem><listitem><para>&quot;Insert application code here&quot; comment </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/main.c"/>
+  </compounddef>
+</doxygen>

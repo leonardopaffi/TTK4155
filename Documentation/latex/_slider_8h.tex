@@ -1,0 +1,79 @@
+\hypertarget{_slider_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+Slider.h File Reference}
+\label{_slider_8h}\index{D:/Progetti/TTK4155/Node1/TTK4155/Slider.h@{D:/Progetti/TTK4155/Node1/TTK4155/Slider.h}}
+{\ttfamily \#include \char`\"{}ADC.\+h\char`\"{}}\newline
+Include dependency graph for Slider.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{_slider_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{_slider_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsliderpos__t}{sliderpos\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Data type for sliders position L (left), R (right) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_slider_8h_ad6638c56bebc77f2b95b9066af835481}{S\+\_\+\+L\+\_\+\+ADDRESS}}~0x03
+\item 
+\#define \mbox{\hyperlink{_slider_8h_ae767d5c561b42466e454fe6ba105b79b}{S\+\_\+\+R\+\_\+\+ADDRESS}}~0x02
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structsliderpos__t}{sliderpos\+\_\+t}} \mbox{\hyperlink{_slider_8h_a639ed1e78351bf834f06ae19dd3ff621}{slider\+\_\+pos\+\_\+read}} ()
+\begin{DoxyCompactList}\small\item\em Read the position of both sliders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_slider_8h_addfb9e3de7536850eb8c6b2c620f4fb0}{print\+\_\+slider\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Print position of both sliders L.\+R. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_slider_8h_ad6638c56bebc77f2b95b9066af835481}\label{_slider_8h_ad6638c56bebc77f2b95b9066af835481}} 
+\index{Slider.h@{Slider.h}!S\_L\_ADDRESS@{S\_L\_ADDRESS}}
+\index{S\_L\_ADDRESS@{S\_L\_ADDRESS}!Slider.h@{Slider.h}}
+\doxysubsubsection{\texorpdfstring{S\_L\_ADDRESS}{S\_L\_ADDRESS}}
+{\footnotesize\ttfamily \#define S\+\_\+\+L\+\_\+\+ADDRESS~0x03}
+
+\mbox{\Hypertarget{_slider_8h_ae767d5c561b42466e454fe6ba105b79b}\label{_slider_8h_ae767d5c561b42466e454fe6ba105b79b}} 
+\index{Slider.h@{Slider.h}!S\_R\_ADDRESS@{S\_R\_ADDRESS}}
+\index{S\_R\_ADDRESS@{S\_R\_ADDRESS}!Slider.h@{Slider.h}}
+\doxysubsubsection{\texorpdfstring{S\_R\_ADDRESS}{S\_R\_ADDRESS}}
+{\footnotesize\ttfamily \#define S\+\_\+\+R\+\_\+\+ADDRESS~0x02}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_slider_8h_addfb9e3de7536850eb8c6b2c620f4fb0}\label{_slider_8h_addfb9e3de7536850eb8c6b2c620f4fb0}} 
+\index{Slider.h@{Slider.h}!print\_slider\_position@{print\_slider\_position}}
+\index{print\_slider\_position@{print\_slider\_position}!Slider.h@{Slider.h}}
+\doxysubsubsection{\texorpdfstring{print\_slider\_position()}{print\_slider\_position()}}
+{\footnotesize\ttfamily void print\+\_\+slider\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print position of both sliders L.\+R. 
+
+\mbox{\Hypertarget{_slider_8h_a639ed1e78351bf834f06ae19dd3ff621}\label{_slider_8h_a639ed1e78351bf834f06ae19dd3ff621}} 
+\index{Slider.h@{Slider.h}!slider\_pos\_read@{slider\_pos\_read}}
+\index{slider\_pos\_read@{slider\_pos\_read}!Slider.h@{Slider.h}}
+\doxysubsubsection{\texorpdfstring{slider\_pos\_read()}{slider\_pos\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsliderpos__t}{sliderpos\+\_\+t}} slider\+\_\+pos\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the position of both sliders. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structsliderpos__t}{sliderpos\+\_\+t}} 
+\end{DoxyReturn}

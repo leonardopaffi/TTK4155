@@ -102,20 +102,23 @@ $(document).ready(function(){initNavTree('can__interrupt_8h_source.html',''); in
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;sam.h&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    &quot;Buttons&quot; variable:</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">    Joystick button &lt;&lt; 0</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">    Right button &lt;&lt; 1</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">   23</a></span>uint8_t <a class="code hl_variable" href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">buttons</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> uint8_t <a class="code hl_variable" href="can__interrupt_8h.html#a0f3327c42d83e7b42cf684774c788e69">step_position</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">    &quot;Buttons&quot; variable:</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">    Joystick button &lt;&lt; 0</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    Right button &lt;&lt; 1</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="can__interrupt_8h.html#aa0f30c571420d42057d28b7b243e3b3e">CAN0_Handler</a>       ( <span class="keywordtype">void</span> );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">   25</a></span>uint8_t <a class="code hl_variable" href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">buttons</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">/* CAN_INTERRUPT_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="acan__interrupt_8h_html_a541032c0356b6d1e2f340fbb7a98699a"><div class="ttname"><a href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">buttons</a></div><div class="ttdeci">uint8_t buttons</div><div class="ttdef"><b>Definition:</b> can_interrupt.h:23</div></div>
-<div class="ttc" id="acan__interrupt_8h_html_aa0f30c571420d42057d28b7b243e3b3e"><div class="ttname"><a href="can__interrupt_8h.html#aa0f30c571420d42057d28b7b243e3b3e">CAN0_Handler</a></div><div class="ttdeci">void CAN0_Handler(void)</div><div class="ttdoc">CAN0 Interrupt handler for RX, TX and bus error interrupts.</div><div class="ttdef"><b>Definition:</b> can_interrupt.c:33</div></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="can__interrupt_8h.html#aa0f30c571420d42057d28b7b243e3b3e">CAN0_Handler</a>       ( <span class="keywordtype">void</span> );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">/* CAN_INTERRUPT_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acan__interrupt_8h_html_a0f3327c42d83e7b42cf684774c788e69"><div class="ttname"><a href="can__interrupt_8h.html#a0f3327c42d83e7b42cf684774c788e69">step_position</a></div><div class="ttdeci">uint8_t step_position</div><div class="ttdef"><b>Definition:</b> can_interrupt.c:27</div></div>
+<div class="ttc" id="acan__interrupt_8h_html_a541032c0356b6d1e2f340fbb7a98699a"><div class="ttname"><a href="can__interrupt_8h.html#a541032c0356b6d1e2f340fbb7a98699a">buttons</a></div><div class="ttdeci">uint8_t buttons</div><div class="ttdef"><b>Definition:</b> can_interrupt.h:25</div></div>
+<div class="ttc" id="acan__interrupt_8h_html_aa0f30c571420d42057d28b7b243e3b3e"><div class="ttname"><a href="can__interrupt_8h.html#aa0f30c571420d42057d28b7b243e3b3e">CAN0_Handler</a></div><div class="ttdeci">void CAN0_Handler(void)</div><div class="ttdoc">CAN0 Interrupt handler for RX, TX and bus error interrupts.</div><div class="ttdef"><b>Definition:</b> can_interrupt.c:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

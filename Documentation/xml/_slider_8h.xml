@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_slider_8h" kind="file" language="C++">
+    <compoundname>Slider.h</compoundname>
+    <includes refid="_node1_2_t_t_k4155_2_a_d_c_8h" local="yes">ADC.h</includes>
+    <includedby refid="_slider_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/Slider.c</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>ADC.h</label>
+        <link refid="_node1_2_t_t_k4155_2_a_d_c_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Slider.h</label>
+        <link refid="_slider_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>avr/delay.h</label>
+      </node>
+      <node id="4">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="3">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Slider.c</label>
+        <link refid="_slider_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Slider.h</label>
+        <link refid="_slider_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsliderpos__t" prot="public">sliderpos_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_slider_8h_1ad6638c56bebc77f2b95b9066af835481" prot="public" static="no">
+        <name>S_L_ADDRESS</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" line="7" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_slider_8h_1ae767d5c561b42466e454fe6ba105b79b" prot="public" static="no">
+        <name>S_R_ADDRESS</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" line="8" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_slider_8h_1a639ed1e78351bf834f06ae19dd3ff621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsliderpos__t" kindref="compound">sliderpos_t</ref></type>
+        <definition>sliderpos_t slider_pos_read</definition>
+        <argsstring>()</argsstring>
+        <name>slider_pos_read</name>
+        <briefdescription>
+<para>Read the position of both sliders. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="structsliderpos__t" kindref="compound">sliderpos_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" line="25" column="13" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.c" bodystart="3" bodyend="8" declfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" declline="25" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_slider_8h_1addfb9e3de7536850eb8c6b2c620f4fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_slider_position</definition>
+        <argsstring>()</argsstring>
+        <name>print_slider_position</name>
+        <briefdescription>
+<para>Print position of both sliders L.R. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" line="31" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.c" bodystart="10" bodyend="16" declfile="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SLIDER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLIDER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_node2_2_node2_2_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Joystick<sp/>channel<sp/>addresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_slider_8h_1ad6638c56bebc77f2b95b9066af835481" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S_L_ADDRESS<sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_slider_8h_1ae767d5c561b42466e454fe6ba105b79b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S_R_ADDRESS<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structsliderpos__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="structsliderpos__t_1aee73cc056696e504430c53eaa9c58cf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structsliderpos__t_1aee73cc056696e504430c53eaa9c58cf0" kindref="member">L</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structsliderpos__t_1ad6dca68b61d96e60ca0062e00390ba9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structsliderpos__t_1ad6dca68b61d96e60ca0062e00390ba9f" kindref="member">R</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/><ref refid="structsliderpos__t" kindref="compound">sliderpos_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structsliderpos__t" kindref="compound">sliderpos_t</ref><sp/><ref refid="_slider_8h_1a639ed1e78351bf834f06ae19dd3ff621" kindref="member">slider_pos_read</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_slider_8h_1addfb9e3de7536850eb8c6b2c620f4fb0" kindref="member">print_slider_position</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/Slider.h"/>
+  </compounddef>
+</doxygen>

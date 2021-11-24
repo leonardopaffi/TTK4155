@@ -11,8 +11,7 @@ var searchData=
   ['spi_5fslave_5fenable_8',['SPI_slave_enable',['../_s_p_i_8c.html#a474ee5b7a199d155bf6e3c1099d8bd38',1,'SPI_slave_enable():&#160;SPI.c'],['../_s_p_i_8h.html#a474ee5b7a199d155bf6e3c1099d8bd38',1,'SPI_slave_enable():&#160;SPI.c']]],
   ['sprintf_9',['sprintf',['../printf-stdarg_8c.html#aa0649118bc3728b2a62af0b47606ff51',1,'printf-stdarg.c']]],
   ['sram_5finit_10',['SRAM_init',['../_s_r_a_m_8h.html#ad607bcb84cc9434b858ce5502242c54f',1,'SRAM.h']]],
-  ['sram_5ftest_11',['SRAM_test',['../_s_r_a_m_8h.html#a2e2934cf8f43363e11e4fd6c60db1666',1,'SRAM.h']]],
-  ['system_5finit_5fflash_12',['system_init_flash',['../system__sam3xa_8c.html#a38ee6d8de47653fc055f10322c050831',1,'system_sam3xa.c']]],
-  ['systemcoreclockupdate_13',['SystemCoreClockUpdate',['../system__sam3xa_8c.html#ae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_sam3xa.c']]],
-  ['systeminit_14',['SystemInit',['../system__sam3xa_8c.html#a93f514700ccf00d08dbdcff7f1224eb2',1,'system_sam3xa.c']]]
+  ['system_5finit_5fflash_11',['system_init_flash',['../system__sam3xa_8c.html#a38ee6d8de47653fc055f10322c050831',1,'system_sam3xa.c']]],
+  ['systemcoreclockupdate_12',['SystemCoreClockUpdate',['../system__sam3xa_8c.html#ae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_sam3xa.c']]],
+  ['systeminit_13',['SystemInit',['../system__sam3xa_8c.html#a93f514700ccf00d08dbdcff7f1224eb2',1,'system_sam3xa.c']]]
 ];

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_51fb00934f25e7a8ddb9d8b7e513af72" kind="dir">
+    <compoundname>D:/Progetti/TTK4155/Node2/Node2</compoundname>
+    <innerdir refid="dir_a71a0ade0b197ae5cfd2544c19b82370">D:/Progetti/TTK4155/Node2/Node2/Debug</innerdir>
+    <innerdir refid="dir_3464558ff8bfc5271919bbee9cf58add">D:/Progetti/TTK4155/Node2/Node2/Device_Startup</innerdir>
+    <innerfile refid="_node2_2_node2_2_a_d_c_8c">ADC.c</innerfile>
+    <innerfile refid="_node2_2_node2_2_a_d_c_8h">ADC.h</innerfile>
+    <innerfile refid="_node2_2_node2_2_c_a_n___controller_8c">can_controller.c</innerfile>
+    <innerfile refid="_node2_2_node2_2_c_a_n___controller_8h">can_controller.h</innerfile>
+    <innerfile refid="can__interrupt_8c">can_interrupt.c</innerfile>
+    <innerfile refid="can__interrupt_8h">can_interrupt.h</innerfile>
+    <innerfile refid="delay_8c">delay.c</innerfile>
+    <innerfile refid="delay_8h">delay.h</innerfile>
+    <innerfile refid="_node2_2_node2_2main_8c">main.c</innerfile>
+    <innerfile refid="_motor_8c">Motor.c</innerfile>
+    <innerfile refid="_motor_8h">Motor.h</innerfile>
+    <innerfile refid="_p_i_8c">PI.c</innerfile>
+    <innerfile refid="_p_i_8h">PI.h</innerfile>
+    <innerfile refid="printf-stdarg_8c">printf-stdarg.c</innerfile>
+    <innerfile refid="printf-stdarg_8h">printf-stdarg.h</innerfile>
+    <innerfile refid="_p_w_m_8c">PWM.c</innerfile>
+    <innerfile refid="_p_w_m_8h">PWM.h</innerfile>
+    <innerfile refid="solenoid_8c">solenoid.c</innerfile>
+    <innerfile refid="solenoid_8h">solenoid.h</innerfile>
+    <innerfile refid="uart_8c">uart.c</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/"/>
+  </compounddef>
+</doxygen>

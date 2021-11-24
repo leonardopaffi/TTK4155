@@ -1,0 +1,317 @@
+\hypertarget{fonts_8h_source}{}\doxysection{fonts.\+h}
+\label{fonts_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/fonts.h@{D:/Progetti/TTK4155/Node1/TTK4155/fonts.h}}
+\mbox{\hyperlink{fonts_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * fonts.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Library of fonts}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Large: 8x8, normal: 5x7 and small: 4x7}}
+\DoxyCodeLine{6 \textcolor{comment}{ */}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef FONTS\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define FONTS\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <avr/pgmspace.h>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{comment}{// Font 8x8 -\/ Large}}
+\DoxyCodeLine{14 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{music_8h_a767ef47608c95190a991d1e79d155df5}{PROGMEM}} \mbox{\hyperlink{fonts_8h_ae43c5fc2e1d3b49eb7f3f1c7166bd81d}{font8}}[95][8] = \{}
+\DoxyCodeLine{15     \{0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{//}}
+\DoxyCodeLine{16     \{0b00000000,0b00000110,0b01011111,0b01011111,0b00000110,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// !}}
+\DoxyCodeLine{17     \{0b00000000,0b00000111,0b00000111,0b00000000,0b00000111,0b00000111,0b00000000,0b00000000\}, \textcolor{comment}{// "{}}}
+\DoxyCodeLine{18     \{0b00010100,0b01111111,0b01111111,0b00010100,0b01111111,0b01111111,0b00010100,0b00000000\}, \textcolor{comment}{// \#}}
+\DoxyCodeLine{19     \{0b00100100,0b00101110,0b01101011,0b01101011,0b00111010,0b00010010,0b00000000,0b00000000\}, \textcolor{comment}{// \$}}
+\DoxyCodeLine{20     \{0b01000110,0b01100110,0b00110000,0b00011000,0b00001100,0b01100110,0b01100010,0b00000000\}, \textcolor{comment}{// \%}}
+\DoxyCodeLine{21     \{0b00110000,0b01111010,0b01001111,0b01011101,0b00110111,0b01111010,0b01001000,0b00000000\}, \textcolor{comment}{// \&}}
+\DoxyCodeLine{22     \{0b00000100,0b00000111,0b00000011,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// '}}
+\DoxyCodeLine{23     \{0b00000000,0b00011100,0b00111110,0b01100011,0b01000001,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// (}}
+\DoxyCodeLine{24     \{0b00000000,0b01000001,0b01100011,0b00111110,0b00011100,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// )}}
+\DoxyCodeLine{25     \{0b00001000,0b00101010,0b00111110,0b00011100,0b00011100,0b00111110,0b00101010,0b00001000\}, \textcolor{comment}{// *}}
+\DoxyCodeLine{26     \{0b00001000,0b00001000,0b00111110,0b00111110,0b00001000,0b00001000,0b00000000,0b00000000\}, \textcolor{comment}{// +}}
+\DoxyCodeLine{27     \{0b00000000,0b10100000,0b11100000,0b01100000,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// ,}}
+\DoxyCodeLine{28     \{0b00001000,0b00001000,0b00001000,0b00001000,0b00001000,0b00001000,0b00000000,0b00000000\}, \textcolor{comment}{// -\/}}
+\DoxyCodeLine{29     \{0b00000000,0b00000000,0b01100000,0b01100000,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// .}}
+\DoxyCodeLine{30     \{0b01100000,0b00110000,0b00011000,0b00001100,0b00000110,0b00000011,0b00000001,0b00000000\}, \textcolor{comment}{// /}}
+\DoxyCodeLine{31     \{0b00111110,0b01111111,0b01011001,0b01001101,0b01111111,0b00111110,0b00000000,0b00000000\}, \textcolor{comment}{// 0}}
+\DoxyCodeLine{32     \{0b01000010,0b01000010,0b01111111,0b01111111,0b01000000,0b01000000,0b00000000,0b00000000\}, \textcolor{comment}{// 1}}
+\DoxyCodeLine{33     \{0b01100010,0b01110011,0b01011001,0b01001001,0b01101111,0b01100110,0b00000000,0b00000000\}, \textcolor{comment}{// 2}}
+\DoxyCodeLine{34     \{0b00100010,0b01100011,0b01001001,0b01001001,0b01111111,0b00110110,0b00000000,0b00000000\}, \textcolor{comment}{// 3}}
+\DoxyCodeLine{35     \{0b00011000,0b00011100,0b00010110,0b00010011,0b01111111,0b01111111,0b00010000,0b00000000\}, \textcolor{comment}{// 4}}
+\DoxyCodeLine{36     \{0b00100111,0b01100111,0b01000101,0b01000101,0b01111101,0b00111001,0b00000000,0b00000000\}, \textcolor{comment}{// 5}}
+\DoxyCodeLine{37     \{0b00111100,0b01111110,0b01001011,0b01001001,0b01111001,0b00110000,0b00000000,0b00000000\}, \textcolor{comment}{// 6}}
+\DoxyCodeLine{38     \{0b00000011,0b01100011,0b01110001,0b00011001,0b00001111,0b00000111,0b00000000,0b00000000\}, \textcolor{comment}{// 7}}
+\DoxyCodeLine{39     \{0b00110110,0b01111111,0b01001001,0b01001001,0b01111111,0b00110110,0b00000000,0b00000000\}, \textcolor{comment}{// 8}}
+\DoxyCodeLine{40     \{0b00000110,0b01001111,0b01001001,0b01101001,0b00111111,0b00011110,0b00000000,0b00000000\}, \textcolor{comment}{// 9}}
+\DoxyCodeLine{41     \{0b00000000,0b00000000,0b01101100,0b01101100,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// :}}
+\DoxyCodeLine{42     \{0b00000000,0b10100000,0b11101100,0b01101100,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// ;}}
+\DoxyCodeLine{43     \{0b00001000,0b00011100,0b00110110,0b01100011,0b01000001,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// <}}
+\DoxyCodeLine{44     \{0b00010100,0b00010100,0b00010100,0b00010100,0b00010100,0b00010100,0b00000000,0b00000000\}, \textcolor{comment}{// =}}
+\DoxyCodeLine{45     \{0b00000000,0b01000001,0b01100011,0b00110110,0b00011100,0b00001000,0b00000000,0b00000000\}, \textcolor{comment}{// >}}
+\DoxyCodeLine{46     \{0b00000010,0b00000011,0b01010001,0b01011001,0b00001111,0b00000110,0b00000000,0b00000000\}, \textcolor{comment}{// ?}}
+\DoxyCodeLine{47     \{0b00111110,0b01111111,0b01000001,0b01011101,0b01011101,0b00011111,0b00011110,0b00000000\}, \textcolor{comment}{// @}}
+\DoxyCodeLine{48     \{0b01111100,0b01111110,0b00010011,0b00010011,0b01111110,0b01111100,0b00000000,0b00000000\}, \textcolor{comment}{// A}}
+\DoxyCodeLine{49     \{0b01000001,0b01111111,0b01111111,0b01001001,0b01001001,0b01111111,0b00110110,0b00000000\}, \textcolor{comment}{// B}}
+\DoxyCodeLine{50     \{0b00011100,0b00111110,0b01100011,0b01000001,0b01000001,0b01100011,0b00100010,0b00000000\}, \textcolor{comment}{// C}}
+\DoxyCodeLine{51     \{0b01000001,0b01111111,0b01111111,0b01000001,0b01100011,0b01111111,0b00011100,0b00000000\}, \textcolor{comment}{// D}}
+\DoxyCodeLine{52     \{0b01000001,0b01111111,0b01111111,0b01001001,0b01011101,0b01000001,0b01100011,0b00000000\}, \textcolor{comment}{// E}}
+\DoxyCodeLine{53     \{0b01000001,0b01111111,0b01111111,0b01001001,0b00011101,0b00000001,0b00000011,0b00000000\}, \textcolor{comment}{// F}}
+\DoxyCodeLine{54     \{0b00011100,0b00111110,0b01100011,0b01000001,0b01010001,0b01110011,0b01110010,0b00000000\}, \textcolor{comment}{// G}}
+\DoxyCodeLine{55     \{0b01111111,0b01111111,0b00001000,0b00001000,0b01111111,0b01111111,0b00000000,0b00000000\}, \textcolor{comment}{// H}}
+\DoxyCodeLine{56     \{0b00000000,0b01000001,0b01111111,0b01111111,0b01000001,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// I}}
+\DoxyCodeLine{57     \{0b00110000,0b01110000,0b01000000,0b01000001,0b01111111,0b00111111,0b00000001,0b00000000\}, \textcolor{comment}{// J}}
+\DoxyCodeLine{58     \{0b01000001,0b01111111,0b01111111,0b00001000,0b00011100,0b01110111,0b01100011,0b00000000\}, \textcolor{comment}{// K}}
+\DoxyCodeLine{59     \{0b01000001,0b01111111,0b01111111,0b01000001,0b01000000,0b01100000,0b01110000,0b00000000\}, \textcolor{comment}{// L}}
+\DoxyCodeLine{60     \{0b01111111,0b01111111,0b00000110,0b00001100,0b00000110,0b01111111,0b01111111,0b00000000\}, \textcolor{comment}{// M}}
+\DoxyCodeLine{61     \{0b01111111,0b01111111,0b00000110,0b00001100,0b00011000,0b01111111,0b01111111,0b00000000\}, \textcolor{comment}{// N}}
+\DoxyCodeLine{62     \{0b00011100,0b00111110,0b01100011,0b01000001,0b01100011,0b00111110,0b00011100,0b00000000\}, \textcolor{comment}{// O}}
+\DoxyCodeLine{63     \{0b01000001,0b01111111,0b01111111,0b01001001,0b00001001,0b00001111,0b00000110,0b00000000\}, \textcolor{comment}{// P}}
+\DoxyCodeLine{64     \{0b00011110,0b00111111,0b00100001,0b01110001,0b01111111,0b01011110,0b00000000,0b00000000\}, \textcolor{comment}{// Q}}
+\DoxyCodeLine{65     \{0b01000001,0b01111111,0b01111111,0b00011001,0b00111001,0b01101111,0b01000110,0b00000000\}, \textcolor{comment}{// R}}
+\DoxyCodeLine{66     \{0b00100110,0b01100111,0b01001101,0b01011001,0b01111011,0b00110010,0b00000000,0b00000000\}, \textcolor{comment}{// S}}
+\DoxyCodeLine{67     \{0b00000011,0b01000001,0b01111111,0b01111111,0b01000001,0b00000011,0b00000000,0b00000000\}, \textcolor{comment}{// T}}
+\DoxyCodeLine{68     \{0b01111111,0b01111111,0b01000000,0b01000000,0b01111111,0b01111111,0b00000000,0b00000000\}, \textcolor{comment}{// U}}
+\DoxyCodeLine{69     \{0b00011111,0b00111111,0b01100000,0b01100000,0b00111111,0b00011111,0b00000000,0b00000000\}, \textcolor{comment}{// V}}
+\DoxyCodeLine{70     \{0b01111111,0b01111111,0b00110000,0b00011000,0b00110000,0b01111111,0b01111111,0b00000000\}, \textcolor{comment}{// W}}
+\DoxyCodeLine{71     \{0b01100011,0b01110111,0b00011100,0b00001000,0b00011100,0b01110111,0b01100011,0b00000000\}, \textcolor{comment}{// X}}
+\DoxyCodeLine{72     \{0b00000111,0b01001111,0b01111000,0b01111000,0b01001111,0b00000111,0b00000000,0b00000000\}, \textcolor{comment}{// Y}}
+\DoxyCodeLine{73     \{0b01100111,0b01110011,0b01011001,0b01001101,0b01000111,0b01100011,0b01110001,0b00000000\}, \textcolor{comment}{// Z}}
+\DoxyCodeLine{74     \{0b00000000,0b01111111,0b01111111,0b01000001,0b01000001,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// [}}
+\DoxyCodeLine{75     \{0b00000001,0b00000011,0b00000110,0b00001100,0b00011000,0b00110000,0b01100000,0b00000000\}, \textcolor{comment}{// "{}\(\backslash\)"{}}}
+\DoxyCodeLine{76     \{0b00000000,0b01000001,0b01000001,0b01111111,0b01111111,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// ]}}
+\DoxyCodeLine{77     \{0b00001000,0b00001100,0b00000110,0b00000011,0b00000110,0b00001100,0b00001000,0b00000000\}, \textcolor{comment}{// \string^}}
+\DoxyCodeLine{78     \{0b10000000,0b10000000,0b10000000,0b10000000,0b10000000,0b10000000,0b10000000,0b10000000\}, \textcolor{comment}{// \_}}
+\DoxyCodeLine{79     \{0b00000000,0b00000000,0b00000011,0b00000111,0b00000100,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// `}}
+\DoxyCodeLine{80     \{0b00100000,0b01110100,0b01010100,0b01010100,0b00111100,0b01111000,0b01000000,0b00000000\}, \textcolor{comment}{// a}}
+\DoxyCodeLine{81     \{0b01000001,0b00111111,0b01111111,0b01000100,0b01000100,0b01111100,0b00111000,0b00000000\}, \textcolor{comment}{// b}}
+\DoxyCodeLine{82     \{0b00111000,0b01111100,0b01000100,0b01000100,0b01101100,0b00101000,0b00000000,0b00000000\}, \textcolor{comment}{// c}}
+\DoxyCodeLine{83     \{0b00110000,0b01111000,0b01001000,0b01001001,0b00111111,0b01111111,0b01000000,0b00000000\}, \textcolor{comment}{// d}}
+\DoxyCodeLine{84     \{0b00111000,0b01111100,0b01010100,0b01010100,0b01011100,0b00011000,0b00000000,0b00000000\}, \textcolor{comment}{// e}}
+\DoxyCodeLine{85     \{0b01001000,0b01111110,0b01111111,0b01001001,0b00000011,0b00000010,0b00000000,0b00000000\}, \textcolor{comment}{// f}}
+\DoxyCodeLine{86     \{0b10011000,0b10111100,0b10100100,0b10100100,0b11111000,0b01111100,0b00000100,0b00000000\}, \textcolor{comment}{// g}}
+\DoxyCodeLine{87     \{0b01000001,0b01111111,0b01111111,0b00001000,0b00000100,0b01111100,0b01111000,0b00000000\}, \textcolor{comment}{// h}}
+\DoxyCodeLine{88     \{0b00000000,0b01000100,0b01111101,0b01111101,0b01000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// i}}
+\DoxyCodeLine{89     \{0b01000000,0b11000100,0b10000100,0b11111101,0b01111101,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// j}}
+\DoxyCodeLine{90     \{0b01000001,0b01111111,0b01111111,0b00010000,0b00111000,0b01101100,0b01000100,0b00000000\}, \textcolor{comment}{// k}}
+\DoxyCodeLine{91     \{0b00000000,0b01000001,0b01111111,0b01111111,0b01000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// l}}
+\DoxyCodeLine{92     \{0b01111100,0b01111100,0b00001100,0b00011000,0b00001100,0b01111100,0b01111000,0b00000000\}, \textcolor{comment}{// m}}
+\DoxyCodeLine{93     \{0b01111100,0b01111100,0b00000100,0b00000100,0b01111100,0b01111000,0b00000000,0b00000000\}, \textcolor{comment}{// n}}
+\DoxyCodeLine{94     \{0b00111000,0b01111100,0b01000100,0b01000100,0b01111100,0b00111000,0b00000000,0b00000000\}, \textcolor{comment}{// o}}
+\DoxyCodeLine{95     \{0b10000100,0b11111100,0b11111000,0b10100100,0b00100100,0b00111100,0b00011000,0b00000000\}, \textcolor{comment}{// p}}
+\DoxyCodeLine{96     \{0b00011000,0b00111100,0b00100100,0b10100100,0b11111000,0b11111100,0b10000100,0b00000000\}, \textcolor{comment}{// q}}
+\DoxyCodeLine{97     \{0b01000100,0b01111100,0b01111000,0b01000100,0b00011100,0b00011000,0b00000000,0b00000000\}, \textcolor{comment}{// r}}
+\DoxyCodeLine{98     \{0b01001000,0b01011100,0b01010100,0b01010100,0b01110100,0b00100100,0b00000000,0b00000000\}, \textcolor{comment}{// s}}
+\DoxyCodeLine{99     \{0b00000000,0b00000100,0b00111110,0b01111111,0b01000100,0b00100100,0b00000000,0b00000000\}, \textcolor{comment}{// t}}
+\DoxyCodeLine{100     \{0b00111100,0b01111100,0b01000000,0b01000000,0b00111100,0b01111100,0b01000000,0b00000000\}, \textcolor{comment}{// u}}
+\DoxyCodeLine{101     \{0b00011100,0b00111100,0b01100000,0b01100000,0b00111100,0b00011100,0b00000000,0b00000000\}, \textcolor{comment}{// v}}
+\DoxyCodeLine{102     \{0b00111100,0b01111100,0b01100000,0b00110000,0b01100000,0b01111100,0b00111100,0b00000000\}, \textcolor{comment}{// w}}
+\DoxyCodeLine{103     \{0b01000100,0b01101100,0b00111000,0b00010000,0b00111000,0b01101100,0b01000100,0b00000000\}, \textcolor{comment}{// x}}
+\DoxyCodeLine{104     \{0b10011100,0b10111100,0b10100000,0b10100000,0b11111100,0b01111100,0b00000000,0b00000000\}, \textcolor{comment}{// y}}
+\DoxyCodeLine{105     \{0b01001100,0b01100100,0b01110100,0b01011100,0b01001100,0b01100100,0b00000000,0b00000000\}, \textcolor{comment}{// z}}
+\DoxyCodeLine{106     \{0b00001000,0b00001000,0b00111110,0b01110111,0b01000001,0b01000001,0b00000000,0b00000000\}, \textcolor{comment}{// \{}}
+\DoxyCodeLine{107     \{0b00000000,0b00000000,0b00000000,0b01110111,0b01110111,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{// |}}
+\DoxyCodeLine{108     \{0b01000001,0b01000001,0b01110111,0b00111110,0b00001000,0b00001000,0b00000000,0b00000000\}, \textcolor{comment}{// \}}}
+\DoxyCodeLine{109     \{0b00000010,0b00000011,0b00000001,0b00000011,0b00000010,0b00000011,0b00000001,0b00000000\}, \textcolor{comment}{// \string~}}
+\DoxyCodeLine{110 \};}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 \textcolor{comment}{// Font 5x7 -\/ normal}}
+\DoxyCodeLine{113 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{music_8h_a767ef47608c95190a991d1e79d155df5}{PROGMEM}} \mbox{\hyperlink{fonts_8h_a44a622b4a6878a9c8b53e2c691f3d410}{font5}}[95][5] = \{}
+\DoxyCodeLine{114     \{0b00000000,0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{//}}
+\DoxyCodeLine{115     \{0b00000000,0b00000000,0b01011111,0b00000000,0b00000000\}, \textcolor{comment}{// !}}
+\DoxyCodeLine{116     \{0b00000000,0b00000111,0b00000000,0b00000111,0b00000000\}, \textcolor{comment}{// "{}}}
+\DoxyCodeLine{117     \{0b00010100,0b01111111,0b00010100,0b01111111,0b00010100\}, \textcolor{comment}{// \#}}
+\DoxyCodeLine{118     \{0b00100100,0b00101010,0b01111111,0b00101010,0b00010010\}, \textcolor{comment}{// \$}}
+\DoxyCodeLine{119     \{0b00100011,0b00010011,0b00001000,0b01100100,0b01100010\}, \textcolor{comment}{// \%}}
+\DoxyCodeLine{120     \{0b00110110,0b01001001,0b01010101,0b00100010,0b01010000\}, \textcolor{comment}{// \&}}
+\DoxyCodeLine{121     \{0b00000000,0b00000101,0b00000011,0b00000000,0b00000000\}, \textcolor{comment}{// '}}
+\DoxyCodeLine{122     \{0b00000000,0b00011100,0b00100010,0b01000001,0b00000000\}, \textcolor{comment}{// (}}
+\DoxyCodeLine{123     \{0b00000000,0b01000001,0b00100010,0b00011100,0b00000000\}, \textcolor{comment}{// )}}
+\DoxyCodeLine{124     \{0b00001000,0b00101010,0b00011100,0b00101010,0b00001000\}, \textcolor{comment}{// *}}
+\DoxyCodeLine{125     \{0b00001000,0b00001000,0b00111110,0b00001000,0b00001000\}, \textcolor{comment}{// +}}
+\DoxyCodeLine{126     \{0b00000000,0b01010000,0b00110000,0b00000000,0b00000000\}, \textcolor{comment}{// ,}}
+\DoxyCodeLine{127     \{0b00001000,0b00001000,0b00001000,0b00001000,0b00001000\}, \textcolor{comment}{// -\/}}
+\DoxyCodeLine{128     \{0b00000000,0b01100000,0b01100000,0b00000000,0b00000000\}, \textcolor{comment}{// .}}
+\DoxyCodeLine{129     \{0b00100000,0b00010000,0b00001000,0b00000100,0b00000010\}, \textcolor{comment}{// /}}
+\DoxyCodeLine{130     \{0b00111110,0b01010001,0b01001001,0b01000101,0b00111110\}, \textcolor{comment}{// 0}}
+\DoxyCodeLine{131     \{0b00000000,0b01000010,0b01111111,0b01000000,0b00000000\}, \textcolor{comment}{// 1}}
+\DoxyCodeLine{132     \{0b01000010,0b01100001,0b01010001,0b01001001,0b01000110\}, \textcolor{comment}{// 2}}
+\DoxyCodeLine{133     \{0b00100001,0b01000001,0b01000101,0b01001011,0b00110001\}, \textcolor{comment}{// 3}}
+\DoxyCodeLine{134     \{0b00011000,0b00010100,0b00010010,0b01111111,0b00010000\}, \textcolor{comment}{// 4}}
+\DoxyCodeLine{135     \{0b00100111,0b01000101,0b01000101,0b01000101,0b00111001\}, \textcolor{comment}{// 5}}
+\DoxyCodeLine{136     \{0b00111100,0b01001010,0b01001001,0b01001001,0b00110000\}, \textcolor{comment}{// 6}}
+\DoxyCodeLine{137     \{0b00000001,0b01110001,0b00001001,0b00000101,0b00000011\}, \textcolor{comment}{// 7}}
+\DoxyCodeLine{138     \{0b00110110,0b01001001,0b01001001,0b01001001,0b00110110\}, \textcolor{comment}{// 8}}
+\DoxyCodeLine{139     \{0b00000110,0b01001001,0b01001001,0b00101001,0b00011110\}, \textcolor{comment}{// 9}}
+\DoxyCodeLine{140     \{0b00000000,0b00110110,0b00110110,0b00000000,0b00000000\}, \textcolor{comment}{// :}}
+\DoxyCodeLine{141     \{0b00000000,0b01010110,0b00110110,0b00000000,0b00000000\}, \textcolor{comment}{// ;}}
+\DoxyCodeLine{142     \{0b00000000,0b00001000,0b00010100,0b00100010,0b01000001\}, \textcolor{comment}{// <}}
+\DoxyCodeLine{143     \{0b00010100,0b00010100,0b00010100,0b00010100,0b00010100\}, \textcolor{comment}{// =}}
+\DoxyCodeLine{144     \{0b01000001,0b00100010,0b00010100,0b00001000,0b00000000\}, \textcolor{comment}{// >}}
+\DoxyCodeLine{145     \{0b00000010,0b00000001,0b01010001,0b00001001,0b00000110\}, \textcolor{comment}{// ?}}
+\DoxyCodeLine{146     \{0b00110010,0b01001001,0b01111001,0b01000001,0b00111110\}, \textcolor{comment}{// @}}
+\DoxyCodeLine{147     \{0b01111110,0b00010001,0b00010001,0b00010001,0b01111110\}, \textcolor{comment}{// A}}
+\DoxyCodeLine{148     \{0b01111111,0b01001001,0b01001001,0b01001001,0b00110110\}, \textcolor{comment}{// B}}
+\DoxyCodeLine{149     \{0b00111110,0b01000001,0b01000001,0b01000001,0b00100010\}, \textcolor{comment}{// C}}
+\DoxyCodeLine{150     \{0b01111111,0b01000001,0b01000001,0b00100010,0b00011100\}, \textcolor{comment}{// D}}
+\DoxyCodeLine{151     \{0b01111111,0b01001001,0b01001001,0b01001001,0b01000001\}, \textcolor{comment}{// E}}
+\DoxyCodeLine{152     \{0b01111111,0b00001001,0b00001001,0b00000001,0b00000001\}, \textcolor{comment}{// F}}
+\DoxyCodeLine{153     \{0b00111110,0b01000001,0b01000001,0b01010001,0b00110010\}, \textcolor{comment}{// G}}
+\DoxyCodeLine{154     \{0b01111111,0b00001000,0b00001000,0b00001000,0b01111111\}, \textcolor{comment}{// H}}
+\DoxyCodeLine{155     \{0b00000000,0b01000001,0b01111111,0b01000001,0b00000000\}, \textcolor{comment}{// I}}
+\DoxyCodeLine{156     \{0b00100000,0b01000000,0b01000001,0b00111111,0b00000001\}, \textcolor{comment}{// J}}
+\DoxyCodeLine{157     \{0b01111111,0b00001000,0b00010100,0b00100010,0b01000001\}, \textcolor{comment}{// K}}
+\DoxyCodeLine{158     \{0b01111111,0b01000000,0b01000000,0b01000000,0b01000000\}, \textcolor{comment}{// L}}
+\DoxyCodeLine{159     \{0b01111111,0b00000010,0b00000100,0b00000010,0b01111111\}, \textcolor{comment}{// M}}
+\DoxyCodeLine{160     \{0b01111111,0b00000100,0b00001000,0b00010000,0b01111111\}, \textcolor{comment}{// N}}
+\DoxyCodeLine{161     \{0b00111110,0b01000001,0b01000001,0b01000001,0b00111110\}, \textcolor{comment}{// O}}
+\DoxyCodeLine{162     \{0b01111111,0b00001001,0b00001001,0b00001001,0b00000110\}, \textcolor{comment}{// P}}
+\DoxyCodeLine{163     \{0b00111110,0b01000001,0b01010001,0b00100001,0b01011110\}, \textcolor{comment}{// Q}}
+\DoxyCodeLine{164     \{0b01111111,0b00001001,0b00011001,0b00101001,0b01000110\}, \textcolor{comment}{// R}}
+\DoxyCodeLine{165     \{0b01000110,0b01001001,0b01001001,0b01001001,0b00110001\}, \textcolor{comment}{// S}}
+\DoxyCodeLine{166     \{0b00000001,0b00000001,0b01111111,0b00000001,0b00000001\}, \textcolor{comment}{// T}}
+\DoxyCodeLine{167     \{0b00111111,0b01000000,0b01000000,0b01000000,0b00111111\}, \textcolor{comment}{// U}}
+\DoxyCodeLine{168     \{0b00011111,0b00100000,0b01000000,0b00100000,0b00011111\}, \textcolor{comment}{// V}}
+\DoxyCodeLine{169     \{0b01111111,0b00100000,0b00011000,0b00100000,0b01111111\}, \textcolor{comment}{// W}}
+\DoxyCodeLine{170     \{0b01100011,0b00010100,0b00001000,0b00010100,0b01100011\}, \textcolor{comment}{// X}}
+\DoxyCodeLine{171     \{0b00000011,0b00000100,0b01111000,0b00000100,0b00000011\}, \textcolor{comment}{// Y}}
+\DoxyCodeLine{172     \{0b01100001,0b01010001,0b01001001,0b01000101,0b01000011\}, \textcolor{comment}{// Z}}
+\DoxyCodeLine{173     \{0b00000000,0b00000000,0b01111111,0b01000001,0b01000001\}, \textcolor{comment}{// [}}
+\DoxyCodeLine{174     \{0b00000010,0b00000100,0b00001000,0b00010000,0b00100000\}, \textcolor{comment}{// "{}\(\backslash\)"{}}}
+\DoxyCodeLine{175     \{0b01000001,0b01000001,0b01111111,0b00000000,0b00000000\}, \textcolor{comment}{// ]}}
+\DoxyCodeLine{176     \{0b00000100,0b00000010,0b00000001,0b00000010,0b00000100\}, \textcolor{comment}{// \string^}}
+\DoxyCodeLine{177     \{0b01000000,0b01000000,0b01000000,0b01000000,0b01000000\}, \textcolor{comment}{// \_}}
+\DoxyCodeLine{178     \{0b00000000,0b00000001,0b00000010,0b00000100,0b00000000\}, \textcolor{comment}{// `}}
+\DoxyCodeLine{179     \{0b00100000,0b01010100,0b01010100,0b01010100,0b01111000\}, \textcolor{comment}{// a}}
+\DoxyCodeLine{180     \{0b01111111,0b01001000,0b01000100,0b01000100,0b00111000\}, \textcolor{comment}{// b}}
+\DoxyCodeLine{181     \{0b00111000,0b01000100,0b01000100,0b01000100,0b00100000\}, \textcolor{comment}{// c}}
+\DoxyCodeLine{182     \{0b00111000,0b01000100,0b01000100,0b01001000,0b01111111\}, \textcolor{comment}{// d}}
+\DoxyCodeLine{183     \{0b00111000,0b01010100,0b01010100,0b01010100,0b00011000\}, \textcolor{comment}{// e}}
+\DoxyCodeLine{184     \{0b00001000,0b01111110,0b00001001,0b00000001,0b00000010\}, \textcolor{comment}{// f}}
+\DoxyCodeLine{185     \{0b00001000,0b00010100,0b01010100,0b01010100,0b00111100\}, \textcolor{comment}{// g}}
+\DoxyCodeLine{186     \{0b01111111,0b00001000,0b00000100,0b00000100,0b01111000\}, \textcolor{comment}{// h}}
+\DoxyCodeLine{187     \{0b00000000,0b01000100,0b01111101,0b01000000,0b00000000\}, \textcolor{comment}{// i}}
+\DoxyCodeLine{188     \{0b00100000,0b01000000,0b01000100,0b00111101,0b00000000\}, \textcolor{comment}{// j}}
+\DoxyCodeLine{189     \{0b00000000,0b01111111,0b00010000,0b00101000,0b01000100\}, \textcolor{comment}{// k}}
+\DoxyCodeLine{190     \{0b00000000,0b01000001,0b01111111,0b01000000,0b00000000\}, \textcolor{comment}{// l}}
+\DoxyCodeLine{191     \{0b01111100,0b00000100,0b00011000,0b00000100,0b01111000\}, \textcolor{comment}{// m}}
+\DoxyCodeLine{192     \{0b01111100,0b00001000,0b00000100,0b00000100,0b01111000\}, \textcolor{comment}{// n}}
+\DoxyCodeLine{193     \{0b00111000,0b01000100,0b01000100,0b01000100,0b00111000\}, \textcolor{comment}{// o}}
+\DoxyCodeLine{194     \{0b01111100,0b00010100,0b00010100,0b00010100,0b00001000\}, \textcolor{comment}{// p}}
+\DoxyCodeLine{195     \{0b00001000,0b00010100,0b00010100,0b00011000,0b01111100\}, \textcolor{comment}{// q}}
+\DoxyCodeLine{196     \{0b01111100,0b00001000,0b00000100,0b00000100,0b00001000\}, \textcolor{comment}{// r}}
+\DoxyCodeLine{197     \{0b01001000,0b01010100,0b01010100,0b01010100,0b00100000\}, \textcolor{comment}{// s}}
+\DoxyCodeLine{198     \{0b00000100,0b00111111,0b01000100,0b01000000,0b00100000\}, \textcolor{comment}{// t}}
+\DoxyCodeLine{199     \{0b00111100,0b01000000,0b01000000,0b00100000,0b01111100\}, \textcolor{comment}{// u}}
+\DoxyCodeLine{200     \{0b00011100,0b00100000,0b01000000,0b00100000,0b00011100\}, \textcolor{comment}{// v}}
+\DoxyCodeLine{201     \{0b00111100,0b01000000,0b00110000,0b01000000,0b00111100\}, \textcolor{comment}{// w}}
+\DoxyCodeLine{202     \{0b01000100,0b00101000,0b00010000,0b00101000,0b01000100\}, \textcolor{comment}{// x}}
+\DoxyCodeLine{203     \{0b00001100,0b01010000,0b01010000,0b01010000,0b00111100\}, \textcolor{comment}{// y}}
+\DoxyCodeLine{204     \{0b01000100,0b01100100,0b01010100,0b01001100,0b01000100\}, \textcolor{comment}{// z}}
+\DoxyCodeLine{205     \{0b00000000,0b00001000,0b00110110,0b01000001,0b00000000\}, \textcolor{comment}{// \{}}
+\DoxyCodeLine{206     \{0b00000000,0b00000000,0b01111111,0b00000000,0b00000000\}, \textcolor{comment}{// |}}
+\DoxyCodeLine{207     \{0b00000000,0b01000001,0b00110110,0b00001000,0b00000000\}, \textcolor{comment}{// \}}}
+\DoxyCodeLine{208     \{0b00000010,0b00000001,0b00000011,0b00000010,0b00000001\}, \textcolor{comment}{// \string~}}
+\DoxyCodeLine{209     \};}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211 \textcolor{comment}{// Font 4x6 -\/ Small}}
+\DoxyCodeLine{212 \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{music_8h_a767ef47608c95190a991d1e79d155df5}{PROGMEM}} \mbox{\hyperlink{fonts_8h_aaf3dcad743630cdb1cb98d03d9496a88}{font4}}[95][4] = \{}
+\DoxyCodeLine{213         \{0b00000000,0b00000000,0b00000000,0b00000000\}, \textcolor{comment}{//}}
+\DoxyCodeLine{214         \{0b00000000,0b01011100,0b00000000,0b00000000\}, \textcolor{comment}{// !}}
+\DoxyCodeLine{215         \{0b00001100,0b00000000,0b00001100,0b00000000\}, \textcolor{comment}{// "{}}}
+\DoxyCodeLine{216         \{0b01111100,0b00101000,0b01111100,0b00101000\}, \textcolor{comment}{// \#}}
+\DoxyCodeLine{217         \{0b01011000,0b11011100,0b01101000,0b00000000\}, \textcolor{comment}{// \$}}
+\DoxyCodeLine{218         \{0b00100100,0b00010000,0b01001000,0b00000000\}, \textcolor{comment}{// \%}}
+\DoxyCodeLine{219         \{0b00101000,0b01010100,0b00101000,0b01000000\}, \textcolor{comment}{// \&}}
+\DoxyCodeLine{220         \{0b00000000,0b00001100,0b00000000,0b00000000\}, \textcolor{comment}{// '}}
+\DoxyCodeLine{221         \{0b00000000,0b01111000,0b10000100,0b00000000\}, \textcolor{comment}{// (}}
+\DoxyCodeLine{222         \{0b10000100,0b01111000,0b00000000,0b00000000\}, \textcolor{comment}{// )}}
+\DoxyCodeLine{223         \{0b01010100,0b00111000,0b01010100,0b00000000\}, \textcolor{comment}{// *}}
+\DoxyCodeLine{224         \{0b00010000,0b01111100,0b00010000,0b00000000\}, \textcolor{comment}{// +}}
+\DoxyCodeLine{225         \{0b10000000,0b01000000,0b00000000,0b00000000\}, \textcolor{comment}{// ,}}
+\DoxyCodeLine{226         \{0b00010000,0b00010000,0b00010000,0b00000000\}, \textcolor{comment}{// -\/}}
+\DoxyCodeLine{227         \{0b00000000,0b01000000,0b00000000,0b00000000\}, \textcolor{comment}{// .}}
+\DoxyCodeLine{228         \{0b01100000,0b00010000,0b00001100,0b00000000\}, \textcolor{comment}{// /}}
+\DoxyCodeLine{229         \{0b00111000,0b01010100,0b00111000,0b00000000\}, \textcolor{comment}{// 0}}
+\DoxyCodeLine{230         \{0b01001000,0b01111100,0b01000000,0b00000000\}, \textcolor{comment}{// 1}}
+\DoxyCodeLine{231         \{0b01001000,0b01100100,0b01011000,0b00000000\}, \textcolor{comment}{// 2}}
+\DoxyCodeLine{232         \{0b01000100,0b01010100,0b00101100,0b00000000\}, \textcolor{comment}{// 3}}
+\DoxyCodeLine{233         \{0b00011100,0b00010000,0b01111100,0b00000000\}, \textcolor{comment}{// 4}}
+\DoxyCodeLine{234         \{0b01011100,0b01010100,0b00100100,0b00000000\}, \textcolor{comment}{// 5}}
+\DoxyCodeLine{235         \{0b00111000,0b01010100,0b00100100,0b00000000\}, \textcolor{comment}{// 6}}
+\DoxyCodeLine{236         \{0b01100100,0b00010100,0b00001100,0b00000000\}, \textcolor{comment}{// 7}}
+\DoxyCodeLine{237         \{0b01101000,0b01010100,0b00101100,0b00000000\}, \textcolor{comment}{// 8}}
+\DoxyCodeLine{238         \{0b01001000,0b01010100,0b00111000,0b00000000\}, \textcolor{comment}{// 9}}
+\DoxyCodeLine{239         \{0b00000000,0b01001000,0b00000000,0b00000000\}, \textcolor{comment}{// :}}
+\DoxyCodeLine{240         \{0b10000000,0b01001000,0b00000000,0b00000000\}, \textcolor{comment}{// ;}}
+\DoxyCodeLine{241         \{0b00010000,0b00101000,0b01000100,0b00000000\}, \textcolor{comment}{// <}}
+\DoxyCodeLine{242         \{0b00101000,0b00101000,0b00101000,0b00000000\}, \textcolor{comment}{// =}}
+\DoxyCodeLine{243         \{0b01000100,0b00101000,0b00010000,0b00000000\}, \textcolor{comment}{// >}}
+\DoxyCodeLine{244         \{0b00000100,0b01010100,0b00001000,0b00000000\}, \textcolor{comment}{// ?}}
+\DoxyCodeLine{245         \{0b00111000,0b01000100,0b01011100,0b00000000\}, \textcolor{comment}{// @}}
+\DoxyCodeLine{246         \{0b01111000,0b00010100,0b01111000,0b00000000\}, \textcolor{comment}{// A}}
+\DoxyCodeLine{247         \{0b01111100,0b01010100,0b00101000,0b00000000\}, \textcolor{comment}{// B}}
+\DoxyCodeLine{248         \{0b00111000,0b01000100,0b00101000,0b00000000\}, \textcolor{comment}{// C}}
+\DoxyCodeLine{249         \{0b01111100,0b01000100,0b00111000,0b00000000\}, \textcolor{comment}{// D}}
+\DoxyCodeLine{250         \{0b01111100,0b01010100,0b01000100,0b00000000\}, \textcolor{comment}{// E}}
+\DoxyCodeLine{251         \{0b01111100,0b00010100,0b00000100,0b00000000\}, \textcolor{comment}{// F}}
+\DoxyCodeLine{252         \{0b00111000,0b01000100,0b01110100,0b00000000\}, \textcolor{comment}{// G}}
+\DoxyCodeLine{253         \{0b01111100,0b00010000,0b01111100,0b00000000\}, \textcolor{comment}{// H}}
+\DoxyCodeLine{254         \{0b01000100,0b01111100,0b01000100,0b00000000\}, \textcolor{comment}{// I}}
+\DoxyCodeLine{255         \{0b00100000,0b01000000,0b00111100,0b00000000\}, \textcolor{comment}{// J}}
+\DoxyCodeLine{256         \{0b01111100,0b00010000,0b01101100,0b00000000\}, \textcolor{comment}{// K}}
+\DoxyCodeLine{257         \{0b01111100,0b01000000,0b01000000,0b00000000\}, \textcolor{comment}{// L}}
+\DoxyCodeLine{258         \{0b01111100,0b00011000,0b01111100,0b00000000\}, \textcolor{comment}{// M}}
+\DoxyCodeLine{259         \{0b01111000,0b00010000,0b00111100,0b00000000\}, \textcolor{comment}{// N}}
+\DoxyCodeLine{260         \{0b00111000,0b01000100,0b00111000,0b00000000\}, \textcolor{comment}{// O}}
+\DoxyCodeLine{261         \{0b01111100,0b00010100,0b00001000,0b00000000\}, \textcolor{comment}{// P}}
+\DoxyCodeLine{262         \{0b00111000,0b01000100,0b10111000,0b00000000\}, \textcolor{comment}{// Q}}
+\DoxyCodeLine{263         \{0b01111100,0b00010100,0b01101000,0b00000000\}, \textcolor{comment}{// R}}
+\DoxyCodeLine{264         \{0b01001000,0b01010100,0b00100100,0b00000000\}, \textcolor{comment}{// S}}
+\DoxyCodeLine{265         \{0b00000100,0b01111100,0b00000100,0b00000000\}, \textcolor{comment}{// T}}
+\DoxyCodeLine{266         \{0b01111100,0b01000000,0b01111100,0b00000000\}, \textcolor{comment}{// U}}
+\DoxyCodeLine{267         \{0b00111100,0b01100000,0b00111100,0b00000000\}, \textcolor{comment}{// V}}
+\DoxyCodeLine{268         \{0b01111100,0b00110000,0b01111100,0b00000000\}, \textcolor{comment}{// W}}
+\DoxyCodeLine{269         \{0b01101100,0b00010000,0b01101100,0b00000000\}, \textcolor{comment}{// X}}
+\DoxyCodeLine{270         \{0b00001100,0b01110000,0b00001100,0b00000000\}, \textcolor{comment}{// Y}}
+\DoxyCodeLine{271         \{0b01100100,0b01010100,0b01001100,0b00000000\}, \textcolor{comment}{// Z}}
+\DoxyCodeLine{272         \{0b00000000,0b01111100,0b01000100,0b00000000\}, \textcolor{comment}{// [}}
+\DoxyCodeLine{273         \{0b00001100,0b00010000,0b01100000,0b00000000\}, \textcolor{comment}{// "{}\(\backslash\)"{}}}
+\DoxyCodeLine{274         \{0b01000100,0b01111100,0b00000000,0b00000000\}, \textcolor{comment}{// ]}}
+\DoxyCodeLine{275         \{0b00001000,0b00000100,0b00001000,0b00000000\}, \textcolor{comment}{// \string^}}
+\DoxyCodeLine{276         \{0b10000000,0b10000000,0b10000000,0b00000000\}, \textcolor{comment}{// \_}}
+\DoxyCodeLine{277         \{0b00000000,0b00000100,0b00001000,0b00000000\}, \textcolor{comment}{// `}}
+\DoxyCodeLine{278         \{0b00110000,0b01001000,0b01111000,0b00000000\}, \textcolor{comment}{// a}}
+\DoxyCodeLine{279         \{0b01111100,0b01001000,0b00110000,0b00000000\}, \textcolor{comment}{// b}}
+\DoxyCodeLine{280         \{0b00110000,0b01001000,0b01001000,0b00000000\}, \textcolor{comment}{// c}}
+\DoxyCodeLine{281         \{0b00110000,0b01001000,0b01111100,0b00000000\}, \textcolor{comment}{// d}}
+\DoxyCodeLine{282         \{0b00110000,0b01101000,0b01010000,0b00000000\}, \textcolor{comment}{// e}}
+\DoxyCodeLine{283         \{0b00010000,0b01111000,0b00010100,0b00000000\}, \textcolor{comment}{// f}}
+\DoxyCodeLine{284         \{0b10010000,0b10101000,0b01111000,0b00000000\}, \textcolor{comment}{// g}}
+\DoxyCodeLine{285         \{0b01111100,0b00001000,0b01110000,0b00000000\}, \textcolor{comment}{// h}}
+\DoxyCodeLine{286         \{0b01010000,0b01110100,0b01000000,0b00000000\}, \textcolor{comment}{// i}}
+\DoxyCodeLine{287         \{0b10000000,0b10000000,0b01110100,0b00000000\}, \textcolor{comment}{// j}}
+\DoxyCodeLine{288         \{0b01111100,0b00010000,0b01101000,0b00000000\}, \textcolor{comment}{// k}}
+\DoxyCodeLine{289         \{0b01000100,0b01111100,0b01000000,0b00000000\}, \textcolor{comment}{// l}}
+\DoxyCodeLine{290         \{0b01111000,0b00010000,0b01111000,0b00000000\}, \textcolor{comment}{// m}}
+\DoxyCodeLine{291         \{0b01111000,0b00001000,0b01110000,0b00000000\}, \textcolor{comment}{// n}}
+\DoxyCodeLine{292         \{0b00110000,0b01001000,0b00110000,0b00000000\}, \textcolor{comment}{// o}}
+\DoxyCodeLine{293         \{0b11111000,0b00101000,0b00010000,0b00000000\}, \textcolor{comment}{// p}}
+\DoxyCodeLine{294         \{0b00110000,0b01001000,0b11111000,0b00000000\}, \textcolor{comment}{// q}}
+\DoxyCodeLine{295         \{0b01111000,0b00010000,0b00001000,0b00000000\}, \textcolor{comment}{// r}}
+\DoxyCodeLine{296         \{0b01010000,0b01011000,0b00101000,0b00000000\}, \textcolor{comment}{// s}}
+\DoxyCodeLine{297         \{0b00001000,0b00111100,0b01001000,0b00000000\}, \textcolor{comment}{// t}}
+\DoxyCodeLine{298         \{0b00111000,0b01000000,0b01111000,0b00000000\}, \textcolor{comment}{// u}}
+\DoxyCodeLine{299         \{0b00111000,0b01000000,0b00111000,0b00000000\}, \textcolor{comment}{// v}}
+\DoxyCodeLine{300         \{0b01111000,0b00100000,0b01111000,0b00000000\}, \textcolor{comment}{// w}}
+\DoxyCodeLine{301         \{0b01001000,0b00110000,0b01001000,0b00000000\}, \textcolor{comment}{// x}}
+\DoxyCodeLine{302         \{0b10011000,0b10100000,0b01111000,0b00000000\}, \textcolor{comment}{// y}}
+\DoxyCodeLine{303         \{0b01001000,0b01101000,0b01011000,0b00000000\}, \textcolor{comment}{// z}}
+\DoxyCodeLine{304         \{0b00010000,0b01111000,0b10000100,0b00000000\}, \textcolor{comment}{// \{}}
+\DoxyCodeLine{305         \{0b00000000,0b01111100,0b00000000,0b00000000\}, \textcolor{comment}{// |}}
+\DoxyCodeLine{306         \{0b10000100,0b01111000,0b00010000,0b00000000\}, \textcolor{comment}{// \}}}
+\DoxyCodeLine{307         \{0b00001000,0b00000100,0b00001000,0b00000100\}, \textcolor{comment}{// \string~}}
+\DoxyCodeLine{308         \};}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310 }
+\DoxyCodeLine{311 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* FONTS\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

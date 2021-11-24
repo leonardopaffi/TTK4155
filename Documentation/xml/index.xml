@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.2" xml:lang="en-US">
+  <compound refid="struct_c_a_n__message" kind="struct"><name>CAN_message</name>
+    <member refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" kind="variable"><name>length</name></member>
+    <member refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" kind="variable"><name>id</name></member>
+    <member refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="structcan__message__t" kind="struct"><name>can_message_t</name>
+    <member refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" kind="variable"><name>id</name></member>
+    <member refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kind="variable"><name>data_length</name></member>
+    <member refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="structdirection" kind="struct"><name>direction</name>
+    <member refid="structdirection_1a76ed98f400901630078e263bafb604d7" kind="variable"><name>x_dir</name></member>
+    <member refid="structdirection_1a590b462a600602e1a48064bd85674fe5" kind="variable"><name>y_dir</name></member>
+  </compound>
+  <compound refid="structmenu__entry" kind="struct"><name>menu_entry</name>
+    <member refid="structmenu__entry_1a5ac083a645d964373f022d03df4849c8" kind="variable"><name>name</name></member>
+    <member refid="structmenu__entry_1ab2b3adeb2a67e656ff030b56727fd0ac" kind="variable"><name>length</name></member>
+  </compound>
+  <compound refid="struct_p_i_d___d_a_t_a" kind="struct"><name>PID_DATA</name>
+    <member refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kind="variable"><name>error</name></member>
+    <member refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kind="variable"><name>integral</name></member>
+    <member refid="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" kind="variable"><name>P_Factor</name></member>
+    <member refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" kind="variable"><name>I_Factor</name></member>
+  </compound>
+  <compound refid="structpos__t" kind="struct"><name>pos_t</name>
+    <member refid="structpos__t_1a0f561e77fa0f040b637f4e04f6cd8078" kind="variable"><name>x</name></member>
+    <member refid="structpos__t_1a17f97f62d93bc8cfb4a2b5d273a2aa72" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="structsliderpos__t" kind="struct"><name>sliderpos_t</name>
+    <member refid="structsliderpos__t_1aee73cc056696e504430c53eaa9c58cf0" kind="variable"><name>L</name></member>
+    <member refid="structsliderpos__t_1ad6dca68b61d96e60ca0062e00390ba9f" kind="variable"><name>R</name></member>
+  </compound>
+  <compound refid="structuart__ringbuffer__t" kind="struct"><name>uart_ringbuffer_t</name>
+    <member refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kind="variable"><name>head</name></member>
+    <member refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kind="variable"><name>tail</name></member>
+    <member refid="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_a_d_c_8c" kind="file"><name>ADC.c</name>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8c_1a858d347ca0f81c2a28921fae6c895e38" kind="variable"><name>ext_adc</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8c_1a1e942fcd91f79d49e4ddb8d7e9d3ef95" kind="function"><name>adc_init</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8c_1ac1513709a7d29dc6590d9371b8cd0556" kind="function"><name>adc_read</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8c_1adc13db4a167320d251113623317587d0" kind="function"><name>adc_read_all_channels</name></member>
+  </compound>
+  <compound refid="_node2_2_node2_2_a_d_c_8c" kind="file"><name>ADC.c</name>
+    <member refid="_node2_2_node2_2_a_d_c_8c_1a69f491a768a81c2cf99ee2653ad3002d" kind="function"><name>ADC_init</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8c_1a5bbea9320798ccfd596c7925f65e7734" kind="function"><name>ADC_read</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8c_1a3b1c413d7f71131713d5854b208f4e44" kind="function"><name>ADC_check_goal</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8c_1a461ee45e98428f41ccad403d65fcd69d" kind="function"><name>ADC_print</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_a_d_c_8h" kind="file"><name>ADC.h</name>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1a4385d9ed43412491c7fa3aed35590724" kind="define"><name>ADC_ADDRESS</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1ab7b5fa96d786166f677a56f66852eed7" kind="define"><name>SINGLE_CHANNEL_SAMPLE</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1a858d347ca0f81c2a28921fae6c895e38" kind="variable"><name>ext_adc</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1afebee0a5c0b7adb91c8a2dabf6a3bc8b" kind="variable"><name>ADC_data</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1a2b815e6730e8723a6d1d06d9ef8f31c0" kind="function"><name>adc_init</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1ac1513709a7d29dc6590d9371b8cd0556" kind="function"><name>adc_read</name></member>
+    <member refid="_node1_2_t_t_k4155_2_a_d_c_8h_1adc13db4a167320d251113623317587d0" kind="function"><name>adc_read_all_channels</name></member>
+  </compound>
+  <compound refid="_node2_2_node2_2_a_d_c_8h" kind="file"><name>ADC.h</name>
+    <member refid="_node2_2_node2_2_a_d_c_8h_1aa5e01ec55f233bf763f4f095bcfaaaa0" kind="define"><name>ADC_LIMIT</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8h_1a69f491a768a81c2cf99ee2653ad3002d" kind="function"><name>ADC_init</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8h_1a5bbea9320798ccfd596c7925f65e7734" kind="function"><name>ADC_read</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8h_1a3b1c413d7f71131713d5854b208f4e44" kind="function"><name>ADC_check_goal</name></member>
+    <member refid="_node2_2_node2_2_a_d_c_8h_1a461ee45e98428f41ccad403d65fcd69d" kind="function"><name>ADC_print</name></member>
+  </compound>
+  <compound refid="_c_a_n_8c" kind="file"><name>CAN.c</name>
+    <member refid="_c_a_n_8c_1a930a5570610e7a0526767bf358673aa6" kind="variable"><name>you_lose</name></member>
+    <member refid="_c_a_n_8c_1adb0f99207facf71ca3429c6108d42d43" kind="function"><name>CAN_init</name></member>
+    <member refid="_c_a_n_8c_1a977213658904ef25865836933905d9b9" kind="function"><name>CAN_send</name></member>
+    <member refid="_c_a_n_8c_1a4eccfa3b8b0583ef6184416d1e92351e" kind="function"><name>CAN_receive</name></member>
+    <member refid="_c_a_n_8c_1a25224cfb670f006871322eeb78f46b4f" kind="function"><name>CAN_debug_print</name></member>
+    <member refid="_c_a_n_8c_1afea150fcd685610cb9f7672fce361e53" kind="function"><name>ISR</name></member>
+  </compound>
+  <compound refid="_c_a_n_8h" kind="file"><name>CAN.h</name>
+    <member refid="_c_a_n_8h_1a930a5570610e7a0526767bf358673aa6" kind="variable"><name>you_lose</name></member>
+    <member refid="_c_a_n_8h_1adb0f99207facf71ca3429c6108d42d43" kind="function"><name>CAN_init</name></member>
+    <member refid="_c_a_n_8h_1a977213658904ef25865836933905d9b9" kind="function"><name>CAN_send</name></member>
+    <member refid="_c_a_n_8h_1a679e0fac309970bf0d8361cf02da8f97" kind="function"><name>CAN_receive</name></member>
+    <member refid="_c_a_n_8h_1a25224cfb670f006871322eeb78f46b4f" kind="function"><name>CAN_debug_print</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c" kind="file"><name>CAN_Controller.c</name>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a94d0b7ee70889fef8169e24e32de6243" kind="function"><name>MCP2515_read</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882cd25399ed7c350b90960ebad58b4e" kind="function"><name>MCP2515_write</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aa12fd2c3ad6653e48f0e1985527f5d23" kind="function"><name>MCP2515_RTS</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" kind="function"><name>MCP2515_read_status</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1aede3ccc1b3772f8e55447b8334769d37" kind="function"><name>MCP2515_bit_modify</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a882a91d22eb8ae4eb4315b06c4f7e966" kind="function"><name>MCP2515_reset</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c_1a04b0eb91a5bafd55bd91e2b1d4da6353" kind="function"><name>MCP2515_set_mode</name></member>
+  </compound>
+  <compound refid="_node2_2_node2_2_c_a_n___controller_8c" kind="file"><name>can_controller.c</name>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8c_1ad4693f3cf41505cc76fe9e313cbcc8ee" kind="variable"><name>reset</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8c_1a75e7e1428e5ce309c0087602721bf57d" kind="function"><name>can_init_def_tx_rx_mb</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8c_1ab12c1286ebbc8c54dc200d4b9c86902d" kind="function"><name>can_init</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8c_1a8f4793f97f7c2faaf3942bf2e21b24a7" kind="function"><name>can_send</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8c_1a03d4c2c5c83b39910e579652a514f658" kind="function"><name>can_receive</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h" kind="file"><name>CAN_Controller.h</name>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a30d9219d01d77604bb8cccdb6bbb8a89" kind="define"><name>MCP_TXB0SIDH</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a64751f2c34434ba5c7cec9cb89bb3817" kind="define"><name>MCP_TXB0SIDL</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1af079eda36bde82cfee6ef43681813ec7" kind="define"><name>MCP_TXB0DLC</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1aa37171b2eb1e0d9432c71b2b6a3ac879" kind="define"><name>MCP_TXB0D0</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a9b6a29d1afcd03966741bf4f14fc629d" kind="define"><name>MCP_RXB0SIDL</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a4b3a44ce092d08f8bd7b1d76c2000eb3" kind="define"><name>MCP_RXB0DLC</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1ac0c883f6f7f1eed093af5617cbb41f74" kind="define"><name>MCP_RXB0D0</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a83556d0bfcf1cc15058decc60ee6afd1" kind="define"><name>MCP_RXB1SIDL</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a0d1445b03402e8152e66051dad310999" kind="define"><name>MCP_RXB1DLC</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1ad75f4530473680b7c7ec3bfd6f2205b2" kind="define"><name>MCP_RXB1D0</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a94d0b7ee70889fef8169e24e32de6243" kind="function"><name>MCP2515_read</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a882cd25399ed7c350b90960ebad58b4e" kind="function"><name>MCP2515_write</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1aa12fd2c3ad6653e48f0e1985527f5d23" kind="function"><name>MCP2515_RTS</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1ac06d6d9d7edb8a48e7b4b1fd06d2a330" kind="function"><name>MCP2515_read_status</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1aede3ccc1b3772f8e55447b8334769d37" kind="function"><name>MCP2515_bit_modify</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a882a91d22eb8ae4eb4315b06c4f7e966" kind="function"><name>MCP2515_reset</name></member>
+    <member refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h_1a04b0eb91a5bafd55bd91e2b1d4da6353" kind="function"><name>MCP2515_set_mode</name></member>
+  </compound>
+  <compound refid="_node2_2_node2_2_c_a_n___controller_8h" kind="file"><name>can_controller.h</name>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kind="typedef"><name>CAN_MESSAGE</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1ad4693f3cf41505cc76fe9e313cbcc8ee" kind="variable"><name>reset</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1a75e7e1428e5ce309c0087602721bf57d" kind="function"><name>can_init_def_tx_rx_mb</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1ab12c1286ebbc8c54dc200d4b9c86902d" kind="function"><name>can_init</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1ac81681fa36cdf9fe6bdefdbb8164df07" kind="function"><name>can_send</name></member>
+    <member refid="_node2_2_node2_2_c_a_n___controller_8h_1ac22373dd81bf37380ec1f662e7b27678" kind="function"><name>can_receive</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_debug_2_a_d_c_8d" kind="file"><name>ADC.d</name>
+  </compound>
+  <compound refid="_node2_2_node2_2_debug_2_a_d_c_8d" kind="file"><name>ADC.d</name>
+  </compound>
+  <compound refid="_c_a_n_8d" kind="file"><name>CAN.d</name>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_debug_2_c_a_n___controller_8d" kind="file"><name>CAN_Controller.d</name>
+  </compound>
+  <compound refid="_node2_2_node2_2_debug_2_c_a_n___controller_8d" kind="file"><name>can_controller.d</name>
+  </compound>
+  <compound refid="_interrupt_8d" kind="file"><name>Interrupt.d</name>
+  </compound>
+  <compound refid="_joystick_8d" kind="file"><name>Joystick.d</name>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2_debug_2main_8d" kind="file"><name>main.d</name>
+  </compound>
+  <compound refid="_node2_2_node2_2_debug_2main_8d" kind="file"><name>main.d</name>
+  </compound>
+  <compound refid="_o_l_e_d_8d" kind="file"><name>OLED.d</name>
+  </compound>
+  <compound refid="_slider_8d" kind="file"><name>Slider.d</name>
+  </compound>
+  <compound refid="_s_p_i_8d" kind="file"><name>SPI.d</name>
+  </compound>
+  <compound refid="_u_s_a_r_t_8d" kind="file"><name>USART.d</name>
+  </compound>
+  <compound refid="fonts_8h" kind="file"><name>fonts.h</name>
+    <member refid="fonts_8h_1ae43c5fc2e1d3b49eb7f3f1c7166bd81d" kind="variable"><name>font8</name></member>
+    <member refid="fonts_8h_1a44a622b4a6878a9c8b53e2c691f3d410" kind="variable"><name>font5</name></member>
+    <member refid="fonts_8h_1aaf3dcad743630cdb1cb98d03d9496a88" kind="variable"><name>font4</name></member>
+  </compound>
+  <compound refid="_interrupt_8c" kind="file"><name>Interrupt.c</name>
+    <member refid="_interrupt_8c_1a261e47dd882acb04e7c867fe2977ad1a" kind="variable"><name>RIGHT_BUTTON_PRESSED</name></member>
+    <member refid="_interrupt_8c_1ab326e3a1904161f68cf09b94c6808a05" kind="variable"><name>LEFT_BUTTON_PRESSED</name></member>
+    <member refid="_interrupt_8c_1a9e6daedebfea645463f0605ea0c0ea53" kind="variable"><name>JOYSTICK_BUTTON_PRESSED</name></member>
+    <member refid="_interrupt_8c_1a1c62fca549a4981d6684d4a5c72874b9" kind="function"><name>interrupt_init</name></member>
+    <member refid="_interrupt_8c_1ae04f5463a20ee95cdb373a69b2eacf5f" kind="function"><name>interrupt_polling</name></member>
+    <member refid="_interrupt_8c_1a30a0ad88a89a84c0161cf09eace108e8" kind="function"><name>ISR</name></member>
+  </compound>
+  <compound refid="_interrupt_8h" kind="file"><name>Interrupt.h</name>
+    <member refid="_interrupt_8h_1a1c62fca549a4981d6684d4a5c72874b9" kind="function"><name>interrupt_init</name></member>
+    <member refid="_interrupt_8h_1ae04f5463a20ee95cdb373a69b2eacf5f" kind="function"><name>interrupt_polling</name></member>
+  </compound>
+  <compound refid="_joystick_8c" kind="file"><name>Joystick.c</name>
+    <member refid="_joystick_8c_1a219998cfb366307196d1013046d3f5d2" kind="variable"><name>stop</name></member>
+    <member refid="_joystick_8c_1a8273db344fd3a2b068599f6cadba12f4" kind="variable"><name>button</name></member>
+    <member refid="_joystick_8c_1a90acebf0114a3aa5d95650790e8b8693" kind="function"><name>joystick_init</name></member>
+    <member refid="_joystick_8c_1adeabde9061c8f673f7ba257f3e61181d" kind="function"><name>joystick_pos_read</name></member>
+    <member refid="_joystick_8c_1a41bd5d42a9c4f3fc010c5b968c750551" kind="function"><name>print_joystick_position</name></member>
+    <member refid="_joystick_8c_1a547ec3b29eb8621a1108cfbfcd88eaea" kind="function"><name>joystick_dir_read</name></member>
+    <member refid="_joystick_8c_1a374ff6c1fb6656a221738d975f675d46" kind="function"><name>joystick_menu_navigation</name></member>
+    <member refid="_joystick_8c_1a43cfe9ec2944af8457a490bda6dfb11b" kind="function"><name>print_joystick_direction</name></member>
+    <member refid="_joystick_8c_1aada2d75bc8a8c6eb845bd940eadfa3fd" kind="function"><name>map</name></member>
+  </compound>
+  <compound refid="_joystick_8h" kind="file"><name>Joystick.h</name>
+    <member refid="_joystick_8h_1a2769ff203806aedf21a497296998c5db" kind="define"><name>J_X_ADDRESS</name></member>
+    <member refid="_joystick_8h_1aa9b33084ff7a067453337320d9b5f91d" kind="define"><name>J_Y_ADDRESS</name></member>
+    <member refid="_joystick_8h_1a7e0f1830d845220eece50b3deaf069b4" kind="define"><name>IDLE_X_MIN</name></member>
+    <member refid="_joystick_8h_1a4f60f710f00aef06050798cbdb14bd76" kind="define"><name>IDLE_X_MAX</name></member>
+    <member refid="_joystick_8h_1a12613c4db62e59b93433fad0aed89197" kind="define"><name>IDLE_Y_MIN</name></member>
+    <member refid="_joystick_8h_1aa0ac3cdeb060f543982e26c5c5363953" kind="define"><name>IDLE_Y_MAX</name></member>
+    <member refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894" kind="enum"><name>x_direction</name></member>
+    <member refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894a7d26f8d6f199c43bbe89b2ea40cafd74" kind="enumvalue"><name>X_IDLE</name></member>
+    <member refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894adb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894aec8379af7490bb9eaaf579cf17876f38" kind="enumvalue"><name>RIGHT</name></member>
+    <member refid="_joystick_8h_1ac178037a410063bfcc3a63c1e05d117f" kind="enum"><name>y_direction</name></member>
+    <member refid="_joystick_8h_1ac178037a410063bfcc3a63c1e05d117facd18aaa15c761bdd1249127dda0db470" kind="enumvalue"><name>Y_IDLE</name></member>
+    <member refid="_joystick_8h_1ac178037a410063bfcc3a63c1e05d117faba595d8bca8bc5e67c37c0a9d89becfa" kind="enumvalue"><name>UP</name></member>
+    <member refid="_joystick_8h_1ac178037a410063bfcc3a63c1e05d117fa9b0b4a95b99523966e0e34ffdadac9da" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="_joystick_8h_1a219998cfb366307196d1013046d3f5d2" kind="variable"><name>stop</name></member>
+    <member refid="_joystick_8h_1a8273db344fd3a2b068599f6cadba12f4" kind="variable"><name>button</name></member>
+    <member refid="_joystick_8h_1a3daf0fa9e0ee69caaf6eb44de9bf7517" kind="function"><name>pos_read</name></member>
+    <member refid="_joystick_8h_1a90acebf0114a3aa5d95650790e8b8693" kind="function"><name>joystick_init</name></member>
+    <member refid="_joystick_8h_1adeabde9061c8f673f7ba257f3e61181d" kind="function"><name>joystick_pos_read</name></member>
+    <member refid="_joystick_8h_1a41bd5d42a9c4f3fc010c5b968c750551" kind="function"><name>print_joystick_position</name></member>
+    <member refid="_joystick_8h_1a547ec3b29eb8621a1108cfbfcd88eaea" kind="function"><name>joystick_dir_read</name></member>
+    <member refid="_joystick_8h_1ad66678b486e69805d439f61e94e2cc31" kind="function"><name>joystick_menu_navigation</name></member>
+    <member refid="_joystick_8h_1a43cfe9ec2944af8457a490bda6dfb11b" kind="function"><name>print_joystick_direction</name></member>
+    <member refid="_joystick_8h_1aada2d75bc8a8c6eb845bd940eadfa3fd" kind="function"><name>map</name></member>
+  </compound>
+  <compound refid="_node1_2_t_t_k4155_2main_8c" kind="file"><name>main.c</name>
+    <member refid="_node1_2_t_t_k4155_2main_8c_1a802b2b582b121e4632aa9a491d503720" kind="define"><name>FOSC</name></member>
+    <member refid="_node1_2_t_t_k4155_2main_8c_1a62634036639f88eece6fbf226b45f84b" kind="define"><name>BAUD</name></member>
+    <member refid="_node1_2_t_t_k4155_2main_8c_1a711e9130c825a7269c8c87dbb57a85e0" kind="define"><name>MYUBRR</name></member>
+    <member refid="_node1_2_t_t_k4155_2main_8c_1a7b1703131dd3be69c8a918cb0405ce02" kind="variable"><name>playing</name></member>
+    <member refid="_node1_2_t_t_k4155_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_node2_2_node2_2main_8c" kind="file"><name>main.c</name>
+    <member refid="_node2_2_node2_2main_8c_1ad89903731d7f7be95b5d969211e27c26" kind="variable"><name>score</name></member>
+    <member refid="_node2_2_node2_2main_8c_1a8187946bf116103651f3d77f36b30344" kind="variable"><name>game_pause</name></member>
+    <member refid="_node2_2_node2_2main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mcp2515_8h" kind="file"><name>mcp2515.h</name>
+    <member refid="mcp2515_8h_1ae421a063d5c9a67484389eb3eaebebfd" kind="define"><name>MCP_RXF0SIDH</name></member>
+    <member refid="mcp2515_8h_1a9c93381116e954e7a310e2dbbd2dbc4e" kind="define"><name>MCP_RXF0SIDL</name></member>
+    <member refid="mcp2515_8h_1a1ec986ef1512da764c3394f50522b16b" kind="define"><name>MCP_RXF0EID8</name></member>
+    <member refid="mcp2515_8h_1a3de3114c44a811cbaabf1861ba55a690" kind="define"><name>MCP_RXF0EID0</name></member>
+    <member refid="mcp2515_8h_1a0e86a1817cd0b31a287b150dd322f972" kind="define"><name>MCP_RXF1SIDH</name></member>
+    <member refid="mcp2515_8h_1ab57c15509135349cfac67fd74071cf01" kind="define"><name>MCP_RXF1SIDL</name></member>
+    <member refid="mcp2515_8h_1aecfcc2d9cddf17106316db150ac56f82" kind="define"><name>MCP_RXF1EID8</name></member>
+    <member refid="mcp2515_8h_1a00edc9ebc006d15149797e48b82949c6" kind="define"><name>MCP_RXF1EID0</name></member>
+    <member refid="mcp2515_8h_1a2961fd5700a7ae397d71911f328799e3" kind="define"><name>MCP_RXF2SIDH</name></member>
+    <member refid="mcp2515_8h_1a7fc1958385a3995ca062fba4ff14cb41" kind="define"><name>MCP_RXF2SIDL</name></member>
+    <member refid="mcp2515_8h_1a31643cf05e789b655d0bf66c100fc5ae" kind="define"><name>MCP_RXF2EID8</name></member>
+    <member refid="mcp2515_8h_1ad9666d49e084c975e49d1f9f7c3df20a" kind="define"><name>MCP_RXF2EID0</name></member>
+    <member refid="mcp2515_8h_1a1a470d80ae3644bf02f2cd4a7bb6aa39" kind="define"><name>MCP_CANSTAT</name></member>
+    <member refid="mcp2515_8h_1a25864642b445cbfbd85f2a1a22947558" kind="define"><name>MCP_CANCTRL</name></member>
+    <member refid="mcp2515_8h_1a21d7a29b957697c7d35f7a6a8ab6fba7" kind="define"><name>MCP_RXF3SIDH</name></member>
+    <member refid="mcp2515_8h_1a71d3d35f05bf08e68523a9efc61cfbfc" kind="define"><name>MCP_RXF3SIDL</name></member>
+    <member refid="mcp2515_8h_1aec6f10e1f16aa75cf9a2c45cbf072c0c" kind="define"><name>MCP_RXF3EID8</name></member>
+    <member refid="mcp2515_8h_1ae6d1393bf6ade012e9de52ce3f781cc0" kind="define"><name>MCP_RXF3EID0</name></member>
+    <member refid="mcp2515_8h_1a870788013a5eb433261fb4bbe755b798" kind="define"><name>MCP_RXF4SIDH</name></member>
+    <member refid="mcp2515_8h_1a26ea2d067a97a328bdb355f5a1f9bcae" kind="define"><name>MCP_RXF4SIDL</name></member>
+    <member refid="mcp2515_8h_1a3b8889cb0efb5374525dc60f8faa6e35" kind="define"><name>MCP_RXF4EID8</name></member>
+    <member refid="mcp2515_8h_1a61e6e6a2b3c20e8d900bcb628854a404" kind="define"><name>MCP_RXF4EID0</name></member>
+    <member refid="mcp2515_8h_1ac7bc37d5b6536d6c4c15d8a36483fe79" kind="define"><name>MCP_RXF5SIDH</name></member>
+    <member refid="mcp2515_8h_1ad4328ca7028ab38ac270f8547fb59582" kind="define"><name>MCP_RXF5SIDL</name></member>
+    <member refid="mcp2515_8h_1ac44d4ade53dbe90f58d28d54f3ea4aa0" kind="define"><name>MCP_RXF5EID8</name></member>
+    <member refid="mcp2515_8h_1a0dee7fada196f7183e8f709df24e0bc4" kind="define"><name>MCP_RXF5EID0</name></member>
+    <member refid="mcp2515_8h_1a408a3bfd90d57612646979a8b69497c4" kind="define"><name>MCP_TEC</name></member>
+    <member refid="mcp2515_8h_1a6f032cfd514ddf69f0bc8424cf924c4a" kind="define"><name>MCP_REC</name></member>
+    <member refid="mcp2515_8h_1a74a0dc603b68c2ecbb63c3ed29010e17" kind="define"><name>MCP_RXM0SIDH</name></member>
+    <member refid="mcp2515_8h_1acff5cba98baa23236a302a5b678d2899" kind="define"><name>MCP_RXM0SIDL</name></member>
+    <member refid="mcp2515_8h_1a0b72079ef3123f9384f8e8767c381086" kind="define"><name>MCP_RXM0EID8</name></member>
+    <member refid="mcp2515_8h_1a85951b834260f01b30915e446542d3ef" kind="define"><name>MCP_RXM0EID0</name></member>
+    <member refid="mcp2515_8h_1af33255d20e7adbb274843351676d15bd" kind="define"><name>MCP_RXM1SIDH</name></member>
+    <member refid="mcp2515_8h_1abc4c9f616f34a1adef4dc2526ffeb95b" kind="define"><name>MCP_RXM1SIDL</name></member>
+    <member refid="mcp2515_8h_1aac7b0eb43bfd43104e1876e9d75339b6" kind="define"><name>MCP_RXM1EID8</name></member>
+    <member refid="mcp2515_8h_1ae384be8c5a58d1425449b1764ba3fdea" kind="define"><name>MCP_RXM1EID0</name></member>
+    <member refid="mcp2515_8h_1ad2e13220f9c51ccd5efda5d3c19761b8" kind="define"><name>MCP_CNF3</name></member>
+    <member refid="mcp2515_8h_1a2a22ce749e287690e3d85514e2c7cb57" kind="define"><name>MCP_CNF2</name></member>
+    <member refid="mcp2515_8h_1a0baef095a5a2997db4c75831e55e8e96" kind="define"><name>MCP_CNF1</name></member>
+    <member refid="mcp2515_8h_1a778de33d21ab2eb875533a31a2e8ec69" kind="define"><name>MCP_CANINTE</name></member>
+    <member refid="mcp2515_8h_1ae82ca28239a27c2f8c4871e654480ee3" kind="define"><name>MCP_CANINTF</name></member>
+    <member refid="mcp2515_8h_1a1695d6e956775335641f7f600439919c" kind="define"><name>MCP_EFLG</name></member>
+    <member refid="mcp2515_8h_1a8141153ac7a7a40b71f49a3e029c33ac" kind="define"><name>MCP_TXB0CTRL</name></member>
+    <member refid="mcp2515_8h_1abc7ef66a386f13da6f893ea2f951693f" kind="define"><name>MCP_TXB1CTRL</name></member>
+    <member refid="mcp2515_8h_1ac43fb5cf36199d6cd0731d58a6f498c6" kind="define"><name>MCP_TXB2CTRL</name></member>
+    <member refid="mcp2515_8h_1a61b3cd8d6c29ea6abe1db7c566f1d3d0" kind="define"><name>MCP_RXB0CTRL</name></member>
+    <member refid="mcp2515_8h_1ad6151dfa9b6fee9b65db5bb70f41d4a1" kind="define"><name>MCP_RXB0SIDH</name></member>
+    <member refid="mcp2515_8h_1a0715576ae1bb6db08da6699fed69b67b" kind="define"><name>MCP_RXB1CTRL</name></member>
+    <member refid="mcp2515_8h_1af4bddbf3d95eb41f4217b43c0da67391" kind="define"><name>MCP_RXB1SIDH</name></member>
+    <member refid="mcp2515_8h_1a816cbe8c97b2c24a44425bad397348b9" kind="define"><name>MCP_TX_INT</name></member>
+    <member refid="mcp2515_8h_1a7b02ec9eead23e76447f5842404f5af7" kind="define"><name>MCP_TX01_INT</name></member>
+    <member refid="mcp2515_8h_1a7b3120302282594f99b9d8b3ff4bd675" kind="define"><name>MCP_RX_INT</name></member>
+    <member refid="mcp2515_8h_1a624142fcbb5afc5f20a28118cb4c0b09" kind="define"><name>MCP_NO_INT</name></member>
+    <member refid="mcp2515_8h_1ab23e4c7ad318b4c22601f710cbdacbaf" kind="define"><name>MCP_TX01_MASK</name></member>
+    <member refid="mcp2515_8h_1a495863adad70a6e84ef9aaffc2158f45" kind="define"><name>MCP_TX_MASK</name></member>
+    <member refid="mcp2515_8h_1aa144564452e7a678d00d9727ce35f82f" kind="define"><name>MCP_WRITE</name></member>
+    <member refid="mcp2515_8h_1a1d9ce2ac1c72654e113298fc1307102a" kind="define"><name>MCP_READ</name></member>
+    <member refid="mcp2515_8h_1a973305a49ffc6eed476689b0a8dd69e6" kind="define"><name>MCP_BITMOD</name></member>
+    <member refid="mcp2515_8h_1a22f24df177e60164eed1399565483d29" kind="define"><name>MCP_LOAD_TX0</name></member>
+    <member refid="mcp2515_8h_1a39edf0ba0b6b50d37c284a01fc06c234" kind="define"><name>MCP_LOAD_TX1</name></member>
+    <member refid="mcp2515_8h_1a0b09fb52864d8b5035fd0fae0fbebb06" kind="define"><name>MCP_LOAD_TX2</name></member>
+    <member refid="mcp2515_8h_1ad81495d052d65e3a97a4c2688119ac0e" kind="define"><name>MCP_RTS_TX0</name></member>
+    <member refid="mcp2515_8h_1a6cc3f921cb8d7cd9323909466ad4307e" kind="define"><name>MCP_RTS_TX1</name></member>
+    <member refid="mcp2515_8h_1a0fa9efa8755c0ab500fc2e2da56126d0" kind="define"><name>MCP_RTS_TX2</name></member>
+    <member refid="mcp2515_8h_1ade85afe7da126728c581e32c1fb9fb5b" kind="define"><name>MCP_RTS_ALL</name></member>
+    <member refid="mcp2515_8h_1a6d36244d972ea4161783204b65ff75e6" kind="define"><name>MCP_READ_RX0</name></member>
+    <member refid="mcp2515_8h_1a3e686dbe40426f42d3d8553171294458" kind="define"><name>MCP_READ_RX1</name></member>
+    <member refid="mcp2515_8h_1a399014e8231cd5d4acd4bad7a8553bb7" kind="define"><name>MCP_READ_STATUS</name></member>
+    <member refid="mcp2515_8h_1a6e47ae0eaa03f32a201ac45f4a755d73" kind="define"><name>MCP_RX_STATUS</name></member>
+    <member refid="mcp2515_8h_1a8538419d98eecb32d7b8a6e07e8a256f" kind="define"><name>MCP_RESET</name></member>
+    <member refid="mcp2515_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kind="define"><name>MODE_NORMAL</name></member>
+    <member refid="mcp2515_8h_1a2d957317ff490fa73cd4377d5ebf0b0d" kind="define"><name>MODE_SLEEP</name></member>
+    <member refid="mcp2515_8h_1af45bc9b0ed8edccc1c6c237d83d8ec8d" kind="define"><name>MODE_LOOPBACK</name></member>
+    <member refid="mcp2515_8h_1a69067e4f8f3aad92757c47fa9a1edce4" kind="define"><name>MODE_LISTENONLY</name></member>
+    <member refid="mcp2515_8h_1a5552a5de9b59914458ab99d568bf2763" kind="define"><name>MODE_CONFIG</name></member>
+    <member refid="mcp2515_8h_1a6cba238eaa939c8747d20c8685236ee0" kind="define"><name>MODE_POWERUP</name></member>
+    <member refid="mcp2515_8h_1aba2b187200eec47c5fc32655e296783d" kind="define"><name>MODE_MASK</name></member>
+    <member refid="mcp2515_8h_1a625b12ba872bf9561838b72e1f1d133f" kind="define"><name>ABORT_TX</name></member>
+    <member refid="mcp2515_8h_1a81abe0ed7526093905ddcf168243f233" kind="define"><name>MODE_ONESHOT</name></member>
+    <member refid="mcp2515_8h_1a7e4130de16e7b1007a40ca21e2d9ded0" kind="define"><name>CLKOUT_ENABLE</name></member>
+    <member refid="mcp2515_8h_1a867e5061e767c13c80906490060a8f3a" kind="define"><name>CLKOUT_DISABLE</name></member>
+    <member refid="mcp2515_8h_1a1b3bf6482ad57ae80b7c2106fa0449cf" kind="define"><name>CLKOUT_PS1</name></member>
+    <member refid="mcp2515_8h_1a13e70f5589f1f6d303775d88249b32a7" kind="define"><name>CLKOUT_PS2</name></member>
+    <member refid="mcp2515_8h_1abc1f0cc2c03c625d9af22fe7c55482d4" kind="define"><name>CLKOUT_PS4</name></member>
+    <member refid="mcp2515_8h_1adac6f69cc58f518aa7a146e4b7056bab" kind="define"><name>CLKOUT_PS8</name></member>
+    <member refid="mcp2515_8h_1a4ca4a1b715398a83c454f53a3fd79eb1" kind="define"><name>SJW1</name></member>
+    <member refid="mcp2515_8h_1acb0116aef65be06e41b189522e4e91ed" kind="define"><name>SJW2</name></member>
+    <member refid="mcp2515_8h_1a68b22832f20a89ae90e258fd4f192091" kind="define"><name>SJW3</name></member>
+    <member refid="mcp2515_8h_1acc017a3f71fb4570b6ff1dcb747341e3" kind="define"><name>SJW4</name></member>
+    <member refid="mcp2515_8h_1ae2c52bac017026aae58e0594159e11e6" kind="define"><name>BTLMODE</name></member>
+    <member refid="mcp2515_8h_1aee91de8fdfa7f84d2e9102b15dc3ad5d" kind="define"><name>SAMPLE_1X</name></member>
+    <member refid="mcp2515_8h_1afbe5be9c5672ebcb582105e2f413a8e6" kind="define"><name>SAMPLE_3X</name></member>
+    <member refid="mcp2515_8h_1ae2c366800285be68658d0423c48095d8" kind="define"><name>SOF_ENABLE</name></member>
+    <member refid="mcp2515_8h_1a0d367e58d4db2e4d3cb2f590829bad61" kind="define"><name>SOF_DISABLE</name></member>
+    <member refid="mcp2515_8h_1a5a29147670f76a2492e290f0b446b7ce" kind="define"><name>WAKFIL_ENABLE</name></member>
+    <member refid="mcp2515_8h_1a9ebaab776c2140a706d54c6f8f8840ee" kind="define"><name>WAKFIL_DISABLE</name></member>
+    <member refid="mcp2515_8h_1a44d0f7db08c98cfd446daab2b0a4ec8f" kind="define"><name>MCP_RX0IF</name></member>
+    <member refid="mcp2515_8h_1a9fcfe75306166e89b598bd9519e2db8b" kind="define"><name>MCP_RX1IF</name></member>
+    <member refid="mcp2515_8h_1a28eb84f8219613a6da1f46b7d0672ad0" kind="define"><name>MCP_TX0IF</name></member>
+    <member refid="mcp2515_8h_1adb11d8db50d2832ba339ae4c100bdcca" kind="define"><name>MCP_TX1IF</name></member>
+    <member refid="mcp2515_8h_1adee823c1fd68b891ea7ed87f302cc021" kind="define"><name>MCP_TX2IF</name></member>
+    <member refid="mcp2515_8h_1a5c1209adc4e7ee5a0f08b0bced532768" kind="define"><name>MCP_ERRIF</name></member>
+    <member refid="mcp2515_8h_1a86309745d44d7040ccbb116cb0b0de33" kind="define"><name>MCP_WAKIF</name></member>
+    <member refid="mcp2515_8h_1aefa5a3dc7ca94fee366e0418590063f6" kind="define"><name>MCP_MERRF</name></member>
+  </compound>
+  <compound refid="_o_l_e_d_8c" kind="file"><name>OLED.c</name>
+    <member refid="_o_l_e_d_8c_1a1d6d39a4dede2e28a725ab4486866072" kind="variable"><name>main_menu</name></member>
+    <member refid="_o_l_e_d_8c_1ac8ce6eb182e9accacfe9901f78cf1007" kind="variable"><name>play_menu</name></member>
+    <member refid="_o_l_e_d_8c_1ab80aed340dfb01b2ddaa07d6af7b5b00" kind="variable"><name>credits_menu</name></member>
+    <member refid="_o_l_e_d_8c_1a5e6c26943628db3683a5664f0b6f0a5a" kind="variable"><name>about_menu</name></member>
+    <member refid="_o_l_e_d_8c_1ab561e8d3613278ebf0c0faef7591a024" kind="variable"><name>menu_pos</name></member>
+    <member refid="_o_l_e_d_8c_1a205b823d11ca2996c7f8cf02b1429258" kind="variable"><name>is_main_menu</name></member>
+    <member refid="_o_l_e_d_8c_1a2b14bcae81c33704cd345ed337762943" kind="variable"><name>OLED_COMMAND</name></member>
+    <member refid="_o_l_e_d_8c_1ad47de1071fd49ce10af87e8be74b38ff" kind="variable"><name>OLED_DATA</name></member>
+    <member refid="_o_l_e_d_8c_1a92a7efc71034015484371ea860ed96b7" kind="function"><name>OLED_write_command</name></member>
+    <member refid="_o_l_e_d_8c_1a41efdbe7c39d060f81a317703b6626e6" kind="function"><name>OLED_write_data</name></member>
+    <member refid="_o_l_e_d_8c_1afb6f3107e48d72be03cb3781374e1391" kind="function"><name>OLED_init</name></member>
+    <member refid="_o_l_e_d_8c_1ae47f190c0ac5b80b1754ea3d3c3c02a8" kind="function"><name>OLED_goto_line</name></member>
+    <member refid="_o_l_e_d_8c_1afef85af912c108e839a705e7a66a1720" kind="function"><name>OLED_goto_column</name></member>
+    <member refid="_o_l_e_d_8c_1a2dde9e2ff48705297fb105f3f793da04" kind="function"><name>OLED_set_pos</name></member>
+    <member refid="_o_l_e_d_8c_1a79e5a15ee3cdc7c549d2aa961248f239" kind="function"><name>OLED_fill_line</name></member>
+    <member refid="_o_l_e_d_8c_1ad784190236dc8c79d99481bac1fbcf60" kind="function"><name>OLED_clear_all</name></member>
+    <member refid="_o_l_e_d_8c_1a94fbf95c1a5f57d41b094afe2c463718" kind="function"><name>OLED_print_char</name></member>
+    <member refid="_o_l_e_d_8c_1a53b761d5b126de3f35e50ce27022b3b9" kind="function"><name>OLED_print_string</name></member>
+    <member refid="_o_l_e_d_8c_1ac44bc9d1697259578a22f990300f1a50" kind="function"><name>OLED_update_menu</name></member>
+    <member refid="_o_l_e_d_8c_1a55bb654e6204c14882e66fc5a4c6ba44" kind="function"><name>OLED_print_menu</name></member>
+  </compound>
+  <compound refid="_o_l_e_d_8h" kind="file"><name>OLED.h</name>
+    <member refid="_o_l_e_d_8h_1a8673a47a50b180c1d74812d571b6350c" kind="define"><name>OLED_COMMAND_PIN</name></member>
+    <member refid="_o_l_e_d_8h_1aed89bd71aee8be823e8a20ec4e093c1e" kind="define"><name>HEIGHT</name></member>
+    <member refid="_o_l_e_d_8h_1a241aeeb764887ae5e3de58b98f04b16d" kind="define"><name>WIDTH</name></member>
+    <member refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844" kind="enum"><name>menu_name</name></member>
+    <member refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd" kind="enumvalue"><name>MAIN</name></member>
+    <member refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d" kind="enumvalue"><name>PLAYMENU</name></member>
+    <member refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef" kind="enumvalue"><name>CREDITS</name></member>
+    <member refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a" kind="enumvalue"><name>ABOUT</name></member>
+    <member refid="_o_l_e_d_8h_1a2b14bcae81c33704cd345ed337762943" kind="variable"><name>OLED_COMMAND</name></member>
+    <member refid="_o_l_e_d_8h_1ad47de1071fd49ce10af87e8be74b38ff" kind="variable"><name>OLED_DATA</name></member>
+    <member refid="_o_l_e_d_8h_1ab561e8d3613278ebf0c0faef7591a024" kind="variable"><name>menu_pos</name></member>
+    <member refid="_o_l_e_d_8h_1a205b823d11ca2996c7f8cf02b1429258" kind="variable"><name>is_main_menu</name></member>
+    <member refid="_o_l_e_d_8h_1a92a7efc71034015484371ea860ed96b7" kind="function"><name>OLED_write_command</name></member>
+    <member refid="_o_l_e_d_8h_1a41efdbe7c39d060f81a317703b6626e6" kind="function"><name>OLED_write_data</name></member>
+    <member refid="_o_l_e_d_8h_1afb6f3107e48d72be03cb3781374e1391" kind="function"><name>OLED_init</name></member>
+    <member refid="_o_l_e_d_8h_1ae47f190c0ac5b80b1754ea3d3c3c02a8" kind="function"><name>OLED_goto_line</name></member>
+    <member refid="_o_l_e_d_8h_1afef85af912c108e839a705e7a66a1720" kind="function"><name>OLED_goto_column</name></member>
+    <member refid="_o_l_e_d_8h_1a2dde9e2ff48705297fb105f3f793da04" kind="function"><name>OLED_set_pos</name></member>
+    <member refid="_o_l_e_d_8h_1a79e5a15ee3cdc7c549d2aa961248f239" kind="function"><name>OLED_fill_line</name></member>
+    <member refid="_o_l_e_d_8h_1ad784190236dc8c79d99481bac1fbcf60" kind="function"><name>OLED_clear_all</name></member>
+    <member refid="_o_l_e_d_8h_1a94fbf95c1a5f57d41b094afe2c463718" kind="function"><name>OLED_print_char</name></member>
+    <member refid="_o_l_e_d_8h_1a53b761d5b126de3f35e50ce27022b3b9" kind="function"><name>OLED_print_string</name></member>
+    <member refid="_o_l_e_d_8h_1ac44bc9d1697259578a22f990300f1a50" kind="function"><name>OLED_update_menu</name></member>
+    <member refid="_o_l_e_d_8h_1a55bb654e6204c14882e66fc5a4c6ba44" kind="function"><name>OLED_print_menu</name></member>
+  </compound>
+  <compound refid="_slider_8c" kind="file"><name>Slider.c</name>
+    <member refid="_slider_8c_1a639ed1e78351bf834f06ae19dd3ff621" kind="function"><name>slider_pos_read</name></member>
+    <member refid="_slider_8c_1addfb9e3de7536850eb8c6b2c620f4fb0" kind="function"><name>print_slider_position</name></member>
+  </compound>
+  <compound refid="_slider_8h" kind="file"><name>Slider.h</name>
+    <member refid="_slider_8h_1ad6638c56bebc77f2b95b9066af835481" kind="define"><name>S_L_ADDRESS</name></member>
+    <member refid="_slider_8h_1ae767d5c561b42466e454fe6ba105b79b" kind="define"><name>S_R_ADDRESS</name></member>
+    <member refid="_slider_8h_1a639ed1e78351bf834f06ae19dd3ff621" kind="function"><name>slider_pos_read</name></member>
+    <member refid="_slider_8h_1addfb9e3de7536850eb8c6b2c620f4fb0" kind="function"><name>print_slider_position</name></member>
+  </compound>
+  <compound refid="_s_p_i_8c" kind="file"><name>SPI.c</name>
+    <member refid="_s_p_i_8c_1a474ee5b7a199d155bf6e3c1099d8bd38" kind="function"><name>SPI_slave_enable</name></member>
+    <member refid="_s_p_i_8c_1a854b85f853d4139663c8347a2e1a3fd0" kind="function"><name>SPI_slave_disable</name></member>
+    <member refid="_s_p_i_8c_1a34182122af387dbfe661da5dca71d01b" kind="function"><name>SPI_master_init</name></member>
+    <member refid="_s_p_i_8c_1af6368b67e2ba591bcd82ca58e7bc05e2" kind="function"><name>SPI_master_transmit</name></member>
+    <member refid="_s_p_i_8c_1a68e8553f6e049b8f7c4e7a1ee355e063" kind="function"><name>SPI_master_read</name></member>
+  </compound>
+  <compound refid="_s_p_i_8h" kind="file"><name>SPI.h</name>
+    <member refid="_s_p_i_8h_1a474ee5b7a199d155bf6e3c1099d8bd38" kind="function"><name>SPI_slave_enable</name></member>
+    <member refid="_s_p_i_8h_1a854b85f853d4139663c8347a2e1a3fd0" kind="function"><name>SPI_slave_disable</name></member>
+    <member refid="_s_p_i_8h_1a34182122af387dbfe661da5dca71d01b" kind="function"><name>SPI_master_init</name></member>
+    <member refid="_s_p_i_8h_1af6368b67e2ba591bcd82ca58e7bc05e2" kind="function"><name>SPI_master_transmit</name></member>
+    <member refid="_s_p_i_8h_1a68e8553f6e049b8f7c4e7a1ee355e063" kind="function"><name>SPI_master_read</name></member>
+  </compound>
+  <compound refid="_s_r_a_m_8h" kind="file"><name>SRAM.h</name>
+    <member refid="_s_r_a_m_8h_1ad607bcb84cc9434b858ce5502242c54f" kind="function"><name>SRAM_init</name></member>
+  </compound>
+  <compound refid="_u_s_a_r_t_8c" kind="file"><name>USART.c</name>
+    <member refid="_u_s_a_r_t_8c_1a99f79737b2f8bf945b4c169c69e3e3eb" kind="function"><name>USART_Init</name></member>
+    <member refid="_u_s_a_r_t_8c_1a90a44f50119303ce2d4198c756908fa8" kind="function"><name>USART_Transmit</name></member>
+    <member refid="_u_s_a_r_t_8c_1ab0afeb1d2913cba471376bf274411a5c" kind="function"><name>USART_Receive</name></member>
+  </compound>
+  <compound refid="_u_s_a_r_t_8h" kind="file"><name>USART.h</name>
+    <member refid="_u_s_a_r_t_8h_1a99f79737b2f8bf945b4c169c69e3e3eb" kind="function"><name>USART_Init</name></member>
+    <member refid="_u_s_a_r_t_8h_1a90a44f50119303ce2d4198c756908fa8" kind="function"><name>USART_Transmit</name></member>
+    <member refid="_u_s_a_r_t_8h_1a2a0833b5425a154bdb3614d11003c2a2" kind="function"><name>USART_Receive</name></member>
+  </compound>
+  <compound refid="can__interrupt_8c" kind="file"><name>can_interrupt.c</name>
+    <member refid="can__interrupt_8c_1a6bfc99d445c6155d072f211c2adb8c37" kind="define"><name>CAN_INTERRUPT_H</name></member>
+    <member refid="can__interrupt_8c_1a407139d6347d67bb0846a95aaaf1cb34" kind="define"><name>DEBUG_INTERRUPT</name></member>
+    <member refid="can__interrupt_8c_1a0f3327c42d83e7b42cf684774c788e69" kind="variable"><name>step_position</name></member>
+    <member refid="can__interrupt_8c_1aa0f30c571420d42057d28b7b243e3b3e" kind="function"><name>CAN0_Handler</name></member>
+  </compound>
+  <compound refid="can__interrupt_8h" kind="file"><name>can_interrupt.h</name>
+    <member refid="can__interrupt_8h_1a0f3327c42d83e7b42cf684774c788e69" kind="variable"><name>step_position</name></member>
+    <member refid="can__interrupt_8h_1a541032c0356b6d1e2f340fbb7a98699a" kind="variable"><name>buttons</name></member>
+    <member refid="can__interrupt_8h_1aa0f30c571420d42057d28b7b243e3b3e" kind="function"><name>CAN0_Handler</name></member>
+  </compound>
+  <compound refid="can__interrupt_8d" kind="file"><name>can_interrupt.d</name>
+  </compound>
+  <compound refid="delay_8d" kind="file"><name>delay.d</name>
+  </compound>
+  <compound refid="startup__sam3xa_8d" kind="file"><name>startup_sam3xa.d</name>
+  </compound>
+  <compound refid="system__sam3xa_8d" kind="file"><name>system_sam3xa.d</name>
+  </compound>
+  <compound refid="motor_8d" kind="file"><name>motor.d</name>
+  </compound>
+  <compound refid="_p_i_8d" kind="file"><name>PI.d</name>
+  </compound>
+  <compound refid="printf-stdarg_8d" kind="file"><name>printf-stdarg.d</name>
+  </compound>
+  <compound refid="_p_w_m_8d" kind="file"><name>PWM.d</name>
+  </compound>
+  <compound refid="solenoid_8d" kind="file"><name>solenoid.d</name>
+  </compound>
+  <compound refid="uart_8d" kind="file"><name>uart.d</name>
+  </compound>
+  <compound refid="delay_8c" kind="file"><name>delay.c</name>
+    <member refid="delay_8c_1a39dbff94d8aa04a8cb8c5dd2227f77a7" kind="function"><name>test_delay_us</name></member>
+    <member refid="delay_8c_1a36c8c34fc8f64e6bf1a21498195be1dd" kind="function"><name>delay_us</name></member>
+  </compound>
+  <compound refid="delay_8h" kind="file"><name>delay.h</name>
+    <member refid="delay_8h_1a39dbff94d8aa04a8cb8c5dd2227f77a7" kind="function"><name>test_delay_us</name></member>
+    <member refid="delay_8h_1a36c8c34fc8f64e6bf1a21498195be1dd" kind="function"><name>delay_us</name></member>
+  </compound>
+  <compound refid="startup__sam3xa_8c" kind="file"><name>startup_sam3xa.c</name>
+    <member refid="startup__sam3xa_8c_1a797d7617293913aabf29979f9355c069" kind="variable"><name>_sfixed</name></member>
+    <member refid="startup__sam3xa_8c_1aa55487a2e05bbec386ff62a79418827e" kind="variable"><name>_efixed</name></member>
+    <member refid="startup__sam3xa_8c_1abba93927cdaa2d32967cfc724f47cf8f" kind="variable"><name>_etext</name></member>
+    <member refid="startup__sam3xa_8c_1ac50d147d186c5fcf7efa97a4197e530e" kind="variable"><name>_srelocate</name></member>
+    <member refid="startup__sam3xa_8c_1a59f8a39545ac1b9b88d4228c40c910b9" kind="variable"><name>_erelocate</name></member>
+    <member refid="startup__sam3xa_8c_1a5c6ed4fbf19b32595d4afb2c25aa8363" kind="variable"><name>_szero</name></member>
+    <member refid="startup__sam3xa_8c_1ad4c54e57daaa1859c4fd4208ed7d31fa" kind="variable"><name>_ezero</name></member>
+    <member refid="startup__sam3xa_8c_1ae588877090aec0bc36ee7c0ecf084ed4" kind="variable"><name>_sstack</name></member>
+    <member refid="startup__sam3xa_8c_1a69247aef56f755ef3b08265060dea50f" kind="variable"><name>_estack</name></member>
+    <member refid="startup__sam3xa_8c_1a5f388c8556f7cb6a84b5692db6b6ad80" kind="function"><name>__libc_init_array</name></member>
+    <member refid="startup__sam3xa_8c_1a4ed9b32000d3b15c46ffd748f32ed44d" kind="function"><name>Dummy_Handler</name></member>
+    <member refid="startup__sam3xa_8c_1aaa1400c15ada51a2aeaa13813e9f0c0d" kind="function"><name>NMI_Handler</name></member>
+    <member refid="startup__sam3xa_8c_1ae7ee340978f5c25f52f0cad1457c6616" kind="function"><name>Reset_Handler</name></member>
+  </compound>
+  <compound refid="system__sam3xa_8c" kind="file"><name>system_sam3xa.c</name>
+    <member refid="system__sam3xa_8c_1a0a22f8ffd78d8577790c0ccf7471e06d" kind="define"><name>SYS_BOARD_OSCOUNT</name></member>
+    <member refid="system__sam3xa_8c_1aed7d52452ed405bce522ac60f0a9526c" kind="define"><name>SYS_BOARD_PLLAR</name></member>
+    <member refid="system__sam3xa_8c_1a5723ea67fd327e388188538ae2db2f66" kind="define"><name>SYS_BOARD_MCKR</name></member>
+    <member refid="system__sam3xa_8c_1aa3cd3e43291e81e795d642b79b6088e6" kind="variable"><name>SystemCoreClock</name></member>
+    <member refid="system__sam3xa_8c_1a93f514700ccf00d08dbdcff7f1224eb2" kind="function"><name>SystemInit</name></member>
+    <member refid="system__sam3xa_8c_1ae0c36a9591fe6e9c45ecb21a794f0f0f" kind="function"><name>SystemCoreClockUpdate</name></member>
+    <member refid="system__sam3xa_8c_1a38ee6d8de47653fc055f10322c050831" kind="function"><name>system_init_flash</name></member>
+  </compound>
+  <compound refid="_motor_8c" kind="file"><name>Motor.c</name>
+    <member refid="_motor_8c_1a151cccf0120a24d251b5ce5d878abb67" kind="function"><name>motor_init</name></member>
+    <member refid="_motor_8c_1a22cd7acd32a157fb29293924b92d384d" kind="function"><name>motor_set_direction</name></member>
+    <member refid="_motor_8c_1ac29eebf30667cb34d4f79a29035a7709" kind="function"><name>motor_set_speed</name></member>
+    <member refid="_motor_8c_1a3543058368509b35584311cece5d20a3" kind="function"><name>motor_set_direction_speed</name></member>
+    <member refid="_motor_8c_1a920c7ac0f48e355b5ee861247e2cd637" kind="function"><name>motor_encoder_read</name></member>
+    <member refid="_motor_8c_1a091d29ed8690d7f70a79198e3c4e92f7" kind="function"><name>motor_set_with_PI</name></member>
+  </compound>
+  <compound refid="_motor_8h" kind="file"><name>Motor.h</name>
+    <member refid="_motor_8h_1a437ef08681e7210d6678427030446a54" kind="define"><name>LEFT</name></member>
+    <member refid="_motor_8h_1a80fb826a684cf3f0d306b22aa100ddac" kind="define"><name>RIGHT</name></member>
+    <member refid="_motor_8h_1a655c84af1b0034986ff56e12e84f983d" kind="define"><name>NONE</name></member>
+    <member refid="_motor_8h_1a4b94651f41b495094cc445258a379471" kind="variable"><name>pid</name></member>
+    <member refid="_motor_8h_1a151cccf0120a24d251b5ce5d878abb67" kind="function"><name>motor_init</name></member>
+    <member refid="_motor_8h_1a22cd7acd32a157fb29293924b92d384d" kind="function"><name>motor_set_direction</name></member>
+    <member refid="_motor_8h_1ac29eebf30667cb34d4f79a29035a7709" kind="function"><name>motor_set_speed</name></member>
+    <member refid="_motor_8h_1a3543058368509b35584311cece5d20a3" kind="function"><name>motor_set_direction_speed</name></member>
+    <member refid="_motor_8h_1a920c7ac0f48e355b5ee861247e2cd637" kind="function"><name>motor_encoder_read</name></member>
+    <member refid="_motor_8h_1a091d29ed8690d7f70a79198e3c4e92f7" kind="function"><name>motor_set_with_PI</name></member>
+    <member refid="_motor_8h_1a942c3dd1795abb25084e1ae1b5cb210f" kind="function"><name>motor_center</name></member>
+  </compound>
+  <compound refid="_p_i_8c" kind="file"><name>PI.c</name>
+    <member refid="_p_i_8c_1ac64c6936fea812ae971766d888d59c29" kind="function"><name>PI_init</name></member>
+    <member refid="_p_i_8c_1a5e5b3c1185e1fcc5967cefa3727c1714" kind="function"><name>PI_controller</name></member>
+  </compound>
+  <compound refid="_p_i_8h" kind="file"><name>PI.h</name>
+    <member refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kind="typedef"><name>pidData_t</name></member>
+    <member refid="_p_i_8h_1ac64c6936fea812ae971766d888d59c29" kind="function"><name>PI_init</name></member>
+    <member refid="_p_i_8h_1a5e5b3c1185e1fcc5967cefa3727c1714" kind="function"><name>PI_controller</name></member>
+  </compound>
+  <compound refid="printf-stdarg_8c" kind="file"><name>printf-stdarg.c</name>
+    <member refid="printf-stdarg_8c_1a6fd5dddc97219412ab1c4483ce144aef" kind="define"><name>PAD_RIGHT</name></member>
+    <member refid="printf-stdarg_8c_1a0b08e2c1689b9348d321cdc8846950af" kind="define"><name>PAD_ZERO</name></member>
+    <member refid="printf-stdarg_8c_1a5bf270eda1fe4ed63535e31fab16433e" kind="define"><name>PRINT_BUF_LEN</name></member>
+    <member refid="printf-stdarg_8c_1a2958479a2b17cb4eafc47e8f584d0f97" kind="function"><name>printchar</name></member>
+    <member refid="printf-stdarg_8c_1a8d00fb4b337425dfeb7aadc10e96fe87" kind="function"><name>prints</name></member>
+    <member refid="printf-stdarg_8c_1ab435e05d19cb6284903b9904050e0b86" kind="function"><name>printi</name></member>
+    <member refid="printf-stdarg_8c_1a3e674fecee68caf4578c95e85ba38253" kind="function"><name>print</name></member>
+    <member refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kind="function"><name>printf</name></member>
+    <member refid="printf-stdarg_8c_1aa0649118bc3728b2a62af0b47606ff51" kind="function"><name>sprintf</name></member>
+    <member refid="printf-stdarg_8c_1a0b3526078beb75778277d06a066c9508" kind="function"><name>snprintf</name></member>
+  </compound>
+  <compound refid="printf-stdarg_8h" kind="file"><name>printf-stdarg.h</name>
+    <member refid="printf-stdarg_8h_1ae1649fc947ca37a86917a08354f48d1a" kind="define"><name>PRINTF</name></member>
+    <member refid="printf-stdarg_8h_1a98631211a4a8aee62f572375d5b637be" kind="function"><name>printf</name></member>
+  </compound>
+  <compound refid="_p_w_m_8c" kind="file"><name>PWM.c</name>
+    <member refid="_p_w_m_8c_1a9816c7c730e93dba6a3e231505a40354" kind="function"><name>PWM_init</name></member>
+    <member refid="_p_w_m_8c_1aada2d75bc8a8c6eb845bd940eadfa3fd" kind="function"><name>map</name></member>
+    <member refid="_p_w_m_8c_1a394437ec9ec6921d6598d80ce53c639a" kind="function"><name>PWM_set_value</name></member>
+  </compound>
+  <compound refid="_p_w_m_8h" kind="file"><name>PWM.h</name>
+    <member refid="_p_w_m_8h_1ab71cdc0ec46d7f32153a76e127ef13fd" kind="define"><name>STEP_CENTER</name></member>
+    <member refid="_p_w_m_8h_1ae4fc0c884b45881489b7ab5930a87be7" kind="define"><name>STEP_RIGHT_MAX</name></member>
+    <member refid="_p_w_m_8h_1a85c2e0a1c14969e3ff0c1d422d144dae" kind="define"><name>STEP_LEFT_MAX</name></member>
+    <member refid="_p_w_m_8h_1a9816c7c730e93dba6a3e231505a40354" kind="function"><name>PWM_init</name></member>
+    <member refid="_p_w_m_8h_1aada2d75bc8a8c6eb845bd940eadfa3fd" kind="function"><name>map</name></member>
+    <member refid="_p_w_m_8h_1a394437ec9ec6921d6598d80ce53c639a" kind="function"><name>PWM_set_value</name></member>
+  </compound>
+  <compound refid="solenoid_8c" kind="file"><name>solenoid.c</name>
+    <member refid="solenoid_8c_1a05736227e6f452fb1ceb65c417ebd8c9" kind="function"><name>solenoid_init</name></member>
+    <member refid="solenoid_8c_1ad07a96cd66d6585aa3e092542e13b42a" kind="function"><name>solenoid_routine</name></member>
+  </compound>
+  <compound refid="solenoid_8h" kind="file"><name>solenoid.h</name>
+    <member refid="solenoid_8h_1a05736227e6f452fb1ceb65c417ebd8c9" kind="function"><name>solenoid_init</name></member>
+    <member refid="solenoid_8h_1affc4eb3191d520e4b227ab5aef4d2026" kind="function"><name>solenoid_routine</name></member>
+  </compound>
+  <compound refid="uart_8c" kind="file"><name>uart.c</name>
+    <member refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kind="variable"><name>rx_buffer</name></member>
+    <member refid="uart_8c_1ab5b2eb7c61969e61bef72eeb48dd058d" kind="function"><name>configure_uart</name></member>
+    <member refid="uart_8c_1a1c201c2740c7aa7102270bb667069f38" kind="function"><name>uart_getchar</name></member>
+    <member refid="uart_8c_1ae12fb3c9b87465c2fa0f0b2f78c13257" kind="function"><name>uart_putchar</name></member>
+    <member refid="uart_8c_1a5e433d3a46eda66a50c81c1eda46c84b" kind="function"><name>UART_Handler</name></member>
+  </compound>
+  <compound refid="uart_8h" kind="file"><name>uart.h</name>
+    <member refid="uart_8h_1a179f566078d72b10a8dfcaca45a0cba2" kind="define"><name>UART_RINGBUFFER_SIZE</name></member>
+    <member refid="uart_8h_1a72ccb92ff20ffcc17148db0f08e998d1" kind="typedef"><name>uart_ringbuffer</name></member>
+    <member refid="uart_8h_1ab5b2eb7c61969e61bef72eeb48dd058d" kind="function"><name>configure_uart</name></member>
+    <member refid="uart_8h_1a1c201c2740c7aa7102270bb667069f38" kind="function"><name>uart_getchar</name></member>
+    <member refid="uart_8h_1ae12fb3c9b87465c2fa0f0b2f78c13257" kind="function"><name>uart_putchar</name></member>
+    <member refid="uart_8h_1a5e433d3a46eda66a50c81c1eda46c84b" kind="function"><name>UART_Handler</name></member>
+  </compound>
+  <compound refid="m_p_w_m_8h" kind="file"><name>mPWM.h</name>
+    <member refid="m_p_w_m_8h_1a4bf91ef116a226128dff4fe84e6a2950" kind="define"><name>mPWM_H</name></member>
+    <member refid="m_p_w_m_8h_1a12c5d4c3c0f192525e937ed50598ce62" kind="function"><name>mPWM_init</name></member>
+  </compound>
+  <compound refid="music_8h" kind="file"><name>music.h</name>
+    <member refid="music_8h_1a767ef47608c95190a991d1e79d155df5" kind="variable"><name>PROGMEM</name></member>
+  </compound>
+  <compound refid="notes_8h" kind="file"><name>notes.h</name>
+    <member refid="notes_8h_1a75daabb2226536982e7cd233cd1e6f39" kind="define"><name>NOTE_B0</name></member>
+    <member refid="notes_8h_1a3967a2d455ebdbe5e51db21bfb17fe85" kind="define"><name>NOTE_C1</name></member>
+    <member refid="notes_8h_1a860b429370d8c2d7a1c4dbd66b4bcfaa" kind="define"><name>NOTE_CS1</name></member>
+    <member refid="notes_8h_1a6fccac36e451f74157b234d64260b92e" kind="define"><name>NOTE_D1</name></member>
+    <member refid="notes_8h_1ac9a118b2bfc4c7208afc2db45c80b5a0" kind="define"><name>NOTE_DS1</name></member>
+    <member refid="notes_8h_1a0132d10523bb1a91b0aac0a47aee4dbe" kind="define"><name>NOTE_E1</name></member>
+    <member refid="notes_8h_1a8b7abe19db306650a9c0e5e2c7fd98e2" kind="define"><name>NOTE_F1</name></member>
+    <member refid="notes_8h_1a9ab5c314120ca69e5547b6848b5f2220" kind="define"><name>NOTE_FS1</name></member>
+    <member refid="notes_8h_1a45789d849fd75408a30c5cfb35e164d9" kind="define"><name>NOTE_G1</name></member>
+    <member refid="notes_8h_1a6cb0879026575ff13753e45023f98c54" kind="define"><name>NOTE_GS1</name></member>
+    <member refid="notes_8h_1ae7263a79e9675b3bae2b73d2c8b7d0f8" kind="define"><name>NOTE_A1</name></member>
+    <member refid="notes_8h_1acfcb8b2ac851e6f7b76610b28d21cf85" kind="define"><name>NOTE_AS1</name></member>
+    <member refid="notes_8h_1a05b80b905f142f5ffc29b52f4e92fda1" kind="define"><name>NOTE_B1</name></member>
+    <member refid="notes_8h_1a83e1f6d716a3f6560aa1d43b8245855d" kind="define"><name>NOTE_C2</name></member>
+    <member refid="notes_8h_1a0e1ed6d231ab36b54a5a894e76836872" kind="define"><name>NOTE_CS2</name></member>
+    <member refid="notes_8h_1ad219c7bf8aee3d671c24c760d1eac336" kind="define"><name>NOTE_D2</name></member>
+    <member refid="notes_8h_1a189cef9016942455b464b47faec10f7c" kind="define"><name>NOTE_DS2</name></member>
+    <member refid="notes_8h_1a9a021ea5eaee62fd52d4f67250712abb" kind="define"><name>NOTE_E2</name></member>
+    <member refid="notes_8h_1a55ebff842099b32c7e80f0870df9730e" kind="define"><name>NOTE_F2</name></member>
+    <member refid="notes_8h_1a3926c1af05e2876f1e9870566c09049e" kind="define"><name>NOTE_FS2</name></member>
+    <member refid="notes_8h_1a0a94df54731934347951149740d9eac0" kind="define"><name>NOTE_G2</name></member>
+    <member refid="notes_8h_1a70347f8b8ad83fde025d45d0692286f6" kind="define"><name>NOTE_GS2</name></member>
+    <member refid="notes_8h_1ad8c52bd098530d4253e7433c8cc29ee9" kind="define"><name>NOTE_A2</name></member>
+    <member refid="notes_8h_1af0d7a5be59334bf1985cbddde34b95bb" kind="define"><name>NOTE_AS2</name></member>
+    <member refid="notes_8h_1a49bbf78568a8e133862a1c84b825b678" kind="define"><name>NOTE_B2</name></member>
+    <member refid="notes_8h_1aa0630dbc2c704089b77bda35dfea855b" kind="define"><name>NOTE_C3</name></member>
+    <member refid="notes_8h_1a8086c9cb19cdacd01d2f0ffde5885f8b" kind="define"><name>NOTE_CS3</name></member>
+    <member refid="notes_8h_1a9e892b1e2743a11f7a4ce61f1b15688f" kind="define"><name>NOTE_D3</name></member>
+    <member refid="notes_8h_1a233fdbde84ffdd12523bf1c0bef152eb" kind="define"><name>NOTE_DS3</name></member>
+    <member refid="notes_8h_1a31913cf742bcbe91a39a47e819ac289c" kind="define"><name>NOTE_E3</name></member>
+    <member refid="notes_8h_1a2533a6044529da9ea46ea98e76ee50ad" kind="define"><name>NOTE_F3</name></member>
+    <member refid="notes_8h_1a2c1622ffe3f5cd463de2964742571e02" kind="define"><name>NOTE_FS3</name></member>
+    <member refid="notes_8h_1a60b70b4fe537257e776eafd46d25e49b" kind="define"><name>NOTE_G3</name></member>
+    <member refid="notes_8h_1ae2b3de8c17ba8ae7e2e758c6b15576ca" kind="define"><name>NOTE_GS3</name></member>
+    <member refid="notes_8h_1a934b0ccc182054ca8da5c67c0e78a04c" kind="define"><name>NOTE_A3</name></member>
+    <member refid="notes_8h_1a33992ffb6f31579b376cef8c5858b9f0" kind="define"><name>NOTE_AS3</name></member>
+    <member refid="notes_8h_1aa5207dfb3103215cdb89a40c1753eea8" kind="define"><name>NOTE_B3</name></member>
+    <member refid="notes_8h_1adbed706152a3d7114327fc5af3c7e07c" kind="define"><name>NOTE_C4</name></member>
+    <member refid="notes_8h_1ae9a1fa0e819ea29161a72b6840dd0ffc" kind="define"><name>NOTE_CS4</name></member>
+    <member refid="notes_8h_1a6162f78ec6fc3457a077602a77e36992" kind="define"><name>NOTE_D4</name></member>
+    <member refid="notes_8h_1a638f884f0226cff11eff97ba96fbce88" kind="define"><name>NOTE_DS4</name></member>
+    <member refid="notes_8h_1a147e4663d8161df841c418859a70f66f" kind="define"><name>NOTE_E4</name></member>
+    <member refid="notes_8h_1aff20d9abb2ef6f25afeb44245129eba6" kind="define"><name>NOTE_F4</name></member>
+    <member refid="notes_8h_1a3ca197d6b74ace12c6cc9e53f47b7a6a" kind="define"><name>NOTE_FS4</name></member>
+    <member refid="notes_8h_1a588324691d836c7cdf1dd8cc071eeecc" kind="define"><name>NOTE_G4</name></member>
+    <member refid="notes_8h_1ac446a7c56b75b56451b6712833bfd31f" kind="define"><name>NOTE_GS4</name></member>
+    <member refid="notes_8h_1a4ede898d3fa744ffb02d5e9b66994ef3" kind="define"><name>NOTE_A4</name></member>
+    <member refid="notes_8h_1aaf4ee3ef21f5803c75089341e7e3f50d" kind="define"><name>NOTE_AS4</name></member>
+    <member refid="notes_8h_1a9ed6d5c8563ae60e6d2716e13d261386" kind="define"><name>NOTE_B4</name></member>
+    <member refid="notes_8h_1a8afb484cf5507628f20dd2822a5b2e79" kind="define"><name>NOTE_C5</name></member>
+    <member refid="notes_8h_1a8f01a2997f769170cc4f20287aca5339" kind="define"><name>NOTE_CS5</name></member>
+    <member refid="notes_8h_1a37abdd5b16959e6265e7de75022f5dde" kind="define"><name>NOTE_D5</name></member>
+    <member refid="notes_8h_1a7943ad2d66e53367906e04e8af1c086a" kind="define"><name>NOTE_DS5</name></member>
+    <member refid="notes_8h_1a441475178599565b3dd4572cebbdf28c" kind="define"><name>NOTE_E5</name></member>
+    <member refid="notes_8h_1a88cbd6246f212e3bcbecbb032c8e2000" kind="define"><name>NOTE_F5</name></member>
+    <member refid="notes_8h_1a84727bb42a42a0b6af92403750f91557" kind="define"><name>NOTE_FS5</name></member>
+    <member refid="notes_8h_1af71ac5d772736db7a12fd9f9521dd475" kind="define"><name>NOTE_G5</name></member>
+    <member refid="notes_8h_1a1d0d4526c7554185499a7207359bda67" kind="define"><name>NOTE_GS5</name></member>
+    <member refid="notes_8h_1a304d30fa9be20c63c38c57787d037855" kind="define"><name>NOTE_A5</name></member>
+    <member refid="notes_8h_1a9eb288f3153b75a074d08dce3765298e" kind="define"><name>NOTE_AS5</name></member>
+    <member refid="notes_8h_1a88aac44b58d74d5aa5749e17a22b8cdd" kind="define"><name>NOTE_B5</name></member>
+    <member refid="notes_8h_1a54087ffb7da518f038a39025b2a9ee7e" kind="define"><name>NOTE_C6</name></member>
+    <member refid="notes_8h_1a469d61024f06d70e36b5a201e02290dd" kind="define"><name>NOTE_CS6</name></member>
+    <member refid="notes_8h_1a811db0f526f36b57a6798aaf31c8d70c" kind="define"><name>NOTE_D6</name></member>
+    <member refid="notes_8h_1a24a650a77ce62398dafbd1bcce98eb59" kind="define"><name>NOTE_DS6</name></member>
+    <member refid="notes_8h_1a857f52119eedaadce999e3918ae9959f" kind="define"><name>NOTE_E6</name></member>
+    <member refid="notes_8h_1adfe1a899865ae2952aa2d9ed5e790b79" kind="define"><name>NOTE_F6</name></member>
+    <member refid="notes_8h_1ab4ebb3f662ea22dd29c2887d1d217af6" kind="define"><name>NOTE_FS6</name></member>
+    <member refid="notes_8h_1abc6a20319564cb37b2de2d3ef3b90c56" kind="define"><name>NOTE_G6</name></member>
+    <member refid="notes_8h_1a97b306e8336c0e303e366ad2cdacbee0" kind="define"><name>NOTE_GS6</name></member>
+    <member refid="notes_8h_1a398204aee459448c88756450dec5917e" kind="define"><name>NOTE_A6</name></member>
+    <member refid="notes_8h_1aa79cf5cf202add769c2b5e3bac36b07e" kind="define"><name>NOTE_AS6</name></member>
+    <member refid="notes_8h_1a918042b793d057bd1038d859bc769ec0" kind="define"><name>NOTE_B6</name></member>
+    <member refid="notes_8h_1a4a673e851d3b7e3b56a7cd83fba56cc3" kind="define"><name>NOTE_C7</name></member>
+    <member refid="notes_8h_1a9a1638b00a6bdc7d49ca174d866506d8" kind="define"><name>NOTE_CS7</name></member>
+    <member refid="notes_8h_1aedb563ef21585da30f0b764af28c0756" kind="define"><name>NOTE_D7</name></member>
+    <member refid="notes_8h_1a45831ac60d64e86e43e199135ea76716" kind="define"><name>NOTE_DS7</name></member>
+    <member refid="notes_8h_1a94435ecff4dd7454e8f12714c3bddd32" kind="define"><name>NOTE_E7</name></member>
+    <member refid="notes_8h_1a9e4b9940ccfc472459ccc30f2b4292f8" kind="define"><name>NOTE_F7</name></member>
+    <member refid="notes_8h_1a7de2a8e90d9295b995d63190ec927532" kind="define"><name>NOTE_FS7</name></member>
+    <member refid="notes_8h_1afabef1046812185e7c9b348c4ed42ff0" kind="define"><name>NOTE_G7</name></member>
+    <member refid="notes_8h_1a2103012b7aab268027be083fb9527aef" kind="define"><name>NOTE_GS7</name></member>
+    <member refid="notes_8h_1a8d2565a45b2dc04fdd20d687ba9a2adf" kind="define"><name>NOTE_A7</name></member>
+    <member refid="notes_8h_1a3cf820bf5e8bac30a1d1d6f5b0a80278" kind="define"><name>NOTE_AS7</name></member>
+    <member refid="notes_8h_1a65fb6be656e33eec5ebd43f99bdde43c" kind="define"><name>NOTE_B7</name></member>
+    <member refid="notes_8h_1a86f99256baa62c00acf33ae49078a161" kind="define"><name>NOTE_C8</name></member>
+    <member refid="notes_8h_1a3c916049f18564b32af9294a26a80c28" kind="define"><name>NOTE_CS8</name></member>
+    <member refid="notes_8h_1ac016caf952a32a4414a0ac8cffa4b194" kind="define"><name>NOTE_D8</name></member>
+    <member refid="notes_8h_1acff3ddde7bdccfa2dfd9f2dfc3671d26" kind="define"><name>NOTE_DS8</name></member>
+    <member refid="notes_8h_1af61315e1c4a04436923a5c52196cdd3c" kind="define"><name>REST</name></member>
+    <member refid="notes_8h_1a2d2d261ae513ff2b384bfb48bc3527e1" kind="define"><name>MUSIC_END</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__d___progetti__t_t_k4155__r_e_a_d_m_e" kind="page"><name>md_D__Progetti_TTK4155_README</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_acb7934841cbe7f904c6a1a3e7b4d056" kind="dir"><name>D:/Progetti/TTK4155/Node1/TTK4155/Debug</name>
+  </compound>
+  <compound refid="dir_a71a0ade0b197ae5cfd2544c19b82370" kind="dir"><name>D:/Progetti/TTK4155/Node2/Node2/Debug</name>
+  </compound>
+  <compound refid="dir_12aa1f1713acbc3e2c25d090f775827a" kind="dir"><name>D:/Progetti/TTK4155/Node2/Node2/Debug/Device_Startup</name>
+  </compound>
+  <compound refid="dir_3464558ff8bfc5271919bbee9cf58add" kind="dir"><name>D:/Progetti/TTK4155/Node2/Node2/Device_Startup</name>
+  </compound>
+  <compound refid="dir_58cdb4e8a8341cf13de16fff5b7cb7dc" kind="dir"><name>D:/Progetti/TTK4155/Node1</name>
+  </compound>
+  <compound refid="dir_d7a6bd4a33962bf7ae4f33ed35ef8339" kind="dir"><name>D:/Progetti/TTK4155/Node2</name>
+  </compound>
+  <compound refid="dir_51fb00934f25e7a8ddb9d8b7e513af72" kind="dir"><name>D:/Progetti/TTK4155/Node2/Node2</name>
+  </compound>
+  <compound refid="dir_3ac5834d046db03078f6d272fd5d650a" kind="dir"><name>D:/Progetti/TTK4155/Node3</name>
+  </compound>
+  <compound refid="dir_7c8d334ce38413a6e569bcd600341e59" kind="dir"><name>D:/Progetti</name>
+  </compound>
+  <compound refid="dir_8328ea8cd8e8ca88d1473235c4454572" kind="dir"><name>D:/Progetti/TTK4155</name>
+  </compound>
+  <compound refid="dir_9719f7dd5b30e683abc03a097b0da9be" kind="dir"><name>D:/Progetti/TTK4155/Node1/TTK4155</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

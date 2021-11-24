@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>TTK4155<sp/>-<sp/>Industrial<sp/>and<sp/>Embedded<sp/>Computer<sp/>Systems<sp/>Design</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Term<sp/>project</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/README.md"/>
+  </compounddef>
+</doxygen>

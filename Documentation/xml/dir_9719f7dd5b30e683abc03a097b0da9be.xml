@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_9719f7dd5b30e683abc03a097b0da9be" kind="dir">
+    <compoundname>D:/Progetti/TTK4155/Node1/TTK4155</compoundname>
+    <innerdir refid="dir_acb7934841cbe7f904c6a1a3e7b4d056">D:/Progetti/TTK4155/Node1/TTK4155/Debug</innerdir>
+    <innerfile refid="_node1_2_t_t_k4155_2_a_d_c_8c">ADC.c</innerfile>
+    <innerfile refid="_node1_2_t_t_k4155_2_a_d_c_8h">ADC.h</innerfile>
+    <innerfile refid="_c_a_n_8c">CAN.c</innerfile>
+    <innerfile refid="_c_a_n_8h">CAN.h</innerfile>
+    <innerfile refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c">CAN_Controller.c</innerfile>
+    <innerfile refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h">CAN_Controller.h</innerfile>
+    <innerfile refid="fonts_8h">fonts.h</innerfile>
+    <innerfile refid="_interrupt_8c">Interrupt.c</innerfile>
+    <innerfile refid="_interrupt_8h">Interrupt.h</innerfile>
+    <innerfile refid="_joystick_8c">Joystick.c</innerfile>
+    <innerfile refid="_joystick_8h">Joystick.h</innerfile>
+    <innerfile refid="_node1_2_t_t_k4155_2main_8c">main.c</innerfile>
+    <innerfile refid="mcp2515_8h">mcp2515.h</innerfile>
+    <innerfile refid="_o_l_e_d_8c">OLED.c</innerfile>
+    <innerfile refid="_o_l_e_d_8h">OLED.h</innerfile>
+    <innerfile refid="_slider_8c">Slider.c</innerfile>
+    <innerfile refid="_slider_8h">Slider.h</innerfile>
+    <innerfile refid="_s_p_i_8c">SPI.c</innerfile>
+    <innerfile refid="_s_p_i_8h">SPI.h</innerfile>
+    <innerfile refid="_s_r_a_m_8h">SRAM.h</innerfile>
+    <innerfile refid="_u_s_a_r_t_8c">USART.c</innerfile>
+    <innerfile refid="_u_s_a_r_t_8h">USART.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/"/>
+  </compounddef>
+</doxygen>

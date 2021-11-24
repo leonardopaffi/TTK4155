@@ -1,0 +1,69 @@
+\hypertarget{_u_s_a_r_t_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+USART.c File Reference}
+\label{_u_s_a_r_t_8c}\index{D:/Progetti/TTK4155/Node1/TTK4155/USART.c@{D:/Progetti/TTK4155/Node1/TTK4155/USART.c}}
+{\ttfamily \#include \char`\"{}USART.\+h\char`\"{}}\newline
+Include dependency graph for USART.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{_u_s_a_r_t_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_s_a_r_t_8c_a99f79737b2f8bf945b4c169c69e3e3eb}{USART\+\_\+\+Init}} (unsigned int ubrr)
+\begin{DoxyCompactList}\small\item\em Initialization function for the USART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_u_s_a_r_t_8c_a90a44f50119303ce2d4198c756908fa8}{USART\+\_\+\+Transmit}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em Transmit data over the USART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_u_s_a_r_t_8c_ab0afeb1d2913cba471376bf274411a5c}{USART\+\_\+\+Receive}} (void)
+\begin{DoxyCompactList}\small\item\em Receives data over the USART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a99f79737b2f8bf945b4c169c69e3e3eb}\label{_u_s_a_r_t_8c_a99f79737b2f8bf945b4c169c69e3e3eb}} 
+\index{USART.c@{USART.c}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!USART.c@{USART.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{unsigned int}]{ubrr }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the USART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ubrr} & USART bitrate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_ab0afeb1d2913cba471376bf274411a5c}\label{_u_s_a_r_t_8c_ab0afeb1d2913cba471376bf274411a5c}} 
+\index{USART.c@{USART.c}!USART\_Receive@{USART\_Receive}}
+\index{USART\_Receive@{USART\_Receive}!USART.c@{USART.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Receive()}{USART\_Receive()}}
+{\footnotesize\ttfamily int USART\+\_\+\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receives data over the USART. 
+
+\begin{DoxyReturn}{Returns}
+int Received data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_s_a_r_t_8c_a90a44f50119303ce2d4198c756908fa8}\label{_u_s_a_r_t_8c_a90a44f50119303ce2d4198c756908fa8}} 
+\index{USART.c@{USART.c}!USART\_Transmit@{USART\_Transmit}}
+\index{USART\_Transmit@{USART\_Transmit}!USART.c@{USART.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Transmit()}{USART\_Transmit()}}
+{\footnotesize\ttfamily int USART\+\_\+\+Transmit (\begin{DoxyParamCaption}\item[{unsigned char}]{data }\end{DoxyParamCaption})}
+
+
+
+Transmit data over the USART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

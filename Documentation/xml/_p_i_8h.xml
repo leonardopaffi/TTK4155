@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_p_i_8h" kind="file" language="C++">
+    <compoundname>PI.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="_motor_8h" local="yes">D:/Progetti/TTK4155/Node2/Node2/Motor.h</includedby>
+    <includedby refid="_p_i_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/PI.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/PI.h</label>
+        <link refid="_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node2/Node2/Motor.c</label>
+        <link refid="_motor_8c"/>
+      </node>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node2/Node2/Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/Progetti/TTK4155/Node2/Node2/PI.c</label>
+        <link refid="_p_i_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/PI.h</label>
+        <link refid="_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_interrupt.c</label>
+        <link refid="can__interrupt_8c"/>
+      </node>
+      <node id="5">
+        <label>D:/Progetti/TTK4155/Node2/Node2/main.c</label>
+        <link refid="_node2_2_node2_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_p_i_d___d_a_t_a" prot="public">PID_DATA</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" prot="public" static="no">
+        <type>struct <ref refid="struct_p_i_d___d_a_t_a" kindref="compound">PID_DATA</ref></type>
+        <definition>typedef struct PID_DATA pidData_t</definition>
+        <argsstring></argsstring>
+        <name>pidData_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="16" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_p_i_8h_1ac64c6936fea812ae971766d888d59c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PI_init</definition>
+        <argsstring>(int16_t P_factor, int16_t I_factor, pidData_t *pid_st)</argsstring>
+        <name>PI_init</name>
+        <param>
+          <type>int16_t</type>
+          <declname>P_factor</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>I_factor</declname>
+        </param>
+        <param>
+          <type><ref refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kindref="member">pidData_t</ref> *</type>
+          <declname>pid_st</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the PI controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>P_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>I_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="25" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.c" bodystart="3" bodyend="10" declfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_i_8h_1a5e5b3c1185e1fcc5967cefa3727c1714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t PI_controller</definition>
+        <argsstring>(int16_t set_point, int16_t process_value, pidData_t *pid_st)</argsstring>
+        <name>PI_controller</name>
+        <param>
+          <type>int16_t</type>
+          <declname>set_point</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>process_value</declname>
+        </param>
+        <param>
+          <type><ref refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kindref="member">pidData_t</ref> *</type>
+          <declname>pid_st</declname>
+        </param>
+        <briefdescription>
+<para>Updates the value with the PI controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>set_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pid_st</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int16_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="35" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.c" bodystart="12" bodyend="22" declfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" declline="35" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="struct_p_i_d___d_a_t_a" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_p_i_d___d_a_t_a" kindref="compound">PID_DATA</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Structure<sp/>adapted<sp/>from<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>To<sp/>calculate<sp/>Error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" kindref="member">error</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Summation<sp/>of<sp/>errors,<sp/>used<sp/>for<sp/>integrate<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" kindref="member">integral</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>Proportional<sp/>tuning<sp/>constant,<sp/>multiplied<sp/>with<sp/>SCALING_FACTOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" kindref="member">P_Factor</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>Integral<sp/>tuning<sp/>constant,<sp/>multiplied<sp/>with<sp/>SCALING_FACTOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" kindref="member">I_Factor</ref>;</highlight></codeline>
+<codeline lineno="16" refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" refkind="member"><highlight class="normal">}<sp/><ref refid="_p_i_8h_1a4cce40a2f18039f5f1e1744cd44452cf" kindref="member">pidData_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_i_8h_1ac64c6936fea812ae971766d888d59c29" kindref="member">PI_init</ref>(int16_t<sp/>P_factor,<sp/>int16_t<sp/>I_factor,<sp/><ref refid="struct_p_i_d___d_a_t_a" kindref="compound">pidData_t</ref>*<sp/>pid_st);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">int16_t<sp/><ref refid="_p_i_8h_1a5e5b3c1185e1fcc5967cefa3727c1714" kindref="member">PI_controller</ref>(int16_t<sp/>set_point,<sp/>int16_t<sp/>process_value,<sp/><ref refid="struct_p_i_d___d_a_t_a" kindref="compound">pidData_t</ref><sp/><sp/>*pid_st);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h"/>
+  </compounddef>
+</doxygen>

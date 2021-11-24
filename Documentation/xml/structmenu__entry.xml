@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structmenu__entry" kind="struct" language="C++" prot="public">
+    <compoundname>menu_entry</compoundname>
+    <includes refid="_o_l_e_d_8h" local="no">OLED.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmenu__entry_1a5ac083a645d964373f022d03df4849c8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="23" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__entry_1ab2b3adeb2a67e656ff030b56727fd0ac" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="24" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="21" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structmenu__entry_1ab2b3adeb2a67e656ff030b56727fd0ac" prot="public" virt="non-virtual"><scope>menu_entry</scope><name>length</name></member>
+      <member refid="structmenu__entry_1a5ac083a645d964373f022d03df4849c8" prot="public" virt="non-virtual"><scope>menu_entry</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

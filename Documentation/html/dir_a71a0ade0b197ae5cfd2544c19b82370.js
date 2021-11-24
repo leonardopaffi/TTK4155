@@ -1,7 +1,8 @@
 var dir_a71a0ade0b197ae5cfd2544c19b82370 =
 [
     [ "Device_Startup", "dir_12aa1f1713acbc3e2c25d090f775827a.html", "dir_12aa1f1713acbc3e2c25d090f775827a" ],
-    [ "can_controller.d", "can__controller_8d.html", null ],
+    [ "ADC.d", "_node2_2_node2_2_debug_2_a_d_c_8d.html", null ],
+    [ "can_controller.d", "_node2_2_node2_2_debug_2_c_a_n___controller_8d.html", null ],
     [ "can_interrupt.d", "can__interrupt_8d.html", null ],
     [ "delay.d", "delay_8d.html", null ],
     [ "main.d", "_node2_2_node2_2_debug_2main_8d.html", null ],

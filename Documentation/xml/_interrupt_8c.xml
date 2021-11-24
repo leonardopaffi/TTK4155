@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_interrupt_8c" kind="file" language="C++">
+    <compoundname>Interrupt.c</compoundname>
+    <includes refid="_interrupt_8h" local="yes">Interrupt.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c</label>
+        <link refid="_interrupt_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Interrupt.h</label>
+        <link refid="_interrupt_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="3">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_interrupt_8c_1a261e47dd882acb04e7c867fe2977ad1a" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t RIGHT_BUTTON_PRESSED</definition>
+        <argsstring></argsstring>
+        <name>RIGHT_BUTTON_PRESSED</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="3" column="18" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_interrupt_8c_1ab326e3a1904161f68cf09b94c6808a05" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t LEFT_BUTTON_PRESSED</definition>
+        <argsstring></argsstring>
+        <name>LEFT_BUTTON_PRESSED</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="4" column="18" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_interrupt_8c_1a9e6daedebfea645463f0605ea0c0ea53" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t JOYSTICK_BUTTON_PRESSED</definition>
+        <argsstring></argsstring>
+        <name>JOYSTICK_BUTTON_PRESSED</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="5" column="18" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_interrupt_8c_1a1c62fca549a4981d6684d4a5c72874b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interrupt_init</definition>
+        <argsstring>()</argsstring>
+        <name>interrupt_init</name>
+        <briefdescription>
+<para>initialization function for the interrupt </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="7" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="7" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="_interrupt_8c_1ae04f5463a20ee95cdb373a69b2eacf5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interrupt_polling</definition>
+        <argsstring>()</argsstring>
+        <name>interrupt_polling</name>
+        <briefdescription>
+<para>Resets variables and prints in the console if a button is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="28" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="28" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="_interrupt_8c_1a30a0ad88a89a84c0161cf09eace108e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ISR</definition>
+        <argsstring>(INT2_vect)</argsstring>
+        <name>ISR</name>
+        <param>
+          <type>INT2_vect</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" line="48" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c" bodystart="48" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interrupt_8h" kindref="compound">Interrupt.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_interrupt_8c_1a261e47dd882acb04e7c867fe2977ad1a" kindref="member">RIGHT_BUTTON_PRESSED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_interrupt_8c_1ab326e3a1904161f68cf09b94c6808a05" kindref="member">LEFT_BUTTON_PRESSED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_interrupt_8c_1a9e6daedebfea645463f0605ea0c0ea53" kindref="member">JOYSTICK_BUTTON_PRESSED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interrupt_8c_1a1c62fca549a4981d6684d4a5c72874b9" kindref="member">interrupt_init</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>cli();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DDRE<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>PE0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>interrupt<sp/>0<sp/>on<sp/>falling<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>MCUCR<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>ISC01);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>interrupt<sp/>1<sp/>on<sp/>rising<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>MCUCR<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>ISC11)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>ISC10);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>interrupt<sp/>2<sp/>on<sp/>rising<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>EMCUCR<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>ISC2);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>interrupts<sp/>on<sp/>MCU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>GICR<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>INT2)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>INT1)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>INT0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interrupt_8c_1ae04f5463a20ee95cdb373a69b2eacf5f" kindref="member">interrupt_polling</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>if(RIGHT_BUTTON_PRESSED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Do<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;RIGHT<sp/>B\n\r&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//Reset<sp/>button<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>RIGHT_BUTTON_PRESSED<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_interrupt_8c_1ab326e3a1904161f68cf09b94c6808a05" kindref="member">LEFT_BUTTON_PRESSED</ref>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;LEFT<sp/>B\n\r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Reset<sp/>button<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interrupt_8c_1ab326e3a1904161f68cf09b94c6808a05" kindref="member">LEFT_BUTTON_PRESSED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="_interrupt_8c_1a30a0ad88a89a84c0161cf09eace108e8" kindref="member">ISR</ref>(INT2_vect)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wakes<sp/>the<sp/>MCU<sp/>up<sp/>when<sp/>right<sp/>button<sp/>is<sp/>pressed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_interrupt_8c_1a261e47dd882acb04e7c867fe2977ad1a" kindref="member">RIGHT_BUTTON_PRESSED</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ISR(INT1_vect)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wakes<sp/>the<sp/>MCU<sp/>up<sp/>when<sp/>left<sp/>button<sp/>is<sp/>pressed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>LEFT_BUTTON_PRESSED<sp/>=<sp/>1;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*}*/</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c"/>
+  </compounddef>
+</doxygen>

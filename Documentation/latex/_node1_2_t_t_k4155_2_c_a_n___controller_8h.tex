@@ -1,0 +1,233 @@
+\hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+CAN\+\_\+\+Controller.h File Reference}
+\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h}\index{D:/Progetti/TTK4155/Node1/TTK4155/CAN\_Controller.h@{D:/Progetti/TTK4155/Node1/TTK4155/CAN\_Controller.h}}
+{\ttfamily \#include \char`\"{}SPI.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mcp2515.\+h\char`\"{}}\newline
+Include dependency graph for CAN\+\_\+\+Controller.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{_node1_2_t_t_k4155_2_c_a_n___controller_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_node1_2_t_t_k4155_2_c_a_n___controller_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a30d9219d01d77604bb8cccdb6bbb8a89}{MCP\+\_\+\+TXB0\+SIDH}}~0x31
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a64751f2c34434ba5c7cec9cb89bb3817}{MCP\+\_\+\+TXB0\+SIDL}}~0x32
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_af079eda36bde82cfee6ef43681813ec7}{MCP\+\_\+\+TXB0\+DLC}}~0x35
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa37171b2eb1e0d9432c71b2b6a3ac879}{MCP\+\_\+\+TXB0\+D0}}~0x36
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a9b6a29d1afcd03966741bf4f14fc629d}{MCP\+\_\+\+RXB0\+SIDL}}~0\+X62
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a4b3a44ce092d08f8bd7b1d76c2000eb3}{MCP\+\_\+\+RXB0\+DLC}}~0x65
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac0c883f6f7f1eed093af5617cbb41f74}{MCP\+\_\+\+RXB0\+D0}}~0x66
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a83556d0bfcf1cc15058decc60ee6afd1}{MCP\+\_\+\+RXB1\+SIDL}}~0\+X72
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a0d1445b03402e8152e66051dad310999}{MCP\+\_\+\+RXB1\+DLC}}~0\+X75
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ad75f4530473680b7c7ec3bfd6f2205b2}{MCP\+\_\+\+RXB1\+D0}}~0x76
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a94d0b7ee70889fef8169e24e32de6243}{MCP2515\+\_\+read}} (uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Reading instruction for the MCP2515. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882cd25399ed7c350b90960ebad58b4e}{MCP2515\+\_\+write}} (uint8\+\_\+t address, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writing data to a register of the MCP2515. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa12fd2c3ad6653e48f0e1985527f5d23}{MCP2515\+\_\+\+RTS}} (uint8\+\_\+t buffer)
+\begin{DoxyCompactList}\small\item\em Ready To Send instruction for the MCP2515. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac06d6d9d7edb8a48e7b4b1fd06d2a330}{MCP2515\+\_\+read\+\_\+status}} ()
+\begin{DoxyCompactList}\small\item\em Read status instruction for the MCP2515. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aede3ccc1b3772f8e55447b8334769d37}{MCP2515\+\_\+bit\+\_\+modify}} (uint8\+\_\+t address, uint8\+\_\+t byte\+\_\+mask, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Modify bit/bits of a register providing a mask and the new data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882a91d22eb8ae4eb4315b06c4f7e966}{MCP2515\+\_\+reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the MCP2515. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a04b0eb91a5bafd55bd91e2b1d4da6353}{MCP2515\+\_\+set\+\_\+mode}} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Set mode for the MCP2515. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac0c883f6f7f1eed093af5617cbb41f74}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac0c883f6f7f1eed093af5617cbb41f74}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB0D0@{MCP\_RXB0D0}}
+\index{MCP\_RXB0D0@{MCP\_RXB0D0}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB0D0}{MCP\_RXB0D0}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB0\+D0~0x66}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a4b3a44ce092d08f8bd7b1d76c2000eb3}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a4b3a44ce092d08f8bd7b1d76c2000eb3}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB0DLC@{MCP\_RXB0DLC}}
+\index{MCP\_RXB0DLC@{MCP\_RXB0DLC}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB0DLC}{MCP\_RXB0DLC}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB0\+DLC~0x65}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a9b6a29d1afcd03966741bf4f14fc629d}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a9b6a29d1afcd03966741bf4f14fc629d}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB0SIDL@{MCP\_RXB0SIDL}}
+\index{MCP\_RXB0SIDL@{MCP\_RXB0SIDL}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB0SIDL}{MCP\_RXB0SIDL}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB0\+SIDL~0\+X62}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ad75f4530473680b7c7ec3bfd6f2205b2}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ad75f4530473680b7c7ec3bfd6f2205b2}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB1D0@{MCP\_RXB1D0}}
+\index{MCP\_RXB1D0@{MCP\_RXB1D0}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB1D0}{MCP\_RXB1D0}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB1\+D0~0x76}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a0d1445b03402e8152e66051dad310999}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a0d1445b03402e8152e66051dad310999}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB1DLC@{MCP\_RXB1DLC}}
+\index{MCP\_RXB1DLC@{MCP\_RXB1DLC}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB1DLC}{MCP\_RXB1DLC}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB1\+DLC~0\+X75}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a83556d0bfcf1cc15058decc60ee6afd1}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a83556d0bfcf1cc15058decc60ee6afd1}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_RXB1SIDL@{MCP\_RXB1SIDL}}
+\index{MCP\_RXB1SIDL@{MCP\_RXB1SIDL}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_RXB1SIDL}{MCP\_RXB1SIDL}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+RXB1\+SIDL~0\+X72}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa37171b2eb1e0d9432c71b2b6a3ac879}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa37171b2eb1e0d9432c71b2b6a3ac879}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_TXB0D0@{MCP\_TXB0D0}}
+\index{MCP\_TXB0D0@{MCP\_TXB0D0}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_TXB0D0}{MCP\_TXB0D0}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+TXB0\+D0~0x36}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_af079eda36bde82cfee6ef43681813ec7}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_af079eda36bde82cfee6ef43681813ec7}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_TXB0DLC@{MCP\_TXB0DLC}}
+\index{MCP\_TXB0DLC@{MCP\_TXB0DLC}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_TXB0DLC}{MCP\_TXB0DLC}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+TXB0\+DLC~0x35}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a30d9219d01d77604bb8cccdb6bbb8a89}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a30d9219d01d77604bb8cccdb6bbb8a89}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_TXB0SIDH@{MCP\_TXB0SIDH}}
+\index{MCP\_TXB0SIDH@{MCP\_TXB0SIDH}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_TXB0SIDH}{MCP\_TXB0SIDH}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+TXB0\+SIDH~0x31}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a64751f2c34434ba5c7cec9cb89bb3817}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a64751f2c34434ba5c7cec9cb89bb3817}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP\_TXB0SIDL@{MCP\_TXB0SIDL}}
+\index{MCP\_TXB0SIDL@{MCP\_TXB0SIDL}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP\_TXB0SIDL}{MCP\_TXB0SIDL}}
+{\footnotesize\ttfamily \#define MCP\+\_\+\+TXB0\+SIDL~0x32}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aede3ccc1b3772f8e55447b8334769d37}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aede3ccc1b3772f8e55447b8334769d37}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_bit\_modify@{MCP2515\_bit\_modify}}
+\index{MCP2515\_bit\_modify@{MCP2515\_bit\_modify}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_bit\_modify()}{MCP2515\_bit\_modify()}}
+{\footnotesize\ttfamily void MCP2515\+\_\+bit\+\_\+modify (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t}]{byte\+\_\+mask,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Modify bit/bits of a register providing a mask and the new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & \\
+\hline
+{\em byte\+\_\+mask} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a94d0b7ee70889fef8169e24e32de6243}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a94d0b7ee70889fef8169e24e32de6243}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_read@{MCP2515\_read}}
+\index{MCP2515\_read@{MCP2515\_read}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_read()}{MCP2515\_read()}}
+{\footnotesize\ttfamily uint8\+\_\+t MCP2515\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address }\end{DoxyParamCaption})}
+
+
+
+Reading instruction for the MCP2515. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of the register to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac06d6d9d7edb8a48e7b4b1fd06d2a330}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac06d6d9d7edb8a48e7b4b1fd06d2a330}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_read\_status@{MCP2515\_read\_status}}
+\index{MCP2515\_read\_status@{MCP2515\_read\_status}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_read\_status()}{MCP2515\_read\_status()}}
+{\footnotesize\ttfamily uint8\+\_\+t MCP2515\+\_\+read\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read status instruction for the MCP2515. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882a91d22eb8ae4eb4315b06c4f7e966}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882a91d22eb8ae4eb4315b06c4f7e966}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_reset@{MCP2515\_reset}}
+\index{MCP2515\_reset@{MCP2515\_reset}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_reset()}{MCP2515\_reset()}}
+{\footnotesize\ttfamily void MCP2515\+\_\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the MCP2515. 
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa12fd2c3ad6653e48f0e1985527f5d23}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa12fd2c3ad6653e48f0e1985527f5d23}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_RTS@{MCP2515\_RTS}}
+\index{MCP2515\_RTS@{MCP2515\_RTS}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_RTS()}{MCP2515\_RTS()}}
+{\footnotesize\ttfamily void MCP2515\+\_\+\+RTS (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Ready To Send instruction for the MCP2515. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a04b0eb91a5bafd55bd91e2b1d4da6353}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a04b0eb91a5bafd55bd91e2b1d4da6353}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_set\_mode@{MCP2515\_set\_mode}}
+\index{MCP2515\_set\_mode@{MCP2515\_set\_mode}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_set\_mode()}{MCP2515\_set\_mode()}}
+{\footnotesize\ttfamily void MCP2515\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set mode for the MCP2515. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882cd25399ed7c350b90960ebad58b4e}\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882cd25399ed7c350b90960ebad58b4e}} 
+\index{CAN\_Controller.h@{CAN\_Controller.h}!MCP2515\_write@{MCP2515\_write}}
+\index{MCP2515\_write@{MCP2515\_write}!CAN\_Controller.h@{CAN\_Controller.h}}
+\doxysubsubsection{\texorpdfstring{MCP2515\_write()}{MCP2515\_write()}}
+{\footnotesize\ttfamily void MCP2515\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Writing data to a register of the MCP2515. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="m_p_w_m_8h" kind="file" language="C++">
+    <compoundname>mPWM.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="m_p_w_m_8h_1a4bf91ef116a226128dff4fe84e6a2950" prot="public" static="no">
+        <name>mPWM_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node3/mPWM.h" line="2" column="9" bodyfile="D:/Progetti/TTK4155/Node3/mPWM.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="m_p_w_m_8h_1a12c5d4c3c0f192525e937ed50598ce62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mPWM_init</definition>
+        <argsstring>()</argsstring>
+        <name>mPWM_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node3/mPWM.h" line="6" column="6" bodyfile="D:/Progetti/TTK4155/Node3/mPWM.h" bodystart="6" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>mPWM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="m_p_w_m_8h_1a4bf91ef116a226128dff4fe84e6a2950" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>mPWM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="m_p_w_m_8h_1a12c5d4c3c0f192525e937ed50598ce62" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="m_p_w_m_8h_1a12c5d4c3c0f192525e937ed50598ce62" kindref="member">mPWM_init</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PMC_PCER1<sp/>|=<sp/>PMC_PCER1_PID36;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>PWM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PIOC_ABSR<sp/>|=<sp/>PIO_ABSR_P20;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>PWM<sp/>pin<sp/>20<sp/>peripheral<sp/>C<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PIOC_PDR<sp/>|=<sp/>PIO_PDR_P20;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>PWM<sp/>pin<sp/>20<sp/>to<sp/>an<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CLK<sp/>=<sp/>PWM_CLK_PREA(0)<sp/>|<sp/>PWM_CLK_DIVA(42);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>clock<sp/>rate<sp/>to<sp/>2MHz<sp/>(84MHz/42)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CMR5<sp/>=<sp/>PWM_CMR_CALG<sp/>|<sp/>PWM_CMR_CPRE_CLKA;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>dual<sp/>slope<sp/>PWM<sp/>and<sp/>set<sp/>the<sp/>clock<sp/>source<sp/>as<sp/>CLKA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CPRD5<sp/>=<sp/>20000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>frequency<sp/>2MHz/(2<sp/>*<sp/>20000)<sp/>=<sp/>50Hz<sp/>=<sp/>20ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CDTY5<sp/>=<sp/>20000-<ref refid="_p_w_m_8h_1ab71cdc0ec46d7f32153a76e127ef13fd" kindref="member">STEP_CENTER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>duty<sp/>cycle<sp/>to<sp/>1500<sp/>-<sp/>centre<sp/>the<sp/>servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_ENA<sp/>=<sp/>PWM_ENA_CHID5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>the<sp/>PWM<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node3/mPWM.h"/>
+  </compounddef>
+</doxygen>

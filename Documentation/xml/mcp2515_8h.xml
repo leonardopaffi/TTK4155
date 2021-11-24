@@ -1,0 +1,1358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="mcp2515_8h" kind="file" language="C++">
+    <compoundname>mcp2515.h</compoundname>
+    <includedby refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.h</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.c</label>
+        <link refid="_c_a_n_8c"/>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN.h</label>
+        <link refid="_c_a_n_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.c</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8c"/>
+      </node>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/CAN_Controller.h</label>
+        <link refid="_node1_2_t_t_k4155_2_c_a_n___controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h</label>
+        <link refid="mcp2515_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mcp2515_8h_1ae421a063d5c9a67484389eb3eaebebfd" prot="public" static="no">
+        <name>MCP_RXF0SIDH</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="18" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a9c93381116e954e7a310e2dbbd2dbc4e" prot="public" static="no">
+        <name>MCP_RXF0SIDL</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="19" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a1ec986ef1512da764c3394f50522b16b" prot="public" static="no">
+        <name>MCP_RXF0EID8</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="20" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a3de3114c44a811cbaabf1861ba55a690" prot="public" static="no">
+        <name>MCP_RXF0EID0</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="21" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0e86a1817cd0b31a287b150dd322f972" prot="public" static="no">
+        <name>MCP_RXF1SIDH</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="22" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ab57c15509135349cfac67fd74071cf01" prot="public" static="no">
+        <name>MCP_RXF1SIDL</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="23" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aecfcc2d9cddf17106316db150ac56f82" prot="public" static="no">
+        <name>MCP_RXF1EID8</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="24" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a00edc9ebc006d15149797e48b82949c6" prot="public" static="no">
+        <name>MCP_RXF1EID0</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="25" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a2961fd5700a7ae397d71911f328799e3" prot="public" static="no">
+        <name>MCP_RXF2SIDH</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="26" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a7fc1958385a3995ca062fba4ff14cb41" prot="public" static="no">
+        <name>MCP_RXF2SIDL</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="27" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a31643cf05e789b655d0bf66c100fc5ae" prot="public" static="no">
+        <name>MCP_RXF2EID8</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="28" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ad9666d49e084c975e49d1f9f7c3df20a" prot="public" static="no">
+        <name>MCP_RXF2EID0</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="29" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a1a470d80ae3644bf02f2cd4a7bb6aa39" prot="public" static="no">
+        <name>MCP_CANSTAT</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="30" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a25864642b445cbfbd85f2a1a22947558" prot="public" static="no">
+        <name>MCP_CANCTRL</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="31" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a21d7a29b957697c7d35f7a6a8ab6fba7" prot="public" static="no">
+        <name>MCP_RXF3SIDH</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="32" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a71d3d35f05bf08e68523a9efc61cfbfc" prot="public" static="no">
+        <name>MCP_RXF3SIDL</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="33" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aec6f10e1f16aa75cf9a2c45cbf072c0c" prot="public" static="no">
+        <name>MCP_RXF3EID8</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="34" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ae6d1393bf6ade012e9de52ce3f781cc0" prot="public" static="no">
+        <name>MCP_RXF3EID0</name>
+        <initializer>0x13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="35" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a870788013a5eb433261fb4bbe755b798" prot="public" static="no">
+        <name>MCP_RXF4SIDH</name>
+        <initializer>0x14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="36" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a26ea2d067a97a328bdb355f5a1f9bcae" prot="public" static="no">
+        <name>MCP_RXF4SIDL</name>
+        <initializer>0x15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="37" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a3b8889cb0efb5374525dc60f8faa6e35" prot="public" static="no">
+        <name>MCP_RXF4EID8</name>
+        <initializer>0x16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="38" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a61e6e6a2b3c20e8d900bcb628854a404" prot="public" static="no">
+        <name>MCP_RXF4EID0</name>
+        <initializer>0x17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="39" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ac7bc37d5b6536d6c4c15d8a36483fe79" prot="public" static="no">
+        <name>MCP_RXF5SIDH</name>
+        <initializer>0x18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="40" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ad4328ca7028ab38ac270f8547fb59582" prot="public" static="no">
+        <name>MCP_RXF5SIDL</name>
+        <initializer>0x19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="41" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ac44d4ade53dbe90f58d28d54f3ea4aa0" prot="public" static="no">
+        <name>MCP_RXF5EID8</name>
+        <initializer>0x1A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="42" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0dee7fada196f7183e8f709df24e0bc4" prot="public" static="no">
+        <name>MCP_RXF5EID0</name>
+        <initializer>0x1B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="43" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a408a3bfd90d57612646979a8b69497c4" prot="public" static="no">
+        <name>MCP_TEC</name>
+        <initializer>0x1C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="44" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a6f032cfd514ddf69f0bc8424cf924c4a" prot="public" static="no">
+        <name>MCP_REC</name>
+        <initializer>0x1D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="45" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a74a0dc603b68c2ecbb63c3ed29010e17" prot="public" static="no">
+        <name>MCP_RXM0SIDH</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="46" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1acff5cba98baa23236a302a5b678d2899" prot="public" static="no">
+        <name>MCP_RXM0SIDL</name>
+        <initializer>0x21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="47" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0b72079ef3123f9384f8e8767c381086" prot="public" static="no">
+        <name>MCP_RXM0EID8</name>
+        <initializer>0x22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="48" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a85951b834260f01b30915e446542d3ef" prot="public" static="no">
+        <name>MCP_RXM0EID0</name>
+        <initializer>0x23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="49" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1af33255d20e7adbb274843351676d15bd" prot="public" static="no">
+        <name>MCP_RXM1SIDH</name>
+        <initializer>0x24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="50" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1abc4c9f616f34a1adef4dc2526ffeb95b" prot="public" static="no">
+        <name>MCP_RXM1SIDL</name>
+        <initializer>0x25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="51" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aac7b0eb43bfd43104e1876e9d75339b6" prot="public" static="no">
+        <name>MCP_RXM1EID8</name>
+        <initializer>0x26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="52" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ae384be8c5a58d1425449b1764ba3fdea" prot="public" static="no">
+        <name>MCP_RXM1EID0</name>
+        <initializer>0x27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="53" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ad2e13220f9c51ccd5efda5d3c19761b8" prot="public" static="no">
+        <name>MCP_CNF3</name>
+        <initializer>0x28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="54" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a2a22ce749e287690e3d85514e2c7cb57" prot="public" static="no">
+        <name>MCP_CNF2</name>
+        <initializer>0x29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="55" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0baef095a5a2997db4c75831e55e8e96" prot="public" static="no">
+        <name>MCP_CNF1</name>
+        <initializer>0x2A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="56" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a778de33d21ab2eb875533a31a2e8ec69" prot="public" static="no">
+        <name>MCP_CANINTE</name>
+        <initializer>0x2B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="57" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ae82ca28239a27c2f8c4871e654480ee3" prot="public" static="no">
+        <name>MCP_CANINTF</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="58" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a1695d6e956775335641f7f600439919c" prot="public" static="no">
+        <name>MCP_EFLG</name>
+        <initializer>0x2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="59" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a8141153ac7a7a40b71f49a3e029c33ac" prot="public" static="no">
+        <name>MCP_TXB0CTRL</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="60" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1abc7ef66a386f13da6f893ea2f951693f" prot="public" static="no">
+        <name>MCP_TXB1CTRL</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="61" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ac43fb5cf36199d6cd0731d58a6f498c6" prot="public" static="no">
+        <name>MCP_TXB2CTRL</name>
+        <initializer>0x50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="62" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a61b3cd8d6c29ea6abe1db7c566f1d3d0" prot="public" static="no">
+        <name>MCP_RXB0CTRL</name>
+        <initializer>0x60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="63" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ad6151dfa9b6fee9b65db5bb70f41d4a1" prot="public" static="no">
+        <name>MCP_RXB0SIDH</name>
+        <initializer>0x61</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="64" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0715576ae1bb6db08da6699fed69b67b" prot="public" static="no">
+        <name>MCP_RXB1CTRL</name>
+        <initializer>0x70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="65" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1af4bddbf3d95eb41f4217b43c0da67391" prot="public" static="no">
+        <name>MCP_RXB1SIDH</name>
+        <initializer>0x71</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="66" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a816cbe8c97b2c24a44425bad397348b9" prot="public" static="no">
+        <name>MCP_TX_INT</name>
+        <initializer>0x1C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="69" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a7b02ec9eead23e76447f5842404f5af7" prot="public" static="no">
+        <name>MCP_TX01_INT</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="70" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a7b3120302282594f99b9d8b3ff4bd675" prot="public" static="no">
+        <name>MCP_RX_INT</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="71" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a624142fcbb5afc5f20a28118cb4c0b09" prot="public" static="no">
+        <name>MCP_NO_INT</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="72" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ab23e4c7ad318b4c22601f710cbdacbaf" prot="public" static="no">
+        <name>MCP_TX01_MASK</name>
+        <initializer>0x14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="74" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a495863adad70a6e84ef9aaffc2158f45" prot="public" static="no">
+        <name>MCP_TX_MASK</name>
+        <initializer>0x54</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="75" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aa144564452e7a678d00d9727ce35f82f" prot="public" static="no">
+        <name>MCP_WRITE</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="79" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a1d9ce2ac1c72654e113298fc1307102a" prot="public" static="no">
+        <name>MCP_READ</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="81" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a973305a49ffc6eed476689b0a8dd69e6" prot="public" static="no">
+        <name>MCP_BITMOD</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="83" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a22f24df177e60164eed1399565483d29" prot="public" static="no">
+        <name>MCP_LOAD_TX0</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="85" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a39edf0ba0b6b50d37c284a01fc06c234" prot="public" static="no">
+        <name>MCP_LOAD_TX1</name>
+        <initializer>0x42</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="86" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0b09fb52864d8b5035fd0fae0fbebb06" prot="public" static="no">
+        <name>MCP_LOAD_TX2</name>
+        <initializer>0x44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="87" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ad81495d052d65e3a97a4c2688119ac0e" prot="public" static="no">
+        <name>MCP_RTS_TX0</name>
+        <initializer>0x81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="89" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a6cc3f921cb8d7cd9323909466ad4307e" prot="public" static="no">
+        <name>MCP_RTS_TX1</name>
+        <initializer>0x82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="90" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0fa9efa8755c0ab500fc2e2da56126d0" prot="public" static="no">
+        <name>MCP_RTS_TX2</name>
+        <initializer>0x84</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="91" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ade85afe7da126728c581e32c1fb9fb5b" prot="public" static="no">
+        <name>MCP_RTS_ALL</name>
+        <initializer>0x87</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="92" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a6d36244d972ea4161783204b65ff75e6" prot="public" static="no">
+        <name>MCP_READ_RX0</name>
+        <initializer>0x90</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="94" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a3e686dbe40426f42d3d8553171294458" prot="public" static="no">
+        <name>MCP_READ_RX1</name>
+        <initializer>0x94</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="95" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a399014e8231cd5d4acd4bad7a8553bb7" prot="public" static="no">
+        <name>MCP_READ_STATUS</name>
+        <initializer>0xA0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="97" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a6e47ae0eaa03f32a201ac45f4a755d73" prot="public" static="no">
+        <name>MCP_RX_STATUS</name>
+        <initializer>0xB0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="99" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a8538419d98eecb32d7b8a6e07e8a256f" prot="public" static="no">
+        <name>MCP_RESET</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="101" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a199e55c829920c767a3f1f42a6a7c1d8" prot="public" static="no">
+        <name>MODE_NORMAL</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="106" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a2d957317ff490fa73cd4377d5ebf0b0d" prot="public" static="no">
+        <name>MODE_SLEEP</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="107" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1af45bc9b0ed8edccc1c6c237d83d8ec8d" prot="public" static="no">
+        <name>MODE_LOOPBACK</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="108" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a69067e4f8f3aad92757c47fa9a1edce4" prot="public" static="no">
+        <name>MODE_LISTENONLY</name>
+        <initializer>0x60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="109" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a5552a5de9b59914458ab99d568bf2763" prot="public" static="no">
+        <name>MODE_CONFIG</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="110" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a6cba238eaa939c8747d20c8685236ee0" prot="public" static="no">
+        <name>MODE_POWERUP</name>
+        <initializer>0xE0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="111" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aba2b187200eec47c5fc32655e296783d" prot="public" static="no">
+        <name>MODE_MASK</name>
+        <initializer>0xE0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="112" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a625b12ba872bf9561838b72e1f1d133f" prot="public" static="no">
+        <name>ABORT_TX</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="113" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a81abe0ed7526093905ddcf168243f233" prot="public" static="no">
+        <name>MODE_ONESHOT</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="114" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a7e4130de16e7b1007a40ca21e2d9ded0" prot="public" static="no">
+        <name>CLKOUT_ENABLE</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="115" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a867e5061e767c13c80906490060a8f3a" prot="public" static="no">
+        <name>CLKOUT_DISABLE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="116" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a1b3bf6482ad57ae80b7c2106fa0449cf" prot="public" static="no">
+        <name>CLKOUT_PS1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="117" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a13e70f5589f1f6d303775d88249b32a7" prot="public" static="no">
+        <name>CLKOUT_PS2</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="118" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1abc1f0cc2c03c625d9af22fe7c55482d4" prot="public" static="no">
+        <name>CLKOUT_PS4</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="119" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1adac6f69cc58f518aa7a146e4b7056bab" prot="public" static="no">
+        <name>CLKOUT_PS8</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="120" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a4ca4a1b715398a83c454f53a3fd79eb1" prot="public" static="no">
+        <name>SJW1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="125" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1acb0116aef65be06e41b189522e4e91ed" prot="public" static="no">
+        <name>SJW2</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="126" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a68b22832f20a89ae90e258fd4f192091" prot="public" static="no">
+        <name>SJW3</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="127" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1acc017a3f71fb4570b6ff1dcb747341e3" prot="public" static="no">
+        <name>SJW4</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="128" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ae2c52bac017026aae58e0594159e11e6" prot="public" static="no">
+        <name>BTLMODE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="133" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aee91de8fdfa7f84d2e9102b15dc3ad5d" prot="public" static="no">
+        <name>SAMPLE_1X</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="134" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1afbe5be9c5672ebcb582105e2f413a8e6" prot="public" static="no">
+        <name>SAMPLE_3X</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="135" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1ae2c366800285be68658d0423c48095d8" prot="public" static="no">
+        <name>SOF_ENABLE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="140" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a0d367e58d4db2e4d3cb2f590829bad61" prot="public" static="no">
+        <name>SOF_DISABLE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="141" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a5a29147670f76a2492e290f0b446b7ce" prot="public" static="no">
+        <name>WAKFIL_ENABLE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="142" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a9ebaab776c2140a706d54c6f8f8840ee" prot="public" static="no">
+        <name>WAKFIL_DISABLE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="143" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a44d0f7db08c98cfd446daab2b0a4ec8f" prot="public" static="no">
+        <name>MCP_RX0IF</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="148" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a9fcfe75306166e89b598bd9519e2db8b" prot="public" static="no">
+        <name>MCP_RX1IF</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="149" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a28eb84f8219613a6da1f46b7d0672ad0" prot="public" static="no">
+        <name>MCP_TX0IF</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="150" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1adb11d8db50d2832ba339ae4c100bdcca" prot="public" static="no">
+        <name>MCP_TX1IF</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="151" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1adee823c1fd68b891ea7ed87f302cc021" prot="public" static="no">
+        <name>MCP_TX2IF</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="152" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a5c1209adc4e7ee5a0f08b0bced532768" prot="public" static="no">
+        <name>MCP_ERRIF</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="153" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1a86309745d44d7040ccbb116cb0b0de33" prot="public" static="no">
+        <name>MCP_WAKIF</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="154" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcp2515_8h_1aefa5a3dc7ca94fee366e0418590063f6" prot="public" static="no">
+        <name>MCP_MERRF</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" line="155" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__MCP2515_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MCP2515_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">mcp2515.h</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">This<sp/>file<sp/>contains<sp/>constants<sp/>that<sp/>are<sp/>specific<sp/>to<sp/>the<sp/>MCP2515.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">Version<sp/><sp/><sp/><sp/><sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">v1.00<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2003/12/11<sp/><sp/>Initial<sp/>release</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">Copyright<sp/>2003<sp/>Kimberly<sp/>Otten<sp/>Software<sp/>Consulting</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>MCP2515<sp/>register<sp/>addresses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="mcp2515_8h_1ae421a063d5c9a67484389eb3eaebebfd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF0SIDH<sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="mcp2515_8h_1a9c93381116e954e7a310e2dbbd2dbc4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF0SIDL<sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="mcp2515_8h_1a1ec986ef1512da764c3394f50522b16b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF0EID8<sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="mcp2515_8h_1a3de3114c44a811cbaabf1861ba55a690" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF0EID0<sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="mcp2515_8h_1a0e86a1817cd0b31a287b150dd322f972" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF1SIDH<sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="mcp2515_8h_1ab57c15509135349cfac67fd74071cf01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF1SIDL<sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="mcp2515_8h_1aecfcc2d9cddf17106316db150ac56f82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF1EID8<sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="mcp2515_8h_1a00edc9ebc006d15149797e48b82949c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF1EID0<sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="mcp2515_8h_1a2961fd5700a7ae397d71911f328799e3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF2SIDH<sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="mcp2515_8h_1a7fc1958385a3995ca062fba4ff14cb41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF2SIDL<sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="mcp2515_8h_1a31643cf05e789b655d0bf66c100fc5ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF2EID8<sp/><sp/><sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="mcp2515_8h_1ad9666d49e084c975e49d1f9f7c3df20a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF2EID0<sp/><sp/><sp/><sp/>0x0B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="mcp2515_8h_1a1a470d80ae3644bf02f2cd4a7bb6aa39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CANSTAT<sp/><sp/><sp/><sp/><sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="mcp2515_8h_1a25864642b445cbfbd85f2a1a22947558" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CANCTRL<sp/><sp/><sp/><sp/><sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="mcp2515_8h_1a21d7a29b957697c7d35f7a6a8ab6fba7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF3SIDH<sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="mcp2515_8h_1a71d3d35f05bf08e68523a9efc61cfbfc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF3SIDL<sp/><sp/><sp/><sp/>0x11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="mcp2515_8h_1aec6f10e1f16aa75cf9a2c45cbf072c0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF3EID8<sp/><sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="mcp2515_8h_1ae6d1393bf6ade012e9de52ce3f781cc0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF3EID0<sp/><sp/><sp/><sp/>0x13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="mcp2515_8h_1a870788013a5eb433261fb4bbe755b798" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF4SIDH<sp/><sp/><sp/><sp/>0x14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="mcp2515_8h_1a26ea2d067a97a328bdb355f5a1f9bcae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF4SIDL<sp/><sp/><sp/><sp/>0x15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="mcp2515_8h_1a3b8889cb0efb5374525dc60f8faa6e35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF4EID8<sp/><sp/><sp/><sp/>0x16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="mcp2515_8h_1a61e6e6a2b3c20e8d900bcb628854a404" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF4EID0<sp/><sp/><sp/><sp/>0x17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="mcp2515_8h_1ac7bc37d5b6536d6c4c15d8a36483fe79" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF5SIDH<sp/><sp/><sp/><sp/>0x18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="mcp2515_8h_1ad4328ca7028ab38ac270f8547fb59582" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF5SIDL<sp/><sp/><sp/><sp/>0x19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="mcp2515_8h_1ac44d4ade53dbe90f58d28d54f3ea4aa0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF5EID8<sp/><sp/><sp/><sp/>0x1A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="mcp2515_8h_1a0dee7fada196f7183e8f709df24e0bc4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXF5EID0<sp/><sp/><sp/><sp/>0x1B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="mcp2515_8h_1a408a3bfd90d57612646979a8b69497c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="mcp2515_8h_1a6f032cfd514ddf69f0bc8424cf924c4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_REC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="mcp2515_8h_1a74a0dc603b68c2ecbb63c3ed29010e17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM0SIDH<sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="mcp2515_8h_1acff5cba98baa23236a302a5b678d2899" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM0SIDL<sp/><sp/><sp/><sp/>0x21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="mcp2515_8h_1a0b72079ef3123f9384f8e8767c381086" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM0EID8<sp/><sp/><sp/><sp/>0x22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="mcp2515_8h_1a85951b834260f01b30915e446542d3ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM0EID0<sp/><sp/><sp/><sp/>0x23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="mcp2515_8h_1af33255d20e7adbb274843351676d15bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM1SIDH<sp/><sp/><sp/><sp/>0x24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="mcp2515_8h_1abc4c9f616f34a1adef4dc2526ffeb95b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM1SIDL<sp/><sp/><sp/><sp/>0x25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="mcp2515_8h_1aac7b0eb43bfd43104e1876e9d75339b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM1EID8<sp/><sp/><sp/><sp/>0x26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="mcp2515_8h_1ae384be8c5a58d1425449b1764ba3fdea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXM1EID0<sp/><sp/><sp/><sp/>0x27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="mcp2515_8h_1ad2e13220f9c51ccd5efda5d3c19761b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CNF3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mcp2515_8h_1a2a22ce749e287690e3d85514e2c7cb57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CNF2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="mcp2515_8h_1a0baef095a5a2997db4c75831e55e8e96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CNF1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="mcp2515_8h_1a778de33d21ab2eb875533a31a2e8ec69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CANINTE<sp/><sp/><sp/><sp/><sp/>0x2B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="mcp2515_8h_1ae82ca28239a27c2f8c4871e654480ee3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_CANINTF<sp/><sp/><sp/><sp/><sp/>0x2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="mcp2515_8h_1a1695d6e956775335641f7f600439919c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_EFLG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="mcp2515_8h_1a8141153ac7a7a40b71f49a3e029c33ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TXB0CTRL<sp/><sp/><sp/><sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="mcp2515_8h_1abc7ef66a386f13da6f893ea2f951693f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TXB1CTRL<sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="mcp2515_8h_1ac43fb5cf36199d6cd0731d58a6f498c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TXB2CTRL<sp/><sp/><sp/><sp/>0x50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="mcp2515_8h_1a61b3cd8d6c29ea6abe1db7c566f1d3d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXB0CTRL<sp/><sp/><sp/><sp/>0x60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="mcp2515_8h_1ad6151dfa9b6fee9b65db5bb70f41d4a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXB0SIDH<sp/><sp/><sp/><sp/>0x61</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="mcp2515_8h_1a0715576ae1bb6db08da6699fed69b67b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXB1CTRL<sp/><sp/><sp/><sp/>0x70</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="mcp2515_8h_1af4bddbf3d95eb41f4217b43c0da67391" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RXB1SIDH<sp/><sp/><sp/><sp/>0x71</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="mcp2515_8h_1a816cbe8c97b2c24a44425bad397348b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX_INT<sp/><sp/><sp/><sp/><sp/><sp/>0x1C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>all<sp/>transmit<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="mcp2515_8h_1a7b02ec9eead23e76447f5842404f5af7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX01_INT<sp/><sp/><sp/><sp/>0x0C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>TXB0<sp/>and<sp/>TXB1<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="mcp2515_8h_1a7b3120302282594f99b9d8b3ff4bd675" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RX_INT<sp/><sp/><sp/><sp/><sp/><sp/>0x03<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>receive<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="mcp2515_8h_1a624142fcbb5afc5f20a28118cb4c0b09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_NO_INT<sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>all<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="mcp2515_8h_1ab23e4c7ad318b4c22601f710cbdacbaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX01_MASK<sp/><sp/><sp/>0x14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="mcp2515_8h_1a495863adad70a6e84ef9aaffc2158f45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX_MASK<sp/><sp/><sp/><sp/><sp/>0x54</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>SPI<sp/>Instruction<sp/>Set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="mcp2515_8h_1aa144564452e7a678d00d9727ce35f82f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_WRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="mcp2515_8h_1a1d9ce2ac1c72654e113298fc1307102a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_READ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="mcp2515_8h_1a973305a49ffc6eed476689b0a8dd69e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_BITMOD<sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="mcp2515_8h_1a22f24df177e60164eed1399565483d29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_LOAD_TX0<sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="mcp2515_8h_1a39edf0ba0b6b50d37c284a01fc06c234" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_LOAD_TX1<sp/><sp/><sp/><sp/>0x42</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="mcp2515_8h_1a0b09fb52864d8b5035fd0fae0fbebb06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_LOAD_TX2<sp/><sp/><sp/><sp/>0x44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="mcp2515_8h_1ad81495d052d65e3a97a4c2688119ac0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RTS_TX0<sp/><sp/><sp/><sp/><sp/>0x81</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="mcp2515_8h_1a6cc3f921cb8d7cd9323909466ad4307e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RTS_TX1<sp/><sp/><sp/><sp/><sp/>0x82</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="mcp2515_8h_1a0fa9efa8755c0ab500fc2e2da56126d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RTS_TX2<sp/><sp/><sp/><sp/><sp/>0x84</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="mcp2515_8h_1ade85afe7da126728c581e32c1fb9fb5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RTS_ALL<sp/><sp/><sp/><sp/><sp/>0x87</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="mcp2515_8h_1a6d36244d972ea4161783204b65ff75e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_READ_RX0<sp/><sp/><sp/><sp/>0x90</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="mcp2515_8h_1a3e686dbe40426f42d3d8553171294458" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_READ_RX1<sp/><sp/><sp/><sp/>0x94</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="mcp2515_8h_1a399014e8231cd5d4acd4bad7a8553bb7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_READ_STATUS<sp/>0xA0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="mcp2515_8h_1a6e47ae0eaa03f32a201ac45f4a755d73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RX_STATUS<sp/><sp/><sp/>0xB0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="mcp2515_8h_1a8538419d98eecb32d7b8a6e07e8a256f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CANCTRL<sp/>Register<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="mcp2515_8h_1a199e55c829920c767a3f1f42a6a7c1d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_NORMAL<sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="mcp2515_8h_1a2d957317ff490fa73cd4377d5ebf0b0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_SLEEP<sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="mcp2515_8h_1af45bc9b0ed8edccc1c6c237d83d8ec8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_LOOPBACK<sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="mcp2515_8h_1a69067e4f8f3aad92757c47fa9a1edce4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_LISTENONLY<sp/>0x60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="mcp2515_8h_1a5552a5de9b59914458ab99d568bf2763" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_CONFIG<sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="mcp2515_8h_1a6cba238eaa939c8747d20c8685236ee0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_POWERUP<sp/><sp/><sp/><sp/>0xE0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="mcp2515_8h_1aba2b187200eec47c5fc32655e296783d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="mcp2515_8h_1a625b12ba872bf9561838b72e1f1d133f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ABORT_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="mcp2515_8h_1a81abe0ed7526093905ddcf168243f233" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_ONESHOT<sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="mcp2515_8h_1a7e4130de16e7b1007a40ca21e2d9ded0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_ENABLE<sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="mcp2515_8h_1a867e5061e767c13c80906490060a8f3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_DISABLE<sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="mcp2515_8h_1a1b3bf6482ad57ae80b7c2106fa0449cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_PS1<sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="mcp2515_8h_1a13e70f5589f1f6d303775d88249b32a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_PS2<sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="mcp2515_8h_1abc1f0cc2c03c625d9af22fe7c55482d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_PS4<sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="mcp2515_8h_1adac6f69cc58f518aa7a146e4b7056bab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLKOUT_PS8<sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CNF1<sp/>Register<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="mcp2515_8h_1a4ca4a1b715398a83c454f53a3fd79eb1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SJW1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="mcp2515_8h_1acb0116aef65be06e41b189522e4e91ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SJW2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="mcp2515_8h_1a68b22832f20a89ae90e258fd4f192091" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SJW3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="mcp2515_8h_1acc017a3f71fb4570b6ff1dcb747341e3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SJW4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CNF2<sp/>Register<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="mcp2515_8h_1ae2c52bac017026aae58e0594159e11e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTLMODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="mcp2515_8h_1aee91de8fdfa7f84d2e9102b15dc3ad5d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_1X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="mcp2515_8h_1afbe5be9c5672ebcb582105e2f413a8e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_3X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CNF3<sp/>Register<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="mcp2515_8h_1ae2c366800285be68658d0423c48095d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SOF_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="mcp2515_8h_1a0d367e58d4db2e4d3cb2f590829bad61" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SOF_DISABLE<sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="mcp2515_8h_1a5a29147670f76a2492e290f0b446b7ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WAKFIL_ENABLE<sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="mcp2515_8h_1a9ebaab776c2140a706d54c6f8f8840ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WAKFIL_DISABLE<sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CANINTF<sp/>Register<sp/>Bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="mcp2515_8h_1a44d0f7db08c98cfd446daab2b0a4ec8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RX0IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="mcp2515_8h_1a9fcfe75306166e89b598bd9519e2db8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_RX1IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="mcp2515_8h_1a28eb84f8219613a6da1f46b7d0672ad0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX0IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="mcp2515_8h_1adb11d8db50d2832ba339ae4c100bdcca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX1IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="mcp2515_8h_1adee823c1fd68b891ea7ed87f302cc021" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_TX2IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="mcp2515_8h_1a5c1209adc4e7ee5a0f08b0bced532768" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_ERRIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="mcp2515_8h_1a86309745d44d7040ccbb116cb0b0de33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_WAKIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="mcp2515_8h_1aefa5a3dc7ca94fee366e0418590063f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCP_MERRF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/mcp2515.h"/>
+  </compounddef>
+</doxygen>

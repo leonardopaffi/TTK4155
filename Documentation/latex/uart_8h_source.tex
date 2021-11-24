@@ -1,0 +1,43 @@
+\hypertarget{uart_8h_source}{}\doxysection{uart.\+h}
+\label{uart_8h_source}\index{D:/Progetti/TTK4155/Node2/Node2/uart.h@{D:/Progetti/TTK4155/Node2/Node2/uart.h}}
+\mbox{\hyperlink{uart_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * uart.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Author: Gustav O. Often and Eivind H. Jølsgard}}
+\DoxyCodeLine{5 \textcolor{comment}{ *}}
+\DoxyCodeLine{6 \textcolor{comment}{ * For use in TTK4155 Embedded and Industrial Computer Systems Design}}
+\DoxyCodeLine{7 \textcolor{comment}{ * NTNU -\/ Norwegian University of Science and Technology}}
+\DoxyCodeLine{8 \textcolor{comment}{ *}}
+\DoxyCodeLine{9 \textcolor{comment}{ * A simple interface for receiving and transmitting characters to a computer using UART via the on board USB-\/connector}}
+\DoxyCodeLine{10 \textcolor{comment}{ */} }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef UART\_H\_}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define UART\_H\_}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define UART\_RINGBUFFER\_SIZE 64}}
+\DoxyCodeLine{18 \textcolor{comment}{/*}}
+\DoxyCodeLine{19 \textcolor{comment}{ * Ringbuffer for receiving characters from  }}
+\DoxyCodeLine{20 \textcolor{comment}{ */}}
+\DoxyCodeLine{21 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structuart__ringbuffer__t}{uart\_ringbuffer\_t}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     uint8\_t \mbox{\hyperlink{structuart__ringbuffer__t_a9794c0e61506b826b49b458708ae2489}{head}}, \mbox{\hyperlink{structuart__ringbuffer__t_a8db7f977b77e4e4d588ef0d3e04ada16}{tail}};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{char} \mbox{\hyperlink{structuart__ringbuffer__t_aa4fb4bd0c27ed664157badd323b9e8a6}{data}}[\mbox{\hyperlink{uart_8h_a179f566078d72b10a8dfcaca45a0cba2}{UART\_RINGBUFFER\_SIZE}}];}
+\DoxyCodeLine{25     \} \mbox{\hyperlink{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}{uart\_ringbuffer}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{uart_8h_ab5b2eb7c61969e61bef72eeb48dd058d}{configure\_uart}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keywordtype}{int} \mbox{\hyperlink{uart_8h_a1c201c2740c7aa7102270bb667069f38}{uart\_getchar}}(uint8\_t *c);}
+\DoxyCodeLine{31 \textcolor{keywordtype}{int} \mbox{\hyperlink{uart_8h_ae12fb3c9b87465c2fa0f0b2f78c13257}{uart\_putchar}}(\textcolor{keyword}{const} uint8\_t c);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keywordtype}{void} \mbox{\hyperlink{uart_8h_a5e433d3a46eda66a50c81c1eda46c84b}{UART\_Handler}}       ( \textcolor{keywordtype}{void} );}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* UART\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

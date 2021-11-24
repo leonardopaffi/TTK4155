@@ -1,0 +1,79 @@
+\hypertarget{_p_w_m_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/\+PWM.c File Reference}
+\label{_p_w_m_8c}\index{D:/Progetti/TTK4155/Node2/Node2/PWM.c@{D:/Progetti/TTK4155/Node2/Node2/PWM.c}}
+{\ttfamily \#include \char`\"{}PWM.\+h\char`\"{}}\newline
+Include dependency graph for PWM.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{_p_w_m_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_p_w_m_8c_a9816c7c730e93dba6a3e231505a40354}{PWM\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization function for the PWM. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{_p_w_m_8c_aada2d75bc8a8c6eb845bd940eadfa3fd}{map}} (long x, long in\+\_\+min, long in\+\_\+max, long out\+\_\+min, long out\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Function to remap values in a certain range. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_p_w_m_8c_a394437ec9ec6921d6598d80ce53c639a}{PWM\+\_\+set\+\_\+value}} (uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Set value to PWM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_p_w_m_8c_aada2d75bc8a8c6eb845bd940eadfa3fd}\label{_p_w_m_8c_aada2d75bc8a8c6eb845bd940eadfa3fd}} 
+\index{PWM.c@{PWM.c}!map@{map}}
+\index{map@{map}!PWM.c@{PWM.c}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily long map (\begin{DoxyParamCaption}\item[{long}]{x,  }\item[{long}]{in\+\_\+min,  }\item[{long}]{in\+\_\+max,  }\item[{long}]{out\+\_\+min,  }\item[{long}]{out\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Function to remap values in a certain range. 
+
+Function to map a value in a certain range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to remap \\
+\hline
+{\em in\+\_\+min} & Input range minumum value \\
+\hline
+{\em in\+\_\+max} & Input range maximum value \\
+\hline
+{\em out\+\_\+min} & Output range minumum value \\
+\hline
+{\em out\+\_\+max} & Output range maximum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_w_m_8c_a9816c7c730e93dba6a3e231505a40354}\label{_p_w_m_8c_a9816c7c730e93dba6a3e231505a40354}} 
+\index{PWM.c@{PWM.c}!PWM\_init@{PWM\_init}}
+\index{PWM\_init@{PWM\_init}!PWM.c@{PWM.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_init()}{PWM\_init()}}
+{\footnotesize\ttfamily void PWM\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the PWM. 
+
+\mbox{\Hypertarget{_p_w_m_8c_a394437ec9ec6921d6598d80ce53c639a}\label{_p_w_m_8c_a394437ec9ec6921d6598d80ce53c639a}} 
+\index{PWM.c@{PWM.c}!PWM\_set\_value@{PWM\_set\_value}}
+\index{PWM\_set\_value@{PWM\_set\_value}!PWM.c@{PWM.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_set\_value()}{PWM\_set\_value()}}
+{\footnotesize\ttfamily int PWM\+\_\+set\+\_\+value (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Set value to PWM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_u_s_a_r_t_8c" kind="file" language="C++">
+    <compoundname>USART.c</compoundname>
+    <includes refid="_u_s_a_r_t_8h" local="yes">USART.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/USART.c</label>
+        <link refid="_u_s_a_r_t_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>avr/io.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_u_s_a_r_t_8c_1a99f79737b2f8bf945b4c169c69e3e3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART_Init</definition>
+        <argsstring>(unsigned int ubrr)</argsstring>
+        <name>USART_Init</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ubrr</declname>
+        </param>
+        <briefdescription>
+<para>Initialization function for the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ubrr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>USART bitrate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="3" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_s_a_r_t_8c_1a90a44f50119303ce2d4198c756908fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int USART_Transmit</definition>
+        <argsstring>(unsigned char data)</argsstring>
+        <name>USART_Transmit</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Transmit data over the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" line="16" column="5" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="_u_s_a_r_t_8c_1ab0afeb1d2913cba471376bf274411a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int USART_Receive</definition>
+        <argsstring>(void)</argsstring>
+        <name>USART_Receive</name>
+        <briefdescription>
+<para>Receives data over the USART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Received data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" line="28" column="5" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/USART.c" bodystart="28" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_s_a_r_t_8h" kindref="compound">USART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8c_1a99f79737b2f8bf945b4c169c69e3e3eb" kindref="member">USART_Init</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ubrr)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Adapted<sp/>from<sp/>the<sp/>datasheet*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Set<sp/>baud<sp/>rate*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>UBRR0H<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)(ubrr<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>UBRR0L<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)ubrr;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Enable<sp/>receiver<sp/>and<sp/>transmitter*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>UCSR0B<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>RXEN0)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>TXEN0);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Set<sp/>frame<sp/>format:<sp/>8data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>UCSR0C<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>URSEL0)<sp/>|<sp/>(3<sp/>&lt;&lt;<sp/>UCSZ00);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>fdevopen(<ref refid="_u_s_a_r_t_8c_1a90a44f50119303ce2d4198c756908fa8" kindref="member">USART_Transmit</ref>,<sp/><ref refid="_u_s_a_r_t_8c_1ab0afeb1d2913cba471376bf274411a5c" kindref="member">USART_Receive</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8c_1a90a44f50119303ce2d4198c756908fa8" kindref="member">USART_Transmit</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Adapted<sp/>from<sp/>the<sp/>datasheet*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Wait<sp/>for<sp/>empty<sp/>transmit<sp/>buffer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(UCSR0A<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>UDRE0)))</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Put<sp/>data<sp/>into<sp/>buffer,<sp/>sends<sp/>the<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>UDR0<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t_8c_1ab0afeb1d2913cba471376bf274411a5c" kindref="member">USART_Receive</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>data<sp/>to<sp/>be<sp/>received<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(UCSR0A<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>RXC0)))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>and<sp/>return<sp/>received<sp/>data<sp/>from<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UDR0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/USART.c"/>
+  </compounddef>
+</doxygen>

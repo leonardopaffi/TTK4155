@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structdirection" kind="struct" language="C++" prot="public">
+    <compoundname>direction</compoundname>
+    <includes refid="_joystick_8h" local="no">Joystick.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdirection_1a76ed98f400901630078e263bafb604d7" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char x_dir</definition>
+        <argsstring></argsstring>
+        <name>x_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="41" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdirection_1a590b462a600602e1a48064bd85674fe5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char y_dir</definition>
+        <argsstring></argsstring>
+        <name>y_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="42" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="39" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="40" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structdirection_1a76ed98f400901630078e263bafb604d7" prot="public" virt="non-virtual"><scope>direction</scope><name>x_dir</name></member>
+      <member refid="structdirection_1a590b462a600602e1a48064bd85674fe5" prot="public" virt="non-virtual"><scope>direction</scope><name>y_dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

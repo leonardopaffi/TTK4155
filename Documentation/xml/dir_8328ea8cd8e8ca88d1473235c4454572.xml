@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_8328ea8cd8e8ca88d1473235c4454572" kind="dir">
+    <compoundname>D:/Progetti/TTK4155</compoundname>
+    <innerdir refid="dir_58cdb4e8a8341cf13de16fff5b7cb7dc">D:/Progetti/TTK4155/Node1</innerdir>
+    <innerdir refid="dir_d7a6bd4a33962bf7ae4f33ed35ef8339">D:/Progetti/TTK4155/Node2</innerdir>
+    <innerdir refid="dir_3ac5834d046db03078f6d272fd5d650a">D:/Progetti/TTK4155/Node3</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structcan__message__t" kind="struct" language="C++" prot="public">
+    <compoundname>can_message_t</compoundname>
+    <includes refid="_node2_2_node2_2_c_a_n___controller_8h" local="no">can_controller.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="23" column="11" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t data_length</definition>
+        <argsstring></argsstring>
+        <name>data_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="24" column="10" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="25" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure of the CAN message. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="21" column="1" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" prot="public" virt="non-virtual"><scope>can_message_t</scope><name>data</name></member>
+      <member refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" prot="public" virt="non-virtual"><scope>can_message_t</scope><name>data_length</name></member>
+      <member refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" prot="public" virt="non-virtual"><scope>can_message_t</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

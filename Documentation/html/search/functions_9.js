@@ -8,5 +8,5 @@ var searchData=
   ['print_5fslider_5fposition_5',['print_slider_position',['../_slider_8c.html#addfb9e3de7536850eb8c6b2c620f4fb0',1,'print_slider_position():&#160;Slider.c'],['../_slider_8h.html#addfb9e3de7536850eb8c6b2c620f4fb0',1,'print_slider_position():&#160;Slider.c']]],
   ['printf_6',['printf',['../printf-stdarg_8c.html#a98631211a4a8aee62f572375d5b637be',1,'printf(const char *format,...):&#160;printf-stdarg.c'],['../printf-stdarg_8h.html#a98631211a4a8aee62f572375d5b637be',1,'printf(const char *format,...):&#160;printf-stdarg.c']]],
   ['pwm_5finit_7',['PWM_init',['../_p_w_m_8c.html#a9816c7c730e93dba6a3e231505a40354',1,'PWM_init():&#160;PWM.c'],['../_p_w_m_8h.html#a9816c7c730e93dba6a3e231505a40354',1,'PWM_init():&#160;PWM.c']]],
-  ['pwm_5fset_5fvalue_8',['PWM_set_value',['../_p_w_m_8c.html#a4e7a22804f36d8af20d292c78a393926',1,'PWM_set_value(int8_t value):&#160;PWM.c'],['../_p_w_m_8h.html#a4e7a22804f36d8af20d292c78a393926',1,'PWM_set_value(int8_t value):&#160;PWM.c']]]
+  ['pwm_5fset_5fvalue_8',['PWM_set_value',['../_p_w_m_8c.html#a394437ec9ec6921d6598d80ce53c639a',1,'PWM_set_value(uint8_t value):&#160;PWM.c'],['../_p_w_m_8h.html#a394437ec9ec6921d6598d80ce53c639a',1,'PWM_set_value(uint8_t value):&#160;PWM.c']]]
 ];

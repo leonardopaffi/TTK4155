@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="solenoid_8c" kind="file" language="C++">
+    <compoundname>solenoid.c</compoundname>
+    <includes refid="solenoid_8h" local="yes">solenoid.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/solenoid.c</label>
+        <link refid="solenoid_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>solenoid.h</label>
+        <link refid="solenoid_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="solenoid_8c_1a05736227e6f452fb1ceb65c417ebd8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void solenoid_init</definition>
+        <argsstring>()</argsstring>
+        <name>solenoid_init</name>
+        <briefdescription>
+<para>Initalization function for the solenoid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/solenoid.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/solenoid.c" bodystart="3" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="solenoid_8c_1ad07a96cd66d6585aa3e092542e13b42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void solenoid_routine</definition>
+        <argsstring>(uint8_t pressed)</argsstring>
+        <name>solenoid_routine</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>in_state</declname>
+          <defname>pressed</defname>
+        </param>
+        <briefdescription>
+<para>Send impulse to the solenoid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/solenoid.c" line="12" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/solenoid.c" bodystart="12" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="solenoid_8h" kindref="compound">solenoid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="solenoid_8c_1a05736227e6f452fb1ceb65c417ebd8c9" kindref="member">solenoid_init</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>pull-up<sp/>on<sp/>bit<sp/>PC2(D0)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_PUDR<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>PIO<sp/>controller<sp/>on<sp/>bit<sp/>PC2(D0)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_PER<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>output<sp/>enable<sp/>on<sp/>PC2(D0)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_OER<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="solenoid_8c_1ad07a96cd66d6585aa3e092542e13b42a" kindref="member">solenoid_routine</ref>(uint8_t<sp/>pressed){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pressed<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_CODR<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIOC-&gt;PIO_SODR<sp/>|=<sp/>PIO_PC9;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/solenoid.c"/>
+  </compounddef>
+</doxygen>

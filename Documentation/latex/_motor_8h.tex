@@ -1,0 +1,180 @@
+\hypertarget{_motor_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/\+Motor.h File Reference}
+\label{_motor_8h}\index{D:/Progetti/TTK4155/Node2/Node2/Motor.h@{D:/Progetti/TTK4155/Node2/Node2/Motor.h}}
+{\ttfamily \#include \char`\"{}sam.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}delay.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PI.\+h\char`\"{}}\newline
+Include dependency graph for Motor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{_motor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_motor_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_motor_8h_a437ef08681e7210d6678427030446a54}{LEFT}}~0
+\item 
+\#define \mbox{\hyperlink{_motor_8h_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~1
+\item 
+\#define \mbox{\hyperlink{_motor_8h_a655c84af1b0034986ff56e12e84f983d}{NONE}}~2
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_motor_8h_a151cccf0120a24d251b5ce5d878abb67}{motor\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization function for the motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8h_a22cd7acd32a157fb29293924b92d384d}{motor\+\_\+set\+\_\+direction}} (uint8\+\_\+t \mbox{\hyperlink{structdirection}{direction}})
+\begin{DoxyCompactList}\small\item\em Set direction of the motor LEFT/\+RIGHT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8h_ac29eebf30667cb34d4f79a29035a7709}{motor\+\_\+set\+\_\+speed}} (uint8\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Set speed of the motor, normalized to 0-\/100. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8h_a3543058368509b35584311cece5d20a3}{motor\+\_\+set\+\_\+direction\+\_\+speed}} (uint8\+\_\+t \mbox{\hyperlink{structdirection}{direction}}, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Set both speed and direction for the motor. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{_motor_8h_a920c7ac0f48e355b5ee861247e2cd637}{motor\+\_\+encoder\+\_\+read}} ()
+\begin{DoxyCompactList}\small\item\em Read data from the encoder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8h_a091d29ed8690d7f70a79198e3c4e92f7}{motor\+\_\+set\+\_\+with\+\_\+\+PI}} (uint16\+\_\+t desired\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Set the position of the motor with PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8h_a942c3dd1795abb25084e1ae1b5cb210f}{motor\+\_\+center}} ()
+\begin{DoxyCompactList}\small\item\em Center motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} \mbox{\hyperlink{_motor_8h_a4b94651f41b495094cc445258a379471}{pid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_motor_8h_a437ef08681e7210d6678427030446a54}\label{_motor_8h_a437ef08681e7210d6678427030446a54}} 
+\index{Motor.h@{Motor.h}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~0}
+
+\mbox{\Hypertarget{_motor_8h_a655c84af1b0034986ff56e12e84f983d}\label{_motor_8h_a655c84af1b0034986ff56e12e84f983d}} 
+\index{Motor.h@{Motor.h}!NONE@{NONE}}
+\index{NONE@{NONE}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{NONE}{NONE}}
+{\footnotesize\ttfamily \#define NONE~2}
+
+\mbox{\Hypertarget{_motor_8h_a80fb826a684cf3f0d306b22aa100ddac}\label{_motor_8h_a80fb826a684cf3f0d306b22aa100ddac}} 
+\index{Motor.h@{Motor.h}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~1}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_motor_8h_a942c3dd1795abb25084e1ae1b5cb210f}\label{_motor_8h_a942c3dd1795abb25084e1ae1b5cb210f}} 
+\index{Motor.h@{Motor.h}!motor\_center@{motor\_center}}
+\index{motor\_center@{motor\_center}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_center()}{motor\_center()}}
+{\footnotesize\ttfamily void motor\+\_\+center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Center motor. 
+
+\mbox{\Hypertarget{_motor_8h_a920c7ac0f48e355b5ee861247e2cd637}\label{_motor_8h_a920c7ac0f48e355b5ee861247e2cd637}} 
+\index{Motor.h@{Motor.h}!motor\_encoder\_read@{motor\_encoder\_read}}
+\index{motor\_encoder\_read@{motor\_encoder\_read}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_encoder\_read()}{motor\_encoder\_read()}}
+{\footnotesize\ttfamily int16\+\_\+t motor\+\_\+encoder\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read data from the encoder. 
+
+\begin{DoxyReturn}{Returns}
+int16\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_motor_8h_a151cccf0120a24d251b5ce5d878abb67}\label{_motor_8h_a151cccf0120a24d251b5ce5d878abb67}} 
+\index{Motor.h@{Motor.h}!motor\_init@{motor\_init}}
+\index{motor\_init@{motor\_init}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_init()}{motor\_init()}}
+{\footnotesize\ttfamily void motor\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the motor. 
+
+\mbox{\Hypertarget{_motor_8h_a22cd7acd32a157fb29293924b92d384d}\label{_motor_8h_a22cd7acd32a157fb29293924b92d384d}} 
+\index{Motor.h@{Motor.h}!motor\_set\_direction@{motor\_set\_direction}}
+\index{motor\_set\_direction@{motor\_set\_direction}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_direction()}{motor\_set\_direction()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+direction (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set direction of the motor LEFT/\+RIGHT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8h_a3543058368509b35584311cece5d20a3}\label{_motor_8h_a3543058368509b35584311cece5d20a3}} 
+\index{Motor.h@{Motor.h}!motor\_set\_direction\_speed@{motor\_set\_direction\_speed}}
+\index{motor\_set\_direction\_speed@{motor\_set\_direction\_speed}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_direction\_speed()}{motor\_set\_direction\_speed()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+direction\+\_\+speed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{direction,  }\item[{uint16\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set both speed and direction for the motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8h_ac29eebf30667cb34d4f79a29035a7709}\label{_motor_8h_ac29eebf30667cb34d4f79a29035a7709}} 
+\index{Motor.h@{Motor.h}!motor\_set\_speed@{motor\_set\_speed}}
+\index{motor\_set\_speed@{motor\_set\_speed}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_speed()}{motor\_set\_speed()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+speed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set speed of the motor, normalized to 0-\/100. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8h_a091d29ed8690d7f70a79198e3c4e92f7}\label{_motor_8h_a091d29ed8690d7f70a79198e3c4e92f7}} 
+\index{Motor.h@{Motor.h}!motor\_set\_with\_PI@{motor\_set\_with\_PI}}
+\index{motor\_set\_with\_PI@{motor\_set\_with\_PI}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_with\_PI()}{motor\_set\_with\_PI()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+with\+\_\+\+PI (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{desired\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Set the position of the motor with PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em desired\+\_\+value} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_motor_8h_a4b94651f41b495094cc445258a379471}\label{_motor_8h_a4b94651f41b495094cc445258a379471}} 
+\index{Motor.h@{Motor.h}!pid@{pid}}
+\index{pid@{pid}!Motor.h@{Motor.h}}
+\doxysubsubsection{\texorpdfstring{pid}{pid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pid\+Data\+\_\+t}} pid}
+

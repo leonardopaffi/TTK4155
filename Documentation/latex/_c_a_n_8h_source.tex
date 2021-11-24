@@ -1,0 +1,35 @@
+\hypertarget{_c_a_n_8h_source}{}\doxysection{CAN.\+h}
+\label{_c_a_n_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/CAN.h@{D:/Progetti/TTK4155/Node1/TTK4155/CAN.h}}
+\mbox{\hyperlink{_c_a_n_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CAN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CAN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h}{CAN\_Controller.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}avr/interrupt.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{comment}{/*}}
+\DoxyCodeLine{8 \textcolor{comment}{    "{}Buttons"{} variable:}}
+\DoxyCodeLine{9 \textcolor{comment}{    Joystick button << 0}}
+\DoxyCodeLine{10 \textcolor{comment}{    Right button << 1}}
+\DoxyCodeLine{11 \textcolor{comment}{*/}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{14     uint16\_t \mbox{\hyperlink{struct_c_a_n__message_a1892eba2086d12ac2b09005aeb09ea3b}{length}};}
+\DoxyCodeLine{15     uint16\_t \mbox{\hyperlink{struct_c_a_n__message_a4fc3a0c58dfbd1e68224521185cb9384}{id}};}
+\DoxyCodeLine{16     uint8\_t data[8];}
+\DoxyCodeLine{17 \} \mbox{\hyperlink{struct_c_a_n__message}{CAN\_message}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{_c_a_n_8h_a930a5570610e7a0526767bf358673aa6}{you\_lose}};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{_c_a_n_8h_adb0f99207facf71ca3429c6108d42d43}{CAN\_init}}(uint8\_t mode);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{33 \textcolor{keywordtype}{void} \mbox{\hyperlink{_c_a_n_8h_a977213658904ef25865836933905d9b9}{CAN\_send}}(\mbox{\hyperlink{struct_c_a_n__message}{CAN\_message}} message);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{_c_a_n_8h_a679e0fac309970bf0d8361cf02da8f97}{CAN\_receive}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{_c_a_n_8h_a25224cfb670f006871322eeb78f46b4f}{CAN\_debug\_print}}(uint8\_t \textcolor{keywordtype}{id}, \textcolor{keywordtype}{char} data, uint8\_t position);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

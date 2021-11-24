@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="struct_p_i_d___d_a_t_a" kind="struct" language="C++" prot="public">
+    <compoundname>PID_DATA</compoundname>
+    <includes refid="_p_i_8h" local="no">PI.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="9" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t integral</definition>
+        <argsstring></argsstring>
+        <name>integral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="11" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t P_Factor</definition>
+        <argsstring></argsstring>
+        <name>P_Factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="13" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t I_Factor</definition>
+        <argsstring></argsstring>
+        <name>I_Factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="15" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/PI.h" line="6" column="1" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PI.h" bodystart="6" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_p_i_d___d_a_t_a_1aaa0c89f0eeef7f2beab2ec23718dd9b7" prot="public" virt="non-virtual"><scope>PID_DATA</scope><name>error</name></member>
+      <member refid="struct_p_i_d___d_a_t_a_1aec9421ce78ad8d8ee5dcf8705d1cede5" prot="public" virt="non-virtual"><scope>PID_DATA</scope><name>I_Factor</name></member>
+      <member refid="struct_p_i_d___d_a_t_a_1a59bdb22b7224146301488db0f7f2c550" prot="public" virt="non-virtual"><scope>PID_DATA</scope><name>integral</name></member>
+      <member refid="struct_p_i_d___d_a_t_a_1a22c3cbc2ef78517e2adceb8a96264674" prot="public" virt="non-virtual"><scope>PID_DATA</scope><name>P_Factor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

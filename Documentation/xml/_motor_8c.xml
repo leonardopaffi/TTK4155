@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_motor_8c" kind="file" language="C++">
+    <compoundname>Motor.c</compoundname>
+    <includes refid="_motor_8h" local="yes">motor.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/Motor.c</label>
+        <link refid="_motor_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PI.h</label>
+        <link refid="_p_i_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam.h</label>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_motor_8c_1a151cccf0120a24d251b5ce5d878abb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void motor_init</definition>
+        <argsstring>()</argsstring>
+        <name>motor_init</name>
+        <briefdescription>
+<para>Initialization function for the motor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="3" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="_motor_8c_1a22cd7acd32a157fb29293924b92d384d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void motor_set_direction</definition>
+        <argsstring>(uint8_t direction)</argsstring>
+        <name>motor_set_direction</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Set direction of the motor LEFT/RIGHT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="62" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="_motor_8c_1ac29eebf30667cb34d4f79a29035a7709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void motor_set_speed</definition>
+        <argsstring>(uint8_t speed)</argsstring>
+        <name>motor_set_speed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Set speed of the motor, normalized to 0-100. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="75" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="75" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="_motor_8c_1a3543058368509b35584311cece5d20a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void motor_set_direction_speed</definition>
+        <argsstring>(uint8_t direction, uint16_t speed)</argsstring>
+        <name>motor_set_direction_speed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Set both speed and direction for the motor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="95" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="_motor_8c_1a920c7ac0f48e355b5ee861247e2cd637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t motor_encoder_read</definition>
+        <argsstring>()</argsstring>
+        <name>motor_encoder_read</name>
+        <briefdescription>
+<para>Read data from the encoder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int16_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="101" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="101" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="_motor_8c_1a091d29ed8690d7f70a79198e3c4e92f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void motor_set_with_PI</definition>
+        <argsstring>(uint16_t desired_value)</argsstring>
+        <name>motor_set_with_PI</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>desired_value</declname>
+        </param>
+        <briefdescription>
+<para>Set the position of the motor with PI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desired_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c" line="139" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/Motor.c" bodystart="139" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_motor_8h" kindref="compound">motor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_motor_8c_1a151cccf0120a24d251b5ce5d878abb67" kindref="member">motor_init</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_WPMR<sp/>=<sp/>(0x50494F<sp/>&lt;&lt;<sp/>8);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>PMC-&gt;PMC_PCER0<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>ID_PIOC);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PMC-&gt;PMC_PCER0<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>ID_PIOD);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>EN<sp/>pin<sp/>for<sp/>motor<sp/>(PD9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_PER<sp/>|=<sp/>PIO_PER_P9;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_OER<sp/>|=<sp/>PIO_OER_P9;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>|=<sp/>PIO_SODR_P9;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DIR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PD10;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_OER<sp/>=<sp/>PIO_PD10;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!OE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PD0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_OER<sp/>=<sp/>PIO_PD0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_CODR<sp/>=<sp/>PIO_CODR_P0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PD2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_OER<sp/>=<sp/>PIO_PD2;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!RES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PD1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_OER<sp/>=<sp/>PIO_PD1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>DAC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>PMC-&gt;PMC_PCER1<sp/>=<sp/>PMC_PCER1_PID38;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DACC<sp/>power<sp/>ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>DACC-&gt;DACC_CR<sp/>=<sp/>DACC_CR_SWRST<sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>DACC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>DACC-&gt;DACC_MR<sp/>=<sp/>DACC_MR_TRGEN_DIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Free<sp/>running<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>DACC_MR_USER_SEL_CHANNEL1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>select<sp/>channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>DACC_MR_REFRESH<sp/>(10);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>DACC-&gt;DACC_IER<sp/>|=<sp/>DACC_IER_EOC;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>channel<sp/>1<sp/>=<sp/>DAC1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>DACC-&gt;DACC_CHER<sp/>=<sp/>DACC_CHER_CH1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//DACC-&gt;DACC_ISR;<sp/><sp/>//<sp/>Read<sp/>and<sp/>clear<sp/>status<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setting<sp/>encoder<sp/>pins<sp/>as<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_IFER<sp/>=<sp/>(0xFF<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PUDR<sp/>=<sp/>(0xFF<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!RES<sp/>to<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_CODR<sp/>=<sp/>PIO_PD1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!RES<sp/>to<sp/>high</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>=<sp/>PIO_PD1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>PI<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_i_8c_1ac64c6936fea812ae971766d888d59c29" kindref="member">PI_init</ref>(20,1,&amp;<ref refid="_motor_8h_1a4b94651f41b495094cc445258a379471" kindref="member">pid</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>motor<sp/>at<sp/>center</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_motor_8c_1a22cd7acd32a157fb29293924b92d384d" kindref="member">motor_set_direction</ref>(uint8_t<sp/><ref refid="structdirection" kindref="compound">direction</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="structdirection" kindref="compound">direction</ref><sp/>==<sp/><ref refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894adb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>LEFT<sp/>direction<sp/>(PD10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_CODR<sp/>|=<sp/>PIO_CODR_P10;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>RIGHT<sp/>direction<sp/>(PD10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>|=<sp/>PIO_SODR_P10;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_motor_8c_1ac29eebf30667cb34d4f79a29035a7709" kindref="member">motor_set_speed</ref>(uint8_t<sp/>speed)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>if<sp/>speed<sp/>is<sp/>too<sp/>high<sp/>or<sp/>negative</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(speed<sp/>&gt;<sp/>100)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(speed<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Speed<sp/>should<sp/>be<sp/>between<sp/>0<sp/>and<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>speed_voltage<sp/>=<sp/>speed<sp/>*<sp/>30;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>speed<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>DACC<sp/>-&gt;<sp/>DACC_CDR<sp/>=<sp/>speed_voltage;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_motor_8c_1a3543058368509b35584311cece5d20a3" kindref="member">motor_set_direction_speed</ref>(uint8_t<sp/><ref refid="structdirection" kindref="compound">direction</ref>,<sp/>uint16_t<sp/>speed)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_motor_8c_1a22cd7acd32a157fb29293924b92d384d" kindref="member">motor_set_direction</ref>(<ref refid="structdirection" kindref="compound">direction</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_motor_8c_1ac29eebf30667cb34d4f79a29035a7709" kindref="member">motor_set_speed</ref>(speed);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">int16_t<sp/><ref refid="_motor_8c_1a920c7ac0f48e355b5ee861247e2cd637" kindref="member">motor_encoder_read</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!RST<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>=<sp/>PIO_SODR_P1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC8;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC7;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC6;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC5;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC4;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC3;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC2;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOC<sp/>-&gt;<sp/>PIO_PER<sp/>=<sp/>PIO_PC1;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>data;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!OE<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_CODR<sp/>=<sp/>PIO_PD0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SEL<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_CODR<sp/>=<sp/>PIO_PD2;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="delay_8c_1a36c8c34fc8f64e6bf1a21498195be1dd" kindref="member">delay_us</ref>(1000);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>MSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>|=<sp/>((PIOC-&gt;PIO_PDSR<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>8;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SEL<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>=<sp/>PIO_PD2;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="delay_8c_1a36c8c34fc8f64e6bf1a21498195be1dd" kindref="member">delay_us</ref>(1000);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>|=<sp/>(PIOC-&gt;PIO_PDSR<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0xFF;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!OE<sp/>HIGH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOD<sp/>-&gt;<sp/>PIO_SODR<sp/>=<sp/>PIO_PD0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_motor_8c_1a091d29ed8690d7f70a79198e3c4e92f7" kindref="member">motor_set_with_PI</ref>(uint16_t<sp/>desired_value)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>value<sp/>=<sp/><ref refid="_motor_8c_1a920c7ac0f48e355b5ee861247e2cd637" kindref="member">motor_encoder_read</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(value<sp/>!=<sp/>desired_value)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="_motor_8c_1a920c7ac0f48e355b5ee861247e2cd637" kindref="member">motor_encoder_read</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>speed<sp/><sp/>=<sp/><ref refid="_p_i_8c_1a5e5b3c1185e1fcc5967cefa3727c1714" kindref="member">PI_controller</ref>(desired_value,<sp/>value,<sp/>&amp;<ref refid="_motor_8h_1a4b94651f41b495094cc445258a379471" kindref="member">pid</ref>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;READ<sp/>VALUE<sp/>%d<sp/>\r\n&quot;,<sp/>value);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(speed<sp/>&gt;<sp/>100<sp/>|<sp/>speed<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speed<sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(desired_value-value<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_motor_8c_1a3543058368509b35584311cece5d20a3" kindref="member">motor_set_direction_speed</ref>(<ref refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894adb45120aafd37a973140edee24708065" kindref="member">LEFT</ref>,<sp/>speed);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(desired_value-value<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_motor_8c_1a3543058368509b35584311cece5d20a3" kindref="member">motor_set_direction_speed</ref>(<ref refid="_joystick_8h_1a159792ed672fe23dd4fb6d376a556894aec8379af7490bb9eaaf579cf17876f38" kindref="member">RIGHT</ref>,<sp/>speed);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/Motor.c"/>
+  </compounddef>
+</doxygen>

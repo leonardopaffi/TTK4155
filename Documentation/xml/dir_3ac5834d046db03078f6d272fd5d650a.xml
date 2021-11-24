@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_3ac5834d046db03078f6d272fd5d650a" kind="dir">
+    <compoundname>D:/Progetti/TTK4155/Node3</compoundname>
+    <innerfile refid="m_p_w_m_8h">mPWM.h</innerfile>
+    <innerfile refid="music_8h">music.h</innerfile>
+    <innerfile refid="notes_8h">notes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node3/"/>
+  </compounddef>
+</doxygen>

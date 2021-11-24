@@ -1,0 +1,70 @@
+\hypertarget{_joystick_8h_source}{}\doxysection{Joystick.\+h}
+\label{_joystick_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h@{D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h}}
+\mbox{\hyperlink{_joystick_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef JOYSTICK\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define JOYSTICK\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_node2_2_node2_2_a_d_c_8h}{ADC.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_o_l_e_d_8h}{OLED.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{comment}{// Joystick channel addresses}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define J\_X\_ADDRESS 0x01}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define J\_Y\_ADDRESS 0x00}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{comment}{// Idle values limit interval}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define IDLE\_X\_MIN 20}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define IDLE\_X\_MAX 80}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define IDLE\_Y\_MIN 20}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define IDLE\_Y\_MAX 80}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// Position structure for x,y values}}
+\DoxyCodeLine{18 \textcolor{comment}{// 8-\/bit each value}}
+\DoxyCodeLine{19 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     uint8\_t \mbox{\hyperlink{structpos__t_a0f561e77fa0f040b637f4e04f6cd8078}{x}};}
+\DoxyCodeLine{22     uint8\_t \mbox{\hyperlink{structpos__t_a17f97f62d93bc8cfb4a2b5d273a2aa72}{y}};}
+\DoxyCodeLine{23 \} \mbox{\hyperlink{structpos__t}{pos\_t}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{enum}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     \mbox{\hyperlink{_joystick_8h_a159792ed672fe23dd4fb6d376a556894a7d26f8d6f199c43bbe89b2ea40cafd74}{X\_IDLE}},}
+\DoxyCodeLine{28     \mbox{\hyperlink{_joystick_8h_a159792ed672fe23dd4fb6d376a556894adb45120aafd37a973140edee24708065}{LEFT}},}
+\DoxyCodeLine{29     \mbox{\hyperlink{_joystick_8h_a159792ed672fe23dd4fb6d376a556894aec8379af7490bb9eaaf579cf17876f38}{RIGHT}}}
+\DoxyCodeLine{30 \} \mbox{\hyperlink{_joystick_8h_a159792ed672fe23dd4fb6d376a556894}{x\_direction}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} \textcolor{keyword}{enum}}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     \mbox{\hyperlink{_joystick_8h_ac178037a410063bfcc3a63c1e05d117facd18aaa15c761bdd1249127dda0db470}{Y\_IDLE}},}
+\DoxyCodeLine{35     \mbox{\hyperlink{_joystick_8h_ac178037a410063bfcc3a63c1e05d117faba595d8bca8bc5e67c37c0a9d89becfa}{UP}},}
+\DoxyCodeLine{36     \mbox{\hyperlink{_joystick_8h_ac178037a410063bfcc3a63c1e05d117fa9b0b4a95b99523966e0e34ffdadac9da}{DOWN}}}
+\DoxyCodeLine{37 \} \mbox{\hyperlink{_joystick_8h_ac178037a410063bfcc3a63c1e05d117f}{y\_direction}};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     \textcolor{keywordtype}{char} \mbox{\hyperlink{structdirection_a76ed98f400901630078e263bafb604d7}{x\_dir}};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{char} \mbox{\hyperlink{structdirection_a590b462a600602e1a48064bd85674fe5}{y\_dir}};}
+\DoxyCodeLine{43 \} \mbox{\hyperlink{structdirection}{direction}};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{_joystick_8h_a219998cfb366307196d1013046d3f5d2}{stop}};}
+\DoxyCodeLine{46 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{_joystick_8h_a8273db344fd3a2b068599f6cadba12f4}{button}};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53 \mbox{\hyperlink{structpos__t}{pos\_t}} \mbox{\hyperlink{_joystick_8h_a3daf0fa9e0ee69caaf6eb44de9bf7517}{pos\_read}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59 \textcolor{keywordtype}{void} \mbox{\hyperlink{_joystick_8h_a90acebf0114a3aa5d95650790e8b8693}{joystick\_init}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66 \mbox{\hyperlink{structpos__t}{pos\_t}} \mbox{\hyperlink{_joystick_8h_adeabde9061c8f673f7ba257f3e61181d}{joystick\_pos\_read}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72 \textcolor{keywordtype}{void} \mbox{\hyperlink{_joystick_8h_a41bd5d42a9c4f3fc010c5b968c750551}{print\_joystick\_position}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79 \mbox{\hyperlink{structdirection}{direction}} \mbox{\hyperlink{_joystick_8h_a547ec3b29eb8621a1108cfbfcd88eaea}{joystick\_dir\_read}}();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{85 \textcolor{keywordtype}{void} \mbox{\hyperlink{_joystick_8h_ad66678b486e69805d439f61e94e2cc31}{joystick\_menu\_navigation}}();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{91 \textcolor{keywordtype}{void} \mbox{\hyperlink{_joystick_8h_a43cfe9ec2944af8457a490bda6dfb11b}{print\_joystick\_direction}}();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{103 \textcolor{keywordtype}{long} \mbox{\hyperlink{_joystick_8h_aada2d75bc8a8c6eb845bd940eadfa3fd}{map}}(\textcolor{keywordtype}{long} x, \textcolor{keywordtype}{long} in\_min, \textcolor{keywordtype}{long} in\_max, \textcolor{keywordtype}{long} out\_min, \textcolor{keywordtype}{long} out\_max);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

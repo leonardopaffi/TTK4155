@@ -1,0 +1,137 @@
+\hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+ADC.h File Reference}
+\label{_node1_2_t_t_k4155_2_a_d_c_8h}\index{D:/Progetti/TTK4155/Node1/TTK4155/ADC.h@{D:/Progetti/TTK4155/Node1/TTK4155/ADC.h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$avr/delay.\+h$>$}\newline
+Include dependency graph for ADC.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{_node1_2_t_t_k4155_2_a_d_c_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_node1_2_t_t_k4155_2_a_d_c_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a4385d9ed43412491c7fa3aed35590724}{ADC\+\_\+\+ADDRESS}}~0x1400
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_ab7b5fa96d786166f677a56f66852eed7}{SINGLE\+\_\+\+CHANNEL\+\_\+\+SAMPLE}}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a2b815e6730e8723a6d1d06d9ef8f31c0}{adc\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the ADC and its clock signal. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_ac1513709a7d29dc6590d9371b8cd0556}{adc\+\_\+read}} (uint8\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Reads a certain analog channel of the ADC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_adc13db4a167320d251113623317587d0}{adc\+\_\+read\+\_\+all\+\_\+channels}} ()
+\begin{DoxyCompactList}\small\item\em Debug function to read all the channels from the ADC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile char $\ast$ \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a858d347ca0f81c2a28921fae6c895e38}{ext\+\_\+adc}}
+\begin{DoxyCompactList}\small\item\em Pointer to the array of all addresses we will write to. ADC starting at 0x1400. \end{DoxyCompactList}\item 
+volatile char \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_afebee0a5c0b7adb91c8a2dabf6a3bc8b}{ADC\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Data retrieved from the ADC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_a4385d9ed43412491c7fa3aed35590724}\label{_node1_2_t_t_k4155_2_a_d_c_8h_a4385d9ed43412491c7fa3aed35590724}} 
+\index{ADC.h@{ADC.h}!ADC\_ADDRESS@{ADC\_ADDRESS}}
+\index{ADC\_ADDRESS@{ADC\_ADDRESS}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_ADDRESS}{ADC\_ADDRESS}}
+{\footnotesize\ttfamily \#define ADC\+\_\+\+ADDRESS~0x1400}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_ab7b5fa96d786166f677a56f66852eed7}\label{_node1_2_t_t_k4155_2_a_d_c_8h_ab7b5fa96d786166f677a56f66852eed7}} 
+\index{ADC.h@{ADC.h}!SINGLE\_CHANNEL\_SAMPLE@{SINGLE\_CHANNEL\_SAMPLE}}
+\index{SINGLE\_CHANNEL\_SAMPLE@{SINGLE\_CHANNEL\_SAMPLE}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{SINGLE\_CHANNEL\_SAMPLE}{SINGLE\_CHANNEL\_SAMPLE}}
+{\footnotesize\ttfamily \#define SINGLE\+\_\+\+CHANNEL\+\_\+\+SAMPLE~7}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_a2b815e6730e8723a6d1d06d9ef8f31c0}\label{_node1_2_t_t_k4155_2_a_d_c_8h_a2b815e6730e8723a6d1d06d9ef8f31c0}} 
+\index{ADC.h@{ADC.h}!adc\_init@{adc\_init}}
+\index{adc\_init@{adc\_init}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{adc\_init()}{adc\_init()}}
+{\footnotesize\ttfamily void adc\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the ADC and its clock signal. 
+
+Initialization function of the ADC.
+
+Initializes the ADC and its clock signal. \mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_ac1513709a7d29dc6590d9371b8cd0556}\label{_node1_2_t_t_k4155_2_a_d_c_8h_ac1513709a7d29dc6590d9371b8cd0556}} 
+\index{ADC.h@{ADC.h}!adc\_read@{adc\_read}}
+\index{adc\_read@{adc\_read}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{adc\_read()}{adc\_read()}}
+{\footnotesize\ttfamily uint8\+\_\+t adc\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{channel }\end{DoxyParamCaption})}
+
+
+
+Reads a certain analog channel of the ADC. 
+
+Reading data from the ADC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t
+\end{DoxyReturn}
+Reads a certain analog channel of the ADC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_adc13db4a167320d251113623317587d0}\label{_node1_2_t_t_k4155_2_a_d_c_8h_adc13db4a167320d251113623317587d0}} 
+\index{ADC.h@{ADC.h}!adc\_read\_all\_channels@{adc\_read\_all\_channels}}
+\index{adc\_read\_all\_channels@{adc\_read\_all\_channels}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{adc\_read\_all\_channels()}{adc\_read\_all\_channels()}}
+{\footnotesize\ttfamily void adc\+\_\+read\+\_\+all\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Debug function to read all the channels from the ADC. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_afebee0a5c0b7adb91c8a2dabf6a3bc8b}\label{_node1_2_t_t_k4155_2_a_d_c_8h_afebee0a5c0b7adb91c8a2dabf6a3bc8b}} 
+\index{ADC.h@{ADC.h}!ADC\_data@{ADC\_data}}
+\index{ADC\_data@{ADC\_data}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{ADC\_data}{ADC\_data}}
+{\footnotesize\ttfamily volatile char ADC\+\_\+data}
+
+
+
+Data retrieved from the ADC. 
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_a858d347ca0f81c2a28921fae6c895e38}\label{_node1_2_t_t_k4155_2_a_d_c_8h_a858d347ca0f81c2a28921fae6c895e38}} 
+\index{ADC.h@{ADC.h}!ext\_adc@{ext\_adc}}
+\index{ext\_adc@{ext\_adc}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{ext\_adc}{ext\_adc}}
+{\footnotesize\ttfamily volatile char$\ast$ ext\+\_\+adc}
+
+
+
+Pointer to the array of all addresses we will write to. ADC starting at 0x1400. 
+

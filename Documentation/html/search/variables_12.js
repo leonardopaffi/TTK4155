@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../structpos__t.html#a0f561e77fa0f040b637f4e04f6cd8078',1,'pos_t']]],
-  ['x_5fdir_1',['x_dir',['../structdirection.html#a76ed98f400901630078e263bafb604d7',1,'direction']]]
+  ['tail_0',['tail',['../structuart__ringbuffer__t.html#a8db7f977b77e4e4d588ef0d3e04ada16',1,'uart_ringbuffer_t']]]
 ];

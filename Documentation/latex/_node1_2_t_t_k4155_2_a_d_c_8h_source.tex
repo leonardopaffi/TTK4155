@@ -1,0 +1,32 @@
+\hypertarget{_node1_2_t_t_k4155_2_a_d_c_8h_source}{}\doxysection{ADC.\+h}
+\label{_node1_2_t_t_k4155_2_a_d_c_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/ADC.h@{D:/Progetti/TTK4155/Node1/TTK4155/ADC.h}}
+\mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ADC\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ADC\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <avr/io.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <avr/interrupt.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <avr/delay.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define ADC\_ADDRESS 0x1400}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define SINGLE\_CHANNEL\_SAMPLE 7}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{16 \textcolor{keyword}{volatile} \textcolor{keywordtype}{char}* \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a858d347ca0f81c2a28921fae6c895e38}{ext\_adc}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{keyword}{volatile} \textcolor{keywordtype}{char} \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_afebee0a5c0b7adb91c8a2dabf6a3bc8b}{ADC\_data}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a2b815e6730e8723a6d1d06d9ef8f31c0}{adc\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{36 uint8\_t \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_ac1513709a7d29dc6590d9371b8cd0556}{adc\_read}}(uint8\_t channel);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_a2b815e6730e8723a6d1d06d9ef8f31c0}{adc\_init}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{50 uint8\_t \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_ac1513709a7d29dc6590d9371b8cd0556}{adc\_read}}(uint8\_t channel);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_a_d_c_8h_adc13db4a167320d251113623317587d0}{adc\_read\_all\_channels}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

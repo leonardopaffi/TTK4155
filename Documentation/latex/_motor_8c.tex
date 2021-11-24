@@ -1,0 +1,114 @@
+\hypertarget{_motor_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/\+Motor.c File Reference}
+\label{_motor_8c}\index{D:/Progetti/TTK4155/Node2/Node2/Motor.c@{D:/Progetti/TTK4155/Node2/Node2/Motor.c}}
+{\ttfamily \#include \char`\"{}motor.\+h\char`\"{}}\newline
+Include dependency graph for Motor.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{_motor_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_motor_8c_a151cccf0120a24d251b5ce5d878abb67}{motor\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization function for the motor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8c_a22cd7acd32a157fb29293924b92d384d}{motor\+\_\+set\+\_\+direction}} (uint8\+\_\+t \mbox{\hyperlink{structdirection}{direction}})
+\begin{DoxyCompactList}\small\item\em Set direction of the motor LEFT/\+RIGHT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8c_ac29eebf30667cb34d4f79a29035a7709}{motor\+\_\+set\+\_\+speed}} (uint8\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Set speed of the motor, normalized to 0-\/100. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8c_a3543058368509b35584311cece5d20a3}{motor\+\_\+set\+\_\+direction\+\_\+speed}} (uint8\+\_\+t \mbox{\hyperlink{structdirection}{direction}}, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Set both speed and direction for the motor. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{_motor_8c_a920c7ac0f48e355b5ee861247e2cd637}{motor\+\_\+encoder\+\_\+read}} ()
+\begin{DoxyCompactList}\small\item\em Read data from the encoder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_motor_8c_a091d29ed8690d7f70a79198e3c4e92f7}{motor\+\_\+set\+\_\+with\+\_\+\+PI}} (uint16\+\_\+t desired\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Set the position of the motor with PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_motor_8c_a920c7ac0f48e355b5ee861247e2cd637}\label{_motor_8c_a920c7ac0f48e355b5ee861247e2cd637}} 
+\index{Motor.c@{Motor.c}!motor\_encoder\_read@{motor\_encoder\_read}}
+\index{motor\_encoder\_read@{motor\_encoder\_read}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_encoder\_read()}{motor\_encoder\_read()}}
+{\footnotesize\ttfamily int16\+\_\+t motor\+\_\+encoder\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read data from the encoder. 
+
+\begin{DoxyReturn}{Returns}
+int16\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_motor_8c_a151cccf0120a24d251b5ce5d878abb67}\label{_motor_8c_a151cccf0120a24d251b5ce5d878abb67}} 
+\index{Motor.c@{Motor.c}!motor\_init@{motor\_init}}
+\index{motor\_init@{motor\_init}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_init()}{motor\_init()}}
+{\footnotesize\ttfamily void motor\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the motor. 
+
+\mbox{\Hypertarget{_motor_8c_a22cd7acd32a157fb29293924b92d384d}\label{_motor_8c_a22cd7acd32a157fb29293924b92d384d}} 
+\index{Motor.c@{Motor.c}!motor\_set\_direction@{motor\_set\_direction}}
+\index{motor\_set\_direction@{motor\_set\_direction}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_direction()}{motor\_set\_direction()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+direction (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set direction of the motor LEFT/\+RIGHT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8c_a3543058368509b35584311cece5d20a3}\label{_motor_8c_a3543058368509b35584311cece5d20a3}} 
+\index{Motor.c@{Motor.c}!motor\_set\_direction\_speed@{motor\_set\_direction\_speed}}
+\index{motor\_set\_direction\_speed@{motor\_set\_direction\_speed}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_direction\_speed()}{motor\_set\_direction\_speed()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+direction\+\_\+speed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{direction,  }\item[{uint16\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set both speed and direction for the motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8c_ac29eebf30667cb34d4f79a29035a7709}\label{_motor_8c_ac29eebf30667cb34d4f79a29035a7709}} 
+\index{Motor.c@{Motor.c}!motor\_set\_speed@{motor\_set\_speed}}
+\index{motor\_set\_speed@{motor\_set\_speed}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_speed()}{motor\_set\_speed()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+speed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set speed of the motor, normalized to 0-\/100. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_motor_8c_a091d29ed8690d7f70a79198e3c4e92f7}\label{_motor_8c_a091d29ed8690d7f70a79198e3c4e92f7}} 
+\index{Motor.c@{Motor.c}!motor\_set\_with\_PI@{motor\_set\_with\_PI}}
+\index{motor\_set\_with\_PI@{motor\_set\_with\_PI}!Motor.c@{Motor.c}}
+\doxysubsubsection{\texorpdfstring{motor\_set\_with\_PI()}{motor\_set\_with\_PI()}}
+{\footnotesize\ttfamily void motor\+\_\+set\+\_\+with\+\_\+\+PI (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{desired\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Set the position of the motor with PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em desired\+\_\+value} & \\
+\hline
+\end{DoxyParams}

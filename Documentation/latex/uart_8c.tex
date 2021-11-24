@@ -1,0 +1,93 @@
+\hypertarget{uart_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/uart.c File Reference}
+\label{uart_8c}\index{D:/Progetti/TTK4155/Node2/Node2/uart.c@{D:/Progetti/TTK4155/Node2/Node2/uart.c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sam.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+Include dependency graph for uart.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{uart_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8c_ab5b2eb7c61969e61bef72eeb48dd058d}{configure\+\_\+uart}} (void)
+\begin{DoxyCompactList}\small\item\em Configure UART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8c_a1c201c2740c7aa7102270bb667069f38}{uart\+\_\+getchar}} (uint8\+\_\+t $\ast$c)
+\begin{DoxyCompactList}\small\item\em Get character from UART. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_8c_ae12fb3c9b87465c2fa0f0b2f78c13257}{uart\+\_\+putchar}} (const uint8\+\_\+t c)
+\item 
+void \mbox{\hyperlink{uart_8c_a5e433d3a46eda66a50c81c1eda46c84b}{UART\+\_\+\+Handler}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}{uart\+\_\+ringbuffer}} \mbox{\hyperlink{uart_8c_ab7c2eeebc26b7ad1e38b702d04ae3bd4}{rx\+\_\+buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{uart_8c_ab5b2eb7c61969e61bef72eeb48dd058d}\label{uart_8c_ab5b2eb7c61969e61bef72eeb48dd058d}} 
+\index{uart.c@{uart.c}!configure\_uart@{configure\_uart}}
+\index{configure\_uart@{configure\_uart}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{configure\_uart()}{configure\_uart()}}
+{\footnotesize\ttfamily void configure\+\_\+uart (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Configure UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em void.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{uart_8c_a1c201c2740c7aa7102270bb667069f38}\label{uart_8c_a1c201c2740c7aa7102270bb667069f38}} 
+\index{uart.c@{uart.c}!uart\_getchar@{uart\_getchar}}
+\index{uart\_getchar@{uart\_getchar}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_getchar()}{uart\_getchar()}}
+{\footnotesize\ttfamily int uart\+\_\+getchar (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Get character from UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$c} & location of character\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{uart_8c_a5e433d3a46eda66a50c81c1eda46c84b}\label{uart_8c_a5e433d3a46eda66a50c81c1eda46c84b}} 
+\index{uart.c@{uart.c}!UART\_Handler@{UART\_Handler}}
+\index{UART\_Handler@{UART\_Handler}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{UART\_Handler()}{UART\_Handler()}}
+{\footnotesize\ttfamily void UART\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8c_ae12fb3c9b87465c2fa0f0b2f78c13257}\label{uart_8c_ae12fb3c9b87465c2fa0f0b2f78c13257}} 
+\index{uart.c@{uart.c}!uart\_putchar@{uart\_putchar}}
+\index{uart\_putchar@{uart\_putchar}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{uart\_putchar()}{uart\_putchar()}}
+{\footnotesize\ttfamily int uart\+\_\+putchar (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{uart_8c_ab7c2eeebc26b7ad1e38b702d04ae3bd4}\label{uart_8c_ab7c2eeebc26b7ad1e38b702d04ae3bd4}} 
+\index{uart.c@{uart.c}!rx\_buffer@{rx\_buffer}}
+\index{rx\_buffer@{rx\_buffer}!uart.c@{uart.c}}
+\doxysubsubsection{\texorpdfstring{rx\_buffer}{rx\_buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{uart_8h_a72ccb92ff20ffcc17148db0f08e998d1}{uart\+\_\+ringbuffer}} rx\+\_\+buffer}
+

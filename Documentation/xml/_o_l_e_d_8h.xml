@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_o_l_e_d_8h" kind="file" language="C++">
+    <compoundname>OLED.h</compoundname>
+    <includes local="no">avr/delay.h</includes>
+    <includedby refid="_joystick_8h" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h</includedby>
+    <includedby refid="_o_l_e_d_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/OLED.c</includedby>
+    <includedby refid="_node1_2_t_t_k4155_2main_8c" local="yes">D:/Progetti/TTK4155/Node1/TTK4155/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/OLED.h</label>
+        <link refid="_o_l_e_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>avr/delay.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Joystick.c</label>
+        <link refid="_joystick_8c"/>
+      </node>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h</label>
+        <link refid="_joystick_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/OLED.c</label>
+        <link refid="_o_l_e_d_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/OLED.h</label>
+        <link refid="_o_l_e_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node1/TTK4155/main.c</label>
+        <link refid="_node1_2_t_t_k4155_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmenu__entry" prot="public">menu_entry</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_o_l_e_d_8h_1a8673a47a50b180c1d74812d571b6350c" prot="public" static="no">
+        <name>OLED_COMMAND_PIN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="6" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_o_l_e_d_8h_1aed89bd71aee8be823e8a20ec4e093c1e" prot="public" static="no">
+        <name>HEIGHT</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="8" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_o_l_e_d_8h_1a241aeeb764887ae5e3de58b98f04b16d" prot="public" static="no">
+        <name>WIDTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="9" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844" prot="public" static="no" strong="no">
+        <type></type>
+        <name>menu_name</name>
+        <enumvalue id="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd" prot="public">
+          <name>MAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d" prot="public">
+          <name>PLAYMENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef" prot="public">
+          <name>CREDITS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a" prot="public">
+          <name>ABOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="12" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" bodystart="13" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_o_l_e_d_8h_1a2b14bcae81c33704cd345ed337762943" prot="public" static="no" mutable="no">
+        <type>volatile char *</type>
+        <definition>volatile char* OLED_COMMAND</definition>
+        <argsstring></argsstring>
+        <name>OLED_COMMAND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="27" column="22" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="14" bodyend="-1" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="27" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="_o_l_e_d_8h_1ad47de1071fd49ce10af87e8be74b38ff" prot="public" static="no" mutable="no">
+        <type>volatile char *</type>
+        <definition>volatile char* OLED_DATA</definition>
+        <argsstring></argsstring>
+        <name>OLED_DATA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="28" column="22" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="15" bodyend="-1" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="28" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="_o_l_e_d_8h_1ab561e8d3613278ebf0c0faef7591a024" prot="public" static="no" mutable="no">
+        <type>volatile uint8_t</type>
+        <definition>volatile uint8_t menu_pos</definition>
+        <argsstring></argsstring>
+        <name>menu_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="31" column="25" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="11" bodyend="-1" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="31" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="_o_l_e_d_8h_1a205b823d11ca2996c7f8cf02b1429258" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t is_main_menu</definition>
+        <argsstring></argsstring>
+        <name>is_main_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="33" column="16" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="12" bodyend="-1" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="33" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_o_l_e_d_8h_1a92a7efc71034015484371ea860ed96b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_write_command</definition>
+        <argsstring>(uint8_t c)</argsstring>
+        <name>OLED_write_command</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Send command to the OLED controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Command to be sent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="40" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="17" bodyend="21" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a41efdbe7c39d060f81a317703b6626e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_write_data</definition>
+        <argsstring>(uint8_t d)</argsstring>
+        <name>OLED_write_data</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Write data to the OLED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="47" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="23" bodyend="27" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1afb6f3107e48d72be03cb3781374e1391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_init</definition>
+        <argsstring>()</argsstring>
+        <name>OLED_init</name>
+        <briefdescription>
+<para>Initialization function for the OLED. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="53" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="29" bodyend="70" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1ae47f190c0ac5b80b1754ea3d3c3c02a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_goto_line</definition>
+        <argsstring>(uint8_t line)</argsstring>
+        <name>OLED_goto_line</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Set cursor to a certain line of the OLEd. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="60" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="72" bodyend="76" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1afef85af912c108e839a705e7a66a1720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_goto_column</definition>
+        <argsstring>(uint8_t column)</argsstring>
+        <name>OLED_goto_column</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Set the cursor to a certain column. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="67" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="78" bodyend="85" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a2dde9e2ff48705297fb105f3f793da04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_set_pos</definition>
+        <argsstring>(uint8_t line, uint8_t column)</argsstring>
+        <name>OLED_set_pos</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Set the cursor to a certain line and column. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="75" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="87" bodyend="91" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a79e5a15ee3cdc7c549d2aa961248f239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_fill_line</definition>
+        <argsstring>(uint8_t line)</argsstring>
+        <name>OLED_fill_line</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Fill line with white pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="82" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="93" bodyend="102" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1ad784190236dc8c79d99481bac1fbcf60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_clear_all</definition>
+        <argsstring>()</argsstring>
+        <name>OLED_clear_all</name>
+        <briefdescription>
+<para>Clear the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="88" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="104" bodyend="117" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a94fbf95c1a5f57d41b094afe2c463718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_print_char</definition>
+        <argsstring>(char c, uint8_t line, uint8_t col)</argsstring>
+        <name>OLED_print_char</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>Print character on the OLED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="97" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="119" bodyend="130" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="97" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a53b761d5b126de3f35e50ce27022b3b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_print_string</definition>
+        <argsstring>(char *s, uint8_t length, uint8_t line)</argsstring>
+        <name>OLED_print_string</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Print string to the OLED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="106" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="132" bodyend="146" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1ac44bc9d1697259578a22f990300f1a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_update_menu</definition>
+        <argsstring>(uint8_t pos)</argsstring>
+        <name>OLED_update_menu</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Update the cursor on the menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="113" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="148" bodyend="158" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_o_l_e_d_8h_1a55bb654e6204c14882e66fc5a4c6ba44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OLED_print_menu</definition>
+        <argsstring>(uint8_t menutype)</argsstring>
+        <name>OLED_print_menu</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>menutype</declname>
+        </param>
+        <briefdescription>
+<para>Print menu on the OLED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menutype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" line="120" column="6" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.c" bodystart="160" bodyend="206" declfile="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OLED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OLED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/delay.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_o_l_e_d_8h_1a8673a47a50b180c1d74812d571b6350c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OLED_COMMAND_PIN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_o_l_e_d_8h_1aed89bd71aee8be823e8a20ec4e093c1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEIGHT<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_o_l_e_d_8h_1a241aeeb764887ae5e3de58b98f04b16d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIDTH<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Types<sp/>of<sp/>available<sp/>menu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd" kindref="member">MAIN</ref>,</highlight></codeline>
+<codeline lineno="15" refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d" kindref="member">PLAYMENU</ref>,</highlight></codeline>
+<codeline lineno="16" refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef" kindref="member">CREDITS</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a" kindref="member">ABOUT</ref></highlight></codeline>
+<codeline lineno="18" refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a" refkind="member"><highlight class="normal">}<sp/><ref refid="_o_l_e_d_8h_1aa365de70bf20ec692b20b877b8875844" kindref="member">menu_name</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Struct<sp/>to<sp/>have<sp/>both<sp/>text<sp/>and<sp/>length<sp/>of<sp/>string<sp/>on<sp/>the<sp/>same<sp/>place</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structmenu__entry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="structmenu__entry_1a5ac083a645d964373f022d03df4849c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmenu__entry_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structmenu__entry_1ab2b3adeb2a67e656ff030b56727fd0ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmenu__entry_1ab2b3adeb2a67e656ff030b56727fd0ac" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structmenu__entry" kindref="compound">menu_entry</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="_o_l_e_d_8h_1a2b14bcae81c33704cd345ed337762943" kindref="member">OLED_COMMAND</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="_o_l_e_d_8h_1ad47de1071fd49ce10af87e8be74b38ff" kindref="member">OLED_DATA</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Current<sp/>cursor<sp/>position<sp/>on<sp/>the<sp/>screen<sp/>(line<sp/>number)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_o_l_e_d_8h_1ab561e8d3613278ebf0c0faef7591a024" kindref="member">menu_pos</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_o_l_e_d_8h_1a205b823d11ca2996c7f8cf02b1429258" kindref="member">is_main_menu</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a92a7efc71034015484371ea860ed96b7" kindref="member">OLED_write_command</ref>(uint8_t<sp/>c);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a41efdbe7c39d060f81a317703b6626e6" kindref="member">OLED_write_data</ref>(uint8_t<sp/>d);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1afb6f3107e48d72be03cb3781374e1391" kindref="member">OLED_init</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1ae47f190c0ac5b80b1754ea3d3c3c02a8" kindref="member">OLED_goto_line</ref>(uint8_t<sp/>line);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1afef85af912c108e839a705e7a66a1720" kindref="member">OLED_goto_column</ref>(uint8_t<sp/>column);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a2dde9e2ff48705297fb105f3f793da04" kindref="member">OLED_set_pos</ref>(uint8_t<sp/>line,<sp/>uint8_t<sp/>column);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a79e5a15ee3cdc7c549d2aa961248f239" kindref="member">OLED_fill_line</ref>(uint8_t<sp/>line);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1ad784190236dc8c79d99481bac1fbcf60" kindref="member">OLED_clear_all</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a94fbf95c1a5f57d41b094afe2c463718" kindref="member">OLED_print_char</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/>uint8_t<sp/>line,<sp/>uint8_t<sp/>col);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a53b761d5b126de3f35e50ce27022b3b9" kindref="member">OLED_print_string</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s,<sp/>uint8_t<sp/>length,<sp/>uint8_t<sp/>line);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1ac44bc9d1697259578a22f990300f1a50" kindref="member">OLED_update_menu</ref>(uint8_t<sp/>pos);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_o_l_e_d_8h_1a55bb654e6204c14882e66fc5a4c6ba44" kindref="member">OLED_print_menu</ref>(uint8_t<sp/>menutype);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/OLED.h"/>
+  </compounddef>
+</doxygen>

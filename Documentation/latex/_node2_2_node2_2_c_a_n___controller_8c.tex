@@ -1,0 +1,129 @@
+\hypertarget{_node2_2_node2_2_c_a_n___controller_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node2/\+Node2/can\+\_\+controller.c File Reference}
+\label{_node2_2_node2_2_c_a_n___controller_8c}\index{D:/Progetti/TTK4155/Node2/Node2/can\_controller.c@{D:/Progetti/TTK4155/Node2/Node2/can\_controller.c}}
+{\ttfamily \#include \char`\"{}can\+\_\+controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sam.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}printf-\/stdarg.\+h\char`\"{}}\newline
+Include dependency graph for can\+\_\+controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{_node2_2_node2_2_c_a_n___controller_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8c_a75e7e1428e5ce309c0087602721bf57d}{can\+\_\+init\+\_\+def\+\_\+tx\+\_\+rx\+\_\+mb}} (uint32\+\_\+t can\+\_\+br)
+\begin{DoxyCompactList}\small\item\em Initialize can bus with predefined number of rx and tx mailboxes, CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+MB\mbox{[}0\mbox{]} is used for transmitting CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+MB\mbox{[}1,2\mbox{]} is used for receiving. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8c_ab12c1286ebbc8c54dc200d4b9c86902d}{can\+\_\+init}} (uint32\+\_\+t can\+\_\+br, uint8\+\_\+t num\+\_\+tx\+\_\+mb, uint8\+\_\+t num\+\_\+rx\+\_\+mb)
+\begin{DoxyCompactList}\small\item\em Initialize can bus. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8c_a8f4793f97f7c2faaf3942bf2e21b24a7}{can\+\_\+send}} (\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a0627202712e73e6823e5c51a56663ac5}{CAN\+\_\+\+MESSAGE}} $\ast$can\+\_\+msg, uint8\+\_\+t tx\+\_\+mb\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Send can message from mailbox. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8c_a03d4c2c5c83b39910e579652a514f658}{can\+\_\+receive}} (\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a0627202712e73e6823e5c51a56663ac5}{CAN\+\_\+\+MESSAGE}} $\ast$can\+\_\+msg, uint8\+\_\+t rx\+\_\+mb\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Read can message from mailbox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8c_ad4693f3cf41505cc76fe9e313cbcc8ee}{reset}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_node2_2_node2_2_c_a_n___controller_8c_ab12c1286ebbc8c54dc200d4b9c86902d}\label{_node2_2_node2_2_c_a_n___controller_8c_ab12c1286ebbc8c54dc200d4b9c86902d}} 
+\index{can\_controller.c@{can\_controller.c}!can\_init@{can\_init}}
+\index{can\_init@{can\_init}!can\_controller.c@{can\_controller.c}}
+\doxysubsubsection{\texorpdfstring{can\_init()}{can\_init()}}
+{\footnotesize\ttfamily uint8\+\_\+t can\+\_\+init (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{can\+\_\+br,  }\item[{uint8\+\_\+t}]{num\+\_\+tx\+\_\+mb,  }\item[{uint8\+\_\+t}]{num\+\_\+rx\+\_\+mb }\end{DoxyParamCaption})}
+
+
+
+Initialize can bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+\_\+br} & Value to be set in CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+BR register to match can bus bit timing\\
+\hline
+{\em num\+\_\+tx\+\_\+mb} & Number of transmit mailboxes, tx mb indexes\+: \mbox{[}0 , num\+\_\+tx\+\_\+mb-\/1\mbox{]}\\
+\hline
+{\em num\+\_\+rx\+\_\+mb} & Number of receive mailboxes, rx mb indexes\+: \mbox{[}num\+\_\+tx\+\_\+mb, num\+\_\+rx\+\_\+mb-\/1\mbox{]}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{_node2_2_node2_2_c_a_n___controller_8c_a75e7e1428e5ce309c0087602721bf57d}\label{_node2_2_node2_2_c_a_n___controller_8c_a75e7e1428e5ce309c0087602721bf57d}} 
+\index{can\_controller.c@{can\_controller.c}!can\_init\_def\_tx\_rx\_mb@{can\_init\_def\_tx\_rx\_mb}}
+\index{can\_init\_def\_tx\_rx\_mb@{can\_init\_def\_tx\_rx\_mb}!can\_controller.c@{can\_controller.c}}
+\doxysubsubsection{\texorpdfstring{can\_init\_def\_tx\_rx\_mb()}{can\_init\_def\_tx\_rx\_mb()}}
+{\footnotesize\ttfamily uint8\+\_\+t can\+\_\+init\+\_\+def\+\_\+tx\+\_\+rx\+\_\+mb (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{can\+\_\+br }\end{DoxyParamCaption})}
+
+
+
+Initialize can bus with predefined number of rx and tx mailboxes, CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+MB\mbox{[}0\mbox{]} is used for transmitting CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+MB\mbox{[}1,2\mbox{]} is used for receiving. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+\_\+br} & Value to be set in CAN0-\/\texorpdfstring{$>$}{>}CAN\+\_\+\+BR register to match can bus bit timing\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{_node2_2_node2_2_c_a_n___controller_8c_a03d4c2c5c83b39910e579652a514f658}\label{_node2_2_node2_2_c_a_n___controller_8c_a03d4c2c5c83b39910e579652a514f658}} 
+\index{can\_controller.c@{can\_controller.c}!can\_receive@{can\_receive}}
+\index{can\_receive@{can\_receive}!can\_controller.c@{can\_controller.c}}
+\doxysubsubsection{\texorpdfstring{can\_receive()}{can\_receive()}}
+{\footnotesize\ttfamily uint8\+\_\+t can\+\_\+receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a0627202712e73e6823e5c51a56663ac5}{CAN\+\_\+\+MESSAGE}} $\ast$}]{can\+\_\+msg,  }\item[{uint8\+\_\+t}]{rx\+\_\+mb\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Read can message from mailbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+\_\+msg} & struct instance to save received data\\
+\hline
+{\em rx\+\_\+mb\+\_\+id} & ID of receive mailbox to be used\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{_node2_2_node2_2_c_a_n___controller_8c_a8f4793f97f7c2faaf3942bf2e21b24a7}\label{_node2_2_node2_2_c_a_n___controller_8c_a8f4793f97f7c2faaf3942bf2e21b24a7}} 
+\index{can\_controller.c@{can\_controller.c}!can\_send@{can\_send}}
+\index{can\_send@{can\_send}!can\_controller.c@{can\_controller.c}}
+\doxysubsubsection{\texorpdfstring{can\_send()}{can\_send()}}
+{\footnotesize\ttfamily uint8\+\_\+t can\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_node2_2_node2_2_c_a_n___controller_8h_a0627202712e73e6823e5c51a56663ac5}{CAN\+\_\+\+MESSAGE}} $\ast$}]{can\+\_\+msg,  }\item[{uint8\+\_\+t}]{tx\+\_\+mb\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Send can message from mailbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+\_\+msg} & message to be sent\\
+\hline
+{\em tx\+\_\+mb\+\_\+id} & ID of transmit mailbox to be used\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Success(0)} & or failure(1) \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_node2_2_node2_2_c_a_n___controller_8c_ad4693f3cf41505cc76fe9e313cbcc8ee}\label{_node2_2_node2_2_c_a_n___controller_8c_ad4693f3cf41505cc76fe9e313cbcc8ee}} 
+\index{can\_controller.c@{can\_controller.c}!reset@{reset}}
+\index{reset@{reset}!can\_controller.c@{can\_controller.c}}
+\doxysubsubsection{\texorpdfstring{reset}{reset}}
+{\footnotesize\ttfamily uint8\+\_\+t reset = 0}
+

@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="uart_8c" kind="file" language="C++">
+    <compoundname>uart.c</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">sam.h</includes>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/uart.c</label>
+        <link refid="uart_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" prot="public" static="no" mutable="no">
+        <type><ref refid="uart_8h_1a72ccb92ff20ffcc17148db0f08e998d1" kindref="member">uart_ringbuffer</ref></type>
+        <definition>uart_ringbuffer rx_buffer</definition>
+        <argsstring></argsstring>
+        <name>rx_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c" line="16" column="17" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="uart_8c_1ab5b2eb7c61969e61bef72eeb48dd058d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void configure_uart</definition>
+        <argsstring>(void)</argsstring>
+        <name>configure_uart</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configure UART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>void.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c" line="26" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.c" bodystart="26" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8c_1a1c201c2740c7aa7102270bb667069f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uart_getchar</definition>
+        <argsstring>(uint8_t *c)</argsstring>
+        <name>uart_getchar</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Get character from UART. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>*c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location of character</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c" line="91" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.c" bodystart="91" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8c_1ae12fb3c9b87465c2fa0f0b2f78c13257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int uart_putchar</definition>
+        <argsstring>(const uint8_t c)</argsstring>
+        <name>uart_putchar</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c" line="111" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.c" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="uart_8c_1a5e433d3a46eda66a50c81c1eda46c84b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>UART_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c" line="123" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/uart.c" bodystart="123" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>uart.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Gustav<sp/>O.<sp/>Often<sp/>and<sp/>Eivind<sp/>H.<sp/>Jølsgard</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>use<sp/>in<sp/>TTK4155<sp/>Embedded<sp/>and<sp/>Industrial<sp/>Computer<sp/>Systems<sp/>Design</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>NTNU<sp/>-<sp/>Norwegian<sp/>University<sp/>of<sp/>Science<sp/>and<sp/>Technology</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sam.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="uart_8h" kindref="compound">uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//Ringbuffer<sp/>for<sp/>receiving<sp/>multiple<sp/>characters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="structuart__ringbuffer__t" kindref="compound">uart_ringbuffer</ref><sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="uart_8c_1ab5b2eb7c61969e61bef72eeb48dd058d" kindref="member">configure_uart</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>ul_sr;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">Initialize<sp/>UART<sp/>ring<sp/>buffer<sp/>as<sp/>empty</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref>=0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref>=0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">Initialize<sp/>UART<sp/>communication</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pin<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>interrupts<sp/>on<sp/>Uart<sp/>receive<sp/>(URXD)<sp/>and<sp/>transmit<sp/>(UTXD)<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_IDR<sp/>=<sp/>PIO_PA8A_URXD<sp/>|<sp/>PIO_PA9A_UTXD;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>the<sp/>Parallel<sp/>IO<sp/>(PIO)<sp/>of<sp/>the<sp/>URXD<sp/>and<sp/>UTXD<sp/>pins<sp/>so<sp/>that<sp/>the<sp/>peripheral<sp/>controller<sp/>can<sp/>use<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_PDR<sp/>=<sp/>PIO_PA8A_URXD<sp/>|<sp/>PIO_PA9A_UTXD;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>current<sp/>peripheral<sp/>AB<sp/>select<sp/>register<sp/>and<sp/>set<sp/>the<sp/>UTXD<sp/>and<sp/>URXD<sp/>pins<sp/>to<sp/>0<sp/>(UART<sp/>is<sp/>connected<sp/>as<sp/>peripheral<sp/>A)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>ul_sr<sp/>=<sp/>PIOA-&gt;PIO_ABSR;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_ABSR<sp/>&amp;=<sp/>~(PIO_PA8A_URXD<sp/>|<sp/>PIO_PA9A_UTXD)<sp/>&amp;<sp/>ul_sr;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>pull<sp/>up<sp/>resistor<sp/>on<sp/>URXD<sp/>and<sp/>UTXD<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>PIOA-&gt;PIO_PUER<sp/>=<sp/>PIO_PA8A_URXD<sp/>|<sp/>PIO_PA9A_UTXD;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Uart<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>the<sp/>peripheral<sp/>UART<sp/>controller<sp/>in<sp/>Power<sp/>Management<sp/>Controller<sp/>(PMC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>PMC-&gt;PMC_PCER0<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>ID_UART;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>and<sp/>disable<sp/>receiver<sp/>and<sp/>transmitter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_CR<sp/>=<sp/>UART_CR_RSTRX<sp/>|<sp/>UART_CR_RSTTX<sp/>|<sp/>UART_CR_RXDIS<sp/>|<sp/>UART_CR_TXDIS;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>baudrate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_BRGR<sp/>=<sp/>547;<sp/></highlight><highlight class="comment">//<sp/>MCK<sp/>/<sp/>16<sp/>*<sp/>x<sp/>=<sp/>BaudRate<sp/>(write<sp/>x<sp/>into<sp/>UART_BRGR)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>parity<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_MR<sp/>=<sp/>UART_MR_PAR_NO<sp/>|<sp/>UART_MR_CHMODE_NORMAL;<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>PDC<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_PTCR<sp/>=<sp/>UART_PTCR_RXTDIS<sp/>|<sp/>UART_PTCR_TXTDIS;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>interrupts<sp/>on<sp/>receive<sp/>ready<sp/>and<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_IDR<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_IER<sp/>=<sp/>UART_IER_RXRDY<sp/>|<sp/>UART_IER_OVRE<sp/>|<sp/>UART_IER_FRAME<sp/>|<sp/>UART_IER_PARE;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>UART<sp/>interrupt<sp/>in<sp/>the<sp/>Nested<sp/>Vectored<sp/>Interrupt<sp/>Controller(NVIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>NVIC_EnableIRQ((IRQn_Type)<sp/>ID_UART);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>UART<sp/>receiver<sp/>and<sp/>transmitter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_CR<sp/>=<sp/>UART_CR_RXEN<sp/>|<sp/>UART_CR_TXEN;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="uart_8c_1a1c201c2740c7aa7102270bb667069f38" kindref="member">uart_getchar</ref>(uint8_t<sp/>*c)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>a<sp/>character<sp/>is<sp/>available<sp/>in<sp/>the<sp/>ringbuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref><sp/>==<sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref>)<sp/>{<sp/></highlight><highlight class="comment">//Buffer<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>the<sp/>head<sp/>character<sp/>from<sp/>the<sp/>ringbuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>*c<sp/>=<sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" kindref="member">data</ref>[<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref>];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref><sp/>=<sp/>(<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref><sp/>+<sp/>1)<sp/>%<sp/><ref refid="uart_8h_1a179f566078d72b10a8dfcaca45a0cba2" kindref="member">UART_RINGBUFFER_SIZE</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Sends<sp/>a<sp/>character<sp/>through<sp/>the<sp/>UART<sp/>interface</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>\param<sp/>c<sp/>Character<sp/>to<sp/>be<sp/>sent</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>\retval<sp/>Success(0)<sp/>or<sp/>failure(1).</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="uart_8c_1ae12fb3c9b87465c2fa0f0b2f78c13257" kindref="member">uart_putchar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>c)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>transmitter<sp/>is<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((UART-&gt;UART_SR<sp/>&amp;<sp/>UART_SR_TXRDY)<sp/>!=<sp/>UART_SR_TXRDY)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>the<sp/>character</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>UART-&gt;UART_THR<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!((UART-&gt;UART_SR)<sp/>&amp;<sp/>UART_SR_TXEMPTY));<sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>the<sp/>character<sp/>to<sp/>be<sp/>sent,<sp/>can<sp/>implement<sp/>ring<sp/>buffer<sp/>to<sp/>remove<sp/>the<sp/>wait</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="uart_8c_1a5e433d3a46eda66a50c81c1eda46c84b" kindref="member">UART_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>status<sp/>=<sp/>UART-&gt;UART_SR;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Reset<sp/>UART<sp/>at<sp/>overflow<sp/>error<sp/>and<sp/>frame<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>&amp;<sp/>(UART_SR_OVRE<sp/>|<sp/>UART_SR_FRAME<sp/>|<sp/>UART_SR_PARE))</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART-&gt;UART_CR<sp/>=<sp/>UART_CR_RXEN<sp/>|<sp/>UART_CR_TXEN<sp/>|<sp/>UART_CR_RSTSTA;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>if<sp/>message<sp/>is<sp/>ready<sp/>to<sp/>be<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>&amp;<sp/>UART_SR_RXRDY)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Check<sp/>if<sp/>receive<sp/>ring<sp/>buffer<sp/>is<sp/>full<sp/>and<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref><sp/>+<sp/>1)<sp/>%<sp/><ref refid="uart_8h_1a179f566078d72b10a8dfcaca45a0cba2" kindref="member">UART_RINGBUFFER_SIZE</ref><sp/>==<sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a9794c0e61506b826b49b458708ae2489" kindref="member">head</ref>)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="printf-stdarg_8c_1a98631211a4a8aee62f572375d5b637be" kindref="member">printf</ref>(</highlight><highlight class="stringliteral">&quot;ERR:<sp/>UART<sp/>RX<sp/>buffer<sp/>is<sp/>full\n\r&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" kindref="member">data</ref>[<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref>]<sp/>=<sp/>UART-&gt;UART_RHR;<sp/></highlight><highlight class="comment">//Throw<sp/>away<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1aa4fb4bd0c27ed664157badd323b9e8a6" kindref="member">data</ref>[<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref>]<sp/>=<sp/>UART-&gt;UART_RHR;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref><sp/>=<sp/>(<ref refid="uart_8c_1ab7c2eeebc26b7ad1e38b702d04ae3bd4" kindref="member">rx_buffer</ref>.<ref refid="structuart__ringbuffer__t_1a8db7f977b77e4e4d588ef0d3e04ada16" kindref="member">tail</ref><sp/>+<sp/>1)<sp/>%<sp/><ref refid="uart_8h_1a179f566078d72b10a8dfcaca45a0cba2" kindref="member">UART_RINGBUFFER_SIZE</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/uart.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+\hypertarget{_interrupt_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+Interrupt.c File Reference}
+\label{_interrupt_8c}\index{D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c@{D:/Progetti/TTK4155/Node1/TTK4155/Interrupt.c}}
+{\ttfamily \#include \char`\"{}Interrupt.\+h\char`\"{}}\newline
+Include dependency graph for Interrupt.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{_interrupt_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_interrupt_8c_a1c62fca549a4981d6684d4a5c72874b9}{interrupt\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em initialization function for the interrupt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_interrupt_8c_ae04f5463a20ee95cdb373a69b2eacf5f}{interrupt\+\_\+polling}} ()
+\begin{DoxyCompactList}\small\item\em Resets variables and prints in the console if a button is pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_interrupt_8c_a30a0ad88a89a84c0161cf09eace108e8}{ISR}} (INT2\+\_\+vect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{_interrupt_8c_a261e47dd882acb04e7c867fe2977ad1a}{RIGHT\+\_\+\+BUTTON\+\_\+\+PRESSED}} = 0
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{_interrupt_8c_ab326e3a1904161f68cf09b94c6808a05}{LEFT\+\_\+\+BUTTON\+\_\+\+PRESSED}} = 0
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{_interrupt_8c_a9e6daedebfea645463f0605ea0c0ea53}{JOYSTICK\+\_\+\+BUTTON\+\_\+\+PRESSED}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_interrupt_8c_a1c62fca549a4981d6684d4a5c72874b9}\label{_interrupt_8c_a1c62fca549a4981d6684d4a5c72874b9}} 
+\index{Interrupt.c@{Interrupt.c}!interrupt\_init@{interrupt\_init}}
+\index{interrupt\_init@{interrupt\_init}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{interrupt\_init()}{interrupt\_init()}}
+{\footnotesize\ttfamily void interrupt\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initialization function for the interrupt 
+
+\mbox{\Hypertarget{_interrupt_8c_ae04f5463a20ee95cdb373a69b2eacf5f}\label{_interrupt_8c_ae04f5463a20ee95cdb373a69b2eacf5f}} 
+\index{Interrupt.c@{Interrupt.c}!interrupt\_polling@{interrupt\_polling}}
+\index{interrupt\_polling@{interrupt\_polling}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{interrupt\_polling()}{interrupt\_polling()}}
+{\footnotesize\ttfamily void interrupt\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets variables and prints in the console if a button is pressed. 
+
+\mbox{\Hypertarget{_interrupt_8c_a30a0ad88a89a84c0161cf09eace108e8}\label{_interrupt_8c_a30a0ad88a89a84c0161cf09eace108e8}} 
+\index{Interrupt.c@{Interrupt.c}!ISR@{ISR}}
+\index{ISR@{ISR}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{INT2\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_interrupt_8c_a9e6daedebfea645463f0605ea0c0ea53}\label{_interrupt_8c_a9e6daedebfea645463f0605ea0c0ea53}} 
+\index{Interrupt.c@{Interrupt.c}!JOYSTICK\_BUTTON\_PRESSED@{JOYSTICK\_BUTTON\_PRESSED}}
+\index{JOYSTICK\_BUTTON\_PRESSED@{JOYSTICK\_BUTTON\_PRESSED}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{JOYSTICK\_BUTTON\_PRESSED}{JOYSTICK\_BUTTON\_PRESSED}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t JOYSTICK\+\_\+\+BUTTON\+\_\+\+PRESSED = 0}
+
+\mbox{\Hypertarget{_interrupt_8c_ab326e3a1904161f68cf09b94c6808a05}\label{_interrupt_8c_ab326e3a1904161f68cf09b94c6808a05}} 
+\index{Interrupt.c@{Interrupt.c}!LEFT\_BUTTON\_PRESSED@{LEFT\_BUTTON\_PRESSED}}
+\index{LEFT\_BUTTON\_PRESSED@{LEFT\_BUTTON\_PRESSED}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{LEFT\_BUTTON\_PRESSED}{LEFT\_BUTTON\_PRESSED}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t LEFT\+\_\+\+BUTTON\+\_\+\+PRESSED = 0}
+
+\mbox{\Hypertarget{_interrupt_8c_a261e47dd882acb04e7c867fe2977ad1a}\label{_interrupt_8c_a261e47dd882acb04e7c867fe2977ad1a}} 
+\index{Interrupt.c@{Interrupt.c}!RIGHT\_BUTTON\_PRESSED@{RIGHT\_BUTTON\_PRESSED}}
+\index{RIGHT\_BUTTON\_PRESSED@{RIGHT\_BUTTON\_PRESSED}!Interrupt.c@{Interrupt.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_BUTTON\_PRESSED}{RIGHT\_BUTTON\_PRESSED}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RIGHT\+\_\+\+BUTTON\+\_\+\+PRESSED = 0}
+

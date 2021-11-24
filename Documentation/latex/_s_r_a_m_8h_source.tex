@@ -1,0 +1,17 @@
+\hypertarget{_s_r_a_m_8h_source}{}\doxysection{SRAM.\+h}
+\label{_s_r_a_m_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/SRAM.h@{D:/Progetti/TTK4155/Node1/TTK4155/SRAM.h}}
+\mbox{\hyperlink{_s_r_a_m_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRAM\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRAM\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{8 \textcolor{keywordtype}{void} \mbox{\hyperlink{_s_r_a_m_8h_ad607bcb84cc9434b858ce5502242c54f}{SRAM\_init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     \textcolor{comment}{/*Enabling memory reading*/}}
+\DoxyCodeLine{11     MCUCR |= (1 << SRE);}
+\DoxyCodeLine{12     SFIOR |= (1 << XMM2);}
+\DoxyCodeLine{13 \}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

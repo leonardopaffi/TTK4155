@@ -1,0 +1,106 @@
+\hypertarget{_c_a_n_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+CAN.c File Reference}
+\label{_c_a_n_8c}\index{D:/Progetti/TTK4155/Node1/TTK4155/CAN.c@{D:/Progetti/TTK4155/Node1/TTK4155/CAN.c}}
+{\ttfamily \#include \char`\"{}CAN.\+h\char`\"{}}\newline
+Include dependency graph for CAN.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{_c_a_n_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_c_a_n_8c_adb0f99207facf71ca3429c6108d42d43}{CAN\+\_\+init}} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initialization function for the CAN bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_c_a_n_8c_a977213658904ef25865836933905d9b9}{CAN\+\_\+send}} (\mbox{\hyperlink{struct_c_a_n__message}{CAN\+\_\+message}} message)
+\begin{DoxyCompactList}\small\item\em Send data though the CAN bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_c_a_n_8c_a4eccfa3b8b0583ef6184416d1e92351e}{CAN\+\_\+receive}} (void)
+\begin{DoxyCompactList}\small\item\em Checks registers for received messages. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_c_a_n_8c_a25224cfb670f006871322eeb78f46b4f}{CAN\+\_\+debug\+\_\+print}} (uint8\+\_\+t id, char data, uint8\+\_\+t position)
+\begin{DoxyCompactList}\small\item\em Debug function for printing incoming messages. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_c_a_n_8c_afea150fcd685610cb9f7672fce361e53}{ISR}} (INT0\+\_\+vect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_c_a_n_8c_a930a5570610e7a0526767bf358673aa6}{you\+\_\+lose}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_c_a_n_8c_a25224cfb670f006871322eeb78f46b4f}\label{_c_a_n_8c_a25224cfb670f006871322eeb78f46b4f}} 
+\index{CAN.c@{CAN.c}!CAN\_debug\_print@{CAN\_debug\_print}}
+\index{CAN\_debug\_print@{CAN\_debug\_print}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{CAN\_debug\_print()}{CAN\_debug\_print()}}
+{\footnotesize\ttfamily void CAN\+\_\+debug\+\_\+print (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{char}]{data,  }\item[{uint8\+\_\+t}]{position }\end{DoxyParamCaption})}
+
+
+
+Debug function for printing incoming messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em data} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_c_a_n_8c_adb0f99207facf71ca3429c6108d42d43}\label{_c_a_n_8c_adb0f99207facf71ca3429c6108d42d43}} 
+\index{CAN.c@{CAN.c}!CAN\_init@{CAN\_init}}
+\index{CAN\_init@{CAN\_init}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{CAN\_init()}{CAN\_init()}}
+{\footnotesize\ttfamily void CAN\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the CAN bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_c_a_n_8c_a4eccfa3b8b0583ef6184416d1e92351e}\label{_c_a_n_8c_a4eccfa3b8b0583ef6184416d1e92351e}} 
+\index{CAN.c@{CAN.c}!CAN\_receive@{CAN\_receive}}
+\index{CAN\_receive@{CAN\_receive}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{CAN\_receive()}{CAN\_receive()}}
+{\footnotesize\ttfamily void CAN\+\_\+receive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Checks registers for received messages. 
+
+\mbox{\Hypertarget{_c_a_n_8c_a977213658904ef25865836933905d9b9}\label{_c_a_n_8c_a977213658904ef25865836933905d9b9}} 
+\index{CAN.c@{CAN.c}!CAN\_send@{CAN\_send}}
+\index{CAN\_send@{CAN\_send}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{CAN\_send()}{CAN\_send()}}
+{\footnotesize\ttfamily void CAN\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_a_n__message}{CAN\+\_\+message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Send data though the CAN bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_c_a_n_8c_afea150fcd685610cb9f7672fce361e53}\label{_c_a_n_8c_afea150fcd685610cb9f7672fce361e53}} 
+\index{CAN.c@{CAN.c}!ISR@{ISR}}
+\index{ISR@{ISR}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{INT0\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_c_a_n_8c_a930a5570610e7a0526767bf358673aa6}\label{_c_a_n_8c_a930a5570610e7a0526767bf358673aa6}} 
+\index{CAN.c@{CAN.c}!you\_lose@{you\_lose}}
+\index{you\_lose@{you\_lose}!CAN.c@{CAN.c}}
+\doxysubsubsection{\texorpdfstring{you\_lose}{you\_lose}}
+{\footnotesize\ttfamily uint8\+\_\+t you\+\_\+lose = 0}
+

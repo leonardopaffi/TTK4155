@@ -90,6 +90,19 @@ $(document).ready(function(){initNavTree('_o_l_e_d_8c.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_o_l_e_d_8h_source.html">OLED.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fonts_8h_source.html">fonts.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for OLED.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="_o_l_e_d_8c__incl.png" border="0" usemap="#a_d_1_2_progetti_2_t_t_k4155_2_node1_2_t_t_k4155_2_o_l_e_d_8c" alt=""/></div>
+<map name="a_d_1_2_progetti_2_t_t_k4155_2_node1_2_t_t_k4155_2_o_l_e_d_8c" id="a_d_1_2_progetti_2_t_t_k4155_2_node1_2_t_t_k4155_2_o_l_e_d_8c">
+<area shape="rect" title=" " alt="" coords="23,5,191,47"/>
+<area shape="rect" href="_o_l_e_d_8h.html" title=" " alt="" coords="29,95,97,121"/>
+<area shape="rect" href="fonts_8h.html" title=" " alt="" coords="130,95,191,121"/>
+<area shape="rect" title=" " alt="" coords="5,169,89,196"/>
+<area shape="rect" title=" " alt="" coords="113,169,227,196"/>
+</map>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -132,10 +145,22 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0bc1976a718f2024b9ec7c0e3e856807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a0bc1976a718f2024b9ec7c0e3e856807">main_menu</a> [4] = {{&quot;Play&quot;, 4}, {&quot;Settings&quot;, 8}, {&quot;Credits&quot;, 7}, {&quot;About&quot;, 5}}</td></tr>
-<tr class="separator:a0bc1976a718f2024b9ec7c0e3e856807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c32cf95dee545a8f5e15a2be34f65c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a6c32cf95dee545a8f5e15a2be34f65c8">menu_pos</a> = 1</td></tr>
-<tr class="separator:a6c32cf95dee545a8f5e15a2be34f65c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6d39a4dede2e28a725ab4486866072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmenu__entry.html">menu_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a1d6d39a4dede2e28a725ab4486866072">main_menu</a> [4] = {{&quot;Play&quot;, 4}, {&quot;Credits&quot;, 7}, {&quot;About&quot;, 5}}</td></tr>
+<tr class="separator:a1d6d39a4dede2e28a725ab4486866072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ce6eb182e9accacfe9901f78cf1007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmenu__entry.html">menu_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#ac8ce6eb182e9accacfe9901f78cf1007">play_menu</a> [2] = {{&quot;Playing&quot;, 7}, {&quot;Return&quot;, 6}}</td></tr>
+<tr class="separator:ac8ce6eb182e9accacfe9901f78cf1007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80aed340dfb01b2ddaa07d6af7b5b00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmenu__entry.html">menu_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#ab80aed340dfb01b2ddaa07d6af7b5b00">credits_menu</a> [4] = {{&quot;Hans&quot;, 4}, {&quot;Leonardo&quot;, 8}, {&quot;Pragaash&quot;, 8}, {&quot;Tobi&quot;, 4}}</td></tr>
+<tr class="separator:ab80aed340dfb01b2ddaa07d6af7b5b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6c26943628db3683a5664f0b6f0a5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmenu__entry.html">menu_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a5e6c26943628db3683a5664f0b6f0a5a">about_menu</a> [4] = {{&quot;TTK4155&quot;, 7}, {&quot;Group 39&quot;, 8}, {&quot;2021&quot;, 4}, {&quot;2022&quot;, 4}}</td></tr>
+<tr class="separator:a5e6c26943628db3683a5664f0b6f0a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab561e8d3613278ebf0c0faef7591a024"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#ab561e8d3613278ebf0c0faef7591a024">menu_pos</a> = 1</td></tr>
+<tr class="separator:ab561e8d3613278ebf0c0faef7591a024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205b823d11ca2996c7f8cf02b1429258"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a205b823d11ca2996c7f8cf02b1429258">is_main_menu</a> = 1</td></tr>
+<tr class="separator:a205b823d11ca2996c7f8cf02b1429258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b14bcae81c33704cd345ed337762943"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#a2b14bcae81c33704cd345ed337762943">OLED_COMMAND</a> = (char *)0x1000</td></tr>
+<tr class="separator:a2b14bcae81c33704cd345ed337762943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47de1071fd49ce10af87e8be74b38ff"><td class="memItemLeft" align="right" valign="top">volatile char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_l_e_d_8c.html#ad47de1071fd49ce10af87e8be74b38ff">OLED_DATA</a> = (char *)0x1200</td></tr>
+<tr class="separator:ad47de1071fd49ce10af87e8be74b38ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad784190236dc8c79d99481bac1fbcf60" name="ad784190236dc8c79d99481bac1fbcf60"></a>
@@ -484,28 +509,112 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a0bc1976a718f2024b9ec7c0e3e856807" name="a0bc1976a718f2024b9ec7c0e3e856807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bc1976a718f2024b9ec7c0e3e856807">&#9670;&nbsp;</a></span>main_menu</h2>
+<a id="a5e6c26943628db3683a5664f0b6f0a5a" name="a5e6c26943628db3683a5664f0b6f0a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6c26943628db3683a5664f0b6f0a5a">&#9670;&nbsp;</a></span>about_menu</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">main_menu[4] = {{&quot;Play&quot;, 4}, {&quot;Settings&quot;, 8}, {&quot;Credits&quot;, 7}, {&quot;About&quot;, 5}}</td>
+          <td class="memname"><a class="el" href="structmenu__entry.html">menu_entry</a> about_menu[4] = {{&quot;TTK4155&quot;, 7}, {&quot;Group 39&quot;, 8}, {&quot;2021&quot;, 4}, {&quot;2022&quot;, 4}}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6c32cf95dee545a8f5e15a2be34f65c8" name="a6c32cf95dee545a8f5e15a2be34f65c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c32cf95dee545a8f5e15a2be34f65c8">&#9670;&nbsp;</a></span>menu_pos</h2>
+<a id="ab80aed340dfb01b2ddaa07d6af7b5b00" name="ab80aed340dfb01b2ddaa07d6af7b5b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80aed340dfb01b2ddaa07d6af7b5b00">&#9670;&nbsp;</a></span>credits_menu</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">menu_pos = 1</td>
+          <td class="memname"><a class="el" href="structmenu__entry.html">menu_entry</a> credits_menu[4] = {{&quot;Hans&quot;, 4}, {&quot;Leonardo&quot;, 8}, {&quot;Pragaash&quot;, 8}, {&quot;Tobi&quot;, 4}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a205b823d11ca2996c7f8cf02b1429258" name="a205b823d11ca2996c7f8cf02b1429258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205b823d11ca2996c7f8cf02b1429258">&#9670;&nbsp;</a></span>is_main_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t is_main_menu = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d6d39a4dede2e28a725ab4486866072" name="a1d6d39a4dede2e28a725ab4486866072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6d39a4dede2e28a725ab4486866072">&#9670;&nbsp;</a></span>main_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmenu__entry.html">menu_entry</a> main_menu[4] = {{&quot;Play&quot;, 4}, {&quot;Credits&quot;, 7}, {&quot;About&quot;, 5}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab561e8d3613278ebf0c0faef7591a024" name="ab561e8d3613278ebf0c0faef7591a024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab561e8d3613278ebf0c0faef7591a024">&#9670;&nbsp;</a></span>menu_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t menu_pos = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b14bcae81c33704cd345ed337762943" name="a2b14bcae81c33704cd345ed337762943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b14bcae81c33704cd345ed337762943">&#9670;&nbsp;</a></span>OLED_COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile char* OLED_COMMAND = (char *)0x1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad47de1071fd49ce10af87e8be74b38ff" name="ad47de1071fd49ce10af87e8be74b38ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47de1071fd49ce10af87e8be74b38ff">&#9670;&nbsp;</a></span>OLED_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile char* OLED_DATA = (char *)0x1200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8ce6eb182e9accacfe9901f78cf1007" name="ac8ce6eb182e9accacfe9901f78cf1007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ce6eb182e9accacfe9901f78cf1007">&#9670;&nbsp;</a></span>play_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmenu__entry.html">menu_entry</a> play_menu[2] = {{&quot;Playing&quot;, 7}, {&quot;Return&quot;, 6}}</td>
         </tr>
       </table>
 </div><div class="memdoc">

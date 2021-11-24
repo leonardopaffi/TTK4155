@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structpos__t" kind="struct" language="C++" prot="public">
+    <compoundname>pos_t</compoundname>
+    <includes refid="_joystick_8h" local="no">Joystick.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpos__t_1a0f561e77fa0f040b637f4e04f6cd8078" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="21" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpos__t_1a17f97f62d93bc8cfb4a2b5d273a2aa72" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="22" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" line="19" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/Joystick.h" bodystart="20" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structpos__t_1a0f561e77fa0f040b637f4e04f6cd8078" prot="public" virt="non-virtual"><scope>pos_t</scope><name>x</name></member>
+      <member refid="structpos__t_1a17f97f62d93bc8cfb4a2b5d273a2aa72" prot="public" virt="non-virtual"><scope>pos_t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

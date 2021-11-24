@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_node2_2_node2_2_c_a_n___controller_8h" kind="file" language="C++">
+    <compoundname>can_controller.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="_node2_2_node2_2_c_a_n___controller_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/can_controller.c</includedby>
+    <includedby refid="can__interrupt_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/can_interrupt.c</includedby>
+    <includedby refid="_node2_2_node2_2main_8c" local="yes">D:/Progetti/TTK4155/Node2/Node2/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_controller.h</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_controller.c</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8c"/>
+      </node>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_controller.h</label>
+        <link refid="_node2_2_node2_2_c_a_n___controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/Progetti/TTK4155/Node2/Node2/can_interrupt.c</label>
+        <link refid="can__interrupt_8c"/>
+      </node>
+      <node id="4">
+        <label>D:/Progetti/TTK4155/Node2/Node2/main.c</label>
+        <link refid="_node2_2_node2_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcan__message__t" prot="public">can_message_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" prot="public" static="no">
+        <type>struct <ref refid="structcan__message__t" kindref="compound">can_message_t</ref></type>
+        <definition>typedef struct can_message_t CAN_MESSAGE</definition>
+        <argsstring></argsstring>
+        <name>CAN_MESSAGE</name>
+        <briefdescription>
+<para>Structure of the CAN message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="26" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_node2_2_node2_2_c_a_n___controller_8h_1ad4693f3cf41505cc76fe9e313cbcc8ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reset</definition>
+        <argsstring></argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="28" column="16" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="17" bodyend="-1" declfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" declline="28" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8h_1a75e7e1428e5ce309c0087602721bf57d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_init_def_tx_rx_mb</definition>
+        <argsstring>(uint32_t can_br)</argsstring>
+        <name>can_init_def_tx_rx_mb</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>can_br</declname>
+        </param>
+        <briefdescription>
+<para>Initialize can bus with predefined number of rx and tx mailboxes, CAN0-&gt;CAN_MB[0] is used for transmitting CAN0-&gt;CAN_MB[1,2] is used for receiving. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set in CAN0-&gt;CAN_BR register to match can bus bit timing</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="30" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="28" bodyend="31" declfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" declline="30" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8h_1ab12c1286ebbc8c54dc200d4b9c86902d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_init</definition>
+        <argsstring>(uint32_t can_br, uint8_t num_tx_mb, uint8_t num_rx_mb)</argsstring>
+        <name>can_init</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>can_br</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_tx_mb</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>num_rx_mb</declname>
+        </param>
+        <briefdescription>
+<para>Initialize can bus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to be set in CAN0-&gt;CAN_BR register to match can bus bit timing</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_tx_mb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of transmit mailboxes, tx mb indexes: [0 , num_tx_mb-1]</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_rx_mb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of receive mailboxes, rx mb indexes: [num_tx_mb, num_rx_mb-1]</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="31" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="46" bodyend="120" declfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" declline="31" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8h_1ac81681fa36cdf9fe6bdefdbb8164df07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_send</definition>
+        <argsstring>(CAN_MESSAGE *can_msg, uint8_t mailbox_id)</argsstring>
+        <name>can_send</name>
+        <param>
+          <type><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kindref="member">CAN_MESSAGE</ref> *</type>
+          <declname>can_msg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mailbox_id</declname>
+          <defname>tx_mb_id</defname>
+        </param>
+        <briefdescription>
+<para>Send can message from mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tx_mb_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of transmit mailbox to be used</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="33" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="131" bodyend="160" declfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" declline="33" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_node2_2_node2_2_c_a_n___controller_8h_1ac22373dd81bf37380ec1f662e7b27678" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t can_receive</definition>
+        <argsstring>(CAN_MESSAGE *can_msg, uint8_t mailbox_id)</argsstring>
+        <name>can_receive</name>
+        <param>
+          <type><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kindref="member">CAN_MESSAGE</ref> *</type>
+          <declname>can_msg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mailbox_id</declname>
+          <defname>rx_mb_id</defname>
+        </param>
+        <briefdescription>
+<para>Read can message from mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>can_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct instance to save received data</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rx_mb_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of receive mailbox to be used</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Success(0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>or failure(1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" line="34" column="9" bodyfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.c" bodystart="171" bodyend="211" declfile="D:/Progetti/TTK4155/Node2/Node2/can_controller.h" declline="34" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>can_controller.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Gustav<sp/>O.<sp/>Often<sp/>and<sp/>Eivind<sp/>H.<sp/>J�lsgard</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>use<sp/>in<sp/>TTK4155<sp/>Embedded<sp/>and<sp/>Industrial<sp/>Computer<sp/>Systems<sp/>Design</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>NTNU<sp/>-<sp/>Norwegian<sp/>University<sp/>of<sp/>Science<sp/>and<sp/>Technology</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CAN_CONTROLLER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_CONTROLLER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structcan__message__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcan__message__t" kindref="compound">can_message_t</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structcan__message__t_1a4fc3a0c58dfbd1e68224521185cb9384" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structcan__message__t_1a4984cd1ac153dd3a0b24706eb8f9b904" kindref="member">data_length</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structcan__message__t_1afb87d045bbf32b236fc425efe02bdc7b" kindref="member">data</ref>[8];</highlight></codeline>
+<codeline lineno="26" refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" refkind="member"><highlight class="normal">}<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a0627202712e73e6823e5c51a56663ac5" kindref="member">CAN_MESSAGE</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1ad4693f3cf41505cc76fe9e313cbcc8ee" kindref="member">reset</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1a75e7e1428e5ce309c0087602721bf57d" kindref="member">can_init_def_tx_rx_mb</ref>(uint32_t<sp/>can_br);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1ab12c1286ebbc8c54dc200d4b9c86902d" kindref="member">can_init</ref>(uint32_t<sp/>can_br,<sp/>uint8_t<sp/>num_tx_mb,<sp/>uint8_t<sp/>num_rx_mb);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1ac81681fa36cdf9fe6bdefdbb8164df07" kindref="member">can_send</ref>(<ref refid="structcan__message__t" kindref="compound">CAN_MESSAGE</ref>*<sp/>can_msg,<sp/>uint8_t<sp/>mailbox_id);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">uint8_t<sp/><ref refid="_node2_2_node2_2_c_a_n___controller_8h_1ac22373dd81bf37380ec1f662e7b27678" kindref="member">can_receive</ref>(<ref refid="structcan__message__t" kindref="compound">CAN_MESSAGE</ref>*<sp/>can_msg,<sp/>uint8_t<sp/>mailbox_id);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CAN_CONTROLLER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/can_controller.h"/>
+  </compounddef>
+</doxygen>

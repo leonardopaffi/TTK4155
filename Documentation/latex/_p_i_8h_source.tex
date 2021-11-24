@@ -1,0 +1,28 @@
+\hypertarget{_p_i_8h_source}{}\doxysection{PI.\+h}
+\label{_p_i_8h_source}\index{D:/Progetti/TTK4155/Node2/Node2/PI.h@{D:/Progetti/TTK4155/Node2/Node2/PI.h}}
+\mbox{\hyperlink{_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_p_i_d___d_a_t_a}{PID\_DATA}}\{}
+\DoxyCodeLine{7     \textcolor{comment}{// Structure adapted from example code}}
+\DoxyCodeLine{8     \textcolor{comment}{// To calculate Error}}
+\DoxyCodeLine{9     int16\_t \mbox{\hyperlink{struct_p_i_d___d_a_t_a_aaa0c89f0eeef7f2beab2ec23718dd9b7}{error}};}
+\DoxyCodeLine{10     \textcolor{comment}{// Summation of errors, used for integrate calculations}}
+\DoxyCodeLine{11     int32\_t \mbox{\hyperlink{struct_p_i_d___d_a_t_a_a59bdb22b7224146301488db0f7f2c550}{integral}};}
+\DoxyCodeLine{12     \textcolor{comment}{// The Proportional tuning constant, multiplied with SCALING\_FACTOR}}
+\DoxyCodeLine{13     int16\_t \mbox{\hyperlink{struct_p_i_d___d_a_t_a_a22c3cbc2ef78517e2adceb8a96264674}{P\_Factor}};}
+\DoxyCodeLine{14     \textcolor{comment}{// The Integral tuning constant, multiplied with SCALING\_FACTOR}}
+\DoxyCodeLine{15     int32\_t \mbox{\hyperlink{struct_p_i_d___d_a_t_a_aec9421ce78ad8d8ee5dcf8705d1cede5}{I\_Factor}};}
+\DoxyCodeLine{16 \} \mbox{\hyperlink{_p_i_8h_a4cce40a2f18039f5f1e1744cd44452cf}{pidData\_t}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{25 \textcolor{keywordtype}{void} \mbox{\hyperlink{_p_i_8h_ac64c6936fea812ae971766d888d59c29}{PI\_init}}(int16\_t P\_factor, int16\_t I\_factor, \mbox{\hyperlink{struct_p_i_d___d_a_t_a}{pidData\_t}}* pid\_st);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{35 int16\_t \mbox{\hyperlink{_p_i_8h_a5e5b3c1185e1fcc5967cefa3727c1714}{PI\_controller}}(int16\_t set\_point, int16\_t process\_value, \mbox{\hyperlink{struct_p_i_d___d_a_t_a}{pidData\_t}}  *pid\_st);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

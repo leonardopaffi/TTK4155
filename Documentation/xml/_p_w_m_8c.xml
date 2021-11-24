@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_p_w_m_8c" kind="file" language="C++">
+    <compoundname>PWM.c</compoundname>
+    <includes refid="_p_w_m_8h" local="yes">PWM.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/Progetti/TTK4155/Node2/Node2/PWM.c</label>
+        <link refid="_p_w_m_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sam.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_p_w_m_8c_1a9816c7c730e93dba6a3e231505a40354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWM_init</definition>
+        <argsstring>()</argsstring>
+        <name>PWM_init</name>
+        <briefdescription>
+<para>Initialization function for the PWM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PWM.c" line="3" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PWM.c" bodystart="3" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_w_m_8c_1aada2d75bc8a8c6eb845bd940eadfa3fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long map</definition>
+        <argsstring>(long x, long in_min, long in_max, long out_min, long out_max)</argsstring>
+        <name>map</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>in_min</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>in_max</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>out_min</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>out_max</declname>
+        </param>
+        <briefdescription>
+<para>Function to remap values in a certain range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to map a value in a certain range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to remap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input range minumum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input range maximum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output range minumum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output range maximum value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>long </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PWM.c" line="15" column="6" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PWM.c" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_w_m_8c_1a394437ec9ec6921d6598d80ce53c639a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PWM_set_value</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>PWM_set_value</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set value to PWM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node2/Node2/PWM.c" line="20" column="5" bodyfile="D:/Progetti/TTK4155/Node2/Node2/PWM.c" bodystart="20" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_w_m_8h" kindref="compound">PWM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_w_m_8c_1a9816c7c730e93dba6a3e231505a40354" kindref="member">PWM_init</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PMC_PCER1<sp/>|=<sp/>PMC_PCER1_PID36;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>PWM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PIOC_ABSR<sp/>|=<sp/>PIO_ABSR_P19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>PWM<sp/>pin<sp/>perhipheral<sp/>C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PIOC_PDR<sp/>|=<sp/>PIO_PDR_P19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>PWM<sp/>pin<sp/>to<sp/>an<sp/>output1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CLK<sp/>=<sp/>PWM_CLK_PREA(0)<sp/>|<sp/>PWM_CLK_DIVA(42);<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>clock<sp/>rate<sp/>to<sp/>2MHz<sp/>(84MHz/42)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CMR5<sp/>=<sp/>PWM_CMR_CALG<sp/>|<sp/>PWM_CMR_CPRE_CLKA;<sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>dual<sp/>slope<sp/>PWM<sp/>and<sp/>set<sp/>the<sp/>clock<sp/>source<sp/>as<sp/>CLKA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CPRD5<sp/>=<sp/>20000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>frequency<sp/>2MHz/(2<sp/>*<sp/>20000)<sp/>=<sp/>50Hz<sp/>=<sp/>20ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_CDTY5<sp/>=<sp/>20000<sp/>-<sp/><ref refid="_p_w_m_8h_1ab71cdc0ec46d7f32153a76e127ef13fd" kindref="member">STEP_CENTER</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>PWM<sp/>duty<sp/>cycle<sp/>to<sp/>1500<sp/>-<sp/>centre<sp/>the<sp/>servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_PWM_ENA<sp/>=<sp/>PWM_ENA_CHID5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>the<sp/>PWM<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_p_w_m_8c_1aada2d75bc8a8c6eb845bd940eadfa3fd" kindref="member">map</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>in_min,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>in_max,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>out_min,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>out_max)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x<sp/>-<sp/>in_min)<sp/>*<sp/>(out_max<sp/>-<sp/>out_min)<sp/>/<sp/>(in_max<sp/>-<sp/>in_min)<sp/>+<sp/>out_min;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_p_w_m_8c_1a394437ec9ec6921d6598d80ce53c639a" kindref="member">PWM_set_value</ref>(uint8_t<sp/>value)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>step_value<sp/>=<sp/><ref refid="_p_w_m_8h_1ab71cdc0ec46d7f32153a76e127ef13fd" kindref="member">STEP_CENTER</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>step_value<sp/>=<sp/><ref refid="_p_w_m_8c_1aada2d75bc8a8c6eb845bd940eadfa3fd" kindref="member">map</ref>(value,<sp/>0,<sp/>255,<sp/><ref refid="_p_w_m_8h_1a85c2e0a1c14969e3ff0c1d422d144dae" kindref="member">STEP_LEFT_MAX</ref>,<sp/><ref refid="_p_w_m_8h_1ae4fc0c884b45881489b7ab5930a87be7" kindref="member">STEP_RIGHT_MAX</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;STEP<sp/>%d\r\n&quot;,<sp/>step_value);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(step_value<sp/>&lt;<sp/>STEP_LEFT_MAX<sp/>||<sp/>step_value<sp/>&gt;<sp/><ref refid="_p_w_m_8h_1ae4fc0c884b45881489b7ab5930a87be7" kindref="member">STEP_RIGHT_MAX</ref>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Error:<sp/>Value<sp/>is<sp/>outside<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REG_PWM_CDTY5<sp/>=<sp/>20000<sp/>-<sp/>step_value;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/PWM.c"/>
+  </compounddef>
+</doxygen>

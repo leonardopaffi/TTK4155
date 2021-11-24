@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['score_0',['score',['../_node2_2_node2_2main_8c.html#ad89903731d7f7be95b5d969211e27c26',1,'main.c']]],
-  ['stop_1',['stop',['../_joystick_8c.html#a2d6abedce0377a7a23305ce566382d23',1,'stop():&#160;Joystick.c'],['../_joystick_8h.html#a219998cfb366307196d1013046d3f5d2',1,'stop():&#160;Joystick.h']]],
-  ['systemcoreclock_2',['SystemCoreClock',['../system__sam3xa_8c.html#aa3cd3e43291e81e795d642b79b6088e6',1,'system_sam3xa.c']]]
+  ['r_0',['R',['../structsliderpos__t.html#ad6dca68b61d96e60ca0062e00390ba9f',1,'sliderpos_t']]],
+  ['reset_1',['reset',['../_node2_2_node2_2_c_a_n___controller_8c.html#ad4693f3cf41505cc76fe9e313cbcc8ee',1,'reset():&#160;can_controller.c'],['../_node2_2_node2_2_c_a_n___controller_8h.html#ad4693f3cf41505cc76fe9e313cbcc8ee',1,'reset():&#160;can_controller.c']]],
+  ['right_5fbutton_5fpressed_2',['RIGHT_BUTTON_PRESSED',['../_interrupt_8c.html#a261e47dd882acb04e7c867fe2977ad1a',1,'Interrupt.c']]],
+  ['rx_5fbuffer_3',['rx_buffer',['../uart_8c.html#ab7c2eeebc26b7ad1e38b702d04ae3bd4',1,'uart.c']]]
 ];

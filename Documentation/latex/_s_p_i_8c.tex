@@ -1,0 +1,85 @@
+\hypertarget{_s_p_i_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+SPI.c File Reference}
+\label{_s_p_i_8c}\index{D:/Progetti/TTK4155/Node1/TTK4155/SPI.c@{D:/Progetti/TTK4155/Node1/TTK4155/SPI.c}}
+{\ttfamily \#include \char`\"{}SPI.\+h\char`\"{}}\newline
+Include dependency graph for SPI.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_s_p_i_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_s_p_i_8c_a474ee5b7a199d155bf6e3c1099d8bd38}{SPI\+\_\+slave\+\_\+enable}} ()
+\begin{DoxyCompactList}\small\item\em Enable the SPI slave. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_s_p_i_8c_a854b85f853d4139663c8347a2e1a3fd0}{SPI\+\_\+slave\+\_\+disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable the SPI slave. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_s_p_i_8c_a34182122af387dbfe661da5dca71d01b}{SPI\+\_\+master\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the SPI master. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_s_p_i_8c_af6368b67e2ba591bcd82ca58e7bc05e2}{SPI\+\_\+master\+\_\+transmit}} (char c\+Data)
+\begin{DoxyCompactList}\small\item\em Transmit data with SPI. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_s_p_i_8c_a68e8553f6e049b8f7c4e7a1ee355e063}{SPI\+\_\+master\+\_\+read}} ()
+\begin{DoxyCompactList}\small\item\em Read data with SPI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_s_p_i_8c_a34182122af387dbfe661da5dca71d01b}\label{_s_p_i_8c_a34182122af387dbfe661da5dca71d01b}} 
+\index{SPI.c@{SPI.c}!SPI\_master\_init@{SPI\_master\_init}}
+\index{SPI\_master\_init@{SPI\_master\_init}!SPI.c@{SPI.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_master\_init()}{SPI\_master\_init()}}
+{\footnotesize\ttfamily void SPI\+\_\+master\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the SPI master. 
+
+\mbox{\Hypertarget{_s_p_i_8c_a68e8553f6e049b8f7c4e7a1ee355e063}\label{_s_p_i_8c_a68e8553f6e049b8f7c4e7a1ee355e063}} 
+\index{SPI.c@{SPI.c}!SPI\_master\_read@{SPI\_master\_read}}
+\index{SPI\_master\_read@{SPI\_master\_read}!SPI.c@{SPI.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_master\_read()}{SPI\_master\_read()}}
+{\footnotesize\ttfamily char SPI\+\_\+master\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read data with SPI. 
+
+\begin{DoxyReturn}{Returns}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_p_i_8c_af6368b67e2ba591bcd82ca58e7bc05e2}\label{_s_p_i_8c_af6368b67e2ba591bcd82ca58e7bc05e2}} 
+\index{SPI.c@{SPI.c}!SPI\_master\_transmit@{SPI\_master\_transmit}}
+\index{SPI\_master\_transmit@{SPI\_master\_transmit}!SPI.c@{SPI.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_master\_transmit()}{SPI\_master\_transmit()}}
+{\footnotesize\ttfamily void SPI\+\_\+master\+\_\+transmit (\begin{DoxyParamCaption}\item[{char}]{c\+Data }\end{DoxyParamCaption})}
+
+
+
+Transmit data with SPI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+Data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_s_p_i_8c_a854b85f853d4139663c8347a2e1a3fd0}\label{_s_p_i_8c_a854b85f853d4139663c8347a2e1a3fd0}} 
+\index{SPI.c@{SPI.c}!SPI\_slave\_disable@{SPI\_slave\_disable}}
+\index{SPI\_slave\_disable@{SPI\_slave\_disable}!SPI.c@{SPI.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_slave\_disable()}{SPI\_slave\_disable()}}
+{\footnotesize\ttfamily void SPI\+\_\+slave\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable the SPI slave. 
+
+\mbox{\Hypertarget{_s_p_i_8c_a474ee5b7a199d155bf6e3c1099d8bd38}\label{_s_p_i_8c_a474ee5b7a199d155bf6e3c1099d8bd38}} 
+\index{SPI.c@{SPI.c}!SPI\_slave\_enable@{SPI\_slave\_enable}}
+\index{SPI\_slave\_enable@{SPI\_slave\_enable}!SPI.c@{SPI.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_slave\_enable()}{SPI\_slave\_enable()}}
+{\footnotesize\ttfamily void SPI\+\_\+slave\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable the SPI slave. 
+

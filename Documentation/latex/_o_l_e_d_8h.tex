@@ -1,0 +1,338 @@
+\hypertarget{_o_l_e_d_8h}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/\+OLED.h File Reference}
+\label{_o_l_e_d_8h}\index{D:/Progetti/TTK4155/Node1/TTK4155/OLED.h@{D:/Progetti/TTK4155/Node1/TTK4155/OLED.h}}
+{\ttfamily \#include $<$avr/delay.\+h$>$}\newline
+Include dependency graph for OLED.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{_o_l_e_d_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_o_l_e_d_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmenu__entry}{menu\+\_\+entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_o_l_e_d_8h_a8673a47a50b180c1d74812d571b6350c}{OLED\+\_\+\+COMMAND\+\_\+\+PIN}}~3
+\item 
+\#define \mbox{\hyperlink{_o_l_e_d_8h_aed89bd71aee8be823e8a20ec4e093c1e}{HEIGHT}}~64
+\item 
+\#define \mbox{\hyperlink{_o_l_e_d_8h_a241aeeb764887ae5e3de58b98f04b16d}{WIDTH}}~128
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844}{menu\+\_\+name}} \{ \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd}{MAIN}}
+, \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d}{PLAYMENU}}
+, \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef}{CREDITS}}
+, \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a}{ABOUT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a92a7efc71034015484371ea860ed96b7}{OLED\+\_\+write\+\_\+command}} (uint8\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em Send command to the OLED controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a41efdbe7c39d060f81a317703b6626e6}{OLED\+\_\+write\+\_\+data}} (uint8\+\_\+t d)
+\begin{DoxyCompactList}\small\item\em Write data to the OLED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_afb6f3107e48d72be03cb3781374e1391}{OLED\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization function for the OLED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_ae47f190c0ac5b80b1754ea3d3c3c02a8}{OLED\+\_\+goto\+\_\+line}} (uint8\+\_\+t line)
+\begin{DoxyCompactList}\small\item\em Set cursor to a certain line of the OLEd. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_afef85af912c108e839a705e7a66a1720}{OLED\+\_\+goto\+\_\+column}} (uint8\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em Set the cursor to a certain column. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a2dde9e2ff48705297fb105f3f793da04}{OLED\+\_\+set\+\_\+pos}} (uint8\+\_\+t line, uint8\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em Set the cursor to a certain line and column. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a79e5a15ee3cdc7c549d2aa961248f239}{OLED\+\_\+fill\+\_\+line}} (uint8\+\_\+t line)
+\begin{DoxyCompactList}\small\item\em Fill line with white pixels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_ad784190236dc8c79d99481bac1fbcf60}{OLED\+\_\+clear\+\_\+all}} ()
+\begin{DoxyCompactList}\small\item\em Clear the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a94fbf95c1a5f57d41b094afe2c463718}{OLED\+\_\+print\+\_\+char}} (char c, uint8\+\_\+t line, uint8\+\_\+t col)
+\begin{DoxyCompactList}\small\item\em Print character on the OLED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a53b761d5b126de3f35e50ce27022b3b9}{OLED\+\_\+print\+\_\+string}} (char $\ast$s, uint8\+\_\+t length, uint8\+\_\+t line)
+\begin{DoxyCompactList}\small\item\em Print string to the OLED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_ac44bc9d1697259578a22f990300f1a50}{OLED\+\_\+update\+\_\+menu}} (uint8\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Update the cursor on the menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_o_l_e_d_8h_a55bb654e6204c14882e66fc5a4c6ba44}{OLED\+\_\+print\+\_\+menu}} (uint8\+\_\+t menutype)
+\begin{DoxyCompactList}\small\item\em Print menu on the OLED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile char $\ast$ \mbox{\hyperlink{_o_l_e_d_8h_a2b14bcae81c33704cd345ed337762943}{OLED\+\_\+\+COMMAND}}
+\item 
+volatile char $\ast$ \mbox{\hyperlink{_o_l_e_d_8h_ad47de1071fd49ce10af87e8be74b38ff}{OLED\+\_\+\+DATA}}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{_o_l_e_d_8h_ab561e8d3613278ebf0c0faef7591a024}{menu\+\_\+pos}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_o_l_e_d_8h_a205b823d11ca2996c7f8cf02b1429258}{is\+\_\+main\+\_\+menu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_o_l_e_d_8h_aed89bd71aee8be823e8a20ec4e093c1e}\label{_o_l_e_d_8h_aed89bd71aee8be823e8a20ec4e093c1e}} 
+\index{OLED.h@{OLED.h}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \#define HEIGHT~64}
+
+\mbox{\Hypertarget{_o_l_e_d_8h_a8673a47a50b180c1d74812d571b6350c}\label{_o_l_e_d_8h_a8673a47a50b180c1d74812d571b6350c}} 
+\index{OLED.h@{OLED.h}!OLED\_COMMAND\_PIN@{OLED\_COMMAND\_PIN}}
+\index{OLED\_COMMAND\_PIN@{OLED\_COMMAND\_PIN}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_COMMAND\_PIN}{OLED\_COMMAND\_PIN}}
+{\footnotesize\ttfamily \#define OLED\+\_\+\+COMMAND\+\_\+\+PIN~3}
+
+\mbox{\Hypertarget{_o_l_e_d_8h_a241aeeb764887ae5e3de58b98f04b16d}\label{_o_l_e_d_8h_a241aeeb764887ae5e3de58b98f04b16d}} 
+\index{OLED.h@{OLED.h}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \#define WIDTH~128}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844}\label{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844}} 
+\index{OLED.h@{OLED.h}!menu\_name@{menu\_name}}
+\index{menu\_name@{menu\_name}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{menu\_name}{menu\_name}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844}{menu\+\_\+name}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAIN@{MAIN}!OLED.h@{OLED.h}}\index{OLED.h@{OLED.h}!MAIN@{MAIN}}}\mbox{\Hypertarget{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd}\label{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd}} 
+MAIN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYMENU@{PLAYMENU}!OLED.h@{OLED.h}}\index{OLED.h@{OLED.h}!PLAYMENU@{PLAYMENU}}}\mbox{\Hypertarget{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d}\label{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d}} 
+PLAYMENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CREDITS@{CREDITS}!OLED.h@{OLED.h}}\index{OLED.h@{OLED.h}!CREDITS@{CREDITS}}}\mbox{\Hypertarget{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef}\label{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef}} 
+CREDITS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABOUT@{ABOUT}!OLED.h@{OLED.h}}\index{OLED.h@{OLED.h}!ABOUT@{ABOUT}}}\mbox{\Hypertarget{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a}\label{_o_l_e_d_8h_aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a}} 
+ABOUT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_o_l_e_d_8h_ad784190236dc8c79d99481bac1fbcf60}\label{_o_l_e_d_8h_ad784190236dc8c79d99481bac1fbcf60}} 
+\index{OLED.h@{OLED.h}!OLED\_clear\_all@{OLED\_clear\_all}}
+\index{OLED\_clear\_all@{OLED\_clear\_all}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_clear\_all()}{OLED\_clear\_all()}}
+{\footnotesize\ttfamily void OLED\+\_\+clear\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the screen. 
+
+\mbox{\Hypertarget{_o_l_e_d_8h_a79e5a15ee3cdc7c549d2aa961248f239}\label{_o_l_e_d_8h_a79e5a15ee3cdc7c549d2aa961248f239}} 
+\index{OLED.h@{OLED.h}!OLED\_fill\_line@{OLED\_fill\_line}}
+\index{OLED\_fill\_line@{OLED\_fill\_line}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_fill\_line()}{OLED\_fill\_line()}}
+{\footnotesize\ttfamily void OLED\+\_\+fill\+\_\+line (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{line }\end{DoxyParamCaption})}
+
+
+
+Fill line with white pixels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Line number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_afef85af912c108e839a705e7a66a1720}\label{_o_l_e_d_8h_afef85af912c108e839a705e7a66a1720}} 
+\index{OLED.h@{OLED.h}!OLED\_goto\_column@{OLED\_goto\_column}}
+\index{OLED\_goto\_column@{OLED\_goto\_column}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_goto\_column()}{OLED\_goto\_column()}}
+{\footnotesize\ttfamily void OLED\+\_\+goto\+\_\+column (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{column }\end{DoxyParamCaption})}
+
+
+
+Set the cursor to a certain column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & Column number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_ae47f190c0ac5b80b1754ea3d3c3c02a8}\label{_o_l_e_d_8h_ae47f190c0ac5b80b1754ea3d3c3c02a8}} 
+\index{OLED.h@{OLED.h}!OLED\_goto\_line@{OLED\_goto\_line}}
+\index{OLED\_goto\_line@{OLED\_goto\_line}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_goto\_line()}{OLED\_goto\_line()}}
+{\footnotesize\ttfamily void OLED\+\_\+goto\+\_\+line (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{line }\end{DoxyParamCaption})}
+
+
+
+Set cursor to a certain line of the OLEd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Line number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_afb6f3107e48d72be03cb3781374e1391}\label{_o_l_e_d_8h_afb6f3107e48d72be03cb3781374e1391}} 
+\index{OLED.h@{OLED.h}!OLED\_init@{OLED\_init}}
+\index{OLED\_init@{OLED\_init}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_init()}{OLED\_init()}}
+{\footnotesize\ttfamily void OLED\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization function for the OLED. 
+
+\mbox{\Hypertarget{_o_l_e_d_8h_a94fbf95c1a5f57d41b094afe2c463718}\label{_o_l_e_d_8h_a94fbf95c1a5f57d41b094afe2c463718}} 
+\index{OLED.h@{OLED.h}!OLED\_print\_char@{OLED\_print\_char}}
+\index{OLED\_print\_char@{OLED\_print\_char}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_print\_char()}{OLED\_print\_char()}}
+{\footnotesize\ttfamily void OLED\+\_\+print\+\_\+char (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{uint8\+\_\+t}]{line,  }\item[{uint8\+\_\+t}]{col }\end{DoxyParamCaption})}
+
+
+
+Print character on the OLED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Character \\
+\hline
+{\em line} & line number \\
+\hline
+{\em col} & Column number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_a55bb654e6204c14882e66fc5a4c6ba44}\label{_o_l_e_d_8h_a55bb654e6204c14882e66fc5a4c6ba44}} 
+\index{OLED.h@{OLED.h}!OLED\_print\_menu@{OLED\_print\_menu}}
+\index{OLED\_print\_menu@{OLED\_print\_menu}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_print\_menu()}{OLED\_print\_menu()}}
+{\footnotesize\ttfamily void OLED\+\_\+print\+\_\+menu (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{menutype }\end{DoxyParamCaption})}
+
+
+
+Print menu on the OLED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menutype} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_a53b761d5b126de3f35e50ce27022b3b9}\label{_o_l_e_d_8h_a53b761d5b126de3f35e50ce27022b3b9}} 
+\index{OLED.h@{OLED.h}!OLED\_print\_string@{OLED\_print\_string}}
+\index{OLED\_print\_string@{OLED\_print\_string}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_print\_string()}{OLED\_print\_string()}}
+{\footnotesize\ttfamily void OLED\+\_\+print\+\_\+string (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{uint8\+\_\+t}]{length,  }\item[{uint8\+\_\+t}]{line }\end{DoxyParamCaption})}
+
+
+
+Print string to the OLED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String \\
+\hline
+{\em length} & Length of the string \\
+\hline
+{\em line} & Line number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_a2dde9e2ff48705297fb105f3f793da04}\label{_o_l_e_d_8h_a2dde9e2ff48705297fb105f3f793da04}} 
+\index{OLED.h@{OLED.h}!OLED\_set\_pos@{OLED\_set\_pos}}
+\index{OLED\_set\_pos@{OLED\_set\_pos}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_set\_pos()}{OLED\_set\_pos()}}
+{\footnotesize\ttfamily void OLED\+\_\+set\+\_\+pos (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{line,  }\item[{uint8\+\_\+t}]{column }\end{DoxyParamCaption})}
+
+
+
+Set the cursor to a certain line and column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Line number \\
+\hline
+{\em column} & Column number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_ac44bc9d1697259578a22f990300f1a50}\label{_o_l_e_d_8h_ac44bc9d1697259578a22f990300f1a50}} 
+\index{OLED.h@{OLED.h}!OLED\_update\_menu@{OLED\_update\_menu}}
+\index{OLED\_update\_menu@{OLED\_update\_menu}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_update\_menu()}{OLED\_update\_menu()}}
+{\footnotesize\ttfamily void OLED\+\_\+update\+\_\+menu (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pos }\end{DoxyParamCaption})}
+
+
+
+Update the cursor on the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_a92a7efc71034015484371ea860ed96b7}\label{_o_l_e_d_8h_a92a7efc71034015484371ea860ed96b7}} 
+\index{OLED.h@{OLED.h}!OLED\_write\_command@{OLED\_write\_command}}
+\index{OLED\_write\_command@{OLED\_write\_command}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_write\_command()}{OLED\_write\_command()}}
+{\footnotesize\ttfamily void OLED\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+Send command to the OLED controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Command to be sent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_o_l_e_d_8h_a41efdbe7c39d060f81a317703b6626e6}\label{_o_l_e_d_8h_a41efdbe7c39d060f81a317703b6626e6}} 
+\index{OLED.h@{OLED.h}!OLED\_write\_data@{OLED\_write\_data}}
+\index{OLED\_write\_data@{OLED\_write\_data}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_write\_data()}{OLED\_write\_data()}}
+{\footnotesize\ttfamily void OLED\+\_\+write\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{d }\end{DoxyParamCaption})}
+
+
+
+Write data to the OLED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Data to write \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_o_l_e_d_8h_a205b823d11ca2996c7f8cf02b1429258}\label{_o_l_e_d_8h_a205b823d11ca2996c7f8cf02b1429258}} 
+\index{OLED.h@{OLED.h}!is\_main\_menu@{is\_main\_menu}}
+\index{is\_main\_menu@{is\_main\_menu}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{is\_main\_menu}{is\_main\_menu}}
+{\footnotesize\ttfamily uint8\+\_\+t is\+\_\+main\+\_\+menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_o_l_e_d_8h_ab561e8d3613278ebf0c0faef7591a024}\label{_o_l_e_d_8h_ab561e8d3613278ebf0c0faef7591a024}} 
+\index{OLED.h@{OLED.h}!menu\_pos@{menu\_pos}}
+\index{menu\_pos@{menu\_pos}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{menu\_pos}{menu\_pos}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t menu\+\_\+pos\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_o_l_e_d_8h_a2b14bcae81c33704cd345ed337762943}\label{_o_l_e_d_8h_a2b14bcae81c33704cd345ed337762943}} 
+\index{OLED.h@{OLED.h}!OLED\_COMMAND@{OLED\_COMMAND}}
+\index{OLED\_COMMAND@{OLED\_COMMAND}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_COMMAND}{OLED\_COMMAND}}
+{\footnotesize\ttfamily volatile char$\ast$ OLED\+\_\+\+COMMAND\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_o_l_e_d_8h_ad47de1071fd49ce10af87e8be74b38ff}\label{_o_l_e_d_8h_ad47de1071fd49ce10af87e8be74b38ff}} 
+\index{OLED.h@{OLED.h}!OLED\_DATA@{OLED\_DATA}}
+\index{OLED\_DATA@{OLED\_DATA}!OLED.h@{OLED.h}}
+\doxysubsubsection{\texorpdfstring{OLED\_DATA}{OLED\_DATA}}
+{\footnotesize\ttfamily volatile char$\ast$ OLED\+\_\+\+DATA\hspace{0.3cm}{\ttfamily [extern]}}
+

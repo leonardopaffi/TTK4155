@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="struct_c_a_n__message" kind="struct" language="C++" prot="public">
+    <compoundname>CAN_message</compoundname>
+    <includes refid="_c_a_n_8h" local="no">CAN.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="14" column="10" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="15" column="10" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="16" column="9" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" line="13" column="1" bodyfile="D:/Progetti/TTK4155/Node1/TTK4155/CAN.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="struct_c_a_n__message_1afb87d045bbf32b236fc425efe02bdc7b" prot="public" virt="non-virtual"><scope>CAN_message</scope><name>data</name></member>
+      <member refid="struct_c_a_n__message_1a4fc3a0c58dfbd1e68224521185cb9384" prot="public" virt="non-virtual"><scope>CAN_message</scope><name>id</name></member>
+      <member refid="struct_c_a_n__message_1a1892eba2086d12ac2b09005aeb09ea3b" prot="public" virt="non-virtual"><scope>CAN_message</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

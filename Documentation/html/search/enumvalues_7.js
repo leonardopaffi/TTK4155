@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settings_0',['SETTINGS',['../_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844ac678338caea29d77d56be2ea56325610',1,'OLED.h']]]
+  ['up_0',['UP',['../_joystick_8h.html#ac178037a410063bfcc3a63c1e05d117faba595d8bca8bc5e67c37c0a9d89becfa',1,'Joystick.h']]]
 ];

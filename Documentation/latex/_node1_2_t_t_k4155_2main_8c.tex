@@ -1,0 +1,79 @@
+\hypertarget{_node1_2_t_t_k4155_2main_8c}{}\doxysection{D\+:/\+Progetti/\+TTK4155/\+Node1/\+TTK4155/main.c File Reference}
+\label{_node1_2_t_t_k4155_2main_8c}\index{D:/Progetti/TTK4155/Node1/TTK4155/main.c@{D:/Progetti/TTK4155/Node1/TTK4155/main.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}USART.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SRAM.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ADC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Joystick.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interrupt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slider.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}OLED.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}CAN.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mcp2515.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_node1_2_t_t_k4155_2main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a802b2b582b121e4632aa9a491d503720}{FOSC}}~4915200
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}}~9600
+\item 
+\#define \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a711e9130c825a7269c8c87dbb57a85e0}{MYUBRR}}~\mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a802b2b582b121e4632aa9a491d503720}{FOSC}} / 16 / \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}} -\/ 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a7b1703131dd3be69c8a918cb0405ce02}{playing}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2main_8c_a62634036639f88eece6fbf226b45f84b}\label{_node1_2_t_t_k4155_2main_8c_a62634036639f88eece6fbf226b45f84b}} 
+\index{main.c@{main.c}!BAUD@{BAUD}}
+\index{BAUD@{BAUD}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{BAUD}{BAUD}}
+{\footnotesize\ttfamily \#define BAUD~9600}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2main_8c_a802b2b582b121e4632aa9a491d503720}\label{_node1_2_t_t_k4155_2main_8c_a802b2b582b121e4632aa9a491d503720}} 
+\index{main.c@{main.c}!FOSC@{FOSC}}
+\index{FOSC@{FOSC}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{FOSC}{FOSC}}
+{\footnotesize\ttfamily \#define FOSC~4915200}
+
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2main_8c_a711e9130c825a7269c8c87dbb57a85e0}\label{_node1_2_t_t_k4155_2main_8c_a711e9130c825a7269c8c87dbb57a85e0}} 
+\index{main.c@{main.c}!MYUBRR@{MYUBRR}}
+\index{MYUBRR@{MYUBRR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MYUBRR}{MYUBRR}}
+{\footnotesize\ttfamily \#define MYUBRR~\mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a802b2b582b121e4632aa9a491d503720}{FOSC}} / 16 / \mbox{\hyperlink{_node1_2_t_t_k4155_2main_8c_a62634036639f88eece6fbf226b45f84b}{BAUD}} -\/ 1}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_node1_2_t_t_k4155_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_node1_2_t_t_k4155_2main_8c_a7b1703131dd3be69c8a918cb0405ce02}\label{_node1_2_t_t_k4155_2main_8c_a7b1703131dd3be69c8a918cb0405ce02}} 
+\index{main.c@{main.c}!playing@{playing}}
+\index{playing@{playing}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{playing}{playing}}
+{\footnotesize\ttfamily uint8\+\_\+t playing = 0}
+

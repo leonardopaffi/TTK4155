@@ -4,10 +4,10 @@ var indexSectionsWithContent =
   1: "cdmpsu",
   2: "acdfijmnoprsu",
   3: "_acdijmnoprstu",
-  4: "_abdefghijlmnoprstxy",
+  4: "_abcdefghijlmnoprstxy",
   5: "cpu",
   6: "mxy",
-  7: "acdlmprsuxy",
+  7: "acdlmpruxy",
   8: "abcdfhijlmnoprsuw",
   9: "tu"
 };

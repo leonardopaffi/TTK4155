@@ -5,5 +5,5 @@ var _c_a_n_8h =
     [ "CAN_init", "_c_a_n_8h.html#adb0f99207facf71ca3429c6108d42d43", null ],
     [ "CAN_receive", "_c_a_n_8h.html#a679e0fac309970bf0d8361cf02da8f97", null ],
     [ "CAN_send", "_c_a_n_8h.html#a977213658904ef25865836933905d9b9", null ],
-    [ "ISR", "_c_a_n_8h.html#afea150fcd685610cb9f7672fce361e53", null ]
+    [ "you_lose", "_c_a_n_8h.html#a930a5570610e7a0526767bf358673aa6", null ]
 ];

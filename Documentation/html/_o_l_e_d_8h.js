@@ -7,7 +7,6 @@ var _o_l_e_d_8h =
     [ "menu_name", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844", [
       [ "MAIN", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844a41c6eb506ccf657cc7e958c8e8c769cd", null ],
       [ "PLAYMENU", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844a9a13d48b131486f4aa4530caa560240d", null ],
-      [ "SETTINGS", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844ac678338caea29d77d56be2ea56325610", null ],
       [ "CREDITS", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844acb9e6f410cf374803d7ff561a15bc4ef", null ],
       [ "ABOUT", "_o_l_e_d_8h.html#aa365de70bf20ec692b20b877b8875844aaef4dc1e4f450a4c9e61a3699d75af0a", null ]
     ] ],
@@ -23,7 +22,7 @@ var _o_l_e_d_8h =
     [ "OLED_update_menu", "_o_l_e_d_8h.html#ac44bc9d1697259578a22f990300f1a50", null ],
     [ "OLED_write_command", "_o_l_e_d_8h.html#a92a7efc71034015484371ea860ed96b7", null ],
     [ "OLED_write_data", "_o_l_e_d_8h.html#a41efdbe7c39d060f81a317703b6626e6", null ],
-    [ "main_menu", "_o_l_e_d_8h.html#a1d6d39a4dede2e28a725ab4486866072", null ],
+    [ "is_main_menu", "_o_l_e_d_8h.html#a205b823d11ca2996c7f8cf02b1429258", null ],
     [ "menu_pos", "_o_l_e_d_8h.html#ab561e8d3613278ebf0c0faef7591a024", null ],
     [ "OLED_COMMAND", "_o_l_e_d_8h.html#a2b14bcae81c33704cd345ed337762943", null ],
     [ "OLED_DATA", "_o_l_e_d_8h.html#ad47de1071fd49ce10af87e8be74b38ff", null ]

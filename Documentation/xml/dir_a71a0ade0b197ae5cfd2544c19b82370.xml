@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_a71a0ade0b197ae5cfd2544c19b82370" kind="dir">
+    <compoundname>D:/Progetti/TTK4155/Node2/Node2/Debug</compoundname>
+    <innerdir refid="dir_12aa1f1713acbc3e2c25d090f775827a">D:/Progetti/TTK4155/Node2/Node2/Debug/Device_Startup</innerdir>
+    <innerfile refid="_node2_2_node2_2_debug_2_a_d_c_8d">ADC.d</innerfile>
+    <innerfile refid="_node2_2_node2_2_debug_2_c_a_n___controller_8d">can_controller.d</innerfile>
+    <innerfile refid="can__interrupt_8d">can_interrupt.d</innerfile>
+    <innerfile refid="delay_8d">delay.d</innerfile>
+    <innerfile refid="_node2_2_node2_2_debug_2main_8d">main.d</innerfile>
+    <innerfile refid="motor_8d">motor.d</innerfile>
+    <innerfile refid="_p_i_8d">PI.d</innerfile>
+    <innerfile refid="printf-stdarg_8d">printf-stdarg.d</innerfile>
+    <innerfile refid="_p_w_m_8d">PWM.d</innerfile>
+    <innerfile refid="solenoid_8d">solenoid.d</innerfile>
+    <innerfile refid="uart_8d">uart.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Progetti/TTK4155/Node2/Node2/Debug/"/>
+  </compounddef>
+</doxygen>

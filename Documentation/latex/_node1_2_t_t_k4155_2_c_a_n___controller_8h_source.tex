@@ -1,0 +1,39 @@
+\hypertarget{_node1_2_t_t_k4155_2_c_a_n___controller_8h_source}{}\doxysection{CAN\+\_\+\+Controller.\+h}
+\label{_node1_2_t_t_k4155_2_c_a_n___controller_8h_source}\index{D:/Progetti/TTK4155/Node1/TTK4155/CAN\_Controller.h@{D:/Progetti/TTK4155/Node1/TTK4155/CAN\_Controller.h}}
+\mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CAN\_CONTROLLER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CAN\_CONTROLLER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_s_p_i_8h}{SPI.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mcp2515_8h}{mcp2515.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{comment}{// From the Register Map table 11.1 page 63 of MCP2515 datasheet}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define MCP\_TXB0SIDH    0x31}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define MCP\_TXB0SIDL    0x32}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define MCP\_TXB0DLC     0x35}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define MCP\_TXB0D0      0x36}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define MCP\_RXB0SIDL    0X62}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define MCP\_RXB0DLC     0x65}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define MCP\_RXB0D0      0x66}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define MCP\_RXB1SIDL    0X72}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define MCP\_RXB1DLC     0X75}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define MCP\_RXB1D0      0x76}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{25 uint8\_t \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a94d0b7ee70889fef8169e24e32de6243}{MCP2515\_read}}(uint8\_t address);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{33 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882cd25399ed7c350b90960ebad58b4e}{MCP2515\_write}}(uint8\_t address, uint8\_t data);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{40 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aa12fd2c3ad6653e48f0e1985527f5d23}{MCP2515\_RTS}}(uint8\_t buffer);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{47 uint8\_t \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_ac06d6d9d7edb8a48e7b4b1fd06d2a330}{MCP2515\_read\_status}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_aede3ccc1b3772f8e55447b8334769d37}{MCP2515\_bit\_modify}}(uint8\_t address, uint8\_t byte\_mask, uint8\_t data);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a882a91d22eb8ae4eb4315b06c4f7e966}{MCP2515\_reset}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69 \textcolor{keywordtype}{void} \mbox{\hyperlink{_node1_2_t_t_k4155_2_c_a_n___controller_8h_a04b0eb91a5bafd55bd91e2b1d4da6353}{MCP2515\_set\_mode}}(uint8\_t mode);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
